@@ -1,0 +1,1144 @@
+/* Reset e Estilos Base - Mantém consistência com a home */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.border-test {
+  border: solid 1px red;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0 20px;
+}
+
+main section {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.xop-question {
+  width: 55%;
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+}
+.xop-question h2 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+}
+
+/* Estilos de Botões - Usando a nova cor laranja */
+
+.main-button-styles {
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.dark-button {
+  color: #fff;
+  background-color: #000;
+}
+
+.dark-button:hover {
+  color: #fff;
+  background-color: #dc6339;
+}
+.news-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+}
+
+.btn-primary {
+  background-color: #dc6339;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c55530;
+}
+
+.btn-secondary {
+  background-color: #dc6339;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+}
+
+.btn-outline {
+  border: 2px solid #dc6339;
+  color: #dc6339;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #dc6339;
+  color: white;
+}
+
+/* Hero Section - Seção principal da página */
+.hero-image-service {
+      max-width: 1500px;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    /* Container de texto centralizado */
+    .hero-text {
+      position: absolute;
+      bottom: 43px;
+      left: 43px;
+      color: white;
+      z-index: 2;
+      width: 55%;
+    }
+
+    .hero-text h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 72px;
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* Containers das imagens flutuantes */
+    .floating-container {
+      position: absolute;
+      bottom: 10px;
+      right: 0px;
+      width: 32%;
+      height: 42%;
+      padding: 40px;
+      border-radius: 15px;
+      background: #dc6339;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .floating-container p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      line-height: 141%;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .floating-container-two {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 11%;
+      height: 26%;
+      border-radius: 12%;
+      background: #1e1e1e;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+    }
+
+    .floating-container-two span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 120%;
+      text-align: center;
+      color: #fff;
+    }
+
+/* Why Choose Section - Benefícios em grid */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.benefits-grid h2 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+  max-width: 90%;
+  margin: 15px;
+}
+.benefits-grid h3 {
+  font-size: 24px;
+ font-weight: 600;
+
+}
+
+.benefits-grid p {
+  font-size: 22px;
+  max-width: 100%;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.benefit-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 20px 0;
+}
+
+.benefit-card {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dc6339;
+}
+/* Card CTA especial - Destaque para orçamento */
+.cta-card {
+  background-color: #dc6339;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.cta-card h3,
+.cta-card p {
+  color: white;
+  display: flex;
+  align-items: end;
+  font-size: 2rem;
+}
+
+.cta-card .button-primary {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: start;
+}
+
+/* Testimonial Section - Depoimento com layout flexível */
+.testimonial-section {
+  padding: 20px 0;
+}
+
+.testimonial-content {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  border-radius: 30px;
+  max-width: 1500px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.testimonial-text {
+  flex: 1;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 80px;
+  color: #dc6339;
+  opacity: 0.3;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: serif;
+}
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  color: #333;
+  line-height: 1.5;
+}
+
+.section-tag {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-tag i {
+  font-size: 0.8em;
+  color: #dc6339;
+  text-align: center;
+  padding: 5px;
+}
+
+cite {
+  color: #666;
+}
+
+cite strong {
+  color: #dc6339;
+  font-weight: 600;
+}
+
+/* Technology Section - Recursos em grid flexível */
+.technology-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-features {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 20px;
+}
+
+.tech-card-one {
+  background-image: url(img/cardbackground-tec1.png);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-size: cover;
+}
+
+.tech-card-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.tech-card-one h3,
+.tech-card-one p {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card-two {
+  background-image: url(img/cardbackground-2.png);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-size: cover;
+}
+
+.tech-card-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.tech-card-two h3,
+.tech-card-two p {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card-three {
+  background-image: url(img/cardbackground-3.png);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-size: cover;
+}
+
+.tech-card-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.tech-card-three h3,
+.tech-card-three p {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card-four {
+  background-image: url(img/cardbackground-4.png);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-size: cover;
+}
+
+.tech-card-four::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.tech-card-four h3,
+.tech-card-four p {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card.large {
+  grid-row: span 2;
+
+  align-items: center;
+}
+
+.tech-content {
+  padding: 30px;
+  flex: 1;
+}
+
+.titulo-centralizado {
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+  justify-content: flex-end;
+}
+
+.tech-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.tech-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.tech-image {
+  flex: 1;
+}
+
+.tech-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Industries Section - Grid de indústrias */
+.xopvision-industries-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.xopvision-industries-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  line-height: 132%;
+  text-align: left;
+}
+
+.xopvision-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.xopvision-industry-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.xopvision-industry-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.xopvision-industry-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.xopvision-industry-content {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.xopvision-industry-scenario,
+.xopvision-industry-benefit {
+  margin-bottom: 15px;
+}
+
+.xopvision-scenario-label,
+.xopvision-benefit-label {
+  font-weight: 700;
+  color: #333;
+  display: inline;
+}
+
+.xopvision-scenario-text,
+.xopvision-benefit-text {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 400;
+  display: inline;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.xopvision-desktop-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.xopvision-desktop-button:hover {
+  background-color: #555;
+}
+
+.xopvision-mobile-button {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .xopvision-industries-container {
+    padding: 30px 0;
+  }
+
+  .xopvision-industries-title {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .xopvision-industries-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .xopvision-industries-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .xopvision-industry-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .xopvision-industry-image {
+    height: 250px;
+    border-radius: 25px;
+  }
+
+  .xopvision-industry-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .xopvision-scenario-text,
+  .xopvision-benefit-text {
+    font-size: 15px;
+  }
+
+  .xopvision-desktop-button {
+    display: none;
+  }
+
+  .xopvision-mobile-button {
+    display: block;
+    background-color: #dc6339;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .xopvision-mobile-button::after {
+    content: "→";
+    margin-left: 8px;
+    font-size: 16px;
+  }
+
+  .xopvision-mobile-button:hover {
+    background-color: #dc6339;
+  }
+
+  /* Add scroll indicator */
+  .xopvision-scroll-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .xopvision-scroll-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+
+  .xopvision-scroll-dot.active {
+    background-color: #dc6339;
+  }
+  .benefits-grid p {
+    font-size: 18px;
+    max-width: 100%;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+}
+
+/* Desktop only - hide mobile elements */
+@media (min-width: 769px) {
+  .xopvision-mobile-only {
+    display: none;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .xopvision-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .xopvision-industries-title {
+    font-size: 36px;
+  }
+}
+
+
+
+/* FAQ Section - Perguntas frequentes interativas */
+.faq-section {
+  max-width: 1500px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+
+.faq-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  box-shadow: 0 0 0 1px #f0f0f0;
+}
+
+.faq-tag .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #dc6339;
+  border-radius: 50%;
+}
+
+.faq-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.faq-image img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  height: auto;
+}
+
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+.faq-item {
+  position: relative;
+  border-bottom: none;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #dc6339; /* laranja */
+}
+
+.faq-item h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: 0;
+}
+
+.faq-item p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.faq-item .icon {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #1c1c1c;
+    border-radius: 20px;
+    padding: 5px;
+}
+/* Show only on mobile and tablet */
+.mobile-container {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.content-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay-card {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  min-width: 140px;
+}
+
+.overlay-card::before {
+  content: "↗";
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 16px;
+  color: #dc6339;
+}
+
+.overlay-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+.cta-button {
+  background-color: #dc6339;
+  display: block;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.cta-button:hover {
+  background-color: #e2e2e2;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+.secondary-text {
+  display: block;
+  background-color: #e2e2e2;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.secundary-text:hover {
+  background-color: #dc6339;
+  color: white;
+  transform: translateY(-2px);
+}
+/* Responsive Design - Adaptação para diferentes telas */
+@media (min-width: 768px) {
+  .faq-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+/* Hide on desktop */
+@media (min-width: 1024px) {
+  .mobile-container {
+    display: none !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-image-service {
+    display: none !important;
+  }
+  .faq-image img {
+    width: 100%;
+  }
+  .content-wrapper {
+    max-width: 500px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .hero-image-service {
+    display: none !important;
+  }
+  .cta-card {
+    display: none !important;
+  }
+  
+
+  .mobile-container {
+    padding: 15px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .overlay-card {
+    bottom: 10px;
+    right: 10px;
+    padding: 12px 16px;
+    min-width: 120px;
+  }
+
+  .overlay-text {
+    font-size: 13px;
+  }
+
+  /* Benefits grid */
+  .benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .benefits-grid h2 {
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .xop-question {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .xop-question h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    padding: 0 15px;
+  }
+  .section-tag {
+    display: block;
+    width: fit-content;
+    margin-right: auto;
+    text-align: center;
+  }
+  .xopvision-industries-container {
+    padding: 30px 0;
+  }
+
+  .xopvision-industries-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .xopvision-industries-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .xopvision-industries-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .xopvision-industry-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .xopvision-industry-image {
+    height: 250px;
+    border-radius: 25px;
+  }
+
+  .xopvision-industry-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .xopvision-scenario-text,
+  .xopvision-benefit-text {
+    font-size: 15px;
+  }
+
+  .xopvision-desktop-button {
+    display: none;
+  }
+
+  .xopvision-mobile-button {
+    display: block;
+    background-color: #dc6339;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .xopvision-mobile-button::after {
+    content: "→";
+    margin-left: 8px;
+    font-size: 16px;
+  }
+
+  /* Add scroll indicator */
+  .xopvision-scroll-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .xopvision-scroll-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+
+  .xopvision-scroll-dot.active {
+    background-color: #dc6339;
+  }
+  .faq-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .faq-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: 0;
+}
+}

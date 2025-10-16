@@ -680,99 +680,6 @@ color: white;
 .cta-link:hover .icon {
   transform: translateY(3px); /* Pequeno efeito de movimento ao passar o rato */
 }
-/* Secção de FAQ - Estilos Corrigidos */
-.faq-section {
-  padding: 80px 0;
-}
-
-.faq-container {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 80px;
-  margin-top: 60px;
-  align-items: flex-start;
-}
-
-.faq-image {
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-}
-
-.faq-photo {
-  width: 100%;
-  display: block;
-}
-
-.faq-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.faq-item {
-  /* A linha cinzenta que separa CADA item (aberto ou fechado) */
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.faq-question {
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  /* A borda laranja foi REMOVIDA daqui */
-}
-
-.faq-question h3 {
-font-size: 32px;
-  font-weight: 600;
-  color: #1C1C1C;
-  padding-right: 20px;
-  margin: 0;
-  line-height: 45px;
-}
-
-.faq-icon {
-  color: #71717a;
-  flex-shrink: 0;
-}
-
-/* Esconder a resposta por defeito */
-.faq-answer {
-  display: none;
-  padding: 24px 0 0 0; /* Apenas padding no topo, para afastar do texto da pergunta */
-  color: #52525b;
-  line-height: 1.6;
-  max-width: 95%;
-}
-
-.faq-answer p{
-font-family: DM Sans;
-  line-height: 28px;
-  font-size: 18px;
-}
-
-
-/* ---- A LÓGICA CORRETA PARA A LINHA LARANJA ---- */
-
-/* REGRA PARA ITENS FECHADOS:
-   Se o .faq-item NÃO tiver a classe .open, adiciona a linha laranja na .faq-question */
-.faq-item:not(.open) .faq-question {
-  border-bottom: 2px solid #dc6339;
-}
-
-/* REGRA PARA ITENS ABERTOS:
-   Se o .faq-item TIVER a classe .open, mostra a resposta e adiciona a linha laranja na .faq-answer */
-.faq-item.open .faq-answer {
-  display: block;
-  border-bottom: 2px solid #dc6339;
- /* padding-bottom: 24px;  */
-}
-
-/* Estilo do ícone quando o item está aberto (apenas muda a cor) */
-.faq-item.open .faq-icon {
-  color: #27272a;
-}
 
 /* Large Desktops */
 @media (min-width: 1400px) {
@@ -833,10 +740,6 @@ font-family: DM Sans;
     font-size: 16px;
   }
 
-  /* Responsive styles for FAQ section */
-  .faq-container {
-    grid-template-columns: 1fr 1.5fr;
-  }
 }
 
 /* Tablets and Small Desktops */
@@ -896,14 +799,6 @@ font-family: DM Sans;
     height: 400px;
   }
 
-  /* Responsive styles for FAQ section */
-  .faq-container {
-    grid-template-columns: 1fr;
-  }
-
-  .faq-image {
-    display: none;
-  }
 }
 
 /* Tablets */
@@ -1006,15 +901,6 @@ font-family: DM Sans;
   .cta-overlay h3 {
     font-size: 20px;
     margin-bottom: 15px;
-  }
-
-  /* Responsive styles for FAQ section */
-  .faq-section {
-    padding: 60px 0;
-  }
-
-  .faq-question h3 {
-    font-size: 16px;
   }
 }
 
@@ -1140,22 +1026,6 @@ font-family: DM Sans;
     margin-bottom: 10px;
   }
 
-  /* Responsive styles for FAQ section */
-  .faq-section {
-    padding: 40px 0;
-  }
-
-  .faq-question {
-    padding: 15px;
-  }
-
-  .faq-question h3 {
-    font-size: 15px;
-  }
-
-  .faq-answer {
-    padding: 0 15px 15px;
-  }
 }
 
 /* Small Mobile Phones */

@@ -32,18 +32,18 @@
      <section class="solutions">
          <div class="container">
              <div class="section-header">
-                <!-- <div class="section-tag">
+                 <!-- <div class="section-tag">
                      <span>Soluções</span>
                  </div> -->
-				  <span class="section-tag"><i class="fa-solid fa-circle"></i> Soluções</span>
+                 <span class="section-tag"><i class="fa-solid fa-circle"></i> Soluções</span>
                  <h2 class="section-title-productos">Tecnologia que impulsiona resultados</h2>
                  <p class="section-description">Com décadas de inovação tecnológica, as impressoras e multifunções Sharp
                      foram desenvolvidas para responder às necessidades específicas do seu negócio. Descubra os motivos
                      que fazem destas soluções a escolha ideal para empresas que valorizam eficiência e excelência:</p>
              </div>
 
-			 
-			 
+
+
              <div class="solutions-images">
                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/soluções2.png" alt="Business professionals" class="solution-image">
              </div>
@@ -145,7 +145,7 @@
                          trabalho.</p>
                  </div>
              </div>
-         
+
          </div>
      </section>
      <!-- Industry Solutions Section -->
@@ -191,40 +191,40 @@
          </div>
      </section>
 
-    	
-		<!-- Testemunhos responsivos -->
-			<div class="testemunhos-variant testemunhos-desktop">
-			  <?php
-			  get_template_part('template-parts/testemunhos-individual', null, array(
-				// usa o mesmo texto que já tens nos args, se aplicável
-				'show_title'    => true,
-				'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-				'card_bg_color' => '#dc6339',
-				// id único para evitar conflito
-				'carousel_id'   => 'carousel-testemunhos-desktop',
-			  ));
-			  ?>
-			</div>
 
-			<div class="testemunhos-variant testemunhos-mobile">
-			  <?php
-			  get_template_part('template-parts/testemunhos', null, array(
-				'show_title'    => true,
-				'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-				'card_bg_color' => '#ffffff',
-				'carousel_id'   => 'carousel-testemunhos-mobile',
-			  ));
-			  ?>
-			</div>
+     <!-- Testemunhos responsivos -->
+     <div class="testemunhos-variant testemunhos-desktop">
+         <?php
+            get_template_part('template-parts/testemunhos-individual', null, array(
+                // usa o mesmo texto que já tens nos args, se aplicável
+                'show_title'    => true,
+                'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
+                'card_bg_color' => '#dc6339',
+                // id único para evitar conflito
+                'carousel_id'   => 'carousel-testemunhos-desktop',
+            ));
+            ?>
+     </div>
+
+     <div class="testemunhos-variant testemunhos-mobile">
+         <?php
+            get_template_part('template-parts/testemunhos', null, array(
+                'show_title'    => true,
+                'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
+                'card_bg_color' => '#ffffff',
+                'carousel_id'   => 'carousel-testemunhos-mobile',
+            ));
+            ?>
+     </div>
 
 
 
      <!-- Advanced Features Section -->
      <section class="advanced-features">
          <div class="container">
-           <span class="section-tag"><i class="fa-solid fa-circle"></i> Soluções</span>
-			 
-			 
+             <span class="section-tag"><i class="fa-solid fa-circle"></i> Soluções</span>
+
+
 
              <h2 class="section-title">Funcionalidades avançadas que revolucionam a gestão documental do seu negócio</h2>
 
@@ -401,88 +401,38 @@
          </div>
      </section>
 
-    
-	  <!-- Secção Formulario -->
-    
-		<section id="formularioprodutos">
-				  <?php
-				  get_template_part('template-parts/card-formulario', null, array(
-					
-				  ));
-				  ?>
-		</section>
-		
 
+     <!-- Secção Formulario -->
 
+     <section id="formularioprodutos">
+         <?php
+            get_template_part('template-parts/card-formulario', null, array());
+            ?>
+     </section>
 
-         <!-- Secção de FAQ -->
-         <section class="faq-section">
-             <div class="container">
-                 				  <span class="section-tag"><i class="fa-solid fa-circle"></i> FAQ</span>
-
-                 <h2 class="section-title">Dúvidas? Nós temos as respostas</h2>
-
-                 <div class="faq-container">
-                     <div class="faq-image">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/faq.png" alt="Pessoa a utilizar uma impressora multifunções" class="faq-photo">
-                     </div>
-
-                     <div class="faq-list">
-                         <!-- Item 1 - Aberto -->
-                         <div class="faq-item open">
-                             <div class="faq-question">
-                                 <h3>As impressoras Sharp são compatíveis com sistemas Mac e Windows?</h3>
-                                 <div class="faq-icon">
-                                     <!-- Ícone de seta para baixo -->
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                         <circle cx="12" cy="12" r="10"></circle>
-                                         <polyline points="8 12 12 16 16 12"></polyline>
-                                     </svg>
-                                 </div>
-                             </div>
-                             <div class="faq-answer">
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                     ut labore et dolore magna aliqua.</p>
-                             </div>
-                         </div>
-
-                         <!-- Item 2 - Fechado -->
-                         <div class="faq-item">
-                             <div class="faq-question">
-                                 <h3>É possível digitalizar diretamente para a Cloud?</h3>
-                                 <div class="faq-icon">
-                                     <!-- Ícone de seta para a direita -->
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                         <circle cx="12" cy="12" r="10"></circle>
-                                         <polyline points="12 8 16 12 12 16"></polyline>
-                                     </svg>
-                                 </div>
-                             </div>
-                         </div>
-
-                         <!-- Item 3 - Fechado -->
-                         <div class="faq-item">
-                             <div class="faq-question">
-                                 <h3>Qual o suporte técnico disponível?</h3>
-                                 <div class="faq-icon">
-                                     <!-- Ícone de seta para a direita -->
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                         <circle cx="12" cy="12" r="10"></circle>
-                                         <polyline points="12 8 16 12 12 16"></polyline>
-                                     </svg>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </section>
+     <!-- FAQ Section - Perguntas frequentes -->
+     <?php
+        get_template_part('templates/faq-section', null, [
+            'tag' => 'FAQ',
+            'title' => 'Dúvidas? Nós temos as respostas',
+            'image' => 'assets/img/img-produtos/faq.png',
+            'questions' => [
+                [
+                    'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
+                    'answer' => 'Sim, são compatíveis com ambos os sistemas operacionais.',
+                    'icon' => 'assets/img/img-servico/icon-arrow-down.svg'
+                ],
+                [
+                    'question' => 'É possível digitalizar diretamente para a Cloud?',
+                    'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
+                ],
+                [
+                    'question' => 'Qual o suporte técnico disponível?',
+                    'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
+                ]
+            ]
+        ]);
+        ?>
  </main>
 
  <?php get_footer(); ?>

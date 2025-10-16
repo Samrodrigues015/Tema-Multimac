@@ -27,21 +27,26 @@
     </div>
 
     <div class="faq-questions">
-      <?php if (!empty($args['questions'])): ?>
-        <?php foreach ($args['questions'] as $item): ?>
-          <div class="faq-item">
-            <h3><?php echo esc_html($item['question']); ?></h3>
+      <?php
+      $default_questions = [
+        ['question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?'],
+        ['question' => 'É possível digitalizar diretamente para a Cloud?'],
+        ['question' => 'Qual o suporte técnico disponível?'],
+      ];
 
-            <?php if (!empty($item['answer'])): ?>
-              <p><?php echo esc_html($item['answer']); ?></p>
-            <?php endif; ?>
+      $questions = $args['questions'] ?? $default_questions;
 
-            <img class="icon"
-              src="<?php echo esc_url(get_template_directory_uri() . '/' . ($item['icon'] ?? 'assets/img/img-servico/icon-arrow-down.svg')); ?>"
-              alt="Ícone FAQ">
-          </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
+      foreach ($questions as $item): ?>
+        <div class="faq-item">
+          <h3><?php echo esc_html($item['question']); ?></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img class="icon"
+            src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/img-servico/icon-arrow-down.svg'); ?>"
+            alt="Seta para baixo">
+        </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
+
+

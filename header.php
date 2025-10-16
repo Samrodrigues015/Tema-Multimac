@@ -50,7 +50,7 @@
             <ul class="nav__list">
               <li class="nav__item"><a href="<?php echo site_url(); ?>" class="nav__link nav__link--active">Home</a></li>
               <li class="nav__item">
-                <a href="<?php echo site_url('/produtos'); ?>" class="nav__link" aria-expanded="false" aria-haspopup="true">
+                <a href="<?php echo site_url('/pagina-produtos'); ?>" class="nav__link" aria-expanded="false" aria-haspopup="true">
                   Produtos
                   <i class="fa-solid fa-chevron-down nav__dropdown-icon" aria-hidden="true"></i>
                 </a>
@@ -71,7 +71,7 @@
                 </div>
               </li>
               <li class="nav__item">
-                <a href="servico" class="nav__link" aria-expanded="false" aria-haspopup="true">
+                <a href="pagina-servico" class="nav__link" aria-expanded="false" aria-haspopup="true">
                   Serviços e Soluções
                   <i class="fa-solid fa-chevron-down nav__dropdown-icon" aria-hidden="true"></i>
                 </a>

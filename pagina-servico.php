@@ -250,28 +250,28 @@ get_header();
     <!-- Secção Formulario -->
 
     <!-- FAQ Section - Perguntas frequentes -->
-    <?php
-    get_template_part('templates/faq-section', null, [
-        'tag' => 'FAQ',
-        'title' => 'Dúvidas? Nós temos as respostas',
-        'image' => 'assets/img/img-servico/img-faq.png',
-        'questions' => [
-            [
-                'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
-                'answer' => 'Sim, são compatíveis com ambos os sistemas operacionais.',
-                'icon' => 'assets/img/img-servico/icon-arrow-down.svg'
-            ],
-            [
-                'question' => 'É possível digitalizar diretamente para a Cloud?',
-                'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
-            ],
-            [
-                'question' => 'Qual o suporte técnico disponível?',
-                'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
-            ]
-        ]
-    ]);
-    ?>
+<?php
+get_template_part('templates/faq-section', null, [
+  'tag' => 'FAQ',
+  'title' => 'Dúvidas? Nós temos as respostas',
+  'image' => 'assets/img/img-servico/img-faq.png',
+  'questions' => [
+    [
+      'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, libero nec eleifend vehicula, sapien velit fermentum metus, sit amet tempor ligula lacus sit amet eros.'
+    ],
+    [
+      'question' => 'É possível digitalizar diretamente para a Cloud?',
+      'answer' => 'Sim! Nossos equipamentos oferecem integração com diversos serviços de nuvem como Google Drive, OneDrive e Dropbox.'
+    ],
+    [
+      'question' => 'Qual o suporte técnico disponível?',
+      'answer' => 'Oferecemos suporte técnico especializado com atendimento remoto e presencial, de acordo com o tipo de contrato.'
+    ]
+  ]
+]);
+?>
+
 
 </main>
 

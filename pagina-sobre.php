@@ -315,28 +315,28 @@ get_header();
   <!-- Secção Formulario -->
 
   <!-- FAQ Section - Perguntas frequentes -->
-  <?php
-  get_template_part('templates/faq-section', null, [
-    'tag' => 'FAQ',
-    'title' => 'Dúvidas? Nós temos as respostas',
-    'image' => 'assets/img/img-sobre/image11.png',
-    'questions' => [
-      [
-        'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
-        'answer' => 'Sim, são compatíveis com ambos os sistemas operacionais.',
-        'icon' => 'assets/img/img-servico/icon-arrow-down.svg'
-      ],
-      [
-        'question' => 'É possível digitalizar diretamente para a Cloud?',
-        'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
-      ],
-      [
-        'question' => 'Qual o suporte técnico disponível?',
-        'icon' => 'assets/img/img-servico/icon-arrow-up-right.svg'
-      ]
+<?php
+get_template_part('templates/faq-section', null, [
+  'tag' => 'FAQ',
+  'title' => 'Dúvidas? Nós temos as respostas',
+  'image' => 'assets/img/img-sobre/image11.png',
+  'questions' => [
+    [
+      'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ],
+    [
+      'question' => 'É possível digitalizar diretamente para a Cloud?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ],
+    [
+      'question' => 'Qual o suporte técnico disponível?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     ]
-  ]);
-  ?>
+  ]
+]);
+?>
+
 </main>
 
 <?php get_footer(); ?>

@@ -106,12 +106,6 @@
   display: block;
 }
 
-/* Efeito na seta quando ativo (opcional) */
-.faq-item.active .icon {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
 .icon {
   transition: transform 0.3s ease;
 }

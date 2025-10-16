@@ -47,9 +47,13 @@ function meu_tema_scripts()
   if (is_page_template('pagina-produtos.php')) {
     wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/produtos.css', array('multimac-main-style'), $theme_version);
   }
+  // 11. Página Suporte Tecnico
+  if (is_page_template('pagina-suporte.php')) {
+    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/suporte.css', array('multimac-main-style'), $theme_version);
+  }
 
   
-  // 11. Estilo e script do FAQ (carregado globalmente)
+  // . Estilo e script do FAQ (carregado globalmente)
   wp_enqueue_style('faq-style', get_template_directory_uri() . '/assets/css/faq-section.css', array(), $theme_version);
   wp_enqueue_script('faq-script', get_template_directory_uri() . '/assets/js/main.js', array(), $theme_version, true);
 }

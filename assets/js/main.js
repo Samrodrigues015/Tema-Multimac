@@ -244,3 +244,17 @@ if (window.innerWidth <= 640) {
     }
   }
 }
+ // Script para Faq das paginas(Geral)
+  document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona apenas as setas "para baixo"
+    const downArrows = document.querySelectorAll('.faq-item .icon[src*="icon-arrow-down"]');
+
+    downArrows.forEach(icon => {
+      const item = icon.closest(".faq-item");
+
+      icon.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  });
+

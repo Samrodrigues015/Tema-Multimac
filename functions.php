@@ -43,6 +43,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-servico.php')) {
     wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/servico.css', array('multimac-main-style'), $theme_version);
   }
+  // 6. Página Produtos
+  if (is_page_template('pagina-produtos.php')) {
+    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/produtos.css', array('multimac-main-style'), $theme_version);
+  }
 
 }
 

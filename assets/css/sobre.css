@@ -722,11 +722,9 @@ p {
 /* SECTION HEADER (FAQ capsule) */
 /* FAQ Section - Perguntas frequentes interativas */
 .faq-section {
-  max-width: 1500px;
-  margin: 60px auto;
-  padding: 0 20px;
-  font-family: "Inter", sans-serif;
-  color: #1a1a1a;
+ display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .faq-tag {
@@ -759,8 +757,11 @@ p {
 
 .faq-content {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 
 .faq-image img {

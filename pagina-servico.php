@@ -249,6 +249,20 @@ get_header();
 
     <!-- Secção Formulario -->
 
+    <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já o seu orçamento personalizado',
+    'texto1' => 'Quer saber como a XOPVISION pode transformar o seu negócio?',
+    'texto2' => 'Preencha o formulário e receba uma solução ajustada às necessidades da sua empresa.',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
+
     <!-- FAQ Section - Perguntas frequentes -->
 <?php
 get_template_part('templates/faq-section', null, [

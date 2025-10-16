@@ -404,11 +404,19 @@
 
      <!-- Secção Formulario -->
 
-     <section id="formularioprodutos">
-         <?php
-            get_template_part('template-parts/card-formulario', null, array());
-            ?>
-     </section>
+<?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já o seu orçamento personalizado',
+    'texto1' => 'Quer saber como as impressoras e multifunções Sharp podem transformar o seu negócio?',
+    'texto2' => 'Preencha o formulário e receba uma solução ajustada às necessidades da sua empresa.',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
 
      <!-- FAQ Section - Perguntas frequentes -->
     <?php

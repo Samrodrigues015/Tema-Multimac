@@ -337,6 +337,22 @@ get_template_part('templates/faq-section', null, [
 ]);
 ?>
 
+    <!-- Secção Formulario -->
+
+    <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Junte-se à nossa história de sucesso!',
+    'texto1' => 'Quer descobrir como a Multimac pode transformar o seu negócio?',
+    'texto2' => 'Entre em contacto connosco e entenda por que somos líderes em soluções empresariais há mais de 45 anos',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
+
 </main>
 
 <?php get_footer(); ?>

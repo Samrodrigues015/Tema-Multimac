@@ -113,7 +113,7 @@ get_header();
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="arrow-icon">
+                            class="arrow-icon-suporte">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
@@ -129,7 +129,7 @@ get_header();
             <h2>Soluções rápidas e eficazes para as suas necessidades</h2>
 
             <div class="solutions-cards">
-                <div class="solution-card">
+                <div class="solution-card-suporte">
                     <div class="card-icon">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/folhainterrogativa.png"
@@ -143,7 +143,7 @@ get_header();
                     </p>
                 </div>
 
-                <div class="solution-card">
+                <div class="solution-card-suporte">
                     <div class="card-icon">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/computadorlupa.png"
@@ -158,7 +158,7 @@ get_header();
                     </p>
                 </div>
 
-                <div class="solution-card">
+                <div class="solution-card-suporte">
                     <div class="card-icon">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/bobconstrutor.png"
@@ -172,7 +172,7 @@ get_header();
                     </p>
                 </div>
 
-                <div class="solution-card">
+                <div class="solution-card-suporte">
                     <div class="card-icon">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/páginaolho.png"
@@ -190,7 +190,7 @@ get_header();
     </section>
 
     <!-- Formulário para Assistência Técnica -->
-    <section id="formulariosuporte">>
+    <section id="formulariosuporte">
         <div class="main-container">
             <div class="form-container">
                 <div class="form-header">
@@ -279,43 +279,48 @@ get_header();
                 </p>
             </div>
 
-            <div class="resources-main-grid">
-                <div class="teamviewer-section">
-                    <h3>Team Viewer para Assistência Remota</h3>
-                    <div class="download-items">
-                        <div class="download-item">
-                            <span class="platform-name">WINDOWS</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                        <div class="download-item">
-                            <span class="platform-name">MAC</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                        <div class="download-item">
-                            <span class="platform-name">LINUX</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                    </div>
-                </div>
+           <div class="resources-main-grid">
+  <div class="teamviewer-section">
+    <h3>Team Viewer para Assistência Remota</h3>
+    <div class="download-items">
+      <div class="download-item">
+        <span class="platform-name">WINDOWS</span>
+        <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+      <div class="download-item">
+        <span class="platform-name">MAC</span>
+        <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+      <div class="download-item">
+        <span class="platform-name">LINUX</span>
+        <a href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+    </div>
+  </div>
 
-                <div class="drivers-section">
-                    <h3>Drivers e Manuais por Marca</h3>
-                    <div class="download-items">
-                        <div class="download-item">
-                            <span class="platform-name">LEXMARK</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                        <div class="download-item">
-                            <span class="platform-name">SHARP</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                        <div class="download-item">
-                            <span class="platform-name">MULTIMAC - MYPRINTERS</span>
-                            <button class="download-btn">Descarregar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="drivers-section">
+    <h3>Drivers e Manuais por Marca</h3>
+    <div class="download-items">
+      <div class="download-item">
+        <span class="platform-name">LEXMARK</span>
+        <a href="https://support.lexmark.com/pt_pt/drivers-downloads.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+      <div class="download-item">
+        <span class="platform-name">SHARP</span>
+        <a href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+      <div class="download-item">
+        <span class="platform-name">MULTIMAC - MYPRINTERS</span>
+        <a href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+      <div class="download-item">
+        <span class="platform-name">MANUAL MULTIXOP</span>
+        <a href="https://multimac.pt/atualizacao-multixop/" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <div class="resources-bottom-grid">
                 <div class="update-guide-section">

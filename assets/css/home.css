@@ -17,9 +17,6 @@ h2 {
 p {
   font-family: "Funnel Display", sans-serif;
 }
-main {
-  padding: 0 20px;
-}
 
 main section {
   max-width: 1500px;
@@ -487,7 +484,7 @@ main section {
 
 /* SEÇÃO DE SOLUÇÕES TRANSFORMADORAS */
 .transformative-solutions {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .transform-grid {
@@ -691,6 +688,7 @@ main section {
   .section-header h2 {
     font-size: 35px;
     text-align: center;
+    padding: 0 10px;
     align-items: center;
     justify-content: center;
   }
@@ -706,6 +704,7 @@ main section {
     -webkit-overflow-scrolling: touch;
     gap: 16px;
     padding-bottom: 10px;
+    padding: 0 20px;
   }
 
   .product-card {
@@ -716,6 +715,7 @@ main section {
 
   .solution-cards {
     grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 
   .solution-card {
@@ -742,6 +742,7 @@ main section {
 
   .stats-cards {
     width: 100%;
+    padding: 0 20px;
   }
 
   .stats-card {
@@ -789,12 +790,14 @@ main section {
 
   .home-main-container {
     flex-direction: column;
+    padding: 0 10px;
   }
 
   .main-button-styles {
     width: 100%;
     font-size: 15px;
     text-align: center;
+    margin: 0 20px;
   }
 
   .hero-content {

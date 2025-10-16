@@ -51,6 +51,18 @@ function meu_tema_scripts()
   if (is_page_template('pagina-suporte.php')) {
     wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/suporte.css', array('multimac-main-style'), $theme_version);
   }
+  // 12. Página Parcerias Sharp
+  if (is_page_template('pagina-parceriassharp.php')) {
+    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/parceriassharp.css', array('multimac-main-style'), $theme_version);
+  }
+
+  // . Formulário de Orçamento
+  wp_enqueue_style(
+  'multimac-form-orcamento-css',
+  get_template_directory_uri() . '/assets/css/formulario.css',
+  array('multimac-main-style'),
+  $theme_version
+);
 
   
   // . Estilo e script do FAQ (carregado globalmente)

@@ -23,7 +23,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -57,20 +57,20 @@ img {
 }
 
 .hero-text h1 {
-    font-family: Poppins;
-    font-size: 54px;
-    font-weight: 600;
-    color: #1C1C1C;
-    margin-bottom: 20px;
-    line-height: 120%;
+  font-family: Poppins;
+  font-size: 54px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  line-height: 120%;
 }
 
 .hero-text p {
-    font-family: Funnel Display;
-    font-size: 22px;
-    color: #1c1c1c;
-    margin-bottom: 30px;
-    line-height: 31px;
+  font-family: Funnel Display;
+  font-size: 22px;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+  line-height: 31px;
 }
 
 .hero-buttons {
@@ -80,18 +80,17 @@ img {
 }
 
 .cta-button {
-    background-color: #dc6339;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Poppins";
-    cursor: pointer;
-    transition: all 0.3s 
-ease;
-    white-space: nowrap;
+  background-color: #dc6339;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .cta-button:hover {
@@ -101,18 +100,17 @@ ease;
 }
 
 .cta-button-secondary {
-    background-color: #e2e2e2;
-    color: #1c1c1c;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Poppins";
-    cursor: pointer;
-    transition: all 0.3s 
-ease;
-    white-space: nowrap;
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .cta-button-secondary:hover {
@@ -124,8 +122,6 @@ ease;
 .hero-image {
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
@@ -139,14 +135,14 @@ ease;
   padding: 60px 0;
 }
 .section-tag {
-    border-radius: 48px;
-    padding: 10px 20px;
-    background-color: #fff;
-    display: inline-block;
-    margin-bottom: 20px;
-    font-family: "Poppins";
-    font-weight: 600;
-    color: #1e1e1e;
+  border-radius: 48px;
+  padding: 10px 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #1e1e1e;
 }
 
 .section-tag i {
@@ -157,12 +153,12 @@ ease;
 }
 
 .section-title {
-    font-family: "Poppins";
-    font-size: 50px;
-    font-weight: 600;
-    color: #1c1c1c;
-    margin-bottom: 30px;
-    line-height: 120%;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+  line-height: 120%;
 }
 
 .team-image-container {
@@ -184,11 +180,11 @@ ease;
 }
 
 .solutions-text p {
-    font-size: 22px;
-    color: #1c1c1c;
-    line-height: 32px;
-    font-family: "Funnel Display";
-    font-weight: 400;
+  font-size: 22px;
+  color: #1c1c1c;
+  line-height: 32px;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 .solutions-text p strong {
@@ -207,24 +203,24 @@ ease;
   position: relative;
 }
 .service-item h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #1c1c1c;
-    margin-bottom: 15px;
-    font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 15px;
+  font-family: "Poppins";
 }
 
 .service-item p {
-    font-size: 18px;
-    color: #1e1e1e;
-    line-height: 28px;
-    font-family: "Funnel Display";
-    font-weight: 400;
+  font-size: 18px;
+  color: #1e1e1e;
+  line-height: 28px;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 .service-divider {
   height: 1px;
-  background-color: #ddd;
+  background-color: #dc6339;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -242,28 +238,22 @@ ease;
   display: none;
 }
 .support-cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #dc6339;
-    color: white;
-    padding: 25px 30px;
-    border-radius: 20px;
-    font-size: 25px;
-    font-family: "Poppins";
-    font-weight: 600;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease;
-}
-
-.support-cta:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #dc6339;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(232, 93, 36, 0.3);
+  color: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
-.arrow-icon {
+.arrow-icon-suporte {
   margin-left: 10px;
 }
 
@@ -274,13 +264,13 @@ ease;
 }
 
 .quick-solutions h2 {
-    text-align: left;
-    font-size: 50px;
-    font-family: "Poppins";
-    color: #1c1c1c;
-    margin-bottom: 60px;
-    font-weight: 600;
-    max-width: 600px;
+  text-align: left;
+  font-size: 50px;
+  font-family: "Poppins";
+  color: #1c1c1c;
+  margin-bottom: 60px;
+  font-weight: 600;
+  max-width: 800px;
 }
 
 .solutions-cards {
@@ -289,7 +279,7 @@ ease;
   gap: 20px;
 }
 
-.solution-card {
+.solution-card-suporte {
   background-color: #f8f8f8;
   padding: 40px 20px;
   border-radius: 20px;
@@ -303,7 +293,7 @@ ease;
   align-items: center;
 }
 
-.solution-card:hover {
+.solution-card-suporte:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(232, 93, 36, 0.2);
 }
@@ -324,22 +314,22 @@ ease;
 }
 
 .solution-card h3 {
-    font-size: 22px;
-    font-family: "Poppins";
-    font-weight: 600;
-    color: #1c1c1c;
-    margin-bottom: 20px;
-    font-weight: 600;
-    line-height: 30px;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 .solution-card p {
-    font-size: 18px;
-    color: #1c1c1c;
-    line-height: normal;
-    text-align: center;
-    font-family: "Funnel Display";
-    font-weight: 400;
+  font-size: 18px;
+  color: #1c1c1c;
+  line-height: normal;
+  text-align: center;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 /* Resources Section */
@@ -365,43 +355,42 @@ ease;
 }
 
 .resources-title {
-    font-size: 50px;
-    font-family: "Poppins";
-    font-weight: 600;
-    color: #1c1c1c;
-    margin-bottom: 20px;
-    line-height: 120%;
+  font-size: 50px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  line-height: 120%;
 }
 
 .resources-description {
-    font-size: 20px;
-    font-family: "Funnel Display";
-    color: #1c1c1c;
-    max-width: 800px;
-    margin-bottom: 0;
-    line-height: 32px;
-    font-weight: 400;
+  font-size: 20px;
+  font-family: "Funnel Display";
+  color: #1c1c1c;
+  max-width: 800px;
+  margin-bottom: 0;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 .resources-main-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
   margin-bottom: 60px;
 }
 
-.teamviewer-section h3, .drivers-section h3 {
-    font-size: 24px;
-    font-family: "Poppins";
-    font-weight: 600;
-    color: #1e1e1e;
-    margin-bottom: 30px;
+.teamviewer-section h3,
+.drivers-section h3 {
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 30px;
 }
 
 .download-items {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .download-item {
@@ -409,31 +398,28 @@ ease;
   flex-direction: column;
   gap: 15px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.download-item:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid #dc6339;
 }
 
 .platform-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e1e1e;
-    font-family: "Funnel Display";
-    line-height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+  font-family: "Funnel Display";
+  line-height: 28px;
 }
 
 .download-btn {
-    background-color: #dc6339;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: "DM Sans";
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    align-self: flex-start;
+  background-color: #dc6339;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
 }
 
 .download-btn:hover {
@@ -445,7 +431,6 @@ ease;
 .resources-bottom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
   align-items: flex-start;
 }
 
@@ -461,30 +446,27 @@ ease;
 }
 
 .important-note {
-  background-color: #fff;
   padding: 25px;
   border-radius: 15px;
   border: 1px solid #dc6339;
-  max-width: 400px;
-  justify-self: end;
+  max-width: 600px;
 }
 
 .important-note h4 {
-    font-size: 22px;
-    color: #1c1c1c;
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-family: "Poppins";
+  font-size: 22px;
+  color: #1c1c1c;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: "Poppins";
 }
 
-.important-note p
- {
-    font-size: 16px;
-    color: #1c1c1c;
-    line-height: normal;
-    margin: 0;
-    font-family: "Funnel Display";
-    font-weight: 400;
+.important-note p {
+  font-size: 16px;
+  color: #1c1c1c;
+  line-height: normal;
+  margin: 0;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 /* Responsive Design for Resources */
@@ -499,57 +481,111 @@ ease;
 }
 
 @media (max-width: 768px) {
-  .resources-main-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .resources-bottom-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: none;
+  }
+  .resources-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
   }
 
-  .important-note {
-    max-width: 100%;
-    justify-self: start;
+  /* reduz um pouco o tamanho/line-height dos textos para caber nas colunas */
+  .resources-description {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: none;
+    text-align: center;
   }
 
   .resources-title {
     font-size: 32px;
+    text-align: center;
+  }
+  .teamviewer-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  .drivers-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #78716c;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #78716c;
+  }
+
+  /* garante que os blocos de download não quebrem layout */
+  .download-items {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .download-item {
-    gap: 10px;
+    flex: 1;
+    border: 1px solid #dc6339;
+    border-radius: 25px;
+    padding: 20px;
+  }
+
+  /* botões e textos dentro dos cards ficam mais proporcionais */
+  .platform-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .download-btn {
+    position: relative;
+    padding-right: 30px;
+    border-radius: 10px;
+  }
+
+  .download-btn::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12 16l4-5h-3V4h-2v7H8l4 5zM4 18h16v2H4z'/%3E%3C/svg%3E")
+      no-repeat center;
+    background-size: contain;
   }
 }
 
 /* Quality Section */
 .quality-section {
-  padding: 80px 0;
 }
 
 .quality-section h2 {
-    text-align: center;
-    font-size: 50px;
-    color: #1c1c1c;
-    margin-bottom: 30px;
-    font-weight: 600;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 120%;
+  text-align: center;
+  font-size: 50px;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+  font-weight: 600;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 120%;
 }
 
 .quality-section .container > p {
-    text-align: center;
-    font-size: 20px;
-    color: #1c1c1c;
-    max-width: 900px;
-    margin: 0 auto 30px;
-    line-height: 1.6;
-    padding: 0 20px;
-    font-family: "Funnel Display";
-    font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  color: #1c1c1c;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  padding: 0 20px;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 .quality-cards {
@@ -596,21 +632,21 @@ ease;
 }
 
 .card-content h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    font-weight: 500;
-    color: white;
-    font-family: "Poppins";
-    line-height: 120%;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins";
+  line-height: 120%;
 }
 
 .card-content p {
-    font-size: 18px;
-    line-height: 25px;
-    color: white;
-    opacity: 0.95;
-    font-family: "Funnel Display";
-    font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  opacity: 0.95;
+  font-family: "Funnel Display";
+  font-weight: 400;
 }
 
 /* Responsive Design for Quality Cards */
@@ -623,8 +659,23 @@ ease;
 
 @media (max-width: 768px) {
   .quality-cards {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 20px;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch; /* Suaviza o scroll no iOS */
+  }
+
+  .quality-card {
+    flex: 0 0 85%; /* largura de cada card no carrossel */
+    scroll-snap-align: center;
+    min-width: 280px;
+  }
+
+  /* Esconde a barra de rolagem no mobile */
+  .quality-cards::-webkit-scrollbar {
+    display: none;
   }
 
   .quality-section .container > p {
@@ -662,28 +713,25 @@ ease;
 .cta-img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.cta-text h2
- {
-    font-size: 50px;
-    color: #1c1c1c;
-    margin-bottom: 30px;
-    font-weight: 600;
-    line-height: 120%;
-    font-family: "Poppins";
+.cta-text h2 {
+  font-size: 50px;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 120%;
+  font-family: "Poppins";
 }
 
 .cta-text p {
-    font-size: 20px;
-    color: #1c1c1c;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-family: "Funnel Display";
-    font-weight: 400;
-    line-height: 32px;
+  font-size: 20px;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: "Funnel Display";
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .cta-buttons {
@@ -693,17 +741,16 @@ ease;
 }
 
 .cta-buttons .cta-button {
-    background-color: #dc6339;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s 
-ease;
-    white-space: nowrap;
+  background-color: #dc6339;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .cta-buttons .cta-button:hover {
@@ -712,20 +759,18 @@ ease;
   transform: translateY(-2px);
 }
 
-.cta-buttons .cta-button-secondary
- {
-    font-family: "Poppins";
-    background-color: #e2e2e2;
-    color: #1c1c1c;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s 
-ease;
-    white-space: nowrap;
+.cta-buttons .cta-button-secondary {
+  font-family: "Poppins";
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .cta-buttons .cta-button-secondary:hover {
@@ -748,6 +793,15 @@ ease;
     text-align: center;
   }
 
+  /* 🔹 Adicione estas duas linhas abaixo */
+  .cta-text {
+    order: 1;
+  }
+
+  .cta-image {
+    order: 2;
+  }
+
   .cta-text h2 {
     font-size: 28px;
   }
@@ -765,7 +819,7 @@ ease;
   .cta-buttons .cta-button,
   .cta-buttons .cta-button-secondary {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
@@ -793,33 +847,48 @@ ease;
 @media (max-width: 768px) {
   .hero-content-wrapper {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+  }
+
+  /* Garante que o texto apareça primeiro */
+  .hero-text {
+    order: 1;
+    padding-left: 0;
     text-align: center;
   }
 
+  /* E a imagem depois */
   .hero-image-container {
-    order: 1;
-  }
-
-  .hero-text {
     order: 2;
-    padding-left: 0;
   }
 
   .hero-text h1 {
     font-size: 32px;
+    line-height: 130%;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    justify-content: center;
   }
 
   .cta-button,
   .cta-button-secondary {
-    width: 100%;
-    max-width: 300px;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .hero-image {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
   }
 
   .section-title {
@@ -854,23 +923,52 @@ ease;
     text-align: center;
   }
 
-  .solutions-cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
   .quick-solutions h2 {
     font-size: 28px;
     text-align: center;
   }
-
-  .solution-card {
-    min-height: auto;
-    padding: 30px 20px;
-  }
-
   .quality-cards {
     grid-template-columns: 1fr;
+  }
+
+  .quick-solutions {
+    padding: 50px 0;
+  }
+
+  .quick-solutions h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .solutions-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 15px;
+  }
+
+  .solution-card-suporte {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    min-width: 260px;
+    margin-right: 10px;
+  }
+
+  /* Esconde a barra de rolagem */
+  .solutions-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .solution-card-suporte h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .solution-card-suporte p {
+    font-size: 16px;
   }
 
   .download-buttons,
@@ -895,12 +993,11 @@ ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 .form-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1500px;
   border-radius: 24px;
   overflow: hidden;
   background: linear-gradient(to right, #0e0853, #2e0a3a, #8b0e23);

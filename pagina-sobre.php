@@ -312,44 +312,46 @@ get_header();
       </div>
     </div>
   </section>
-
-  <!-- FAQ Section -->
-     <!-- FAQ Section - Perguntas frequentes -->
-        <section class="faq-section">
-            <div class="faq-tag">
-                <span class="dot"></span>
-                <span>FAQ</span>
-            </div>
-
-            <h2 class="faq-title">Dúvidas? Nós temos as respostas</h2>
-
-            <div class="faq-content">
-                <div class="faq-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/img-faq.png" alt="Mulher com tablet">
-                </div>
-
-                <div class="faq-questions">
-                    <div class="faq-item active">
-                        <h3>As impressoras Sharp são compatíveis com sistemas Mac e Windows?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-down.svg" alt="Seta para baixo">
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>É possível digitalizar diretamente para a Cloud?</h3>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-up-right.svg" alt="Seta para cima e direita">
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Qual o suporte técnico disponível?</h3>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-up-right.svg" alt="Seta para cima e direita">
-                    </div>
-                </div>
-            </div>
-        </section>
-  
   <!-- Secção Formulario -->
 
+  <!-- FAQ Section - Perguntas frequentes -->
+<?php
+get_template_part('templates/faq-section', null, [
+  'tag' => 'FAQ',
+  'title' => 'Dúvidas? Nós temos as respostas',
+  'image' => 'assets/img/img-sobre/image11.png',
+  'questions' => [
+    [
+      'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ],
+    [
+      'question' => 'É possível digitalizar diretamente para a Cloud?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ],
+    [
+      'question' => 'Qual o suporte técnico disponível?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ]
+  ]
+]);
+?>
+
+    <!-- Secção Formulario -->
+
+    <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Junte-se à nossa história de sucesso!',
+    'texto1' => 'Quer descobrir como a Multimac pode transformar o seu negócio?',
+    'texto2' => 'Entre em contacto connosco e entenda por que somos líderes em soluções empresariais há mais de 45 anos',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
 
 </main>
 

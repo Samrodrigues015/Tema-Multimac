@@ -118,7 +118,7 @@ get_header();
     </section>
 
     <!-- Testimonial Section - Depoimento de cliente -->
-  
+
 
     <!-- Technology Section - Recursos tecnológicos -->
     <section class="technology-section">
@@ -247,41 +247,45 @@ get_header();
         <button class="xopvision-desktop-button" style="display: none;" id="xopvisionDesktopButton">Ver todos os produtos</button>
     </div>
 
-     <!-- Secção Formulario -->
-    
-        <!-- FAQ Section - Perguntas frequentes -->
-        <section class="faq-section">
-            <div class="faq-tag">
-                <span class="dot"></span>
-                <span>FAQ</span>
-            </div>
+    <!-- Secção Formulario -->
 
-            <h2 class="faq-title">Dúvidas? Nós temos as respostas</h2>
+    <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já o seu orçamento personalizado',
+    'texto1' => 'Quer saber como a XOPVISION pode transformar o seu negócio?',
+    'texto2' => 'Preencha o formulário e receba uma solução ajustada às necessidades da sua empresa.',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
 
-            <div class="faq-content">
-                <div class="faq-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/img-faq.png" alt="Mulher com tablet">
-                </div>
+    <!-- FAQ Section - Perguntas frequentes -->
+<?php
+get_template_part('templates/faq-section', null, [
+  'tag' => 'FAQ',
+  'title' => 'Dúvidas? Nós temos as respostas',
+  'image' => 'assets/img/img-servico/img-faq.png',
+  'questions' => [
+    [
+      'question' => 'As impressoras Sharp são compatíveis com sistemas Mac e Windows?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, libero nec eleifend vehicula, sapien velit fermentum metus, sit amet tempor ligula lacus sit amet eros.'
+    ],
+    [
+      'question' => 'É possível digitalizar diretamente para a Cloud?',
+      'answer' => 'Sim! Nossos equipamentos oferecem integração com diversos serviços de nuvem como Google Drive, OneDrive e Dropbox.'
+    ],
+    [
+      'question' => 'Qual o suporte técnico disponível?',
+      'answer' => 'Oferecemos suporte técnico especializado com atendimento remoto e presencial, de acordo com o tipo de contrato.'
+    ]
+  ]
+]);
+?>
 
-                <div class="faq-questions">
-                    <div class="faq-item active">
-                        <h3>As impressoras Sharp são compatíveis com sistemas Mac e Windows?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-down.svg" alt="Seta para baixo">
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>É possível digitalizar diretamente para a Cloud?</h3>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-up-right.svg" alt="Seta para cima e direita">
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Qual o suporte técnico disponível?</h3>
-                        <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/icon-arrow-up-right.svg" alt="Seta para cima e direita">
-                    </div>
-                </div>
-            </div>
-        </section>
 
 </main>
 

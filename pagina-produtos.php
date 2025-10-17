@@ -19,10 +19,10 @@
                  <h1>Impressoras e Multifunções Sharp: O aliado tecnológico ideal para sua empresa</h1>
                  <p>Com tecnologia de ponta, segurança avançada e funcionalidades integradas, as nossas soluções
                      redefinem a forma como a sua empresa imprime, digitaliza e organiza documentos.</p>
-                 <div class="hero-buttons">
-                     <a href="#formularioprodutos" class="btn btn-primary">Solicite um Orçamento</a>
-                     <a href="#formularioprodutos" class="btn btn-secondary">Fale com um especialista</a>
-                 </div>
+             </div>
+             <div class="hero-buttons">
+                 <a href="#formularioprodutos" class="btn btn-primary">Solicite um Orçamento</a>
+                 <a href="#formularioprodutos" class="btn btn-secondary">Fale com um especialista</a>
              </div>
 
          </div>

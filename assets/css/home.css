@@ -33,6 +33,7 @@ main section {
   display: flex;
   align-items: center;
   gap: 25px;
+  padding: 0 20px;
 }
 
 .hero-content {
@@ -354,6 +355,7 @@ main section {
 .stats-cards {
   display: flex;
   gap: 30px;
+  padding: 0 20px;
 }
 
 .stats-card {

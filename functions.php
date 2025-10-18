@@ -41,19 +41,31 @@ function meu_tema_scripts()
   }
   // 9. Página Servicos e Soluçoes
   if (is_page_template('pagina-servico.php')) {
-    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/servico.css', array('multimac-main-style'), $theme_version);
+    wp_enqueue_style('multimac-servico-css', get_template_directory_uri() . '/assets/css/servico.css', array('multimac-main-style'), $theme_version);
   }
   // 10. Página Produtos
   if (is_page_template('pagina-produtos.php')) {
-    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/produtos.css', array('multimac-main-style'), $theme_version);
+    wp_enqueue_style('multimac-produtos-css', get_template_directory_uri() . '/assets/css/produtos.css', array('multimac-main-style'), $theme_version);
   }
   // 11. Página Suporte Tecnico
   if (is_page_template('pagina-suporte.php')) {
-    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/suporte.css', array('multimac-main-style'), $theme_version);
+    wp_enqueue_style('multimac-suporte-css', get_template_directory_uri() . '/assets/css/suporte.css', array('multimac-main-style'), $theme_version);
   }
   // 12. Página Parcerias Sharp
   if (is_page_template('pagina-parceriassharp.php')) {
-    wp_enqueue_style('multimac-sobre-css', get_template_directory_uri() . '/assets/css/parceriassharp.css', array('multimac-main-style'), $theme_version);
+    wp_enqueue_style('multimac-parceriassharp-css', get_template_directory_uri() . '/assets/css/parceriassharp.css', array('multimac-main-style'), $theme_version);
+  }
+  // 13. Página Soluções Visuais
+  if (is_page_template('pagina-solucoes.php')) {
+    wp_enqueue_style('multimac-solucoes-css', get_template_directory_uri() . '/assets/css/solucoes.css', array('multimac-main-style'), $theme_version);
+  }
+  // 14. Página Redes e Computing
+  if (is_page_template('pagina-computing.php')) {
+    wp_enqueue_style('multimac-computing-css', get_template_directory_uri() . '/assets/css/computing.css', array('multimac-main-style'), $theme_version);
+  }
+  // 15. Página Pos Software
+  if (is_page_template('pagina-software.php')) {
+    wp_enqueue_style('multimac-software-css', get_template_directory_uri() . '/assets/css/software.css', array('multimac-main-style'), $theme_version);
   }
 
   // . Formulário de Orçamento

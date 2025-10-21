@@ -67,6 +67,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-software.php')) {
     wp_enqueue_style('multimac-software-css', get_template_directory_uri() . '/assets/css/software.css', array('multimac-main-style'), $theme_version);
   }
+  // 16. Página Gavetas de dinheiro
+  if (is_page_template('pagina-gavetasdedinheiro.php')) {
+    wp_enqueue_style('multimac-gavetasdedinheiro-css', get_template_directory_uri() . '/assets/css/gavetasdedinheiro.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

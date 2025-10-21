@@ -131,61 +131,106 @@ get_header();
     ?>
 
     <!-- Technology Section -->
-    <section class="solucoes-container">
-        <div class="solucoes-header">
-            <span class="section-tag">
-                <i class="fa-solid fa-circle"></i>
-                Soluções</span>
-
-            <h1>Tecnologia P.O.S que<br>Transforma o Seu Negócio</h1>
-            <p class="intro">
-                Os Terminais POS da Multimac combinam hardware de alta qualidade com software inovador para atender às necessidades de negócios de qualquer dimensão.
-            </p>
+   <section class="equipment-categories">
+    <div class="container">
+        <div class="section-label">
+            <span class="section-bullet">•</span>
+            <span class="section-text">Soluções</span>
         </div>
 
-        <div class="solucoes-grid">
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon1.svg" alt="">
-                <h3>Integração na Cloud</h3>
-                <p>Aceda aos seus dados em tempo real, em qualquer lugar, e otimize a gestão do seu negócio.</p>
+        <div class="equipment-header">
+            <div class="equipment-title">
+                <h2>Tecnologia P.O.S que<br>Transforma o Seu Negócio</h2>
             </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon2.svg" alt="">
-                <h3>Pagamentos Móveis e Fixos</h3>
-                <p>Soluções para receber pagamentos no balcão, na mesa ou através de dispositivos móveis.</p>
-            </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon3.svg" alt="">
-                <h3>Ementas Digitais Interativas</h3>
-                <p>Atualize menus, imagens e descrições em tempo real, garantindo uma experiência diferenciada para o cliente.</p>
-            </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon4.svg" alt="">
-                <h3>Gavetas Inteligentes de Dinheiro</h3>
-                <p>Evite desvios e mantenha a segurança ao integrar sistemas automáticos de gestão de caixa.</p>
-            </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon5.svg" alt="">
-                <h3>Aplicações de Takeaway</h3>
-                <p>Reduza custos e permita que clientes façam pedidos diretamente na sua aplicação personalizada.</p>
-            </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon6.svg" alt="">
-                <h3>Quiosques Self-Service</h3>
-                <p>Reduza filas e melhore o atendimento com pedidos personalizados e pagamentos rápidos.</p>
-            </div>
-            <div class="solucao-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon8.svg" alt="">
-                <h3>Opções de Pagamento Modernas</h3>
-                <p>MB Way, VISA, MasterCard e mais, garantindo flexibilidade para os seus clientes.</p>
-            </div>
-            <div class="solucao-card destaque">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon9.svg" alt="">
-                <h3>Descubra mais</h3>
-                <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
+            <div class="equipment-subtitle">
+                <p>Os Terminais POS da Multimac combinam hardware de alta qualidade com software inovador para atender às necessidades de negócios de qualquer dimensão.</p>
             </div>
         </div>
-    </section>
+
+        <div class="equipment-grid">
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon1.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Integração na Cloud</h3>
+                    <p>Aceda aos seus dados em tempo real, em qualquer lugar, e otimize a gestão do seu negócio.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon2.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Pagamentos Móveis e Fixos</h3>
+                    <p>Soluções para receber pagamentos no balcão, na mesa ou através de dispositivos móveis.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon3.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Ementas Digitais Interativas</h3>
+                    <p>Atualize menus, imagens e descrições em tempo real, garantindo uma experiência diferenciada para o cliente.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon4.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Gavetas Inteligentes de Dinheiro</h3>
+                    <p>Evite desvios e mantenha a segurança ao integrar sistemas automáticos de gestão de caixa.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon5.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Aplicações de Takeaway</h3>
+                    <p>Reduza custos e permita que clientes façam pedidos diretamente na sua aplicação personalizada.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon6.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Quiosques Self-Service</h3>
+                    <p>Reduza filas e melhore o atendimento com pedidos personalizados e pagamentos rápidos.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon8.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Opções de Pagamento Modernas</h3>
+                    <p>MB Way, VISA, MasterCard e mais, garantindo flexibilidade para os seus clientes.</p>
+                </div>
+            </div>
+
+            <div class="equipment-card destaque">
+                <div class="equipment-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon9.svg" alt="">
+                </div>
+                <div class="equipment-content">
+                    <h3>Descubra mais</h3>
+                    <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Business Solutions Section - Updated to match the image -->
     <div class="xopvision-industries-container">
         <h1 class="xopvision-industries-title">
@@ -250,8 +295,7 @@ get_header();
 
             <button class="xopvision-desktop-button" style="display: none;" id="xopvisionDesktopButton">Ver todos os produtos</button>
         </div>
-
-
+    </div>
          <!-- Secção Formulario -->
     
 	    <?php

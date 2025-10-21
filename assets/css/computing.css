@@ -329,13 +329,13 @@ p {
 .equipment-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 50px;
 }
 
 .equipment-card {
   border-radius: 15px;
   border: 2px solid #DC6339;
-  padding: 30px 20px;
+  padding: 30px 40px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -740,21 +740,7 @@ p {
     padding: 14px 24px;
   }
 
-  .equipment-header {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .equipment-title {
-    text-align: center;
-    text-align: center;
-  }
-  .equipment-title h2 {
-    align-items: center;
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
+  
   .computing-title h2 {
     font-size: 32px;
     text-align: center;
@@ -772,8 +758,12 @@ p {
     font-size: 18px;
     text-align: center;
     margin: 0;
+    padding-left: 0;
   }
-
+  .equipment-subtitle p {
+    text-align: center;
+    padding-left: 0;
+  }
   .computing-features-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -789,6 +779,21 @@ p {
   }
   
   /* responsividade cards equipment */
+  .equipment-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .equipment-title {
+    text-align: center;
+    text-align: center;
+  }
+  .equipment-title h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
   .equipment-grid {
     display: flex;
     overflow-x: auto;
@@ -878,7 +883,11 @@ p {
     font-size: 32px;
     text-align: center;
 }
-
+/* Tirando padding equipment categories no mobile */
+.equipment-categories {
+  padding: 0;
+ 
+}
 }
 
 @media (max-width: 480px) {

@@ -255,107 +255,146 @@ img {
 }
 
 /* Technology Section */
-.solucoes-container {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-.solucoes-header {
-  display: inline-block;
-  font-size: 14px;
-  color: #000;
-  margin-bottom: 10px;
-}
-.section-tag {
-  border-radius: 20px;
-  padding: 10px 20px;
-  background-color: #fff;
-  display: inline-block;
-  margin-bottom: 20px;
+.equipment-categories {
+  padding: 80px 0;
+  background-color: #f2f2f2;
 }
 
-.section-tag i {
-  font-size: 0.8em;
-  color: #dc6339;
-  text-align: center;
-  padding: 5px;
-}
-
-.solucoes-header h1 {
-    font-family: 'Poppins';
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 120%;
-    margin-bottom: 15px;
-}
-
-.solucoes-header .intro {
-    font-family: 'Funnel Display';
-    font-weight: 400;
-    font-size: 20px;
-    color: #1C1C1C;
-    margin-bottom: 30px;
-    max-width: 600px;
-}
-
-.solucoes-grid {
+.equipment-header {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  align-items: flex-start;
 }
 
-.solucao-card {
-  background: #f2f2f2;
-  border: 2px solid #dc6963;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: default;
+.equipment-title {
+  text-align: left;
+}
+
+.equipment-title h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #1C1C1C;
+  margin: 0;
+  line-height: 120%;
+}
+
+.equipment-subtitle {
+  display: flex;
+  align-items: flex-start;
+  text-align: right;
+  padding-left: 60px;
+}
+
+.equipment-subtitle p {
+    font-size: 20px;
+    font-family: "Funnel Display", sans-serif;
+    color: #1C1C1C;
+    margin: 0;
+    max-width: 500px;
+    text-align: start;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.equipment-card {
+  border-radius: 15px;
+  border: 2px solid #DC6339;
+  padding: 30px 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.equipment-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #DC6339;
+  border-radius: 15px;
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  margin: 0 auto 20px;
 }
 
-/* Efeito hover para todos os cartões */
-.solucao-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: #dc6339;
+.equipment-icon svg {
+  color: black;
 }
 
-/* Cartão "Descubra mais" com borda laranja permanente */
-.solucao-card.destaque {
-  background: #f2f2f2;
-  text-align: center;
-  border: 2px solid #dc6339;
-}
-.solucao-card.destaque:hover {
-  background: #fff;
-  text-align: center;
-  border: 2px solid #dc6339;
-}
-
-.solucao-card h3 {
-    font-family: 'Poppins';
-    line-height: 30px;
+.equipment-content h3 {
     font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     color: #1C1C1C;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+    line-height: 30px;
 }
 
-.solucao-card p {
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 400;
-    color: #1C1C1C;
+.equipment-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #1C1C1C;
+  margin: 0;
 }
-.solucao-card img {
-  display: block;
-  margin: 0 auto 15px auto; 
-  max-width: 60px; 
-  height: auto;
-  border-radius: 10px;
-  background: #dc6339;
-  padding: 10px;
+
+/* Último card diferente */
+.equipment-card:last-child {
+  background-color: #FFFFFF;
+  color: #000;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajustes internos para manter consistência */
+.equipment-card:last-child .equipment-icon {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment-card:last-child .equipment-content h3,
+.equipment-card:last-child .equipment-content p {
+  color: #000;
+}
+
+/* Pequeno efeito ao passar o mouse (desktop) */
+.equipment-card:last-child:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(220, 99, 57, 0.4);
+}
+/* Section Label */
+.section-label {
+  display: inline-flex; 
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.section-bullet {
+  color: #DC6339;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.section-text {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Business Solutions Section - Updated to match the image */
@@ -584,13 +623,6 @@ img {
   .cta-button {
     display: none;
   }
-  .solucoes-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .solucoes-header .intro {
-    font-size: 0.95rem;
-  }
   .features-grid-new {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -613,15 +645,19 @@ img {
   .cta-card {
     display: none;
   }
+  /* --- Secção Business Solutions --- */
+  .xopvision-industries-subitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
   .xopvision-industries-container {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 
   .xopvision-industries-title {
     font-size: 28px;
     margin-bottom: 40px;
     text-align: center;
-    padding: 0 20px;
   }
 
   .xopvision-industries-grid {
@@ -759,12 +795,85 @@ img {
   .hero-text h1 {
     text-align: center;
     align-items: center;
-	font-size: 24px;
+	font-size: 28px;
   }
 
   .hero-text p {
     text-align: center;
     align-items: center;
+  }
+
+  /* Secção Tecnologia */
+  .equipment-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .equipment-title {
+    text-align: center;
+    text-align: center;
+  }
+  .equipment-title h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .computing-title h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0px;
+}
+.computing-subtitle p {
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 90%; 
+    text-align: center;
+    margin-top: 0px; 
+  }
+
+  .equipment-subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+  }
+    .equipment-subtitle p {
+    text-align: center;
+    padding-left: 0;
+  }
+   .equipment-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 10px 15px;
+  }
+
+  .equipment-card {
+    flex: 0 0 45%; 
+    min-width: 90%;
+    scroll-snap-align: center;
+    padding: 20px 15px; 
+  }
+  .equipment-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .equipment-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .equipment-content p {
+    font-size: 14px;
+  }
+
+  /* Esconde scrollbar no mobile */
+  .equipment-grid::-webkit-scrollbar {
+    display: none;
   }
 }
 /* Desktop only - hide mobile elements */

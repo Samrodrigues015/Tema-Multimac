@@ -478,26 +478,25 @@ cite strong {
   padding: 80px 0;
 }
 
+/* --- ESTILOS PADRÃO (DESKTOP) --- */
 .features-cards {
- display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Grelha de 4 colunas em desktop */
   gap: 24px;
   margin-top: 60px;
-  grid-template-rows: repeat(4, auto);
 }
 
 .feature-box {
- /* background: white;*/
   border-radius: 20px;
   padding: 30px 24px;
-  border: 2px solid #dc6339; /* Borda laranja sólida */
+  border: 2px solid #dc6339;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Adicionado para melhor centralização vertical */
+  justify-content: center;
   text-align: center;
   transition: all 0.3s ease;
-  min-height: 250px; /* Garante altura consistente */
+  min-height: 250px;
 }
 
 .feature-box:hover {
@@ -510,7 +509,7 @@ cite strong {
 }
 
 .feature-box h3 {
-font-size: 22px;
+  font-size: 22px;
   color: #1C1C1C;
   margin-top: 0;
   margin-bottom: 10px;
@@ -520,7 +519,7 @@ font-size: 22px;
 }
 
 .feature-box p {
-font-size: 16px;
+  font-size: 16px;
   color: #1C1C1C;
   line-height: 1.5;
   margin: 0;
@@ -529,45 +528,37 @@ font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos específicos para o card "Descubra mais" */
 .discover-more {
-	background:white;
+  background: white;
   border: none;
   box-shadow: 0 0 15px 2px rgba(220, 99, 57, 0.45);
   position: relative;
 }
 
-/* Mantém o texto centralizado como nos outros cards */
-.discover-more h3
-{
- max-width: 85%;
+.discover-more h3 {
+  max-width: 85%;
   font-size: 28px;
   line-height: 120%;
   color: #1E1E1E;
 }
+
 .discover-more p {
   max-width: 85%;
-	font-size: 16px;
+  font-size: 16px;
   font-family: Funnel Display;
   color: #1C1C1C;
 }
 
-/* Oculta o wrapper do ícone nos outros cards (caso exista por engano) */
-.arrow-icon-wrapper {
-  display: none;
-}
+.arrow-icon-wrapper { display: none; }
 
-/* Mostra e estiliza o ícone apenas no card "Descubra mais" */
 .discover-more .arrow-icon-wrapper {
-  display: flex; /* Torna-o visível */
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  position: absolute; /* Posiciona relativamente ao .discover-more */
+  position: absolute;
   top: 24px;
   right: 24px;
-
-  width: 42px; /* Tamanho do círculo */
+  width: 42px;
   height: 42px;
   border-radius: 50%;
   border: 1.5px solid #dc6339;
@@ -575,7 +566,6 @@ font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
-/* Efeito hover opcional, como é comum neste tipo de botão */
 .discover-more:hover .arrow-icon-wrapper {
   background-color: #fcece6;
 }
@@ -584,6 +574,12 @@ font-size: 16px;
   width: 20px;
   height: 20px;
 }
+
+/* Botão para mobile (escondido em desktop por defeito) */
+.btn-mobile-discover {
+    display: none;
+}
+
 
 /* Secção Produtividade */
 .productivity {
@@ -986,20 +982,50 @@ color: white;
     padding: 60px 0;
   }
 
+ /* 1. Transformar a grelha num carrossel scrollável */
   .features-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 40px;
+    display: flex; /* Muda de grid para flex */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    scroll-snap-type: x mandatory; /* Ativa o "íman" para o scroll */
+    -webkit-overflow-scrolling: touch; /* Melhora a experiência em iOS */
+    
+    /* Esconde a barra de scroll para um look mais limpo */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  .features-cards::-webkit-scrollbar {
+    display: none; /* Safari e Chrome */
   }
 
+  /* 2. Ajustar o tamanho de cada card dentro do carrossel */
   .feature-box {
-    padding: 20px 15px;
+    flex: 0 0 85%; /* Cada card ocupa 85% da largura do ecrã */
+    scroll-snap-align: center; /* Alinha cada card ao centro quando o scroll para */
   }
 
-  .feature-icon-box {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
+  /* 3. Esconder o card "Descubra mais" que é só para desktop */
+  .discover-more {
+    display: none;
+  }
+  
+  /* 4. Mostrar e estilizar o botão que é só para mobile */
+  .btn-mobile-discover {
+    display: block; /* Faz o botão aparecer */
+    background-color: #dc6339;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 40px auto 0;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  .btn-mobile-discover:hover {
+    background-color: #c75630;
   }
 
   .productivity {

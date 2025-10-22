@@ -368,8 +368,9 @@
                          </svg>
                      </div>
                  </div>
-
              </div>
+              <!-- BOTÃO NOVO (visível apenas em mobile) -->
+            <a href="#" class="btn-mobile-discover">Descubra Mais</a>
          </div>
      </section>
 

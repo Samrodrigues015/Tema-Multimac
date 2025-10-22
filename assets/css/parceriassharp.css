@@ -108,7 +108,6 @@ img {
 
 /* Orange Highlight Section */
 .orange-highlight {
-  padding: 60px 0;
 }
 
 .highlight-content {
@@ -147,15 +146,16 @@ img {
   background-color: white;
   color: #1c1c1c;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 12px;
   border-radius: 25px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  align-items: center;
 }
 
 .highlight-button:hover {
@@ -221,10 +221,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-.feature-box:hover {
-  transform: translateY(-5px);
-}
-
 .feature-icon {
   margin-bottom: 15px;
 }
@@ -286,19 +282,15 @@ img {
   transition: transform 0.3s ease;
 }
 
-.solution-card-link:hover {
-  transform: translateY(-5px);
-}
-
-.solution-card {
+.solution-card-sharp {
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   height: 100%;
   align-items: center;
+  padding: 20px 30px;
 }
 
 .solution-card-content {
@@ -316,31 +308,29 @@ img {
 }
 
 .solution-main-image {
-  width: 90%;
-  height: 100%;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
 
 .solution-icon {
-  position: absolute;
-  bottom: -10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .solution-icon-img {
   width: 40px;
-  height: 40px;
+  height: 30px;
   object-fit: contain;
 }
 
-.solution-card h3 {
+.solution-card-sharp h3 {
   font-family: "Poppins";
   font-size: 26px;
   font-weight: 500;
@@ -350,7 +340,7 @@ img {
   letter-spacing: 0%;
 }
 
-.solution-card p {
+.solution-card-sharp p {
   font-family: "Funnel Display";
   font-size: 16px;
   color: #1c1c1c;
@@ -466,6 +456,7 @@ img {
   .partnerships-content {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 20px;
   }
 
   .partnerships-text h2 {
@@ -506,6 +497,58 @@ img {
     font-size: 15px;
     text-align: center;
   }
+  
+  /* Feature Boxes Adjustments */
+  .features-grid {
+    display: flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+
+  .feature-box {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+    min-width: 250px; 
+  }
+
+ /* Cards Solutions Adjustments */
+  .solutions-grid {
+    display: flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .solution-card-link {
+    flex: 0 0 80%; 
+    scroll-snap-align: center; 
+    min-width: 260px; 
+  }
+
+  /* Centraliza o botão abaixo do carrossel */
+  .solutions-button-link {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .solutions-button {
+    padding: 12px 10px;
+    font-size: 16px;
+    
+}
+.solution-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
 }
 
 /* Testimonial Section */
@@ -643,6 +686,9 @@ img {
     font-weight: 600;
     line-height: 120%;
   }
+  .sharp-solutions {
+    padding: 20px;
+  }
 }
 
 /* Statistics Section */
@@ -713,6 +759,7 @@ img {
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 20px;
   }
 
   .stat-box {
@@ -902,6 +949,7 @@ img {
   .sharp-hero-text {
     padding-left: 0;
     text-align: center;
+    padding: 20px;
   }
 
   .sharp-hero-text h1 {
@@ -914,8 +962,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .solutions-grid,
-  .features-grid,
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -924,6 +970,7 @@ img {
   .quality-content {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 20px;
   }
 
   .testimonial-content {
@@ -939,13 +986,9 @@ img {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 15px;
+    padding: 0px;
   }
 
-  .highlight-content {
-    padding: 25px;
-    margin: 0 15px;
-  }
   .highlight-content p {
     font-size: 22px;
     line-height: 32px;

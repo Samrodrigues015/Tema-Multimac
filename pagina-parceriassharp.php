@@ -93,7 +93,7 @@
 
              <div class="solutions-grid">
                  <a href="/impressoras-multifuncoes" class="solution-card-link">
-                     <div class="solution-card">
+                     <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/impressorabranca.png" alt="Impressoras e Multifunções" class="solution-main-image">
                              <div class="solution-icon">
@@ -107,7 +107,7 @@
                      </div>
                  </a>
                  <a href="/monitores-profissionais" class="solution-card-link">
-                     <div class="solution-card">
+                     <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/mulherpainel.png" alt="Monitores Profissionais" class="solution-main-image">
                              <div class="solution-icon">
@@ -121,7 +121,7 @@
                      </div>
                  </a>
                  <a href="/gestao-documental" class="solution-card-link">
-                     <div class="solution-card">
+                     <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/ficheiros.png" alt="Soluções de Gestão Documental" class="solution-main-image">
                              <div class="solution-icon">

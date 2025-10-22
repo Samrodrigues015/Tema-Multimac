@@ -630,16 +630,17 @@ cta-big-btn span {
   font-family: "Poppins";
   line-height: 120%;
   text-align: start;
-  max-width: 1000px;
+  max-width: 1050px;
   margin-bottom: 20px;
 }
 
 .sector-subtitle {
   font-family: "Funnel Display";
   font-weight: 400;
+  font-size: 20px;
   text-align: start;
-  line-height: 20px;
-  max-width: 900px;
+  line-height: normal;
+  max-width: 850px;
   margin-bottom: 20px;
 }
 
@@ -1254,7 +1255,7 @@ cta-big-btn span {
 .modernize-grid {
   width: 100%;
   margin: 0 auto;
-  padding: 60px;
+  padding: 60px 0px;
   background: #f2f2f2;
 }
 
@@ -1280,7 +1281,7 @@ cta-big-btn span {
 
 .modernize-content {
   flex: 1;
-  max-width: 460px;
+  max-width: 700px;
 }
 
 .modernize-content h2 {
@@ -1325,7 +1326,7 @@ cta-big-btn span {
 /* Responsivo */
 @media (max-width: 950px) {
   .modernize-row {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.4rem;
     margin-bottom: 2.2rem;
   }
@@ -1348,11 +1349,11 @@ cta-big-btn span {
 
 @media (max-width: 600px) {
   .modernize-grid {
-    padding: 1.5rem 0 0.7rem 0;
+    padding: 20px;
   }
 
   .modernize-img-wrapper img {
-    border-radius: 18px 10px 18px 10px;
+    border-radius: 30px;
   }
 
   .modernize-content h2 {

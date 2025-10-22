@@ -83,14 +83,16 @@ body {
 }
 
 .btn-primary-gavetas {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background: #dc6339;
   color: #fff;
   border: none;
-  padding: 0.9rem 2.1rem;
-  font-size: 1;
+  padding: 10px 20px;
   border-radius: 25px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   box-shadow: 0 4px 24px rgba(244, 121, 58, 0.1);
   transition: background 0.2s;
@@ -250,12 +252,9 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 1.1rem;
-  border-bottom: 2px solid #f4a177;
+  border-bottom: 1px solid #dc6339;
   padding-bottom: 1.5rem;
   margin-bottom: 0.8rem;
-  transition: box-shadow 0.26s cubic-bezier(0.3, 0.92, 0.58, 1.04),
-    transform 0.23s cubic-bezier(0.28, 1.34, 0.56, 1.01), background 0.2s,
-    border-bottom-color 0.2s;
   box-shadow: none;
   cursor: pointer;
   position: relative;
@@ -288,6 +287,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+  margin-top: 20px;
 }
 
 .benefit-card b {
@@ -624,24 +624,23 @@ cta-big-btn span {
 }
 
 /*SETORES*/
-.sectors {
-  padding: 4rem 0;
-  background-color: #f2f2f2;
-}
-.sector-title h2 {
+.sector-title {
   font-size: 42px;
   font-weight: 600;
   font-family: "Poppins";
   line-height: 120%;
   text-align: start;
+  max-width: 1000px;
+  margin-bottom: 20px;
 }
-.sector-subtitle p {
+
+.sector-subtitle {
   font-family: "Funnel Display";
   font-weight: 400;
+  text-align: start;
   line-height: 20px;
-  color: #1c1c1c;
   max-width: 900px;
-  margin: 0 auto 2rem;
+  margin-bottom: 20px;
 }
 
 .sector-grid {
@@ -656,11 +655,21 @@ cta-big-btn span {
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   text-align: left;
-  transition: box-shadow 0.25s cubic-bezier(0.3, 0.92, 0.58, 1.04),
-    transform 0.2s cubic-bezier(0.28, 1.34, 0.56, 1.01), border 0.22s;
-  cursor: pointer;
   position: relative;
   border: 2px solid transparent;
+}
+
+.sector-card h3 {
+ font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 20px 0px;
+}
+.sector-card p {
+ font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 10px 0px;
 }
 
 .sector-img {
@@ -669,78 +678,6 @@ cta-big-btn span {
   margin-bottom: 1rem;
   object-fit: cover;
   transition: filter 0.22s, transform 0.18s;
-}
-
-/* Responsivo: mantém os cartões bonitos em mobile */
-@media (max-width: 600px) {
-  .sector-grid {
-    gap: 1.2rem;
-  }
-
-  .sector-card {
-    padding: 1rem;
-    border-radius: 12px;
-  }
-}
-
-/* HERO MODERNIZE GRID 2x2 */
-.modernize-grid {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2.5rem 0 1.5rem 0;
-  background: #f2f2f2;
-}
-
-.modernize-row {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 2.6rem;
-}
-
-.modernize-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.modernize-img-wrapper {
-  flex: 1;
-  min-width: 270px;
-  max-width: 420px;
-}
-
-.modernize-img-wrapper img {
-  width: 100%;
-  display: block;
-  border-radius: 40px 16px 40px 16px;
-  object-fit: cover;
-}
-
-.modernize-content {
-  flex: 1;
-  max-width: 460px;
-}
-.modernize-btn-wrapper {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.modernize-btn-wrapper .btn.btn-primary {
-  background: #dc6339;
-  color: #fff;
-  border: none;
-  padding: 0.85rem 2.2rem;
-  font-size: 1.1rem;
-  border-radius: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 24px rgba(244, 121, 58, 0.1);
-  transition: background 0.2s;
-}
-
-.modernize-btn-wrapper .btn.btn-primary:hover {
-  background: #e2e2e2;
-  color: #333;
-  transform: translateY(-2px);
 }
 
 /* Responsivo */
@@ -856,6 +793,38 @@ cta-big-btn span {
     padding: 0.7rem 1.1rem;
     border-radius: 7px;
   }
+
+  /*SETORES*/
+.sector-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 120%;
+  text-align: center;
+  max-width: none;
+}
+
+.sector-subtitle {
+  text-align: center;
+  line-height: 20px;
+  max-width: none;
+}
+ .sector-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+  }
+
+  .sector-grid::-webkit-scrollbar {
+    display: none; /* esconde a barra de rolagem */
+  }
+
+  .sector-card {
+    min-width: 80%;
+  }
 }
 
 /*
@@ -881,10 +850,14 @@ cta-big-btn span {
 }
 
 .benefits-v2-title h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.18;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.benefits-v2-summary p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .benefits-v2-summary {
@@ -903,22 +876,6 @@ cta-big-btn span {
   margin-top: 0.5rem;
 }
 
-.benefit-card {
-  background: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.1rem;
-  border-bottom: 2px solid #f4a177;
-  padding-bottom: 1.5rem;
-  margin-bottom: 0.8rem;
-  transition: box-shadow 0.26s cubic-bezier(0.3, 0.92, 0.58, 1.04),
-    transform 0.23s cubic-bezier(0.28, 1.34, 0.56, 1.01), background 0.2s,
-    border-bottom-color 0.2s;
-  box-shadow: none;
-  cursor: pointer;
-  position: relative;
-}
-
 /* Efeito suave nos ícones também no normal */
 .benefit-icon img {
   transition: filter 0.22s;
@@ -926,10 +883,9 @@ cta-big-btn span {
 
 /* Título e conteúdo do cartão */
 .benefit-card h3 {
-  font-size: 1.09rem;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 0.35em;
-  color: #1a1a1a;
 }
 
 .benefit-card ul {
@@ -944,7 +900,7 @@ cta-big-btn span {
 }
 
 .benefit-card b {
-  color: #dc6339;
+  color: #000
   font-weight: 600;
 }
 
@@ -968,22 +924,22 @@ cta-big-btn span {
 
 /* === BOTÃO DESTAQUE BENEFÍCIOS (GRANDE, LARANJA) === */
 .cta-big-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: start;
-    position: relative;
-    padding: 30px 30px;
-    width: 560px;
-    height: 270px;
-    background: #dc6339;
-    border-radius: 20px;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
-    text-decoration: none;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+  padding: 30px 30px;
+  width: 560px;
+  height: 270px;
+  background: #dc6339;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 .cta-big-btn .cta-arrow {
@@ -1066,8 +1022,9 @@ cta-big-btn span {
 .cta-big-btn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  text-align: center;
   position: relative;
   width: 560px;
   height: 270px;
@@ -1075,7 +1032,7 @@ cta-big-btn span {
   border-radius: 20px;
   color: #fff;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 32px;
   text-decoration: none;
   margin: 0 auto;
   box-shadow: 0 4px 24px rgba(244, 121, 58, 0.09);
@@ -1090,8 +1047,8 @@ cta-big-btn span {
   position: absolute;
   top: 18px;
   right: 26px;
-  width: 38px;
-  height: 38px;
+  width: 70px;
+  height: 70px;
   pointer-events: none;
 }
 
@@ -1293,57 +1250,11 @@ cta-big-btn span {
   }
 }
 
-/*SETORES*/
-.sectors {
-  padding: 4rem 0;
-  background-color: #f2f2f2;
-  text-align: center;
-}
-
-.sector-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-
-.sector-card {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  text-align: left;
-  transition: box-shadow 0.25s cubic-bezier(0.3, 0.92, 0.58, 1.04),
-    transform 0.2s cubic-bezier(0.28, 1.34, 0.56, 1.01), border 0.22s;
-  cursor: pointer;
-  position: relative;
-  border: 2px solid transparent;
-}
-
-.sector-img {
-  width: 100%;
-  border-radius: 25% 25% 8% 8%;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  transition: filter 0.22s, transform 0.18s;
-}
-
-/* Responsivo: mantém os cartões bonitos em mobile */
-@media (max-width: 600px) {
-  .sector-grid {
-    gap: 1.2rem;
-  }
-
-  .sector-card {
-    padding: 1rem;
-    border-radius: 12px;
-  }
-}
-
 /* HERO MODERNIZE GRID 2x2 */
 .modernize-grid {
   width: 100%;
   margin: 0 auto;
-  padding: 2.5rem 0 1.5rem 0;
+  padding: 60px;
   background: #f2f2f2;
 }
 
@@ -1355,20 +1266,16 @@ cta-big-btn span {
 }
 
 .modernize-row.reverse {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .modernize-img-wrapper {
   flex: 1;
-  min-width: 270px;
-  max-width: 420px;
 }
 
 .modernize-img-wrapper img {
   width: 100%;
-  display: block;
-  border-radius: 40px 16px 40px 16px;
-  object-fit: cover;
+  border-radius: 30px;
 }
 
 .modernize-content {

@@ -58,7 +58,7 @@
                   <div class="mega-dropdown__grid">
                     <!-- Produtos listados -->
                     <a href="parceriassharp" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
-                    <a href="paineis" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
+                    <a href="/pagina-energia-renovaveis/" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
                     <a href="/pagina-solucoes-visuais/" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais Multimac</span></a>
                     <a href="videovigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
                     <a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>TI & Computing Multimac</span></a>

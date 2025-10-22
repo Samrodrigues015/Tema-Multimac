@@ -71,6 +71,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-gavetasdedinheiro.php')) {
     wp_enqueue_style('multimac-gavetasdedinheiro-css', get_template_directory_uri() . '/assets/css/gavetasdedinheiro.css', array('multimac-main-style'), $theme_version);
   }
+  // 17. Página Energias Renovaveis (Paineis)
+  if (is_page_template('pagina-paineis.php')) {
+    wp_enqueue_style('multimac-paineis-css', get_template_directory_uri() . '/assets/css/paineis.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

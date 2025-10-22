@@ -62,7 +62,7 @@
                     <a href="/pagina-solucoes-visuais/" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais Multimac</span></a>
                     <a href="videovigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
                     <a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>TI & Computing Multimac</span></a>
-                    <a href="controlo" class="mega-dropdown__item"><i class="fa-solid fa-id-card mega-dropdown__icon"></i><span>Controlo de Acessos e Gestão de Assiduidades</span></a>
+                    <a href="/pagina-controlo-de-acessos/" class="mega-dropdown__item"><i class="fa-solid fa-id-card mega-dropdown__icon"></i><span>Controlo de Acessos e Gestão de Assiduidades</span></a>
                     <a href="/pagina-pos-software/" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação Multimac</span></a>
                     <a href="alarme" class="mega-dropdown__item"><i class="fa-solid fa-shield-alt mega-dropdown__icon"></i><span>Intrusão</span></a>
                     <a href="/pagina-gavetas-de-dinheiro/" class="mega-dropdown__item"><i class="fa-solid fa-money-bill mega-dropdown__icon"></i><span>Gavetas Inteligentes de Dinheiro</span></a>

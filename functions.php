@@ -79,6 +79,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-videovigilancia.php')) {
     wp_enqueue_style('multimac-videovigilancia-css', get_template_directory_uri() . '/assets/css/videovigilancia.css', array('multimac-main-style'), $theme_version);
   }
+  // 19. Página Controlo de Acessos
+  if (is_page_template('pagina-controlo.php')) {
+    wp_enqueue_style('multimac-controlo-css', get_template_directory_uri() . '/assets/css/controlo.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

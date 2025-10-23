@@ -3,7 +3,7 @@
     get_header();
     ?>
 
- <main>
+ <main class="main-section">
      <!-- Hero Section -->
      <section class="hero">
          <div class="hero-content">

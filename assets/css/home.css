@@ -25,7 +25,7 @@ main section {
 
 /* SEÇÃO HERO */
 .hero-section {
-  padding: 60px 0 0;
+  padding: 60px 100px 0;
   position: relative;
 }
 
@@ -33,7 +33,6 @@ main section {
   display: flex;
   align-items: center;
   gap: 25px;
-  padding: 0 100px;
 }
 
 .hero-content {
@@ -677,6 +676,9 @@ main section {
 /* RESPONSIVIDADE */
 
 @media (max-width: 640px) {
+  .hero-section {
+    padding: 20px 0;
+  }
   .hero-content h1 {
     font-size: 26px;
     font-weight: 600;

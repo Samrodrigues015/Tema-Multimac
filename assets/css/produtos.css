@@ -10,19 +10,23 @@ body {
   color: #333;
   background-color: #f2f2f2;
 }
+.main-section {
+  padding: 60px 100px 0;
+  margin: 0 auto;
+  max-width: 1500px;
+}
 
 .testemunhos-desktop { display: none; }
 .testemunhos-mobile  { display: block; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 /* Hero Section */
 .hero {
-  padding: 80px 0;
   min-height: 600px;
   display: flex;
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -50,16 +54,13 @@ body {
 
 .hero-right {
   grid-area: text;
-  max-width: 80%;
-  align-self: end; /* Pushes text to the bottom of its grid cell */
+  align-self: end; 
 }
 
 .printers-image {
   width: 100%;
-  max-width: 663px; /* Mantém o tamanho máximo que você definiu */
   height: auto;
   border-radius: 12px;
- /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);*/
 }
 
 .innovation-badge {
@@ -859,6 +860,9 @@ color: white;
 
 /* Tablets */
 @media (max-width: 768px) {
+  .main-section {
+    padding: 30px 0;
+  }
   .hero {
     padding: 60px 0;
     min-height: auto;

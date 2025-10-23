@@ -268,10 +268,6 @@ img {
   align-items: flex-start;
 }
 
-.equipment-title {
-  text-align: left;
-}
-
 .equipment-title h2 {
   font-size: 42px;
   font-weight: 600;
@@ -280,36 +276,36 @@ img {
   line-height: 120%;
 }
 
-.equipment-subtitle {
-  display: flex;
-  align-items: flex-start;
-  text-align: right;
-  padding-left: 60px;
-}
-
 .equipment-subtitle p {
     font-size: 20px;
     font-family: "Funnel Display", sans-serif;
     color: #1C1C1C;
     margin: 0;
     max-width: 500px;
-    text-align: start;
 }
 
+/* ----- Grelha de Cards (Desktop) ----- */
 .equipment-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 24px;
 }
 
 .equipment-card {
-  border-radius: 15px;
+  border-radius: 20px;
   border: 2px solid #DC6339;
-  padding: 30px 40px;
+  padding: 30px 24px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  background-color: white; /* Garante fundo branco para todos */
+  min-height: 250px ; /* Altura mínima consistente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .equipment-icon {
   width: 60px;
   height: 60px;
@@ -321,15 +317,9 @@ img {
   margin: 0 auto 20px;
 }
 
-.equipment-icon svg {
-  color: black;
-}
-
 .equipment-content h3 {
     font-size: 24px;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: #1C1C1C;
     margin-bottom: 9px;
     line-height: 30px;
 }
@@ -337,39 +327,72 @@ img {
 .equipment-content p {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  color: #1C1C1C;
   margin: 0;
 }
 
-/* Último card diferente */
-.equipment-card:last-child {
-  background-color: #FFFFFF;
-  color: #000;
+/* ----- Card de Destaque (Desktop) ----- */
+.equipment-card.destaque {
+  position: relative; /* Essencial para posicionar a seta */
   border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Ajustes internos para manter consistência */
-.equipment-card:last-child .equipment-icon {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-  padding: 12px;
-  display: inline-flex;
-  justify-content: center;
+  box-shadow: 0 0 15px 2px rgba(220, 99, 57, 0.4);
+  justify-content: center; /* Alinha o texto verticalmente */
   align-items: center;
 }
 
-.equipment-card:last-child .equipment-content h3,
-.equipment-card:last-child .equipment-content p {
-  color: #000;
+/* Esconde a estrutura de ícone antiga que já não é usada neste card */
+.equipment-card.destaque .equipment-icon {
+  display: none;
 }
 
-/* Pequeno efeito ao passar o mouse (desktop) */
-.equipment-card:last-child:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(220, 99, 57, 0.4);
+/* Aumenta o título do card de destaque */
+.equipment-card.destaque h3 {
+  max-width: 85%;
+  font-size: 28px;
+  line-height: 120%;
+  color: #1E1E1E;
 }
+
+.equipment-card.destaque p {
+ max-width: 85%;
+  font-size: 16px;
+  font-family: "Funnel Display", sans-serif;
+  color: #1C1C1C;
+}
+
+/* Posiciona a seta no canto superior direito */
+.equipment-card.destaque .arrow-icon-wrapper {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 42px;  /* Manter para dar espaço ao ícone */
+  height: 42px; /* Manter para dar espaço ao ícone */
+  color: #dc6339;
+  
+  /* 2. Removemos APENAS as propriedades visuais do círculo */
+  border: none; /* ou border: 0; */
+  border-radius: 0;
+}
+
+.equipment-card.destaque .arrow-icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Efeito hover melhorado */
+.equipment-card.destaque:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(220, 99, 57, 0.4);
+}
+
+
+/* ----- Botão mobile (escondido em desktop) ----- */
+.btn-mobile-pos {
+    display: none;
+}
+
 /* Section Label */
 .section-label {
   display: inline-flex; 
@@ -805,58 +828,40 @@ img {
   }
 
   /* Secção Tecnologia */
+  /* ----- Ajustes no cabeçalho ----- */
   .equipment-header {
     grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .equipment-title {
-    text-align: center;
+    gap: 20px;
     text-align: center;
   }
   .equipment-title h2 {
-    align-items: center;
-    text-align: center;
     font-size: 28px;
-    margin-bottom: 15px;
   }
-  .computing-title h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 0px;
-}
-.computing-subtitle p {
-    margin-left: auto; 
-    margin-right: auto; 
-    max-width: 90%; 
-    text-align: center;
-    margin-top: 0px; 
+  .equipment-subtitle p {
+    margin: 15px auto 0;
   }
 
-  .equipment-subtitle {
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-    padding-left: 0;
-  }
-    .equipment-subtitle p {
-    text-align: center;
-    padding-left: 0;
-  }
-   .equipment-grid {
+  /* ----- Transformar a grelha em Carrossel ----- */
+  .equipment-grid {
     display: flex;
+    flex-wrap: nowrap;      /* A CORREÇÃO CRÍTICA: Força uma única linha */
     overflow-x: auto;
+    gap: 16px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin: 0 -20px;
+    scrollbar-width: none;
   }
-
-  .equipment-card {
-    flex: 0 0 45%; 
-    min-width: 90%;
+  .equipment-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* ----- Estilo dos cards no carrossel ----- */
+  .equipment-grid .equipment-card {
+    flex: 0 0 90%;          /* Cada card ocupa 90% da largura */
     scroll-snap-align: center;
-    padding: 20px 15px; 
+    padding: 20px 15px;
   }
   .equipment-icon {
     width: 50px;
@@ -867,14 +872,29 @@ img {
     font-size: 18px;
     line-height: 24px;
   }
-
   .equipment-content p {
     font-size: 14px;
   }
 
-  /* Esconde scrollbar no mobile */
-  .equipment-grid::-webkit-scrollbar {
+  /* ----- Esconde o card de destaque em mobile ----- */
+  .equipment-grid .equipment-card.destaque {
     display: none;
+  }
+  
+  /* ----- Mostra e estiliza o botão mobile ----- */
+  .btn-mobile-pos {
+    display: block;
+    max-width: 300px;
+    margin: 40px auto 0;
+    padding: 14px 20px;
+    background-color: #dc6339;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
   }
 }
 /* Desktop only - hide mobile elements */

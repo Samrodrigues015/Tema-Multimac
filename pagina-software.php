@@ -219,15 +219,19 @@ get_header();
             </div>
 
             <div class="equipment-card destaque">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon9.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Descubra mais</h3>
-                    <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
-                </div>
-            </div>
+    <!-- O texto agora está diretamente dentro do card -->
+    <h3>Descubra mais</h3>
+    <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
+    
+    <!-- E aqui está o contentor da seta, para o podermos posicionar -->
+    <div class="arrow-icon-wrapper">
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.00004L29.2947 1M29.2947 1L29.2947 30M29.2947 1L1.00004 30" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </div>
+</div>
         </div>
+        <a href="#" class="btn-mobile-pos">Descubra Mais</a>
     </div>
 </section>
 

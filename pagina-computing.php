@@ -83,106 +83,100 @@ get_header();
 
     ?>
 
-    <!-- Equipment Categories Section -->
-    <section class="equipment-categories">
-        <div class="container">
-            <div class="section-label">
-                <span class="section-bullet">•</span>
-                <span class="section-text">Soluções</span>
+<!-- Equipment Categories Section -->
+<section class="equipment-categories">
+    <div class="container">
+        <!-- O cabeçalho mantém-se como estava, pois é específico desta secção -->
+        <div class="section-label">
+            <span class="section-bullet">•</span>
+            <span class="section-text">Soluções</span>
+        </div>
+        <div class="equipment-header">
+            <div class="equipment-title">
+                <h2>Equipamentos desenvolvidos para produtividade e confiabilidade</h2>
             </div>
-            <div class="equipment-header">
-                <div class="equipment-title">
-                    <h2>Equipamentos desenvolvidos para produtividade e confiabilidade</h2>
+            <div class="equipment-subtitle">
+                <p>As nossas soluções de TI e computing combinam a mais alta tecnologia com designs práticos e robustos.</p>
+            </div>
+        </div>
+
+        <!-- A grelha de cards agora usa a mesma estrutura e classes da primeira secção -->
+        <div class="features-cards">
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%281%29-RBcZziDXgLxGXocKxWJUMp4BgVsUAz.png" alt="Processadores" style="width: 33px; height: 33px;">
                 </div>
-                <div class="equipment-subtitle">
-                    <p>As nossas soluções de TI e computing combinam a mais alta tecnologia com designs práticos e robustos.</p>
-                </div>
+                <h3>Processadores</h3>
+                <p>Intel Core de última geração e AMD Ryzen, com múltiplos núcleos para multitarefa avançada.</p>
             </div>
 
-            <div class="equipment-grid">
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%281%29-RBcZziDXgLxGXocKxWJUMp4BgVsUAz.png" alt="Processadores" style="width: 33px; height: 33px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Processadores</h3>
-                        <p>Intel Core de última geração e AMD Ryzen, com múltiplos núcleos para multitarefa avançada.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%282%29-X3Or6opW8iLoqWjbiMitifDt74CnQi.png" alt="Memória" style="width: 34px; height: 28px;">
                 </div>
+                <h3>Memória</h3>
+                <p>Opções de até 32 GB de RAM DDR4 para executar aplicações exigentes.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%282%29-X3Or6opW8iLoqWjbiMitifDt74CnQi.png" alt="Memória" style="width: 34px; height: 28px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Memória</h3>
-                        <p>Opções de até 32 GB de RAM DDR4 para executar aplicações exigentes.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%283%29-0kJQsINFvniq9ehgCsehrwRRRLTfqc.png" alt="Armazenamento" style="width: 35px; height: 31px;">
                 </div>
+                <h3>Armazenamento</h3>
+                <p>SSD NVMe até 1 TB, oferecendo alta capacidade e velocidade incomparável.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%283%29-0kJQsINFvniq9ehgCsehrwRRRLTfqc.png" alt="Armazenamento" style="width: 35px; height: 31px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Armazenamento</h3>
-                        <p>SSD NVMe até 1 TB, oferecendo alta capacidade e velocidade incomparável.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%284%29-uUkIGhLQhkuOXSK9SKInIlCwiUiKbu.png" alt="Gráficos" style="width: 31px; height: 31px;">
                 </div>
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%284%29-uUkIGhLQhkuOXSK9SKInIlCwiUiKbu.png" alt="Gráficos" style="width: 31px; height: 31px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Gráficos</h3>
-                        <p>Placas dedicadas para tarefas como edição de vídeo, modelagem 3D e apresentações de alta qualidade.</p>
-                    </div>
-                </div>
+                <h3>Gráficos</h3>
+                <p>Placas dedicadas para tarefas como edição de vídeo, modelagem 3D e apresentações.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%285%29-TeF0ZLcDJlT8VMY5WQQ2A2gIkUBlD5.png" alt="Ecrã" style="width: 39px; height: 30px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Ecrã</h3>
-                        <p>Resolução Full HD ou 4K, com opções táteis em modelos premium para uma interação mais intuitiva.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%285%29-TeF0ZLcDJlT8VMY5WQQ2A2gIkUBlD5.png" alt="Ecrã" style="width: 39px; height: 30px;">
                 </div>
+                <h3>Ecrã</h3>
+                <p>Resolução Full HD ou 4K, com opções táteis em modelos premium para uma interação mais intuitiva.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%286%29-RZrm4emmUk9osUKR9PwfugKXOjErJz.png" alt="Conectividade" style="width: 31px; height: 31px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Conectividade</h3>
-                        <p>Wi-Fi 6, USB-C, HDMI e compatibilidade com docks para máxima flexibilidade.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%286%29-RZrm4emmUk9osUKR9PwfugKXOjErJz.png" alt="Conectividade" style="width: 31px; height: 31px;">
                 </div>
+                <h3>Conectividade</h3>
+                <p>Wi-Fi 6, USB-C, HDMI e compatibilidade com docks para máxima flexibilidade.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%287%29-abEs8wCvJOIzpeezMyqiCgLGPZ7Noh.png" alt="Durabilidade" style="width: 30px; height: 30px;">
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Durabilidade</h3>
-                        <p>Modelos reforçados para resistir ao desgaste diário, ideais para quem trabalha em movimento.</p>
-                    </div>
+            <div class="feature-box">
+                <div class="feature-icon-box">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%287%29-abEs8wCvJOIzpeezMyqiCgLGPZ7Noh.png" alt="Durabilidade" style="width: 30px; height: 30px;">
                 </div>
+                <h3>Durabilidade</h3>
+                <p>Modelos reforçados para resistir ao desgaste diário, ideais para quem trabalha em movimento.</p>
+            </div>
 
-                <div class="equipment-card">
-                    <div class="equipment-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-content">
-                        <h3>Descubra mais</h3>
-                        <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados</p>
-                    </div>
+            <!-- Card "Descubra mais" com a estrutura correta -->
+            <div class="feature-box discover-more">
+                <h3>Descubra mais</h3>
+                <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados</p>
+                <div class="arrow-icon-wrapper">
+                    
+<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.00004L29.2947 1M29.2947 1L29.2947 30M29.2947 1L1.00004 30" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- O botão mobile mantém-se -->
+        <a href="#" class="btn-mobile-equipment">Descubra Mais</a>
+
+    </div>
+</section>
 
     <!-- Business Solutions Section -->
     <section class="business-solutions">

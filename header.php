@@ -66,7 +66,7 @@
                     <a href="/pagina-pos-software/" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação Multimac</span></a>
                     <a href="/paginas-sistemas-de-alarme/" class="mega-dropdown__item"><i class="fa-solid fa-shield-alt mega-dropdown__icon"></i><span>Intrusão</span></a>
                     <a href="/pagina-gavetas-de-dinheiro/" class="mega-dropdown__item"><i class="fa-solid fa-money-bill mega-dropdown__icon"></i><span>Gavetas Inteligentes de Dinheiro</span></a>
-                    <a href="unibind" class="mega-dropdown__item"><i class="fa-solid fa-tag mega-dropdown__icon"></i><span>Peleman - Encadernação e Personalização</span></a>
+                    <a href="/pagina-unibind/" class="mega-dropdown__item"><i class="fa-solid fa-tag mega-dropdown__icon"></i><span>Peleman - Encadernação e Personalização</span></a>
                   </div>
                 </div>
               </li>

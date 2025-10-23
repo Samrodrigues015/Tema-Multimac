@@ -353,33 +353,35 @@ p {
 .technology-section {
   padding: 80px 0;
   background-color: #f2f2f2;
+  max-width: 1400px;
 }
 
 .technology-section h2 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
   color: #1c1c1c;
+  line-height: 120%;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .technology-subtitle {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 400;
   color: #1c1c1c;
-  max-width: 900px;
   margin: 0 auto 40px;
   text-align: center;
-  line-height: 1.6;
+  line-height: 32px;
 }
 
 .technology-image {
   margin-bottom: 60px;
-  text-align: center;
 }
 
 .technology-image img {
   max-width: 100%;
   height: auto;
+  align-items: center;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -396,16 +398,16 @@ p {
 }
 
 .tech-feature h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   color: #1e1e1e;
   margin-bottom: 10px;
 }
 
 .tech-feature p {
-  font-size: 16px;
+  font-size: 18px;
   color: #1e1e1e;
-  line-height: 1.5;
+  line-height: 28px;
 }
 
 /* Sectors Section */
@@ -424,8 +426,9 @@ p {
 
 
 .sectors-header h2 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 132%;
   color: #1c1c1c;
   margin: 0;                      
   flex-basis: 45%;                
@@ -433,9 +436,8 @@ p {
 }
 
 .sectors-header .sectors-subtitle {
-  font-size: 16px; 
+  font-size: 20px; 
   color: #1c1c1c;
-  line-height: 1.6;
   margin: 0;                      
   flex-basis: 50%;                
 }
@@ -450,13 +452,8 @@ p {
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
+  padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sector-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 .sector-image {
@@ -467,14 +464,14 @@ p {
 .sector-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .sector-card h3 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
   color: #1c1c1c;
-  margin: 20px 20px 10px;
+  margin: 20px 20px 20px;
 }
 
 .sector-details {
@@ -482,9 +479,9 @@ p {
 }
 
 .sector-details p {
-  font-size: 14px;
+  font-size: 18px;
   color: #1c1c1c;
-  line-height: 1.5;
+  line-height: 25px;
   margin-bottom: 10px;
 }
 
@@ -510,21 +507,21 @@ p {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .final-cta-text h2 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 600;
   color: #1c1c1c;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 120%;
 }
 
 .final-cta-text p {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 400;
   color: #1c1c1c;
-  line-height: 1.6;
+  line-height: 30px;
   margin-bottom: 30px;
 }
 
@@ -539,7 +536,7 @@ p {
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -557,7 +554,7 @@ p {
   color: #1c1c1c;
   padding: 12px 24px;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -666,8 +663,42 @@ p {
     gap: 40px;
     text-align: center;
   }
+  .final-cta-text {
+    order: 1;
+  }
+
+  .final-cta-image {
+    order: 2;
+  }
   .final-cta-buttons {
     justify-content: center;
+  }
+
+  /* Secção solucoes de setores */
+  .sectors-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  .sector-card {
+    flex: 0 0 80%; 
+    scroll-snap-align: start;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .sector-image {
+    height: 180px;
+  }
+
+  .sector-image img {
+    width: 100%;
   }
 }
 

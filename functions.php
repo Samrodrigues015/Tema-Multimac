@@ -83,6 +83,18 @@ function meu_tema_scripts()
   if (is_page_template('pagina-controlo.php')) {
     wp_enqueue_style('multimac-controlo-css', get_template_directory_uri() . '/assets/css/controlo.css', array('multimac-main-style'), $theme_version);
   }
+  // 20. Página Sistema de Alarme
+  if (is_page_template('pagina-alarme.php')) {
+    wp_enqueue_style('multimac-alarme-css', get_template_directory_uri() . '/assets/css/alarme.css', array('multimac-main-style'), $theme_version);
+  }
+  // 21. Página Unidind
+  if (is_page_template('pagina-unibind.php')) {
+    wp_enqueue_style('multimac-unibind-css', get_template_directory_uri() . '/assets/css/unibind.css', array('multimac-main-style'), $theme_version);
+  }
+  // 22. Página Bilhetica
+  if (is_page_template('pagina-bilhetica.php')) {
+    wp_enqueue_style('multimac-bilhetica-css', get_template_directory_uri() . '/assets/css/bilhetica.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

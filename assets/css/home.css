@@ -130,18 +130,14 @@ main section {
 }
 
 .secondary-button {
-  /*  background: transparent;
-  color: #dc6339;
-  border: 2px solid #dc6339;*/
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: 20px;
   color: black;
 }
 
 .secondary-button:hover {
   color: #fff;
   background-color: #dc6339;
-  font-weight: 500;
 }
 
 .hero-button-container a.main-button-styles.secondary-button {

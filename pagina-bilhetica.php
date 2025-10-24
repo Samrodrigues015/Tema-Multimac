@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<main>
+<main class="">
     <!-- Hero Section - Updated to match the image exactly -->
     <div class="hero-image-bilheteria">
         <!-- Imagem de fundo -->
@@ -240,7 +240,7 @@ get_header();
     </section>
 
     <!-- Business Solutions Section - Updated to match the image -->
-    <div class="xopvision-industries-container">
+    <div class="xopvision-industries-container container">
         <h2 class="xopvision-industries-title">
             Soluções Adaptadas a Diferentes Indústrias e Negócios
 

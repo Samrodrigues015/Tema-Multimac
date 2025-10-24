@@ -1028,3 +1028,8 @@ cite strong {
     background-color: #dc6339;
   }
 }
+@media (max-width: 1400px) and (min-width: 1000px) {
+  main {
+    padding: 0 20px;
+  }
+}

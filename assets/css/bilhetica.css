@@ -63,6 +63,7 @@ p {
   font-weight: 600;
   line-height: 64px;
   color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -209,7 +210,8 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #dc6339;
+   background-color: #e2e2e2;
+  color: #333;
 }
 
 .secondary-text {
@@ -230,7 +232,8 @@ p {
   max-width: 280px;
 }
 .secondary-text:hover {
-  background-color: #e2e2e2;
+  background-color: #dc6339;
+  color: white;
 }
 .cta-button,
 .secondary-text {

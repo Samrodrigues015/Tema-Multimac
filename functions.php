@@ -99,6 +99,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-rotulagem.php')) {
     wp_enqueue_style('multimac-rotulagem-css', get_template_directory_uri() . '/assets/css/rotulagem.css', array('multimac-main-style'), $theme_version);
   }
+  // 24. Página Gestão de Atendimento
+  if (is_page_template('pagina-gestao.php')) {
+    wp_enqueue_style('multimac-gestao-css', get_template_directory_uri() . '/assets/css/gestao.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

@@ -129,6 +129,7 @@ p {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+   padding: 0 20px;
 }
 
 .main-title {
@@ -146,18 +147,23 @@ p {
 }
 
 .image-container {
-  position: relative;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  margin-bottom: 20px;
 }
 
 .main-image {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
-  border-radius: 12px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  width: 105px; 
+  height: 135px;
+  pointer-events: none; 
 }
 
 .overlay-card {
@@ -188,16 +194,19 @@ p {
 }
 
 .cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #dc6339;
   color: white;
   border: none;
   padding: 15px 30px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
+  max-width: 280px;
 }
 
 .cta-button:hover {
@@ -205,21 +214,29 @@ p {
 }
 
 .secondary-text {
-  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
   color: black;
   border: none;
   padding: 15px 30px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   margin-bottom: 20px;
   transition: background-color 0.3s ease;
   width: 100%;
   max-width: 280px;
 }
-.secundary-text:hover {
-  background-color: #f2f2f2;
+.secondary-text:hover {
+  background-color: #e2e2e2;
+}
+.cta-button,
+.secondary-text {
+  display: block;
+   margin: 10px auto; 
 }
 @media (min-width: 1024px) {
   .mobile-container {

@@ -35,9 +35,21 @@ get_header();
                 Venda, organize e controle entradas de forma eficiente em qualquer canal, online ou físico. A solução completa para eventos, espetáculos, serviços e muito mais.
             </p>
 
-            <div class="image-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/background-bilheteria.png" alt="XOPVISION Digital Signage em shopping center" class="main-image">
-            </div>
+           <div class="image-container">
+  <img 
+    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/background-bilheteriamobile.png" 
+    alt="XOPVISION Digital Signage em shopping center" 
+    class="main-image"
+  >
+
+  <!-- Nova imagem a ser posicionada -->
+  <img 
+    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/imageblack.png" 
+    alt="Imagem sobreposta"
+    class="overlay-image"
+  >
+</div>
+
 
             <a href="#formulariobilhetica" class="cta-button">
                 Solicite um Orçamento

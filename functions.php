@@ -95,6 +95,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-bilhetica.php')) {
     wp_enqueue_style('multimac-bilhetica-css', get_template_directory_uri() . '/assets/css/bilhetica.css', array('multimac-main-style'), $theme_version);
   }
+  // 23. Página Rotulagem
+  if (is_page_template('pagina-rotulagem.php')) {
+    wp_enqueue_style('multimac-rotulagem-css', get_template_directory_uri() . '/assets/css/rotulagem.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

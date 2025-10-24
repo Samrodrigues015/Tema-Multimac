@@ -18,7 +18,9 @@ body {
 }
 
 main {
-  padding: 0 20px;
+  padding: 0 100px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 main section {
@@ -601,6 +603,10 @@ cite strong {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  main {
+  padding: 0 20px;
+  
+}
   .xopvision-industries-container {
     padding: 30px 0;
   }

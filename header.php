@@ -81,7 +81,7 @@
                     <a href="solucoes" class="mega-dropdown__item"><i class="fa-solid fa-cloud mega-dropdown__icon"></i><span>Soluções Cloud</span></a>
                     <a href="computing" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura de Rede</span></a>
                     <a href="ciberseguranca" class="mega-dropdown__item"><i class="fa-solid fa-lock mega-dropdown__icon"></i><span>Segurança de Dados</span></a>
-                    <a href="gestao" class="mega-dropdown__item"><i class="fa-solid fa-file-alt mega-dropdown__icon"></i><span>Gestão Documental</span></a>
+                    <a href="/pagina-gestao-de-atendimento/" class="mega-dropdown__item"><i class="fa-solid fa-file-alt mega-dropdown__icon"></i><span>Gestão Documental</span></a>
                   </div>
                 </div>
               </li>

@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<main>
+<main class="">
     <!-- Hero Section - Updated to match the image exactly -->
     <div class="hero-image-bilheteria">
         <!-- Imagem de fundo -->
@@ -35,20 +35,16 @@ get_header();
                 Venda, organize e controle entradas de forma eficiente em qualquer canal, online ou físico. A solução completa para eventos, espetáculos, serviços e muito mais.
             </p>
 
-           <div class="image-container">
-  <img 
-    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/background-bilheteriamobile.png" 
-    alt="XOPVISION Digital Signage em shopping center" 
-    class="main-image"
-  >
-
-  <!-- Nova imagem a ser posicionada -->
-  <img 
-    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/imageblack.png" 
-    alt="Imagem sobreposta"
-    class="overlay-image"
-  >
-</div>
+            <div class="image-container">
+                <img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/background-bilheteriamobile.png"
+                    alt="XOPVISION Digital Signage em shopping center"
+                    class="main-image">
+                <img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/imageblack.png"
+                    alt="Imagem sobreposta"
+                    class="overlay-image">
+            </div>
 
 
             <a href="#formulariobilhetica" class="cta-button">
@@ -240,7 +236,7 @@ get_header();
     </section>
 
     <!-- Business Solutions Section - Updated to match the image -->
-    <div class="xopvision-industries-container">
+    <div class="xopvision-industries-container container">
         <h2 class="xopvision-industries-title">
             Soluções Adaptadas a Diferentes Indústrias e Negócios
 
@@ -325,37 +321,37 @@ get_header();
 
 
     <!-- Formulario -->
-  <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e otimize a gestão de bilhetes',
-    'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Receber Orçamento',
-  )
-);
-?>
+    <?php
+    get_template_part(
+        'templates/card-formulario',
+        null,
+        array(
+            'titulo' => 'Peça já o seu orçamento e otimize a gestão de bilhetes',
+            'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
+            'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+            'botao'  => 'Receber Orçamento',
+        )
+    );
+    ?>
 
-        <!-- Final CTA Section - Updated to match the image -->
-        <section class="final-cta">
-            <div class="container">
-                <div class="final-cta-content">
-                    <div class="final-cta-text">
-                        <h2>Pronto para simplificar e otimizar as vendas de bilhetes?</h2>
-                        <p>Com a Plataforma de Bilhética Multimac, pode modernizar a gestão de bilhetes, melhorar a experiência do cliente e centralizar todas as operações num único sistema. Fale connosco e comece já!</p>
-                        <div class="final-cta-buttons">
-                            <a href="#formulariobilhetica" class="btn-primary">Peça um Orçamento</a>
-                            <a href="#formulariobilhetica" class="btn-secondary">Fale com um Especialista</a>
-                        </div>
-                    </div>
-                    <div class="final-cta-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/prontoparasimplificar.png" alt="Ticketing Platform Solutions" class="cta-image">
+    <!-- Final CTA Section - Updated to match the image -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <div class="final-cta-text">
+                    <h2>Pronto para simplificar e otimizar as vendas de bilhetes?</h2>
+                    <p>Com a Plataforma de Bilhética Multimac, pode modernizar a gestão de bilhetes, melhorar a experiência do cliente e centralizar todas as operações num único sistema. Fale connosco e comece já!</p>
+                    <div class="final-cta-buttons">
+                        <a href="#formulariobilhetica" class="btn-primary">Peça um Orçamento</a>
+                        <a href="#formulariobilhetica" class="btn-secondary">Fale com um Especialista</a>
                     </div>
                 </div>
+                <div class="final-cta-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/prontoparasimplificar.png" alt="Ticketing Platform Solutions" class="cta-image">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

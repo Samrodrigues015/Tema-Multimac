@@ -283,68 +283,7 @@
             ));
             ?>
 
-         <!-- FAQ section -->
-         <section class="faq-section">
-             <div class="container">
-                 <p class="faq-tag testimonial-header">
-                     <span class="dot"></span>
-                     FAQ
-                 </p>
-                 <h2>Dúvidas? Nós temos as respostas</h2>
-
-
-                 <div class="faq-content">
-                     <div class="faq-image">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-rotulagem/FAQ.png" alt="Impressora de etiquetas e laptop">
-                     </div>
-
-                     <div class="faq-list">
-                         <!-- FAQ Item 1 (Expanded) -->
-                         <div class="faq-item expanded">
-                             <div class="faq-question">
-                                 <h3>Qual o volume de produção recomendado para estas impressoras?</h3>
-                                 <div class="faq-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 60 60" fill="none">
-                                         <path d="M37.9629 28.3183L29.5028 38.1889M29.5028 38.1889L21.1509 31.0303M29.5028 38.1889L29.6109 21.1599" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
-                                         <path d="M45.5017 43.3407C37.9468 52.1552 24.8584 53.3053 16.2704 45.9445C7.68246 38.5837 6.81672 25.4734 14.3717 16.659C21.9266 7.84448 35.015 6.69436 43.603 14.0552C52.1909 21.416 53.0567 34.5263 45.5017 43.3407Z" stroke="#1E1E1E" />
-                                     </svg>
-                                 </div>
-                             </div>
-                             <div class="faq-answer">
-                                 <p>Temos equipamentos para pequenas produções até ambientes industriais com elevada cadência. A escolha depende da aplicação e tipo de etiqueta.</p>
-                             </div>
-                         </div>
-
-                         <!-- FAQ Item 2 (Collapsed) -->
-                         <div class="faq-item">
-                             <div class="faq-question">
-                                 <h3>Que tipos de etiquetas posso imprimir?</h3>
-                                 <div class="faq-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 44 42" fill="none">
-                                         <path d="M15.4365 16L28.4365 16M28.4365 16L28.4365 27M28.4365 16L15.4365 27" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
-                                         <path d="M21.9365 0.5C33.5457 0.5 42.9365 9.68919 42.9365 21C42.9365 32.3108 33.5457 41.5 21.9365 41.5C10.3274 41.5 0.936523 32.3108 0.936523 21C0.936523 9.68919 10.3274 0.5 21.9365 0.5Z" stroke="#1E1E1E" />
-                                     </svg>
-                                 </div>
-                             </div>
-                         </div>
-
-                         <!-- FAQ Item 3 (Collapsed) -->
-                         <div class="faq-item">
-                             <div class="faq-question">
-                                 <h3>Qual o suporte técnico disponível?</h3>
-                                 <div class="faq-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 44 42" fill="none">
-                                         <path d="M15.4365 16L28.4365 16M28.4365 16L28.4365 27M28.4365 16L15.4365 27" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" />
-                                         <path d="M21.9365 0.5C33.5457 0.5 42.9365 9.68919 42.9365 21C42.9365 32.3108 33.5457 41.5 21.9365 41.5C10.3274 41.5 0.936523 32.3108 0.936523 21C0.936523 9.68919 10.3274 0.5 21.9365 0.5Z" stroke="#1E1E1E" />
-                                     </svg>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             </div>
-         </section>
+ 
  </main>
 
  <?php get_footer(); ?>

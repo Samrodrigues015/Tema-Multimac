@@ -257,3 +257,12 @@ if (window.innerWidth <= 640) {
     });
   });
 
+  // ===== Escript para pagina Soluçoes documentais ===== //
+
+document.querySelectorAll('.tech-item').forEach(item => {
+  const header = item.querySelector('.tech-header');
+
+  header.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});

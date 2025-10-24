@@ -107,6 +107,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-solucoesdocumentais.php')) {
     wp_enqueue_style('multimac-solucoesdocumentais-css', get_template_directory_uri() . '/assets/css/solucoesdocumentais.css', array('multimac-main-style'), $theme_version);
   }
+  // 26. Página Design & Imagem
+  if (is_page_template('pagina-design.php')) {
+    wp_enqueue_style('multimac-design-css', get_template_directory_uri() . '/assets/css/design.css', array('multimac-main-style'), $theme_version);
+  }
 
   // . Formulário de Orçamento
   wp_enqueue_style(

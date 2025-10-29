@@ -47,7 +47,7 @@ get_header();
                     alt="Imagem sobreposta"
                     class="overlay-image">
             </div>
-
+       
             <button class="cta-button">
                 Solicite um Orçamento
             </button>
@@ -55,6 +55,7 @@ get_header();
             <button class="secondary-text">
                 Fale com um especialista
             </button>
+     
         </div>
     </div>
 

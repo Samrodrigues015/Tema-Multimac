@@ -153,7 +153,6 @@ position: absolute;
 
 /* Why Choose Rotulagem Section */
 .why-choose-rotulagem {
-  padding: 80px 0;
   background-color: #f2f2f2; 
   font-family: sans-serif;
 }
@@ -253,7 +252,7 @@ position: absolute;
 }
 /* Application Sectors Section */
 .application-sectors {
-    padding: 80px 0;
+    padding: 73px 0;
 }
 
 .sectors-header {
@@ -297,7 +296,7 @@ position: absolute;
 .sector-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    padding: 10px;
 }
 
 .sector-content {
@@ -428,7 +427,8 @@ position: absolute;
 
 @media (max-width: 768px) {
   .hero-content-rotulagem {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: 40px;
   }
   
@@ -461,8 +461,42 @@ position: absolute;
   }
   
   .sectors-grid {
-    grid-template-columns: 1fr;
-  }
+        /* 1. Mudar de Grid para Flexbox */
+        display: flex;
+        
+        /* 2. Permitir o scroll horizontal */
+        overflow-x: auto;
+        
+        /* 3. Impedir que os itens quebrem para a linha seguinte */
+        flex-wrap: nowrap;
+        
+        /* 4. Melhorar a experiência de scroll (efeito de "snap") */
+        scroll-snap-type: x mandatory;
+        
+        /* Melhora a fluidez do scroll em iOS */
+        -webkit-overflow-scrolling: touch;
+        
+        /* 5. Remover o espaçamento do grid e adicionar padding para que os cartões não colem às bordas */
+        gap: 16px;
+        padding: 0 20px; /* Adiciona algum espaço no início e no fim do carrossel */
+    }
+
+    /* 6. Esconder a barra de scroll para um visual mais limpo */
+    .sectors-grid::-webkit-scrollbar {
+        display: none; /* Para Chrome, Safari e Opera */
+    }
+    .sectors-grid {
+        -ms-overflow-style: none;  /* Para IE e Edge */
+        scrollbar-width: none;  /* Para Firefox */
+    }
+
+    .sector-card {
+        /* 7. Definir a largura dos cartões no carrossel */
+        flex: 0 0 80%; /* Não cresce, não encolhe, e tem uma base de 80% da largura do contentor */
+        
+        /* 8. Definir onde o "snap" do scroll deve acontecer em cada cartão */
+        scroll-snap-align: center; /* Alinha os cartões ao centro quando o utilizador para de fazer scroll */
+    }
   
   .why-choose-header {
     flex-direction: column;
@@ -494,6 +528,7 @@ position: absolute;
   
   .hero-text p {
     font-size: 16px;
+    text-align: center;
   }
   
   .why-choose-header h2 {
@@ -502,6 +537,7 @@ position: absolute;
   
   .why-choose-header p {
     font-size: 15px;
+    text-align: center;
   }
   
   .application-sectors h2 {
@@ -514,6 +550,7 @@ position: absolute;
   
   .section-header p {
     font-size: 16px;
+    text-align: center;
   }
   
 
@@ -557,18 +594,22 @@ position: absolute;
   
   .hero-text h1 {
     font-size: 28px;
+    text-align: center;
   }
   
   .why-choose-header h2 {
     font-size: 28px;
+    text-align: center;
   }
   
   .application-sectors h2 {
     font-size: 28px;
+    text-align: center;
   }
   
   .section-header h1 {
     font-size: 28px;
+    text-align: center;
   }
   
 

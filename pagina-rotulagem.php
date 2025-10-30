@@ -271,18 +271,42 @@
         ?>
 
      <!-- Secção Formulario -->
-     <section id="formulariorotulagem">
-         <?php
-            get_template_part('template-parts/card-formulario', null, array(
-                'titulo' => 'Peça já o seu orçamento personalizado',
-                'texto1' => 'A nossa equipa está pronta para ajudar a encontrar a solução de labelling mais adequada para o seu negócio. Preencha o formulário abaixo e receba uma solução ajustada ás necessidades da sua empresa.',
-                'texto2' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-                'botao' => 'Pedir Orçamento',
-                'select_label' => 'Setor da Empresa',
-                'select_opcoes' => array('Selecione', 'Indústria Alimentar', 'Farmacêutica', 'Retalho', 'Logística')
-            ));
-            ?>
-
+        <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já o seu orçamento personalizado',
+    'texto1' => 'A nossa equipa está pronta para o ajudar a encontrar a solução de labelling mais adequada para o seu negócio.
+Preencha o formulário e receba uma solução ajustada às necessidades da sua empresa.
+',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Pedir Orçamento',
+  )
+);
+?>
+  <!-- FAQ Section - Perguntas frequentes -->
+    <?php
+get_template_part('templates/faq-section', null, [
+  'tag' => 'FAQ',
+  'title' => 'Dúvidas? Nós temos as respostas',
+  'image' => 'assets/img/img-rotulagem/FAQ.png',
+  'questions' => [
+    [
+      'question' => 'Qual o volume de produção recomendado para estas impressoras?',
+      'answer' => 'Temos equipamentos para pequenas produções até ambientes industriais com elevada cadência. A escolha depende da aplicação e tipo de etiqueta.'
+    ],
+    [
+      'question' => ' Que tipos de etiquetas posso imprimir?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ],
+    [
+      'question' => 'Qual o suporte técnico disponível?',
+      'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ]
+  ]
+]);
+?>
  
  </main>
 

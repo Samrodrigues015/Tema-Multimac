@@ -5,7 +5,7 @@ get_header();
 
 <main>
   <!-- Hero Section -->
-  <section class="document-hero-new">
+  <section class="document-hero-new container">
     <div class="hero-inner">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/image1.png" alt="Business Meeting Background" class="hero-bg-image" />
 
@@ -27,7 +27,7 @@ get_header();
       </div>
     </div>
   </section>
-  <div class="mobile-container">
+  <div class="mobile-container container">
     <div class="content-wrapper">
       <h1 class="main-title">
         Consultadoria Multimac: oluções estratégicas para fazer crescer o teu negócio
@@ -193,9 +193,10 @@ get_header();
   <!-- Consulting Services Table -->
   <section class="consulting-services-table">
     <div class="container">
+       <div class="consulting-header">
       <h2>Consultadoria personalizada e baseada em resultados</h2>
       <p class="services-subtitle">As nossas soluções foram desenvolvidas para responder às necessidades específicas de cada empresa, garantindo que cada projeto gere resultados tangíveis.</p>
-
+    </div>
       <div class="services-table">
         <div class="table-header">
           <div class="header-item">Funcionalidade</div>
@@ -301,17 +302,18 @@ get_header();
   ?>
 
   <!-- Contact Form Section -->
-  <section id="formularioconsultoria">
-    <?php
-    get_template_part('template-parts/card-formulario', null, array(
-      'titulo' => 'Peça já a sua consultadoria personalizada',
-      'texto1' => 'Descubra como a Multimac pode transformar o seu negócio. Preencha o formulário e receba uma proposta personalizada.',
-      'texto2' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-      'botao' => 'Receber Orçamento',
-      'select_label' => 'Setor da Empresa',
-      'select_opcoes' => array('Selecione', 'Tecnologia', 'Indústria', 'Serviços')
-    ));
-    ?>
+ <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já a sua consultadoria personalizada',
+    'texto1' => 'Descubra como a Multimac pode transformar o seu negócio. Preencha o formulário e receba uma proposta personalizada.',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Receber Orçamento',
+  )
+);
+?>
 
 
     <!-- Complementary Solutions Section -->
@@ -322,10 +324,7 @@ get_header();
             <h2>Soluções complementares que potenciam a consultadoria</h2>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon8.png" alt="Cibersegurança" />
-              </div>
-              <div class="solution-content">
+              <div class="solution-content-consultoria">
                 <h3>Soluções de Cibersegurança</h3>
                 <p>Proteja os seus dados e operações com as melhores práticas do mercado.</p>
               </div>
@@ -335,10 +334,8 @@ get_header();
             </div>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon9.png" alt="Redes Estruturadas & Computing" />
-              </div>
-              <div class="solution-content">
+
+              <div class="solution-content-consultoria">
                 <h3>Redes Estruturadas & Computing</h3>
                 <p>Modernize a infraestrutura tecnológica da sua empresa.</p>
               </div>
@@ -348,10 +345,7 @@ get_header();
             </div>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon10.png" alt="Soluções Documentais MPS" />
-              </div>
-              <div class="solution-content">
+              <div class="solution-content-consultoria">
                 <h3>Soluções Documentais MPS</h3>
                 <p>Simplifique a gestão documental e aumente a eficiência operacional.</p>
               </div>

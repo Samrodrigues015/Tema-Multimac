@@ -394,7 +394,7 @@ position: absolute;
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   
   .hero-content-rotulagem {
@@ -437,7 +437,7 @@ position: absolute;
   }
   
    .hero-feature-box {
-    width: 140px;
+    width: 120px;
     height: 130px;
     right: 0;
     bottom: 0;
@@ -568,17 +568,17 @@ position: absolute;
   }
   
   .hero-feature-box p {
-    font-size: 16px;
+    font-size: 12px;
   }
   
   .hero-feature-box .feature-highlight {
-    font-size: 22px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   
   .hero-buttons {

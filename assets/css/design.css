@@ -724,7 +724,7 @@ main section {
   width: 100%;
   max-width: 280px;
 }
-.secundary-text:hover {
+.secondary-text:hover {
   background-color: #dc6339;
   color: white;
 }

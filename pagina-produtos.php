@@ -193,29 +193,39 @@
 
 
      <!-- Testemunhos responsivos -->
-     <div class="testemunhos-variant testemunhos-desktop">
-         <?php
-            get_template_part('template-parts/testemunhos-individual', null, array(
-                // usa o mesmo texto que já tens nos args, se aplicável
-                'show_title'    => true,
-                'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-                'card_bg_color' => '#dc6339',
-                // id único para evitar conflito
-                'carousel_id'   => 'carousel-testemunhos-desktop',
-            ));
-            ?>
-     </div>
+  <section class="testimonial-section">
+    
+    <div class="tag">
+        <span class="dot"></span>
+        Testemunhos
+    </div>
 
-     <div class="testemunhos-variant testemunhos-mobile">
-         <?php
-            get_template_part('template-parts/testemunhos', null, array(
-                'show_title'    => true,
-                'paragraph'     => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-                'card_bg_color' => '#ffffff',
-                'carousel_id'   => 'carousel-testemunhos-mobile',
-            ));
-            ?>
-     </div>
+    <div class="testimonial-card">
+        <!-- ALTERAÇÃO IMPORTANTE: A tag <img> foi removida daqui. -->
+        <!-- A imagem é agora definida pelo 'style' inline. Mude este URL para cada testemunho. -->
+         <div 
+            class="testimonial-image" 
+            style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/imagemtestemunhos2.png');">
+        </div>
+        
+        <div class="testimonial-content">
+            <div class="quotes-svg-placeholder">
+                
+<svg width="76" height="57" viewBox="0 0 76 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4441 30.2394L42.4441 57L75.8193 57L75.8193 32.3803L59.8573 -1.04907e-06L42.4441 -2.19352e-06L55.8668 30.2394L42.4441 30.2394ZM-0.000415504 30.2394L-0.000418616 57L33.3748 57L33.3748 32.3803L17.4127 -3.83865e-06L-0.000411987 -4.9831e-06L13.4222 30.2394L-0.000415504 30.2394Z" fill="#FFF5F5" fill-opacity="0.5"/>
+</svg>
+            </div>
+            <p class="testimonial-text">
+                “Desde que adotámos as impressoras Sharp, aumentámos a produtividade em 50%. A flexibilidade de integração com os nossos sistemas foi um ponto-chave para o nosso crescimento.”
+            </p>
+            <div class="testimonial-author">
+                <p class="author-name">Luís Almeida</p>
+                <p class="author-title">Diretor de Operações de uma empresa de logística.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 
 

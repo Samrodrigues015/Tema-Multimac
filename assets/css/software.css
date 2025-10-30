@@ -23,7 +23,13 @@ img {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
+}
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 /* Access Control Hero Section */
@@ -41,21 +47,21 @@ img {
 }
 
 .hero-text h1 {
-    font-family: 'Poppins';
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 120%;
-    color: #1C1C1C;
-    margin-bottom: 20px;
-    letter-spacing: normal;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  letter-spacing: normal;
 }
 .hero-text p {
-    font-family: 'Funnel Display';
-    font-size: 20px;
-    line-height: 31px;
-    font-weight: 400;
-    color: #1C1C1C;
-    margin-bottom: 30px;
+  font-family: "Funnel Display";
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #1c1c1c;
+  margin-bottom: 30px;
 }
 
 .hero-buttons {
@@ -148,19 +154,19 @@ img {
 }
 
 .why-choose-title h2 {
-    font-family: 'Poppins';
-    font-size: 42px;
-    font-weight: 600;
-    color: #1C1C1C;
-    line-height: 120%;
+  font-family: "Poppins";
+  font-size: 42px;
+  font-weight: 600;
+  color: #1c1c1c;
+  line-height: 120%;
 }
 
 .why-choose-subtitle p {
-    font-family: 'Funnel Display';
-    font-size: 20px;
-    color: #1C1C1C;
-    line-height: normal;
-    padding-top: 10px;
+  font-family: "Funnel Display";
+  font-size: 20px;
+  color: #1c1c1c;
+  line-height: normal;
+  padding-top: 10px;
 }
 
 .features-grid {
@@ -188,24 +194,24 @@ img {
 }
 
 .feature-content h3 {
-    font-family: 'Poppins';
-    font-size: 24px;
-    font-weight: 600;
-    color: #1E1E1E;
-    margin-bottom: 20px;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 20px;
 }
 
 .feature-content ul {
   list-style-type: none;
 }
 
-.feature-content li, 
+.feature-content li,
 .feature-content p {
-    font-family: 'Funnel Display';
-    font-size: 18px;
-    color: #1C1C1C;
-    line-height: 25px;
-    font-weight: 400;
+  font-family: "Funnel Display";
+  font-size: 18px;
+  color: #1c1c1c;
+  line-height: 25px;
+  font-weight: 400;
 }
 
 .feature-content ul li {
@@ -216,7 +222,7 @@ img {
 
 .feature-content ul li::before {
   content: "•";
-  color: #1C1C1C;
+  color: #1c1c1c;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -271,17 +277,17 @@ img {
 .equipment-title h2 {
   font-size: 42px;
   font-weight: 600;
-  color: #1C1C1C;
+  color: #1c1c1c;
   margin: 0;
   line-height: 120%;
 }
 
 .equipment-subtitle p {
-    font-size: 20px;
-    font-family: "Funnel Display", sans-serif;
-    color: #1C1C1C;
-    margin: 0;
-    max-width: 500px;
+  font-size: 20px;
+  font-family: "Funnel Display", sans-serif;
+  color: #1c1c1c;
+  margin: 0;
+  max-width: 500px;
 }
 
 /* ----- Grelha de Cards (Desktop) ----- */
@@ -293,13 +299,12 @@ img {
 
 .equipment-card {
   border-radius: 20px;
-  border: 2px solid #DC6339;
+  border: 2px solid #dc6339;
   padding: 30px 24px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  background-color: white; /* Garante fundo branco para todos */
-  min-height: 250px ; /* Altura mínima consistente */
+  min-height: 250px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +314,7 @@ img {
 .equipment-icon {
   width: 60px;
   height: 60px;
-  background-color: #DC6339;
+  background-color: #dc6339;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -318,10 +323,10 @@ img {
 }
 
 .equipment-content h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 9px;
-    line-height: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 9px;
+  line-height: 30px;
 }
 
 .equipment-content p {
@@ -349,28 +354,28 @@ img {
   max-width: 85%;
   font-size: 28px;
   line-height: 120%;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 
 .equipment-card.destaque p {
- max-width: 85%;
+  max-width: 85%;
   font-size: 16px;
   font-family: "Funnel Display", sans-serif;
-  color: #1C1C1C;
+  color: #1c1c1c;
 }
 
 /* Posiciona a seta no canto superior direito */
 .equipment-card.destaque .arrow-icon-wrapper {
- display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 42px;  /* Manter para dar espaço ao ícone */
+  width: 42px; /* Manter para dar espaço ao ícone */
   height: 42px; /* Manter para dar espaço ao ícone */
   color: #dc6339;
-  
+
   /* 2. Removemos APENAS as propriedades visuais do círculo */
   border: none; /* ou border: 0; */
   border-radius: 0;
@@ -387,26 +392,25 @@ img {
   box-shadow: 0 8px 25px rgba(220, 99, 57, 0.4);
 }
 
-
 /* ----- Botão mobile (escondido em desktop) ----- */
 .btn-mobile-pos {
-    display: none;
+  display: none;
 }
 
 /* Section Label */
 .section-label {
-  display: inline-flex; 
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 30px;
   background-color: #fff;
   padding: 8px 16px;
-  border-radius: 25px; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .section-bullet {
-  color: #DC6339;
+  color: #dc6339;
   font-size: 25px;
   font-weight: bold;
   line-height: 1;
@@ -428,17 +432,17 @@ img {
 }
 
 .xopvision-industries-title {
-    font-family: 'Poppins';
-    font-size: 42px;
-    font-weight: 600;
-    color: #1C1C1C;
-    line-height: 128%;
+  font-family: "Poppins";
+  font-size: 42px;
+  font-weight: 600;
+  color: #1c1c1c;
+  line-height: 128%;
 }
 .xopvision-industries-subitle {
-	font-family: 'Funnel Display';
-	font-weight: 400;
-	font-size: 20px;
-	line-height: normal;
+  font-family: "Funnel Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
   margin: 30px 0px;
 }
 
@@ -464,11 +468,11 @@ img {
 }
 
 .xopvision-industry-title {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 120%;
-    color: #1C1C1C;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #1c1c1c;
+  margin-bottom: 20px;
 }
 
 .xopvision-industry-content {
@@ -487,13 +491,14 @@ img {
   display: inline;
 }
 
-.xopvision-scenario-text, .xopvision-benefit-text {
-    font-family: 'Funnel Display';
-    font-weight: 400;
-    color: #1c1c1c;
-    display: inline;
-    font-size: 18px;
-    line-height: 25px;
+.xopvision-scenario-text,
+.xopvision-benefit-text {
+  font-family: "Funnel Display";
+  font-weight: 400;
+  color: #1c1c1c;
+  display: inline;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .xopvision-desktop-button {
@@ -532,20 +537,20 @@ img {
 }
 
 .final-cta-text h2 {
-    font-family: 'Poppins';
-    font-size: 42px;
-    font-weight: 600;
-    color: #1C1C1C;
-    margin-bottom: 20px;
-    line-height: 120%;
+  font-family: "Poppins";
+  font-size: 42px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  line-height: 120%;
 }
 
 .final-cta-text p {
-    font-family: 'Funnel Display';
-    font-size: 20px;
-    color: #1c1c1c;
-    line-height: 30px;
-    margin-bottom: 30px;
+  font-family: "Funnel Display";
+  font-size: 20px;
+  color: #1c1c1c;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .final-cta-buttons {
   display: flex;
@@ -603,6 +608,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   .access-control-hero,
   .why-choose-section,
   .technology-section,
@@ -671,9 +680,9 @@ img {
   }
   /* --- Secção Business Solutions --- */
   .xopvision-industries-subitle {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .xopvision-industries-container {
     padding: 30px 20px;
   }
@@ -752,15 +761,6 @@ img {
     background-color: #dc6339;
   }
 
-  /* Add scroll indicator */
-  .xopvision-scroll-indicator {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-    padding: 0 20px;
-  }
-
   .xopvision-scroll-dot {
     width: 8px;
     height: 8px;
@@ -819,7 +819,7 @@ img {
   .hero-text h1 {
     text-align: center;
     align-items: center;
-	font-size: 28px;
+    font-size: 28px;
   }
 
   .hero-text p {
@@ -844,7 +844,7 @@ img {
   /* ----- Transformar a grelha em Carrossel ----- */
   .equipment-grid {
     display: flex;
-    flex-wrap: nowrap;      /* A CORREÇÃO CRÍTICA: Força uma única linha */
+    flex-wrap: nowrap; /* A CORREÇÃO CRÍTICA: Força uma única linha */
     overflow-x: auto;
     gap: 16px;
     scroll-snap-type: x mandatory;
@@ -856,10 +856,10 @@ img {
   .equipment-grid::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* ----- Estilo dos cards no carrossel ----- */
   .equipment-grid .equipment-card {
-    flex: 0 0 90%;          /* Cada card ocupa 90% da largura */
+    flex: 0 0 90%; /* Cada card ocupa 90% da largura */
     scroll-snap-align: center;
     padding: 20px 15px;
   }
@@ -880,7 +880,7 @@ img {
   .equipment-grid .equipment-card.destaque {
     display: none;
   }
-  
+
   /* ----- Mostra e estiliza o botão mobile ----- */
   .btn-mobile-pos {
     display: block;

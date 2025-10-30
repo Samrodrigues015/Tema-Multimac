@@ -149,6 +149,7 @@ p {
   margin: 0 auto;
   position: relative;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 /* Container de texto centralizado */
@@ -398,8 +399,9 @@ cite strong {
 
 /* Industries Section - Grid de indústrias */
 .xopvision-industries-container {
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 60px 100px;
 }
 
 .xopvision-industries-title {
@@ -936,7 +938,6 @@ main section {
     max-width: 100%;
     font-size: 28px;
     padding: 0;
-    line-height: normal;
     text-align: center;
   }
   .xop-question p {
@@ -1055,11 +1056,12 @@ main section {
   }
 
   .description-paragraph {
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .btn-style {
     padding: 10px 20px;
-    font-size: 0.9rem;
+    font-size: 18px;
   }
 }

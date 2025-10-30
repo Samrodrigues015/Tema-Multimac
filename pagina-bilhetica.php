@@ -257,7 +257,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Venda de bilhetes online e offline com controlo total de lotação e emissão de passes personalizados.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -273,7 +272,6 @@ get_header();
                         <span class="xopvision-benefit-text">Personalização de bilhetes e programação de reservas por horários para evitar superlotação.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -289,7 +287,6 @@ get_header();
                         <span class="xopvision-benefit-text">Venda multicanal e gestão centralizada de todos os acessos e vendas.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -305,7 +302,6 @@ get_header();
                         <span class="xopvision-benefit-text">Integração com quiosques e portais online, garantindo uma experiência de compra fluida.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
         </div>
 

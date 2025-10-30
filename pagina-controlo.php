@@ -14,7 +14,7 @@ get_header();
                     <p>Automatiza e otimiza a gestão de entradas, saídas e horários com soluções tecnológicas avançadas.
                         Mais controlo, menos preocupações.</p>
                     <div class="hero-buttons">
-                        <a href="#formulariocontrolo" class="hero-cta-primary">Peça um Orçamento</a>
+                        <a href="\pagina-produtos\#formularioprodutos" class="hero-cta-primary">Peça um Orçamento</a>
                         <a href="#formulariocontrolo" class="hero-cta-secondary">Fale com um Especialista</a>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ get_header();
 
                 <!-- Cartão do Call to Action -->
                 <div class="cta-card">
-                    <a href="#formulariocontrolo" class="cta-button">
+                    <a href="\pagina-produtos\#formularioprodutos" class="cta-button">
                         <span>Solicite o Seu Orçamento</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
                             <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465"
@@ -272,6 +272,7 @@ get_template_part(
     'texto1' => 'Está na hora de modernizar a segurança e a gestão de horários da sua empresa. Fale com a nossa equipa e descubra como as nossas soluções podem transformar o seu negócio.',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Enviar Solicitação',
+    'id'     => 'formulariocontrolo',
   )
 );
 ?>
@@ -289,7 +290,7 @@ get_template_part(
                             segurança máxima, eficiência operacional e tranquilidade no dia a dia. A tecnologia que protege
                             e organiza o seu negócio começa aqui.</p>
                         <div class="final-cta-buttons">
-                            <a href="#formulariocontrolo" class="final-cta-primary">Peça um Orçamento</a>
+                            <a href="\pagina-produtos\#formularioprodutos" class="final-cta-primary">Peça um Orçamento</a>
                             <a href="#formulariocontrolo" class="final-cta-secondary">Fale com um Especialista</a>
                         </div>
                     </div>

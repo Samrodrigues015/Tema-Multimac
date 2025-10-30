@@ -112,9 +112,13 @@ function meu_tema_scripts()
   if (is_page_template('pagina-design.php')) {
     wp_enqueue_style('multimac-design-css', get_template_directory_uri() . '/assets/css/design.css', array('multimac-main-style'), $theme_version);
   }
-  // 26. Página comsultadoria
+  // 26. Página consultadoria
   if (is_page_template('pagina-consultadoria.php')) {
     wp_enqueue_style('multimac-consultadoria-css', get_template_directory_uri() . '/assets/css/consultadoria.css', array('multimac-main-style'), $theme_version);
+  }
+  // 27. Página Cibersegurnça
+  if (is_page_template('pagina-ciberseguranca.php')) {
+    wp_enqueue_style('multimac-ciberseguranca-css', get_template_directory_uri() . '/assets/css/ciberseguranca.css', array('multimac-main-style'), $theme_version);
   }
   // . Formulário de Orçamento
   wp_enqueue_style(

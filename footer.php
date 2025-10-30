@@ -19,10 +19,10 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/LOGO-footer.png" alt="Multimac Logo" width="200" height="50">
       </div>
       <div class="social-icons">
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/multimac.hitoinnovation/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/multimac-hito-innovation/?originalSubdomain=pt" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@multimachitoinnovation" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/Multimacportugal/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
       </div>
     </div>
 
@@ -66,19 +66,19 @@
 
     <!-- Navigation Sections -->
     <div class="nav-sections">
-      <a href="<?php echo site_url('/produtos'); ?>" class="nav-section">
+      <a href="<?php echo site_url('/pagina-produtos'); ?>" class="nav-section">
         <h3>Produtos</h3>
       </a>
-      <a href="<?php echo site_url('/servico'); ?>" class="nav-section">
+      <a href="<?php echo site_url('/pagina-servico-e-solucoes'); ?>" class="nav-section">
         <h3>Serviços e Soluções</h3>
       </a>
-      <a href="<?php echo site_url('/sobre'); ?>" class="nav-section">
+      <a href="<?php echo site_url('/pagina-sobre/'); ?>" class="nav-section">
         <h3>Sobre Nós</h3>
       </a>
       <a href="<?php echo site_url('/noticias'); ?>" class="nav-section">
         <h3>Notícias</h3>
       </a>
-      <a href="<?php echo site_url('/suporte'); ?>" class="nav-section">
+      <a href="<?php echo site_url('/pagina-suporte'); ?>" class="nav-section">
         <h3>Suporte Técnico</h3>
       </a>
     </div>

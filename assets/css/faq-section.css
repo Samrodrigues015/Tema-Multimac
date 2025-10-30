@@ -2,11 +2,15 @@
 .faq-section {
   max-width: 1500px;
   margin: 60px auto;
-  padding: 0 20px;
-  font-family: "Inter", sans-serif;
-  color: #1a1a1a;
+  padding: 0 100px;
+  color: #1c1c1c;
 }
-
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .faq-section {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+}
 .faq-tag {
   display: flex;
   align-items: center;
@@ -28,6 +32,7 @@
 }
 
 .faq-title {
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
   font-weight: 600;
   line-height: 120%;
@@ -75,6 +80,7 @@
 }
 
 .faq-item h3 {
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 45px;
@@ -82,6 +88,7 @@
 }
 
 .faq-item p {
+  font-family: "Funnel Display", sans-serif;
   font-size: 18px;
   line-height: 28px;
   margin: 0;
@@ -129,6 +136,9 @@
   font-weight: 600;
   line-height: 45px;
   margin: 0;
+}
+.faq-section {
+  padding: 0 20px;
 }
 }
 

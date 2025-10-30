@@ -20,7 +20,7 @@ get_header();
         </div>
         <a href="#formulariobilhetica" class="link-flutuante">
             <div class="floating-container-two">
-                <span>Solicite um Orçamento</span>
+               <span>Solicite um Orçamento</span>
             </div>
         </a>
     </div>
@@ -330,6 +330,7 @@ get_header();
             'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Receber Orçamento',
+            'id'     => 'formulariobilhetica'
         )
     );
     ?>

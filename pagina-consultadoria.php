@@ -5,7 +5,7 @@ get_header();
 
 <main>
   <!-- Hero Section -->
-  <section class="document-hero-new">
+  <section class="document-hero-new container">
     <div class="hero-inner">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/image1.png" alt="Business Meeting Background" class="hero-bg-image" />
 
@@ -27,10 +27,10 @@ get_header();
       </div>
     </div>
   </section>
-  <div class="mobile-container">
+  <div class="mobile-container container">
     <div class="content-wrapper">
       <h1 class="main-title">
-        Consultadoria Multimac: oluções estratégicas para fazer crescer o teu negócio
+        Consultadoria Multimac: soluções estratégicas para fazer crescer o teu negócio
       </h1>
 
       <p class="subtitle">
@@ -49,7 +49,7 @@ get_header();
           class="overlay-image">
       </div>
 
-      <a href="#formularioconsultoria" class="cta-button">
+      <a href="\pagina-produtos\#formularioprodutos" class="cta-button">
         Solicite um Orçamento
       </a>
 
@@ -177,7 +177,7 @@ get_header();
 
         <!-- Cartão do Call to Action -->
         <div class="cta-card">
-          <a href="#formularioconsultoria" class="cta-button-why">
+          <a href="\pagina-produtos\#formularioprodutos" class="cta-button-why">
             <span>Solicite o Seu Orçamento</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
               <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465"
@@ -193,9 +193,10 @@ get_header();
   <!-- Consulting Services Table -->
   <section class="consulting-services-table">
     <div class="container">
+       <div class="consulting-header">
       <h2>Consultadoria personalizada e baseada em resultados</h2>
       <p class="services-subtitle">As nossas soluções foram desenvolvidas para responder às necessidades específicas de cada empresa, garantindo que cada projeto gere resultados tangíveis.</p>
-
+    </div>
       <div class="services-table">
         <div class="table-header">
           <div class="header-item">Funcionalidade</div>
@@ -301,17 +302,19 @@ get_header();
   ?>
 
   <!-- Contact Form Section -->
-  <section id="formularioconsultoria">
-    <?php
-    get_template_part('template-parts/card-formulario', null, array(
-      'titulo' => 'Peça já a sua consultadoria personalizada',
-      'texto1' => 'Descubra como a Multimac pode transformar o seu negócio. Preencha o formulário e receba uma proposta personalizada.',
-      'texto2' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-      'botao' => 'Receber Orçamento',
-      'select_label' => 'Setor da Empresa',
-      'select_opcoes' => array('Selecione', 'Tecnologia', 'Indústria', 'Serviços')
-    ));
-    ?>
+ <?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Peça já a sua consultadoria personalizada',
+    'texto1' => 'Descubra como a Multimac pode transformar o seu negócio. Preencha o formulário e receba uma proposta personalizada.',
+    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+    'botao'  => 'Receber Orçamento',
+    'id'     => 'formularioconsultoria'
+  )
+);
+?>
 
 
     <!-- Complementary Solutions Section -->
@@ -322,41 +325,33 @@ get_header();
             <h2>Soluções complementares que potenciam a consultadoria</h2>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon8.png" alt="Cibersegurança" />
-              </div>
-              <div class="solution-content">
+              <div class="solution-content-consultoria">
                 <h3>Soluções de Cibersegurança</h3>
                 <p>Proteja os seus dados e operações com as melhores práticas do mercado.</p>
               </div>
               <div class="solution-arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" />
+                <a href="pagina-ciberseguranca"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" /></a>
               </div>
             </div>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon9.png" alt="Redes Estruturadas & Computing" />
-              </div>
-              <div class="solution-content">
+
+              <div class="solution-content-consultoria">
                 <h3>Redes Estruturadas & Computing</h3>
                 <p>Modernize a infraestrutura tecnológica da sua empresa.</p>
               </div>
               <div class="solution-arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" />
+                <a href="pagina-redes-e-computing"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" /></a>
               </div>
             </div>
 
             <div class="solution-item">
-              <div class="solution-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/icon10.png" alt="Soluções Documentais MPS" />
-              </div>
-              <div class="solution-content">
+              <div class="solution-content-consultoria">
                 <h3>Soluções Documentais MPS</h3>
                 <p>Simplifique a gestão documental e aumente a eficiência operacional.</p>
               </div>
               <div class="solution-arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" />
+                <a href="pagina-solucoes-documentais"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-consultadoria/iconarrow.png" alt="Saiba mais" /></a>
               </div>
             </div>
           </div>
@@ -383,7 +378,7 @@ get_header();
             <h2>Transforme o seu negócio com a consultadoria da Multimac</h2>
             <p>Identificamos os desafios do seu negócio e entregamos soluções que geram resultados. O próximo passo rumo ao crescimento sustentável começa connosco.</p>
             <div class="final-cta-buttons">
-              <a href="#formularioconsultoria" class="final-cta-primary">Solicitar Proposta</a>
+              <a href="\pagina-produtos\#formularioprodutos" class="final-cta-primary">Solicitar Proposta</a>
               <a href="#formularioconsultoria" class="final-cta-secondary">Fale com um Especialista</a>
             </div>
           </div>

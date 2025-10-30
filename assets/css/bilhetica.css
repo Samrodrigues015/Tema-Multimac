@@ -270,25 +270,36 @@ p {
   padding: 20px;
 }
   .xopvision-industries-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 0 20px;
-    margin-bottom: 40px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+        /* Transforma o grid num container de scroll horizontal */
+        display: flex;
+        overflow-x: scroll; /* Permite o deslize horizontal */
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory; /* Garante que cada cartão encaixa */
+        -webkit-overflow-scrolling: touch; /* Melhor scroll em iOS */
+        padding-bottom: 20px; /* Espaço para o indicador de scroll se estiver por baixo */
+    }
 
-  .xopvision-industries-grid::-webkit-scrollbar {
-    display: none;
-  }
+    .xopvision-industry-card {
+        /* Define a largura de cada cartão para ocupar quase todo o ecrã */
+        min-width: 85%; /* Exemplo: 85% da largura da viewport */
+        margin-right: 20px; /* Espaço entre os cartões */
+        scroll-snap-align: start; /* O cartão encaixa no início da viewport */
+        flex-shrink: 0; /* Impede que os cartões encolham */
+    }
 
-  .xopvision-industry-image {
-    height: 250px;
-    border-radius: 25px;
-  }
+    /* O último cartão pode precisar de um padding extra para caber no centro */
+    .xopvision-industries-grid > .xopvision-industry-card:last-child {
+        margin-right: calc(100% - 85% - 20px); /* Ajuste para centralizar o último item */
+    }
+
+    /* Esconder o botão de desktop e mostrar o de mobile (se não for feito no HTML/PHP) */
+    .xopvision-desktop-button {
+        display: none !important;
+    }
+
+    .xopvision-mobile-button {
+        display: block !important;
+    }
 
   .xopvision-industry-title {
     font-size: 22px;
@@ -677,7 +688,7 @@ cite strong {
 .xopvision-industries-container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -721,7 +732,7 @@ cite strong {
 .xopvision-industry-card {
   background: white;
   border-radius: 20px;
-  padding:  0 20px;
+  padding:  30px 20px;
   min-width: 300px;
 }
 

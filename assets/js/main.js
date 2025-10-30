@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hiddenCards.forEach((card) => {
         card.style.display = "flex";
       });
-      toggleButton.textContent = "Ver menos produtos";
+      toggleButton.textContent = "Fechar lista";
       isExpanded = true;
     } else {
       // Esconder novamente
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hiddenSolutionCards.forEach((card) => {
         card.style.display = "flex";
       });
-      toggleButtonSolutions.textContent = "Ver menos soluções";
+      toggleButtonSolutions.textContent = "Fechar Lista";
       solutionsExpanded = true;
     } else {
       // Esconder de novo
@@ -266,3 +266,4 @@ document.querySelectorAll('.tech-item').forEach(item => {
     item.classList.toggle('active');
   });
 });
+

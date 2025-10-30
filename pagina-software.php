@@ -220,7 +220,7 @@ get_header();
 
             <div class="equipment-card destaque">
     <!-- O texto agora está diretamente dentro do card -->
-    <h3>Descubra mais</h3>
+    <a href="#formulariosoftware"><h3>Descubra mais</h3></a>
     <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
     
     <!-- E aqui está o contentor da seta, para o podermos posicionar -->
@@ -231,7 +231,7 @@ get_header();
     </div>
 </div>
         </div>
-        <a href="#" class="btn-mobile-pos">Descubra Mais</a>
+        <a href="#formulariosoftware" class="btn-mobile-pos">Descubra Mais</a>
     </div>
 </section>
 
@@ -289,14 +289,6 @@ get_header();
                 </div>
             </div>
 
-
-            <div class="xopvision-scroll-indicator xopvision-mobile-only" id="xopvisionScrollIndicator">
-                <div class="xopvision-scroll-dot active"></div>
-                <div class="xopvision-scroll-dot"></div>
-                <div class="xopvision-scroll-dot"></div>
-                <div class="xopvision-scroll-dot"></div>
-            </div>
-
             <button class="xopvision-desktop-button" style="display: none;" id="xopvisionDesktopButton">Ver todos os produtos</button>
         </div>
     </div>
@@ -311,6 +303,7 @@ get_template_part(
     'texto1' => 'Está na hora de dar ao seu negócio as ferramentas que ele merece. Preencha o formulário abaixo e descubra como os Terminais POS da Multimac podem transformar as suas operações.',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Enviar Solicitação',
+    'id'     => 'formulariosoftware'
   )
 );
 ?>

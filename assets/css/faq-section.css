@@ -2,7 +2,6 @@
 .faq-section {
   max-width: 1500px;
   margin: 60px auto;
-  padding: 0 100px;
   color: #1c1c1c;
 }
 @media (max-width: 1300px) and (min-width: 1200px) {

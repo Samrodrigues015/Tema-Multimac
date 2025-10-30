@@ -149,10 +149,11 @@ font-size: 22px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 10px;
     border-radius: 30px;
     box-sizing: border-box;
     min-width: 0;
+    font-size: 18px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -160,9 +161,9 @@ font-size: 22px;
 
 
 .hero-buttons {
- grid-area: buttons; /* Assign buttons to their own grid area */
-  align-self: start; /* Pushes buttons to the top of their grid cell */
-  margin-top: 32px; /* Creates space between text and buttons */
+ grid-area: buttons; 
+  align-self: start;
+  margin-top: 32px; 
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -348,20 +349,13 @@ color: #1e1e1e;
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid #1e1e1e; /* Borda mais fina e cinzenta */
+  border: 1px solid #1e1e1e; 
   border-radius: 50%;
   color: #1e1e1e;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
-/* ADICIONADO: Efeito de hover para o novo ícone */
-.arrow-icon:hover {
-  background-color: #1e1e1e;
-  border-color: #1e1e1e;
-  color: #1e1e1e;
-  transform: scale(1.05); /* Um pequeno efeito de zoom */
-}
 /* Industry Solutions Section */
 .industry-solutions {
   padding: 80px 0;
@@ -811,7 +805,7 @@ color: white;
   }
 
   .hero-right p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .section-title {

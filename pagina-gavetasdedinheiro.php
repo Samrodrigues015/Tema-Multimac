@@ -90,15 +90,14 @@ get_header();
             </ul>
           </div>
         </div>
-        <div class="benefit-card only-button">
-          <a href="#formulariogavetas" class="cta-big-btn">
-            <svg class="cta-arrow" width="38" height="38" viewBox="0 0 38 38">
-              <line x1="25" y1="13" x2="13" y2="25" stroke="#191919" stroke-width="2" />
-              <polyline points="13,13 25,13 25,25" fill="none" stroke="#191919" stroke-width="2" />
-            </svg>
-            <span>Solicite o Seu Orçamento</span>
-          </a>
-        </div>
+          <div class="cta-card">
+                    <a href="#formulariopaineis" class="cta-button">
+                        <span>Solicite o Seu Orçamento</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
+                            <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
       </div>
     </div>
   </section>
@@ -163,13 +162,14 @@ get_header();
 
       'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
       'botao'  => 'Enviar Solicitação',
+      'id'     => 'formulariogavetas'
     )
   );
   ?>
 
 
   <!-- MODERNIZE -->
-  <section class="modernize-grid">
+  <section class="modernize-grid container">
     <div class="modernize-row">
       <div class="modernize-img-wrapper">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_gavetas-de-dinheiro/modernize1.png" alt="Atendimento moderno" />

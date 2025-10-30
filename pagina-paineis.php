@@ -113,14 +113,7 @@ get_header();
         </div>
     </section>
     <!-- Testimonial Section -->
-    <?php
-  get_template_part('template-parts/testemunhos', null, array(
-    'show_title' => true,
-    'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-    'card_bg_color' => '#dc6339',
-  ));
 
-  ?>
 
     <!-- Advanced Technology Section -->
     <section class="solar-advanced-solutions">
@@ -222,6 +215,7 @@ get_template_part(
     'titulo' => 'Peça Já o Seu Orçamento e Transforme a Sua Energia',
     'texto1' => 'Está na hora de adotar uma solução que poupa dinheiro e ajuda o planeta. Fale com a nossa equipa de especialistas e receba uma proposta personalizada para as suas necessidades de energia solar.',
     'botao'  => 'Enviar Solicitação',
+    'id'     => 'formulariopaineis',
   )
 );
 ?>

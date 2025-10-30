@@ -48,13 +48,13 @@ get_header();
                     class="overlay-image">
             </div>
        
-            <button class="cta-button">
+            <a href="#formulariodesign"><button class="cta-button">
                 Solicite um Orçamento
-            </button>
+            </button></a>
 
-            <button class="secondary-text">
+            <a href="\paginas-produtos\#formularioprodutos"><button class="secondary-text">
                 Fale com um especialista
-            </button>
+            </button></a>
      
         </div>
     </div>
@@ -187,7 +187,6 @@ get_header();
                         <span class="xopvision-benefit-text">Criação de uma identidade visual profissional que transmite credibilidade e atrai novos clientes.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -203,7 +202,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Redesenho da identidade visual, website e comunicação digital para refletir inovação e relevância.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -219,7 +217,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Comunicação visual clara e atrativa para envolver o público e destacar os valores da organização.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -235,7 +232,6 @@ get_header();
                         <span class="xopvision-benefit-text">Campanhas visuais consistentes que captam a atenção do cliente e aumentam as conversões.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
         </div>
 
@@ -260,6 +256,7 @@ get_header();
             'texto1' => 'Fale connosco para criar ou modernizar a imagem da sua empresa. Desde o logotipo até campanhas digitais, a nossa equipa de designers está pronta para ajudá-lo a destacar-se no mercado.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Receber Orçamento',
+            'id'     => 'formulariodesign'
         )
     );
     ?>
@@ -277,7 +274,7 @@ get_header();
                     <a href="#formulariodesign" class="btn-style primary-btn">
                         Peça um Orçamento
                     </a>
-                    <a href="#formulariodesign" class="btn-style secondary-btn">
+                    <a href="\pagina-produtos\#formularioprodutos" class="btn-style secondary-btn">
                         Fale com um especialista
                     </a>
                 </div>

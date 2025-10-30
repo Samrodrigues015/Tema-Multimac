@@ -52,6 +52,7 @@ p {
   max-width: 1307px;
   margin: 0 auto;
   position: relative;
+  margin-top: 30px;
 }
 
 /* Container de texto centralizado */
@@ -767,17 +768,15 @@ p {
 }
 
 .final-cta-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #333;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 20px;
-  line-height: 1.2;
 }
 
 .final-cta-text p {
   font-size: 18px;
-  color: #666;
-  line-height: 1.6;
+  line-height: 120%;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -794,8 +793,8 @@ p {
   border: none;
   padding: 15px 25px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -813,8 +812,8 @@ p {
   color: #333;
   padding: 13px 25px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   background: #e2e2e2;

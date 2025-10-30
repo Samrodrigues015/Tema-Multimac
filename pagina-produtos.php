@@ -195,14 +195,9 @@
      <!-- Testemunhos responsivos -->
   <section class="testimonial-section">
     
-    <div class="tag">
-        <span class="dot"></span>
-        Testemunhos
-    </div>
+    <span class="section-tag"><i class="fa-solid fa-circle"></i> Testemunhos</span>
 
     <div class="testimonial-card">
-        <!-- ALTERAÇÃO IMPORTANTE: A tag <img> foi removida daqui. -->
-        <!-- A imagem é agora definida pelo 'style' inline. Mude este URL para cada testemunho. -->
          <div 
             class="testimonial-image" 
             style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/imagemtestemunhos2.png');">

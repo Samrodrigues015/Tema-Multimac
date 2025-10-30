@@ -170,7 +170,7 @@ p {
 .feature-card {
   display: flex;
   flex-direction: column; 
-  align-items: start 
+  align-items: start; 
   text-align: start;
   padding: 30px 20px;
   border-bottom: 1px solid #dc6339;
@@ -240,22 +240,29 @@ p {
 /* Testimonial Section */
 .testimonial {
   padding: 60px 0;
-  background: #f2f2f2;
+  background: #f7f7f7;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
 }
 
 .section-tag {
-  border-radius: 20px;
-  padding: 10px 20px;
-  background-color: #fff;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.section-tag i {
-  font-size: 0.8em;
-  color: #dc6339;
-  text-align: center;
-  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 6px 15px;
+  border-radius: 48px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  gap: 10px;
+	
+	font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
 }
 
 .testimonial-title {
@@ -269,12 +276,11 @@ p {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  background: linear-gradient(90deg, #4b183a 0%, #1a225a 100%);
-  border-radius: 40px;
-  box-shadow: 0 8px 32px rgba(20, 20, 40, 0.1);
+  background: linear-gradient(90deg, #690207 0%, #121054 100%);
+  border-radius: 30px;
+  box-shadow: 0 8px 32px rgba(20,20,40,0.10);
   overflow: hidden;
   min-height: 320px;
-  min-width: 1200px;
   margin-top: 0;
 }
 
@@ -284,7 +290,7 @@ p {
   min-height: 320px;
   display: block;
   background: #232232;
-  border-radius: 40px 0 0 40px;
+  border-radius: 30px;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -296,7 +302,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 40px 0 0 40px;
+  border-radius: 30px;
   box-shadow: none;
   border: none;
   display: block;
@@ -325,27 +331,30 @@ p {
 }
 
 .testimonial-quote blockquote {
-  font-size: 1.5rem;
-  font-style: normal;
-  margin-bottom: 32px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #fff;
-  quotes: none;
+   font-family: 'Funnel Display', sans-serif; 
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    margin: 0;
+    max-width: 80%;
 }
 
 .testimonial-client-info h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0 0 4px 0;
+  margin-top: 40px;
+  color: #FFFFFF;
 }
 
 .testimonial-client-info p {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin: 0;
-  color: #e0e0e0;
+   font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.85;
+    color: #FFFFFF;
 }
 
 /* Advanced Technology Section */

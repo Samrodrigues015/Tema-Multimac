@@ -57,10 +57,10 @@
                 <div class="mega-dropdown" role="menu">
                   <div class="mega-dropdown__grid">
                     <!-- Produtos listados -->
-                    <a href="parceriassharp" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
+                    <a href="/pagina-produtos" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
                     <a href="/pagina-energia-renovaveis/" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
                     <a href="/pagina-solucoes-visuais/" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais Multimac</span></a>
-                    <a href="videovigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
+                    <a href="/pagina-videovigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
                     <a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>TI & Computing Multimac</span></a>
                     <a href="/pagina-controlo-de-acessos/" class="mega-dropdown__item"><i class="fa-solid fa-id-card mega-dropdown__icon"></i><span>Controlo de Acessos e Gestão de Assiduidades</span></a>
                     <a href="/pagina-pos-software/" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação Multimac</span></a>
@@ -77,9 +77,9 @@
                 </a>
                 <div class="mega-dropdown" role="menu">
                   <div class="mega-dropdown__grid">
-                    <a href="suporte" class="mega-dropdown__item"><i class="fa-solid fa-cogs mega-dropdown__icon"></i><span>Manutenção e Suporte Técnico</span></a>
-                    <a href="solucoes" class="mega-dropdown__item"><i class="fa-solid fa-cloud mega-dropdown__icon"></i><span>Soluções Cloud</span></a>
-                    <a href="computing" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura de Rede</span></a>
+                    <a href="/pagina-suporte" class="mega-dropdown__item"><i class="fa-solid fa-cogs mega-dropdown__icon"></i><span>Manutenção e Suporte Técnico</span></a>
+                    <a href="/pagina-servico-e-solucoes" class="mega-dropdown__item"><i class="fa-solid fa-cloud mega-dropdown__icon"></i><span>Soluções Cloud</span></a>
+                    <a href="pagina-redes-e-computing" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura de Rede</span></a>
                     <a href="/pagina-ciberseguranca/" class="mega-dropdown__item"><i class="fa-solid fa-lock mega-dropdown__icon"></i><span>Segurança de Dados</span></a>
                     <a href="/pagina-gestao-de-atendimento/" class="mega-dropdown__item"><i class="fa-solid fa-file-alt mega-dropdown__icon"></i><span>Gestão Documental</span></a>
                   </div>
@@ -87,13 +87,13 @@
               </li>
               <li class="nav__item"><a href="pagina-sobre" class="nav__link">Sobre nós</a></li>
               <li class="nav__item"><a href="noticias" class="nav__link">Notícias</a></li>
-              <li class="nav__item mobile-assistence"><a href="suporte" class="nav__link">Assistência Técnica</a></li>
+              <li class="nav__item mobile-assistence"><a href="/pagina-suporte" class="nav__link">Assistência Técnica</a></li>
             </ul>
           </div>
         </nav>
 
         <button class="botao-assistencia-tecnica">
-          <a href="suporte"> <i class="fa-solid fa-headset"></i>
+          <a href="/pagina-suporte"> <i class="fa-solid fa-headset"></i>
             <span>Assistência Técnica</span></a>
         </button>
 

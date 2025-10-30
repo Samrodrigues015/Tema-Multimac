@@ -155,7 +155,7 @@ main section {
   border: 2px solid #dc6339;
 }
 .hero-button-container a.main-button-styles.secondary-button:visited {
-  color: #000;
+  color: none;
 }
 .dark-button {
   color: #fff;
@@ -679,7 +679,7 @@ main section {
 }
 /* RESPONSIVIDADE */
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .hero-section {
     padding: 20px 0;
   }

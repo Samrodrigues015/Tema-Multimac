@@ -11,8 +11,7 @@ get_header();
       <div class="hero-square hero-square--tl"></div>
       <div class="hero-square hero-square--br"></div>
       <div class="hero-overlay">
-        <a href="#orcamento" class="hero-badge">Solicite um Orçamento</a>
-
+        <a href="\pagina-produtos\#formularioprodutos" class="hero-badge">Solicite um Orçamento</a>
         <div class="hero-text">
           <h1>Evita Perdas e Paragens<br>
             com as Soluções de Cibersegurança da Multimac</h1>
@@ -48,11 +47,11 @@ get_header();
           class="overlay-image">
       </div>
       <div class="cta-container">
-        <a href="#orcamento" class="cta-button-mobile">
+        <a href="\pagina-produtos\#formularioprodutos" class="cta-button-mobile">
           Solicite um Orçamento
         </a>
 
-        <a href="#orcamento" class="secondary-text">
+        <a href="#formulariociberseguranca" class="secondary-text">
           Fale com um especialista
         </a>
       </div>
@@ -141,7 +140,7 @@ get_header();
 
         <!-- Botão CTA destacado -->
         <div class="cta-card">
-          <a href="#orcamento" class="cta-button">
+          <a href="\pagina-produtos\#formularioprodutos" class="cta-button">
             Solicite o Seu Orçamento
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-servico/vector-seta.png" alt="vector-seta">
           </a>
@@ -391,7 +390,6 @@ get_template_part('templates/faq-section', null, [
 ]);
 ?>
   <!-- Contact Form Section -->
-   <!-- Secção Formulario -->
     <?php
 get_template_part(
   'templates/card-formulario',
@@ -401,6 +399,7 @@ get_template_part(
     'texto1' => 'Queres saber como as soluções da Multimac podem proteger a tua empresa? Preenche o formulário abaixo e recebe uma análise personalizada.',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Receber Orçamento',
+    'id'     => 'formulariociberseguranca'
   )
 );
 ?>
@@ -414,8 +413,8 @@ get_template_part(
             <h2>Protege o futuro da tua empresa com a Multimac</h2>
             <p>Com as soluções de cibersegurança da Multimac, com tecnologia Check Point, podes operar com confiança, sabendo que os teus dados e sistemas estão protegidos.</p>
             <div class="protect-future-buttons">
-              <a href="#orcamento" class="btn-primary">Solicitar Diagnóstico</a>
-              <a href="#orcamento" class="btn-secondary">Fale com um Especialista</a>
+              <a href="\pagina-produtos\#formularioprodutos" class="btn-primary">Solicitar Diagnóstico</a>
+              <a href="#formulariociberseguranca" class="btn-secondary">Fale com um Especialista</a>
             </div>
           </div>
           <div class="protect-future-image">

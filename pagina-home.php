@@ -18,10 +18,10 @@ get_header();
           produtividade.
         </p>
         <div class="hero-button-container">
-          <a href="servico" class="main-button-styles primary-button">
+          <a href="#solucoes" class="main-button-styles primary-button">
             Veja nossas soluções
           </a>
-          <a href="<?php echo site_url('/produtos/#formularioprodutos'); ?>" class="main-button-styles secondary-button">
+          <a href="<?php echo site_url('/pagina-produtos/#formularioprodutos'); ?>" class="main-button-styles secondary-button">
             Fale com um especialista
           </a>
 
@@ -55,7 +55,7 @@ get_header();
 
 
     <!-- SEÇÃO DE PRODUTOS -->
-    <section class="products-section">
+    <section  id="solucoes" class="products-section">
       <div class="container">
         <h2>Produtos e soluções líderes no mercado</h2>
         <div class="products-container">
@@ -67,7 +67,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Soluções Visuais (Digital Signage)</h3>
-                <a href="solucoes" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-solucoes-visuais" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
 
@@ -78,7 +78,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Impressoras e Multifunções</h3>
-                <a href="parceriassharp" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-produtos" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>P.O.S e Sistemas de Controlo</h3>
-                <a href="software" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-pos-software" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Gaveta Inteligente de Dinheiro</h3>
-                <a href="gavetasdedinheiro" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-gavetas-de-dinheiro" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <!-- Card 5 -->
@@ -110,7 +110,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Energias Renováveis</h3>
-                <a href="paineis" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-energia-renovaveis" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <!-- Card 6 -->
@@ -120,7 +120,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Videovigilância</h3>
-                <a href="videovigilancia" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-videovigilancia" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <!-- Card 7 -->
@@ -130,7 +130,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Controlo de acessos</h3>
-                <a href="controlo" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-controlo-de-acessos" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <!-- Card 8 -->
@@ -140,7 +140,7 @@ get_header();
               </div>
               <div class="product-info">
                 <h3>Encadernação e Personalização</h3>
-                <a href="unibind" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/pagina-unibind" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -192,7 +192,7 @@ get_header();
               público e impulsione o seu negócio.
             </p>
             <button class="discover-button">
-              <a href="solucoes">Descubra mais </a><i class="fa-solid fa fa-angle-right"></i>
+              <a href="/pagina-solucoes-visuais">Descubra mais </a><i class="fa-solid fa fa-angle-right"></i>
             </button>
           </div>
         </div>
@@ -207,7 +207,7 @@ get_header();
               de gestão de filas.
             </p>
             <button class="discover-button">
-              <a href="gestao">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+              <a href="/pagina-gestao-de-atendimento">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
             </button>
           </div>
         </div>
@@ -221,7 +221,7 @@ get_header();
               público e impulsione o seu negócio.
             </p>
             <button class="discover-button">
-              <a href="bilhetica">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
+              <a href="/pagina-bilhetica">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -235,7 +235,7 @@ get_header();
               de gestão de filas.
             </p>
             <button class="discover-button">
-              <a href="solucoesdocumentais">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
+              <a href="/pagina-solucoes-documentais">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -249,7 +249,7 @@ get_header();
               público e impulsione o seu negócio.
             </p>
             <button class="discover-button">
-              <a href="design">Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
+              <a href="/pagina-design-e-imagem">Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -263,7 +263,7 @@ get_header();
               de gestão de filas.
             </p>
             <button class="discover-button">
-              <a href="consultoria"> Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
+              <a href="/pagina-consultadoria"> Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -277,7 +277,7 @@ get_header();
               público e impulsione o seu negócio.
             </p>
             <button class="discover-button">
-              <a href="ciberseguranca">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
+              <a href="/pagina-ciberseguranca">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -285,7 +285,7 @@ get_header();
 
       <!-- Botão contacto -->
       <div class="news-button">
-        <button href="#" class="dark-button main-button-styles">
+        <button href="" class="dark-button main-button-styles">
           Conheça todas as soluções
         </button>
       </div>
@@ -311,11 +311,7 @@ get_header();
               combinando performance, durabilidade e segurança.
             </p>
           </div>
-    <a href="computing" class="item-icon"> <i class="fa-solid fa-arrow-right-long"></i> </a>
-
-		
-	
-
+    <a href="/pagina-redes-e-computing" class="item-icon"> <i class="fa-solid fa-arrow-right-long"></i> </a>
 			
         </div>
         <!-- Item 2 -->
@@ -327,7 +323,7 @@ get_header();
               garantindo a máxima segurança.
             </p>
           </div>
-          <a href="videovigilancia" class="item-icon">
+          <a href="\pagina-videovigilancia" class="item-icon">
            <i class="fa-solid fa-arrow-right-long"></i>
           </a>
         </div>
@@ -342,7 +338,7 @@ get_header();
               corporativa.
           </div>
           </p>
-          <a href="unibind" class="item-icon">
+          <a href="/pagina-unibind" class="item-icon">
             <i class="fa-solid fa-arrow-right-long"></i>
           </a>
         </div>
@@ -357,7 +353,7 @@ get_header();
               segurança.
           </div>
           </p>
-          <a href="videovigilancia" class="item-icon">
+          <a href="/pagina-ciberseguranca" class="item-icon">
            <i class="fa-solid fa-arrow-right-long"></i>
           </a>
         </div>
@@ -377,14 +373,14 @@ get_header();
           Trabalhamos com os melhores para oferecer o melhor
         </h2>
         <div class="partners-scroll">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" />
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" />
+        <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+        <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+        <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+        <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+        <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+        <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+        <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+        <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
 </div>
       </div>
     </section>

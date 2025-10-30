@@ -30,9 +30,13 @@ p {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
 }
-
+@media (max-width: 1400px) and (min-width: 1100px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 /* Access Control Hero Section */
 .access-control-hero {
@@ -49,7 +53,7 @@ p {
 }
 
 .hero-text h1 {
-  font-size: 54px;
+  font-size: 50px;
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 20px;
@@ -596,6 +600,10 @@ p {
 }
 
 @media (max-width: 768px) {
+   .container {
+    padding: 0 20px;
+  }
+
   .access-control-hero, .why-choose-section, .technology-section, .sectors-section, .final-cta-section {
     padding: 60px 0;
   }

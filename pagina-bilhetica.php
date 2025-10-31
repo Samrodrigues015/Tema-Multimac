@@ -145,14 +145,38 @@ get_header();
     </section>
 
     <!-- Testimonial Section - Updated to match the image -->
-    <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
-    ));
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-header">
+                <span class="section-tag"><i class="fa-solid fa-circle"></i> Testemunhos</span>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/testemunhabilhetica2.png" alt="Ana Soares">
+                </div>
+                <div class="testimonial-text">
+                    
+                    <div class="testimonial-quote-icon">
+                        <svg width="74" height="58" viewBox="0 0 74 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.2188 30.77L41.2188 58L73.6299 58L73.6299 32.9484L58.1289 -1.05885e-06L41.2188 -2.21395e-06L54.2537 30.77L41.2188 30.77ZM0.000423803 30.77L0.000420757 58L32.4115 58L32.4115 32.9484L16.9105 -3.87442e-06L0.000427246 -5.02952e-06L13.0353 30.77L0.000423803 30.77Z" fill="#DC6339" fill-opacity="0.5"/>
+</svg>
+                    </div>
+                    <div class="testimonial-quote">
+                        <blockquote>
+                            A plataforma de bilhética da Multimac revolucionou a gestão de vendas
+                            dos nossos bilhetes. Conseguimos centralizar tudo, otimizar os processos
+                            e oferecer uma experiência muito melhor aos nossos clientes.
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-client-info">
+                        <h4>Ana Soares</h4>
+                        <p>Diretora de eventos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    ?>
     <!-- Complete Solution Section - Updated to match the image -->
     <section class="technology-section">
         <div class="container">

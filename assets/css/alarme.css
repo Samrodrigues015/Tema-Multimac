@@ -240,7 +240,6 @@ p {
 /* Testimonial Section */
 .testimonial {
   padding: 60px 0;
-  background: #f7f7f7;
 }
 
 .testimonial-header {
@@ -648,27 +647,10 @@ p {
     font-size: 18px;
     text-align: start;
   }
-  .testimonial-content {
-    grid-template-columns: 1fr;
-    border-radius: 24px;
+  .testimonial {
+    display: none;
   }
-  .testimonial-image {
-    min-height: 200px;
-    border-radius: 24px 24px 0 0;
-  }
-  .testimonial-image img {
-    border-radius: 24px 24px 0 0;
-    height: 220px;
-  }
-  .testimonial-text {
-    padding: 32px 24px 32px 24px;
-  }
-  .testimonial-quote-icon {
-    top: 16px;
-    right: 16px;
-    width: 48px;
-    height: 48px;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -779,48 +761,10 @@ p {
     width: 32%;
     z-index: 2;
   }
-  .testimonial-content {
-    display: flex;
-    flex-direction: column;
-    min-width: auto;
-    min-height: auto;
+  .testimonial {
+    display: none;
   }
 
-  .testimonial-image {
-    border-radius: 40px 40px 0 0;
-    min-height: 220px;
-    height: auto;
-  }
-
-  .testimonial-image img {
-    border-radius: 40px 40px 0 0;
-    height: auto;
-  }
-
-  .testimonial-text {
-    padding: 32px 20px;
-    position: relative;
-  }
-
-  .testimonial-quote-icon {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .testimonial-quote blockquote {
-    font-size: 1.2rem;
-    margin-bottom: 24px;
-  }
-
-  .testimonial-client-info h4 {
-    font-size: 1.1rem;
-  }
-
-  .testimonial-client-info p {
-    font-size: 0.95rem;
-  }
   .unibind-sectors-grid {
     padding: 30px 0;
   }

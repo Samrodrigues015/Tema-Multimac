@@ -386,6 +386,124 @@ position: absolute;
     line-height: 28px;
     margin: 0;
 }
+/* Testimonial Section */
+.testimonial {
+  padding: 60px 0;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 6px 15px;
+  border-radius: 48px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  gap: 10px;
+	
+	font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.testimonial-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #232323;
+  margin: 0;
+}
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
+  background: #FFFFFF;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 320px;
+  margin-top: 0;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: block;
+  background: #FFFFFF;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: none;
+  border: none;
+  display: block;
+  margin-top: 0;
+}
+
+.testimonial-text {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  flex: 1;
+  padding: 56px 60px 56px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: #1c1c1c;
+}
+
+.testimonial-quote-icon {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  width: 70px;
+  height: 70px;
+  color: rgba(220, 99, 57, 0.5);
+  opacity: 0.7;
+}
+
+.testimonial-quote blockquote {
+   font-family: 'Funnel Display', sans-serif; 
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    margin: 0;
+    max-width: 80%;
+}
+
+.testimonial-client-info h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0 0 4px 0;
+  margin-top: 40px;
+  color: #1E1E1E;
+}
+
+.testimonial-client-info p {
+   font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.85;
+    color: #535353;
+}
 
 
 
@@ -516,6 +634,10 @@ position: absolute;
   
   .partner-item img {
     max-width: 200px;
+  }
+
+  .testimonial {
+    display: none;
   }
   
 

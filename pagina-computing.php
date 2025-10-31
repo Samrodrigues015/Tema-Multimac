@@ -74,14 +74,35 @@ get_header();
     </section>
 
     <!-- Testimonial Section -->
-    <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
-    ));
-
-    ?>
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-header">
+                <span class="section-tag"><i class="fa-solid fa-circle"></i> Testemunhos</span>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-computing/testemunho.png" alt="Luís Almeida">
+                </div>
+                <div class="testimonial-text">
+                    
+                    <div class="testimonial-quote-icon">
+                        <svg width="74" height="58" viewBox="0 0 74 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.2188 30.77L41.2188 58L73.6299 58L73.6299 32.9484L58.1289 -1.05885e-06L41.2188 -2.21395e-06L54.2537 30.77L41.2188 30.77ZM0.000423803 30.77L0.000420757 58L32.4115 58L32.4115 32.9484L16.9105 -3.87442e-06L0.000427246 -5.02952e-06L13.0353 30.77L0.000423803 30.77Z" fill="#FFF5F5" fill-opacity="0.5"/>
+</svg>
+                    </div>
+                    <div class="testimonial-quote">
+                        <blockquote>
+                            “Desde que adotámos as impressoras Sharp, aumentámos a produtividade em 50%. A flexibilidade de integração com os nossos sistemas foi um ponto-chave para o nosso crescimento.”
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-client-info">
+                        <h4>Luís Almeida</h4>
+                        <p>Diretor de Operações de uma empresa de logística.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- Equipment Categories Section -->
 <section class="equipment-categories">

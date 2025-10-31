@@ -92,7 +92,7 @@
              <p class="solutions-subtitle">Na Multimac, levamos a excelência da Sharp para o seu negócio, com uma vasta gama de equipamentos e serviços, cuidadosamente selecionados para responder às necessidades dos setores mais exigentes.</p>
 
              <div class="solutions-grid">
-                 <a href="/impressoras-multifuncoes" class="solution-card-link">
+                 <a href="/pagina-produtos/" class="solution-card-link">
                      <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/impressorabranca.png" alt="Impressoras e Multifunções" class="solution-main-image">
@@ -106,7 +106,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="/monitores-profissionais" class="solution-card-link">
+                 <a href="/pagina-solucoes-visuais/" class="solution-card-link">
                      <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/mulherpainel.png" alt="Monitores Profissionais" class="solution-main-image">
@@ -120,7 +120,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="/gestao-documental" class="solution-card-link">
+                 <a href="/pagina-gestao-de-atendimento/" class="solution-card-link">
                      <div class="solution-card-sharp">
                          <div class="solution-image">
                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-parcerias/ficheiros.png" alt="Soluções de Gestão Documental" class="solution-main-image">

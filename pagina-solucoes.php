@@ -46,22 +46,12 @@ get_header();
                         <h3>Resolução</h3>
                         <p>Displays Full HD ou 4K para imagens nítidas e vibrantes.</p>
                     </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
-                    </div>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-content">
                         <h3>Software de Gestão</h3>
                         <p>Atualize facilmente conteúdos de forma remota com uma interface intuitiva.</p>
-                    </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
                     </div>
                 </div>
 
@@ -70,22 +60,12 @@ get_header();
                         <h3>Tamanhos Disponíveis</h3>
                         <p>Desde 32" até 85", adaptando-se a diferentes necessidades.</p>
                     </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
-                    </div>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-content">
                         <h3>Eficiência Energética</h3>
                         <p>Displays de baixo consumo com tecnologia LED.</p>
-                    </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
                     </div>
                 </div>
 
@@ -94,22 +74,12 @@ get_header();
                         <h3>Conectividade</h3>
                         <p>Wi-Fi, HDMI, USB e opções para integração com sistemas de gestão de conteúdos (CMS).</p>
                     </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
-                    </div>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-content">
                         <h3>Durabilidade</h3>
                         <p>Construção robusta para funcionamento contínuo em ambientes exigentes.</p>
-                    </div>
-                    <div class="feature-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -198,6 +168,7 @@ get_template_part(
     'texto1' => 'Transforme a forma como comunica com os seus clientes. Preencha o formulário abaixo e receba uma proposta personalizada para o seu projeto.',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Enviar Solicitação',
+    'id'     => 'formulariosolucoes'
   )
 );
 ?>
@@ -213,11 +184,11 @@ get_template_part(
                                 <h3>Gaveta Inteligente de Dinheiro</h3>
                                 <p>Ideal para operações de retalho e restauração.</p>
                             </div>
-                            <div class="solution-arrow">
+                           <a href="/pagina-gavetas-de-dinheiro/"><div class="solution-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M7 17l9.2-9.2M17 17V7H7"></path>
                                 </svg>
-                            </div>
+                            </div></a> 
                         </div>
 
                         <div class="solution-item">
@@ -225,11 +196,11 @@ get_template_part(
                                 <h3>P.O.S Sistemas de Controlo</h3>
                                 <p>Agilidade e precisão para o seu negócio.</p>
                             </div>
-                            <div class="solution-arrow">
+                            <a href="/pagina-pos-software/"><div class="solution-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M7 17l9.2-9.2M17 17V7H7"></path>
                                 </svg>
-                            </div>
+                            </div></a>
                         </div>
 
                         <div class="solution-item">
@@ -237,11 +208,11 @@ get_template_part(
                                 <h3>Videovigilância</h3>
                                 <p>Garanta a segurança do espaço onde os displays estão instalados.</p>
                             </div>
-                            <div class="solution-arrow">
+                           <a href="/pagina-videovigilancia/"> <div class="solution-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M7 17l9.2-9.2M17 17V7H7"></path>
                                 </svg>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                     <div class="solutions-images">

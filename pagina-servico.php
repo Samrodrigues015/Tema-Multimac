@@ -185,7 +185,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Capte a atenção dos clientes, impulsione as vendas e ofereça uma experiência de compra memorável.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -201,7 +200,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Reduza o tempo de espera percebido e informe os pacientes de forma eficaz.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -217,7 +215,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Fortaleça a comunicação interna e envolva a equipa com conteúdos visuais dinâmicos.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
 
             <div class="xopvision-industry-card">
@@ -233,7 +230,6 @@ get_header();
                         <span class="xopvision-benefit-text"> Mantenha estudantes e professores atualizados com informações relevantes.</span>
                     </div>
                 </div>
-                <button class="xopvision-mobile-button">Descubra mais</button>
             </div>
         </div>
 
@@ -259,6 +255,7 @@ get_template_part(
     'texto2' => 'Preencha o formulário e receba uma solução ajustada às necessidades da sua empresa.',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Pedir Orçamento',
+    'id'     => 'formularioservico'
   )
 );
 ?>

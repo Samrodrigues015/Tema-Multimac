@@ -255,111 +255,7 @@ p {
   .cta-card {
     display: none;
   }
-  .xopvision-industries-container {
-    padding: 30px 0;
-  }
-
-  .xopvision-industries-title {
-    font-size: 32px !important;
-    margin-bottom: 40px;
-    text-align: center;
-    padding: 0 20px;
-  }
-.xopvision-industries-container p {
-  font-size: 18px;
-  padding: 20px;
-}
-  .xopvision-industries-grid {
-        /* Transforma o grid num container de scroll horizontal */
-        display: flex;
-        overflow-x: scroll; /* Permite o deslize horizontal */
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory; /* Garante que cada cartão encaixa */
-        -webkit-overflow-scrolling: touch; /* Melhor scroll em iOS */
-        padding-bottom: 20px; /* Espaço para o indicador de scroll se estiver por baixo */
-    }
-
-    .xopvision-industry-card {
-        /* Define a largura de cada cartão para ocupar quase todo o ecrã */
-        min-width: 85%; /* Exemplo: 85% da largura da viewport */
-        margin-right: 20px; /* Espaço entre os cartões */
-        scroll-snap-align: start; /* O cartão encaixa no início da viewport */
-        flex-shrink: 0; /* Impede que os cartões encolham */
-    }
-
-    /* O último cartão pode precisar de um padding extra para caber no centro */
-    .xopvision-industries-grid > .xopvision-industry-card:last-child {
-        margin-right: calc(100% - 85% - 20px); /* Ajuste para centralizar o último item */
-    }
-
-    /* Esconder o botão de desktop e mostrar o de mobile (se não for feito no HTML/PHP) */
-    .xopvision-desktop-button {
-        display: none !important;
-    }
-
-    .xopvision-mobile-button {
-        display: block !important;
-    }
-
-  .xopvision-industry-title {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  .xopvision-scenario-text,
-  .xopvision-benefit-text {
-    font-size: 15px;
-  }
-
-  .xopvision-desktop-button {
-    display: none;
-  }
-
-  .xopvision-mobile-button {
-    display: block;
-    background-color: #dc6339;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 20px auto 0;
-    position: relative;
-    transition: background-color 0.3s ease;
-  }
-
-  .xopvision-mobile-button::after {
-    content: "→";
-    margin-left: 8px;
-    font-size: 16px;
-  }
-
-  .xopvision-mobile-button:hover {
-    background-color: #dc6339;
-  }
-
-  /* Add scroll indicator */
-  .xopvision-scroll-indicator {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-    padding: 0 20px;
-  }
-
-  .xopvision-scroll-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #ccc;
-    transition: background-color 0.3s ease;
-  }
-
-  .xopvision-scroll-dot.active {
-    background-color: #dc6339;
-  }
+  
 }
 /* Desktop only - hide mobile elements */
 @media (min-width: 769px) {
@@ -695,29 +591,32 @@ cite strong {
   align-items: flex-start;
   box-sizing: border-box;
 }
+
 .xopvision-industries-title,
 .xopvision-industries-container p {
   flex: 1 1 100%;
   min-width: 0;
   text-align: center;
 }
+
 .xopvision-industries-title {
   font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 0; 
-    line-height: 120%;
-    text-align: left;
-    flex: 1; 
-    min-width: 400px;
-    margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 120%;
+  text-align: left;
+  flex: 1;
+  min-width: 400px;
+  margin-bottom: 20px;
 }
+
 .xopvision-industries-container p {
   font-size: 22px;
-    font-weight: 400;
-    line-height: 32px;
-    flex: 1; 
-    min-width: 400px;
-    margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  flex: 1;
+  min-width: 400px;
+  margin-bottom: 20px;
 }
 
 .xopvision-industries-grid {
@@ -728,11 +627,10 @@ cite strong {
   box-sizing: border-box;
 }
 
-
 .xopvision-industry-card {
   background: white;
   border-radius: 20px;
-  padding:  30px 20px;
+  padding: 30px 20px;
   min-width: 300px;
 }
 
@@ -793,7 +691,6 @@ cite strong {
 .xopvision-mobile-button {
   display: none;
 }
-
 /* Final CTA Section - Updated to match the image */
 .final-cta {
   padding: 80px 0;
@@ -998,12 +895,65 @@ cite strong {
   .cta-button-cards {
     display: none;
   }
-  .xopvision-industries-container {
-    padding: 0 20px;
-  }
   .final-cta-text p {
     font-size: 18px;
     line-height: normal;
+  }
+   .xopvision-industries-container {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .xopvision-industries-title {
+    text-align: center;
+    font-size: 32px;
+    min-width: auto;
+    margin-bottom: 10px;
+  }
+
+  .xopvision-industries-container p {
+    text-align: center;
+    font-size: 18px;
+    min-width: auto;
+    margin-bottom: 30px;
+  }
+
+  /* Transformar cards em carrossel horizontal */
+  .xopvision-industries-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+  }
+
+  .xopvision-industry-card {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+  }
+
+  /* Oculta botão desktop e mostra botão mobile */
+  .xopvision-desktop-button {
+    display: none;
+  }
+
+  .xopvision-mobile-button {
+    display: block;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto 0;
+  }
+
+  .xopvision-industries-grid::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no mobile */
   }
 }
 

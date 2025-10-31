@@ -342,6 +342,7 @@ img {
   box-shadow: 0 0 15px 2px rgba(220, 99, 57, 0.4);
   justify-content: center; /* Alinha o texto verticalmente */
   align-items: center;
+  gap: 20px;
 }
 
 /* Esconde a estrutura de ícone antiga que já não é usada neste card */
@@ -437,6 +438,7 @@ img {
   font-weight: 600;
   color: #1c1c1c;
   line-height: 128%;
+  max-width: 70%;
 }
 .xopvision-industries-subitle {
   font-family: "Funnel Display";
@@ -444,6 +446,7 @@ img {
   font-size: 20px;
   line-height: normal;
   margin: 30px 0px;
+  max-width: 60%;
 }
 
 .xopvision-industries-grid {
@@ -682,6 +685,7 @@ img {
   .xopvision-industries-subitle {
     text-align: center;
     margin-bottom: 20px;
+    max-width: 100%;
   }
   .xopvision-industries-container {
     padding: 30px 20px;
@@ -691,6 +695,7 @@ img {
     font-size: 28px;
     margin-bottom: 40px;
     text-align: center;
+    max-width: 100%;
   }
 
   .xopvision-industries-grid {

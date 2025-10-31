@@ -31,7 +31,12 @@ p {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
+}
+@media (max-width: 1400px) and (min-width: 1100px) {
+   .container {
+    padding: 0 20px;
+  }
 }
 
 /* TI Computing Hero Section */
@@ -67,7 +72,7 @@ p {
 }
 
 .hero-left h1 {
-  font-size: 54px;
+  font-size: 50px;
   font-weight: 600;
   line-height: 120%;
   color: #1C1C1C;
@@ -294,7 +299,7 @@ p {
 .equipment-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 30px;
   margin-bottom: 60px;
   align-items: flex-start;
 }
@@ -324,7 +329,6 @@ p {
 
 /* Estilo base para todos os cards */
 .feature-box {
-  background: white; /* Adicionado para garantir o fundo branco */
   border-radius: 20px;
   padding: 30px 24px;
   border: 2px solid #dc6339;
@@ -747,6 +751,9 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+    padding: 0 20px;
+  }
   .computing-header {
     grid-template-columns: 1fr;
     gap: 30px;

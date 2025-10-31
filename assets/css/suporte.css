@@ -8,8 +8,6 @@
 
 body {
   background-color: #f2f2f2;
-  color: #333;
-  line-height: 1.6;
 }
 
 a {
@@ -21,13 +19,29 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #1c1c1c;
+}
+p {
+  font-family: "Funnel Display", sans-serif;
+  color: #1c1c1c;
+}
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 100px;
 }
-
+@media (max-width: 1400px) and (min-width: 1100px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 /* Hero Section */
 .hero-support {
   padding: 60px 0;
@@ -481,6 +495,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
   .resources-bottom-grid {
     display: none;
   }
@@ -510,6 +527,18 @@ img {
     margin-bottom: 20px;
     border-bottom: 1px solid #1c1c1c;
   }
+  
+.team-image-container {
+ display: none;
+}
+
+.solutions-text p {
+  font-size: 18px;
+  text-align: center;
+}
+.service-item h3, .service-item p {
+  text-align: center;
+}
   .drivers-section h3 {
     font-size: 16px;
     font-weight: 500;
@@ -808,6 +837,7 @@ img {
 
   .cta-text p {
     font-size: 16px;
+    line-height: 120%;
   }
 
   .cta-buttons {
@@ -863,7 +893,7 @@ img {
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 130%;
   }
 

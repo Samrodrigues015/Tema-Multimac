@@ -29,9 +29,14 @@ p {
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 100px;
+}
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .container{
+  margin: 0 auto;
   padding: 0 20px;
 }
-
+}
 /* Rotulagem Hero Section */
 .rotulagem-hero {
   background-color: #f2f2f2;
@@ -41,7 +46,7 @@ p {
 
 .hero-content-rotulagem {
   display: grid;
-  grid-template-columns: 1.1fr 1fr; 
+  grid-template-columns: 1fr 1fr; 
   gap: 60px;
   align-items: center;
 }
@@ -65,15 +70,15 @@ p {
 .hero-buttons {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap; 
+  flex-wrap: nowrap; 
 }
 
 .hero-cta-primary {
   background-color: #DC6339;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 10px;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   border: none;
   cursor: pointer;

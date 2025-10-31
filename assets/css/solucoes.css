@@ -23,6 +23,12 @@ img {
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 100px;
+}
+@media (max-width: 1400px) and (min-width: 1100px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 /* Visual Solutions Hero Section */
 .visual-solutions-hero {
@@ -131,8 +137,8 @@ img {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     background-color: #dc6339;
     padding: 30px 30px;
     border-radius: 20px;
@@ -239,24 +245,6 @@ img {
     font-weight: 400;
 }
 
-.feature-arrow {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #1c1c1c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: all 0.3s ease;
-}
-
-.feature-arrow svg {
-  color: #1c1c1c;
-  width: 20px;
-  height: 20px;
-}
-
 /* Remove the old feature-icon styles */
 .feature-icon {
   display: none;
@@ -298,8 +286,8 @@ img {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
-    flex: 0 0 256px;
-    min-width: 220px;
+    flex: 0 0 245px;
+    min-width: 200px;
 }
 .space-image {
   height: 180px;
@@ -428,36 +416,6 @@ img {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .testimonial-content-solucoes {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .testimonial-image-solucoes {
-    flex: none;
-    align-self: center;
-  }
-
-  .testimonial-image-solucoes img {
-    width: 200px;
-    height: 180px;
-  }
-
-  .testimonial-text-card {
-    margin-left: 0;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .testimonial-quote-icon {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-  }
-}
-
 /* Complementary Solutions Section */
 .complementary-solutions {
   padding: 80px 0;
@@ -566,6 +524,9 @@ img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
   .visual-solutions-hero {
     padding: 40px 0; /* Reduz o padding vertical */
   }
@@ -574,7 +535,6 @@ img {
     flex-direction: column-reverse; 
     gap: 30px; 
     text-align: center; 
-    padding: 20px;
   }
 
   .hero-left {
@@ -645,7 +605,7 @@ img {
 
   .feature-item {
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     padding: 30px;
   }
 
@@ -656,7 +616,9 @@ img {
   .feature-content {
     padding: 0;
   }
-
+  .spaces-grid {
+    padding: 10px 0px;
+  }
   .spaces-grid {
     display: flex;
     overflow-x: auto;
@@ -722,8 +684,8 @@ img {
 }
 	.solutions-text h2 {
     font-family: 'Poppins';
-    font-size: 24px;
-    text-align: center;
+    font-size: 28px;
+    text-align: start;
 }
 }
 

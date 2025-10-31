@@ -56,13 +56,6 @@
                      <div class="feature-header">
                          <h3>Eficiência na Impressão</h3>
 
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
                      </div>
                      <p>Produz documentos com rapidez, qualidade superior e máxima fiabilidade.</p>
                  </div>
@@ -71,13 +64,7 @@
                  <div class="feature-item">
                      <div class="feature-header">
                          <h3>Soluções Integradas</h3>
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
+                    
                      </div>
                      <p>Impressão, cópia, digitalização e envio de fax reunidos num único equipamento multifuncional.</p>
                  </div>
@@ -87,13 +74,7 @@
                  <div class="feature-item">
                      <div class="feature-header">
                          <h3>Redução de Custos</h3>
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
+                        
                      </div>
                      <p>Otimize recursos com baixo consumo de energia e gestão eficiente de papel.</p>
                  </div>
@@ -102,13 +83,7 @@
                  <div class="feature-item">
                      <div class="feature-header">
                          <h3>Segurança de Dados</h3>
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
+                         
                      </div>
                      <p>Proteja os documentos da sua empresa com sistemas avançados contra acessos não autorizados.</p>
                  </div>
@@ -117,13 +92,7 @@
                  <div class="feature-item">
                      <div class="feature-header">
                          <h3>Sustentabilidade</h3>
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
+                        
                      </div>
                      <p>Equipamentos com certificação Energy Star que garantem eficiência energética e um menor impacto
                          ambiental.</p>
@@ -133,13 +102,7 @@
                  <div class="feature-item">
                      <div class="feature-header">
                          <h3>Flexibilidade Total</h3>
-                         <a href="#" class="arrow-icon">
-                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round" />
-                             </svg>
-                         </a>
+                        
                      </div>
                      <p>Conetividade com Wi-Fi, Ethernet e Cloud, adaptando-se facilmente a qualquer ambiente de
                          trabalho.</p>

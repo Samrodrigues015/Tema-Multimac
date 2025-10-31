@@ -34,7 +34,13 @@ p {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
+}
+@media (max-width: 1400px) and (min-width: 1100px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 /* Unibind specific styles */
@@ -323,6 +329,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   h1,
   h2,
   p {
@@ -353,10 +363,12 @@ p {
     font-size: 32px;
   }
   .unibind-advanced-title h2 {
-    font-size: 32px;
+    text-align: start;
+    font-size: 28px;
 
   }
   .unibind-advanced-subtitle {
+    text-align: start;
     font-size: 18px;
     line-height: normal;
   }
@@ -1384,7 +1396,7 @@ p {
   }
 
   .unibind-hero-left h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .unibind-hero-left p {
     font-size: 18px;
@@ -1484,7 +1496,7 @@ p {
   .feature-card {
     flex-direction: column;
     text-align: start;
-    padding: 30px;
+    padding: 10px;
   }
   .feature-card p {
     text-align: start;
@@ -1601,5 +1613,8 @@ p {
 
   .unibind-sector-image img {
     object-fit: cover;
+  }
+  .unibind-sectors-header h2 {
+    font-size: 26px;
   }
 }

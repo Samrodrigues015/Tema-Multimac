@@ -266,4 +266,3 @@ document.querySelectorAll('.tech-item').forEach(item => {
     item.classList.toggle('active');
   });
 });
-

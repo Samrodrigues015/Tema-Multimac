@@ -123,13 +123,13 @@ get_header();
     </section>
 
     <!-- Testimonial Section -->
+    <!-- Testimonial Section Mobile -->
     <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
     ));
-
     ?>
 
     <!-- Technology Section -->
@@ -230,39 +230,39 @@ get_header();
     </section>
 
     <!-- Secção Formulario -->
-    
- <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e diga adeus aos erros de caixa',
-    'texto1' => 'Quer saber como as gavetas inteligentes de dinheiro podem transformar a gestão do numerário no seu negócio? Preencha o formulário abaixo e a nossa equipa entrará em contacto para oferecer uma solução personalizada.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formulariovideovigilancia'
-  )
-);
-?>
 
-        <!-- Final CTA Section -->
-        <section class="final-cta-video">
-            <div class="container">
-                <div class="final-cta-content-video">
-                    <div class="final-cta-text-video">
-                        <h2>Pronto para Garantir a Segurança do Seu Espaço?</h2>
-                        <p>Não arrisque a segurança do seu negócio, residência ou instituição. As soluções de videovigilância da Multimac são a resposta certa para monitorizar, proteger e prevenir com tecnologia de ponta.</p>
-                        <div class="final-cta-buttons-video">
-                            <a href="#formulariovideovigilancia" class="final-cta-primary-video">Peça um Orçamento</a>
-                            <a href="#formulariovideovigilancia" class="final-cta-secondary-video">Fale com um Especialista</a>
-                        </div>
-                    </div>
-                    <div class="final-cta-image-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-videovigilancia/cameravideovigilancia.png" alt="Segurança urbana">
+    <?php
+    get_template_part(
+        'templates/card-formulario',
+        null,
+        array(
+            'titulo' => 'Peça já o seu orçamento e diga adeus aos erros de caixa',
+            'texto1' => 'Quer saber como as gavetas inteligentes de dinheiro podem transformar a gestão do numerário no seu negócio? Preencha o formulário abaixo e a nossa equipa entrará em contacto para oferecer uma solução personalizada.',
+            'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+            'botao'  => 'Enviar Solicitação',
+            'id'     => 'formulariovideovigilancia'
+        )
+    );
+    ?>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-video">
+        <div class="container">
+            <div class="final-cta-content-video">
+                <div class="final-cta-text-video">
+                    <h2>Pronto para Garantir a Segurança do Seu Espaço?</h2>
+                    <p>Não arrisque a segurança do seu negócio, residência ou instituição. As soluções de videovigilância da Multimac são a resposta certa para monitorizar, proteger e prevenir com tecnologia de ponta.</p>
+                    <div class="final-cta-buttons-video">
+                        <a href="#formulariovideovigilancia" class="final-cta-primary-video">Peça um Orçamento</a>
+                        <a href="#formulariovideovigilancia" class="final-cta-secondary-video">Fale com um Especialista</a>
                     </div>
                 </div>
+                <div class="final-cta-image-video">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-videovigilancia/cameravideovigilancia.png" alt="Segurança urbana">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

@@ -118,13 +118,13 @@ get_header();
 
 
   <!-- Testimonial Section (keeping existing) -->
+  <!-- Testimonial Section Mobile -->
   <?php
-  get_template_part('template-parts/testemunhos', null, array(
-    'show_title' => true,
-    'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-    'card_bg_color' => '#dc6339',
+  get_template_part('templates/testemunhos', null, array(
+    'show_title' => false,
+    'show_paragraph' => false,
+    'only_mobile' => true,
   ));
-
   ?>
 
   <!-- Advanced Solutions Section -->
@@ -217,41 +217,41 @@ get_header();
     </div>
   </section>
 
-   <!-- Secção Formulario -->
-    
-    <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e dê vida aos seus documentos',
-    'texto1' => 'Fale connosco e descubra como as soluções de encadernação e personalização Unibind podem transformar os seus documentos. Preencha o formulário abaixo e receba uma proposta personalizada para as suas necessidades.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formulariounibind'
-  )
-);
-?>
-	
-	
-    <!-- Final CTA Section -->
-    <section class="unibind-final-cta">
-      <div class="container">
-        <div class="final-cta-content">
-          <div class="final-cta-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-unibind/unibind3.png" alt="Buildings from below">
-          </div>
-          <div class="final-cta-text">
-            <h2>Pronto para elevar a apresentação dos seus documentos?</h2>
-            <p>Com as soluções Unibind da Multimac, pode transformar documentos comuns em materiais profissionais e impressionantes. Entre em contacto e descubra como podemos ajudá-lo a alcançar resultados impactantes.</p>
-            <div class="final-cta-buttons">
-              <a href="#formulariounibind" class="final-cta-primary">Peça um Orçamento</a>
-              <a href="#formulariounibind" class="final-cta-secondary">Fale com um Especialista</a>
-            </div>
+  <!-- Secção Formulario -->
+
+  <?php
+  get_template_part(
+    'templates/card-formulario',
+    null,
+    array(
+      'titulo' => 'Peça já o seu orçamento e dê vida aos seus documentos',
+      'texto1' => 'Fale connosco e descubra como as soluções de encadernação e personalização Unibind podem transformar os seus documentos. Preencha o formulário abaixo e receba uma proposta personalizada para as suas necessidades.',
+      'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+      'botao'  => 'Enviar Solicitação',
+      'id'     => 'formulariounibind'
+    )
+  );
+  ?>
+
+
+  <!-- Final CTA Section -->
+  <section class="unibind-final-cta">
+    <div class="container">
+      <div class="final-cta-content">
+        <div class="final-cta-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-unibind/unibind3.png" alt="Buildings from below">
+        </div>
+        <div class="final-cta-text">
+          <h2>Pronto para elevar a apresentação dos seus documentos?</h2>
+          <p>Com as soluções Unibind da Multimac, pode transformar documentos comuns em materiais profissionais e impressionantes. Entre em contacto e descubra como podemos ajudá-lo a alcançar resultados impactantes.</p>
+          <div class="final-cta-buttons">
+            <a href="#formulariounibind" class="final-cta-primary">Peça um Orçamento</a>
+            <a href="#formulariounibind" class="final-cta-secondary">Fale com um Especialista</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>

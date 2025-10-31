@@ -358,14 +358,14 @@ get_header();
 
 
   <!-- Testimonial Section -->
-  <?php
-  get_template_part('template-parts/testemunhos', null, array(
-    'show_title' => true,
-    'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-    'card_bg_color' => '#dc6339',
-  ));
-
-  ?>
+   <!-- Testimonial Section Mobile -->
+    <?php
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
+    ));
+    ?>
 
   <!-- FAQ Section - Perguntas frequentes -->
     <?php

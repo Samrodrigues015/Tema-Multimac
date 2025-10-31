@@ -20,7 +20,7 @@ get_header();
         </div>
         <a href="#formulariobilhetica" class="link-flutuante">
             <div class="floating-container-two">
-               <span>Solicite um Orçamento</span>
+                <span>Solicite um Orçamento</span>
             </div>
         </a>
     </div>
@@ -145,13 +145,13 @@ get_header();
     </section>
 
     <!-- Testimonial Section - Updated to match the image -->
+    <!-- Testimonial Section Mobile -->
     <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
     ));
-
     ?>
     <!-- Complete Solution Section - Updated to match the image -->
     <section class="technology-section">

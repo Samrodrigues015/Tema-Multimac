@@ -387,15 +387,15 @@ get_header();
    
 
 			<!-- Testemunhos responsivos -->
-			<div class="testemunhos-variant testemunhos-mobile">
-			  <?php
-			  get_template_part('template-parts/testemunhos', null, array(
-				'show_title'    => true,
-				
-				'carousel_id'   => 'carousel-testemunhos-mobile',
-			  ));
-			  ?>
-			</div>
+	<?php
+get_template_part('templates/testemunhos', null, array(
+  'title' => 'Por que Escolher a Multimac?',
+  'show_title' => true,
+  'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
+  'card_bg_color' => '#ffffff'
+));
+?>
+
 
 
 

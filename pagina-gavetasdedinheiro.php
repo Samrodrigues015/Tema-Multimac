@@ -90,26 +90,26 @@ get_header();
             </ul>
           </div>
         </div>
-          <div class="cta-card">
-                    <a href="#formulariopaineis" class="cta-button">
-                        <span>Solicite o Seu Orçamento</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
-                            <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
+        <div class="cta-card">
+          <a href="#formulariopaineis" class="cta-button">
+            <span>Solicite o Seu Orçamento</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
+              <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
 
+  <!-- Testimonial Section Mobile -->
   <?php
-  get_template_part('template-parts/testemunhos', null, array(
-    'show_title' => true,
-    'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-    'card_bg_color' => '#dc6339',
+  get_template_part('templates/testemunhos', null, array(
+    'show_title' => false,
+    'show_paragraph' => false,
+    'only_mobile' => true,
   ));
-
   ?>
   <!-- SETORES -->
   <section class="sectors">

@@ -186,7 +186,14 @@
 </section>
 
 
-
+   <!-- Testimonial Section Mobile -->
+    <?php
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
+    ));
+    ?>
      <!-- Advanced Features Section -->
      <section class="advanced-features">
          <div class="container">

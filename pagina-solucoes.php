@@ -146,83 +146,88 @@ get_header();
     </section>
 
     <!-- Testimonial Section -->
-    	<!-- Testemunhos responsivos -->
-			<div class="testemunhos-variant testemunhos-mobile">
-			  <?php
-			  get_template_part('template-parts/testemunhos', null, array(
-				'show_title'    => true,
-				
-				'carousel_id'   => 'carousel-testemunhos-mobile',
-			  ));
-			  ?>
-			</div>
-
-     <!-- Secção Formulario -->
-    
+     
+    <!-- Testimonial Section Mobile -->
     <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e revolucione a comunicação visual do seu negócio',
-    'texto1' => 'Transforme a forma como comunica com os seus clientes. Preencha o formulário abaixo e receba uma proposta personalizada para o seu projeto.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formulariosolucoes'
-  )
-);
-?>
-        <!-- Complementary Solutions Section -->
-        <section class="complementary-solutions">
-            <div class="container">
-                <div class="solutions-content">
-                    <div class="solutions-text">
-                        <h2>Combine as Soluções Visuais com Estas Ferramentas</h2>
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
+    ));
+    ?>
 
-                        <div class="solution-item">
-                            <div class="solution-content">
-                                <h3>Gaveta Inteligente de Dinheiro</h3>
-                                <p>Ideal para operações de retalho e restauração.</p>
-                            </div>
-                           <a href="/pagina-gavetas-de-dinheiro/"><div class="solution-arrow">
+    <!-- Secção Formulario -->
+
+    <?php
+    get_template_part(
+        'templates/card-formulario',
+        null,
+        array(
+            'titulo' => 'Peça já o seu orçamento e revolucione a comunicação visual do seu negócio',
+            'texto1' => 'Transforme a forma como comunica com os seus clientes. Preencha o formulário abaixo e receba uma proposta personalizada para o seu projeto.',
+            'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+            'botao'  => 'Enviar Solicitação',
+            'id'     => 'formulariosolucoes'
+        )
+    );
+    ?>
+    <!-- Complementary Solutions Section -->
+    <section class="complementary-solutions">
+        <div class="container">
+            <div class="solutions-content">
+                <div class="solutions-text">
+                    <h2>Combine as Soluções Visuais com Estas Ferramentas</h2>
+
+                    <div class="solution-item">
+                        <div class="solution-content">
+                            <h3>Gaveta Inteligente de Dinheiro</h3>
+                            <p>Ideal para operações de retalho e restauração.</p>
+                        </div>
+                        <a href="/pagina-gavetas-de-dinheiro/">
+                            <div class="solution-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M7 17l9.2-9.2M17 17V7H7"></path>
                                 </svg>
-                            </div></a> 
-                        </div>
-
-                        <div class="solution-item">
-                            <div class="solution-content">
-                                <h3>P.O.S Sistemas de Controlo</h3>
-                                <p>Agilidade e precisão para o seu negócio.</p>
                             </div>
-                            <a href="/pagina-pos-software/"><div class="solution-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                                </svg>
-                            </div></a>
-                        </div>
-
-                        <div class="solution-item">
-                            <div class="solution-content">
-                                <h3>Videovigilância</h3>
-                                <p>Garanta a segurança do espaço onde os displays estão instalados.</p>
-                            </div>
-                           <a href="/pagina-videovigilancia/"> <div class="solution-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M7 17l9.2-9.2M17 17V7H7"></path>
-                                </svg>
-                            </div></a>
-                        </div>
+                        </a>
                     </div>
-                    <div class="solutions-images">
-                        <div class="solution-image-large">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-solucoes-visuais/ferramentassolucoes.png" alt="Soluções Complementares - Ambiente de restauração com sistema POS">
+
+                    <div class="solution-item">
+                        <div class="solution-content">
+                            <h3>P.O.S Sistemas de Controlo</h3>
+                            <p>Agilidade e precisão para o seu negócio.</p>
                         </div>
+                        <a href="/pagina-pos-software/">
+                            <div class="solution-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="solution-item">
+                        <div class="solution-content">
+                            <h3>Videovigilância</h3>
+                            <p>Garanta a segurança do espaço onde os displays estão instalados.</p>
+                        </div>
+                        <a href="/pagina-videovigilancia/">
+                            <div class="solution-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="solutions-images">
+                    <div class="solution-image-large">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-solucoes-visuais/ferramentassolucoes.png" alt="Soluções Complementares - Ambiente de restauração com sistema POS">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

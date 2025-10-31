@@ -36,16 +36,16 @@ get_header();
                     Transforme qualquer ecrã numa ferramenta poderosa de divulgação de conteúdos. Simples, intuitivo e totalmente gerido na Cloud.
                 </p>
 
-                   <div class="image-container">
-                <img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-gestao-atendimento/gestaomobile.png"
-                    alt="XOPVISION Digital Signage em shopping center"
-                    class="main-image">
-                <img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/imageblack.png"
-                    alt="Imagem sobreposta"
-                    class="overlay-image">
-            </div>
+                <div class="image-container">
+                    <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/img/img-gestao-atendimento/gestaomobile.png"
+                        alt="XOPVISION Digital Signage em shopping center"
+                        class="main-image">
+                    <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/img/img-bilheteria/imageblack.png"
+                        alt="Imagem sobreposta"
+                        class="overlay-image">
+                </div>
 
                 <a href="#formulariogestao" class="cta-button-mobile">
                     Solicite um Orçamento
@@ -98,23 +98,23 @@ get_header();
                     <!-- Botão como último item na grid -->
                     <div class="button-wrapper">
                         <a href="#formulariogestao" class="cta-button">Solicite o Seu Orçamento
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
-                            <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>    
-                      </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
+                                <path d="M3.18356 1.29206L49 1.29199M49 1.29199L48.9999 51.292M49 1.29199L1 46.7465" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonial Section - Updated to match the image -->
+        <!-- Testimonial Section Mobile -->
         <?php
-        get_template_part('template-parts/testemunhos', null, array(
-            'show_title' => true,
-            'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-            'card_bg_color' => '#dc6339',
+        get_template_part('templates/testemunhos', null, array(
+            'show_title' => false,
+            'show_paragraph' => false,
+            'only_mobile' => true,
         ));
-
         ?>
         <!-- Technology Section - Updated to match the image -->
         <section class="technology-section container">
@@ -181,7 +181,7 @@ get_header();
                         </div>
                         <div class="business-content">
                             <h3>Clínicas e Hospitais</h3>
-                           
+
                             <p><strong>Cenário:</strong>Organização de filas para consultas, exames e atendimentos de emergência.</p>
                             <p><strong>Benefícios:</strong>Reduz o tempo de espera percebido e melhora a experiência do paciente.</p>
                         </div>
@@ -193,7 +193,7 @@ get_header();
                         </div>
                         <div class="business-content">
                             <h3>Lojas e Supermercados</h3>
-                          
+
                             <p><strong>Cenário:</strong>Atendimento em balcões específicos, como devoluções ou pagamentos.</p>
                             <p><strong>Benefícios:</strong>Garante um fluxo organizado e mais rapidez no atendimento.</p>
                         </div>
@@ -216,7 +216,7 @@ get_header();
                         </div>
                         <div class="business-content">
                             <h3>Bancos e Serviços Financeiros</h3>
-      
+
                             <p><strong>Cenário:</strong>Gerir filas para caixas, consultores ou serviços prioritários.</p>
                             <p><strong>Benefícios:</strong> Atendimento personalizado, cumprimento de regulamentações e melhoria da experiência bancária.</p>
                         </div>
@@ -226,39 +226,39 @@ get_header();
         </section>
 
         <!-- Secção Formulario -->
-    
-	<?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e otimize a gestão de bilhetes',
-    'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formulariogestao'
-  )
-);
-?>
 
-            <!-- Final CTA Section -->
-            <section class="final-cta">
-                <div class="container">
-                    <div class="final-cta-content">
-                        <div class="final-cta-text">
-                            <h2>Pronto para modernizar o atendimento do seu negócio?</h2>
-                            <p>Solicite a avaliação dos nossos especialistas e descubra como podemos ajudar a transformar a experiência de atendimento da sua empresa.</p>
-                            <div class="final-cta-buttons">
-                                <a href="#formulariogestao" class="btn-primary">Peça um Orçamento</a>
-                                <a href="#formulariogestao" class="btn-secondary">Fale com um Especialista</a>
-                            </div>
-                        </div>
-                        <div class="final-cta-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-gestao-atendimento/gestao3.png" alt="Customer Service Management Solutions" class="cta-image">
+        <?php
+        get_template_part(
+            'templates/card-formulario',
+            null,
+            array(
+                'titulo' => 'Peça já o seu orçamento e otimize a gestão de bilhetes',
+                'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
+                'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+                'botao'  => 'Enviar Solicitação',
+                'id'     => 'formulariogestao'
+            )
+        );
+        ?>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="final-cta-content">
+                    <div class="final-cta-text">
+                        <h2>Pronto para modernizar o atendimento do seu negócio?</h2>
+                        <p>Solicite a avaliação dos nossos especialistas e descubra como podemos ajudar a transformar a experiência de atendimento da sua empresa.</p>
+                        <div class="final-cta-buttons">
+                            <a href="#formulariogestao" class="btn-primary">Peça um Orçamento</a>
+                            <a href="#formulariogestao" class="btn-secondary">Fale com um Especialista</a>
                         </div>
                     </div>
+                    <div class="final-cta-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-gestao-atendimento/gestao3.png" alt="Customer Service Management Solutions" class="cta-image">
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 </main>
 
 <?php get_footer(); ?>

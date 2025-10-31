@@ -113,6 +113,14 @@ get_header();
         </div>
     </section>
     <!-- Testimonial Section -->
+        <!-- Testimonial Section Mobile -->
+    <?php
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
+    ));
+    ?>
 
 
     <!-- Advanced Technology Section -->

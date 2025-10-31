@@ -37,7 +37,7 @@ get_header();
                 Transforme qualquer ecrã numa ferramenta poderosa de divulgação de conteúdos. Simples, intuitivo e totalmente gerido na Cloud.
             </p>
 
-           <div class="image-container">
+            <div class="image-container">
                 <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/img-design/bg2.png"
                     alt="XOPVISION Digital Signage em shopping center"
@@ -47,15 +47,15 @@ get_header();
                     alt="Imagem sobreposta"
                     class="overlay-image">
             </div>
-       
+
             <a href="#formulariodesign"><button class="cta-button">
-                Solicite um Orçamento
-            </button></a>
+                    Solicite um Orçamento
+                </button></a>
 
             <a href="\paginas-produtos\#formularioprodutos"><button class="secondary-text">
-                Fale com um especialista
-            </button></a>
-     
+                    Fale com um especialista
+                </button></a>
+
         </div>
     </div>
 
@@ -108,13 +108,13 @@ get_header();
 
     <!-- Testimonial Section - Depoimento de cliente -->
 
+    <!-- Testimonial Section Mobile -->
     <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
     ));
-
     ?>
     <!-- Technology Section - Recursos tecnológicos -->
     <section class="technology-section">
@@ -261,28 +261,28 @@ get_header();
     );
     ?>
 
-        <!-- FAQ Section --->
-        <section class="design-transformation-section">
-            <div class="content-block">
-                <h1 class="main-title">
-                    Pronto para transformar a imagem da sua empresa?
-                </h1>
-                <p class="description-paragraph">
-                    Com a Multimac, a criatividade e a estratégia andam de mãos dadas para criar soluções de design que impulsionam a sua marca e encantam os seus clientes. Vamos trabalhar juntos?
-                </p>
-                <div class="action-buttons">
-                    <a href="#formulariodesign" class="btn-style primary-btn">
-                        Peça um Orçamento
-                    </a>
-                    <a href="\pagina-produtos\#formularioprodutos" class="btn-style secondary-btn">
-                        Fale com um especialista
-                    </a>
-                </div>
+    <!-- FAQ Section --->
+    <section class="design-transformation-section">
+        <div class="content-block">
+            <h1 class="main-title">
+                Pronto para transformar a imagem da sua empresa?
+            </h1>
+            <p class="description-paragraph">
+                Com a Multimac, a criatividade e a estratégia andam de mãos dadas para criar soluções de design que impulsionam a sua marca e encantam os seus clientes. Vamos trabalhar juntos?
+            </p>
+            <div class="action-buttons">
+                <a href="#formulariodesign" class="btn-style primary-btn">
+                    Peça um Orçamento
+                </a>
+                <a href="\pagina-produtos\#formularioprodutos" class="btn-style secondary-btn">
+                    Fale com um especialista
+                </a>
             </div>
-            <div class="visual-content">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-design/amigosdetrabalho.png" alt="Soluções de design para empresas" class="featured-image" />
-            </div>
-        </section>
+        </div>
+        <div class="visual-content">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-design/amigosdetrabalho.png" alt="Soluções de design para empresas" class="featured-image" />
+        </div>
+    </section>
 
 </main>
 

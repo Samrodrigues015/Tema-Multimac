@@ -151,11 +151,11 @@ get_header();
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-alarme/testemunhos.png" alt="Pedro Silva">
                 </div>
                 <div class="testimonial-text">
-                    
+
                     <div class="testimonial-quote-icon">
                         <svg width="74" height="58" viewBox="0 0 74 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.2188 30.77L41.2188 58L73.6299 58L73.6299 32.9484L58.1289 -1.05885e-06L41.2188 -2.21395e-06L54.2537 30.77L41.2188 30.77ZM0.000423803 30.77L0.000420757 58L32.4115 58L32.4115 32.9484L16.9105 -3.87442e-06L0.000427246 -5.02952e-06L13.0353 30.77L0.000423803 30.77Z" fill="#FFF5F5" fill-opacity="0.5"/>
-</svg>
+                            <path d="M41.2188 30.77L41.2188 58L73.6299 58L73.6299 32.9484L58.1289 -1.05885e-06L41.2188 -2.21395e-06L54.2537 30.77L41.2188 30.77ZM0.000423803 30.77L0.000420757 58L32.4115 58L32.4115 32.9484L16.9105 -3.87442e-06L0.000427246 -5.02952e-06L13.0353 30.77L0.000423803 30.77Z" fill="#FFF5F5" fill-opacity="0.5" />
+                        </svg>
                     </div>
                     <div class="testimonial-quote">
                         <blockquote>
@@ -172,6 +172,14 @@ get_header();
             </div>
         </div>
     </section>
+    <!-- Testimonial Section Mobile -->
+    <?php
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
+    ));
+    ?>
 
     <!-- Advanced Technology Section -->
     <section class="unibind-advanced-solutions">
@@ -292,44 +300,44 @@ get_header();
             </div>
         </div>
     </section>
-	
-    <!-- Secção Formulario -->
-    
-    <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça já o seu orçamento e garanta a sua segurança',
-    'texto1' => 'Proteja o que realmente importa com um sistema de alarme adaptado às suas necessidades. Preencha o formulário abaixo e receba uma proposta personalizada.
-',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formularioalarme'
-  )
-);
-?>
 
-        <!-- Final CTA Section -->
-        <section class="unibind-final-cta">
-            <div class="container">
-                <div class="final-cta-content cta-invertido">
-                    <div class="final-cta-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-alarme/ctasection.png" alt="Mulher usando sistema de alarme">
-                    </div>
-                    <div class="final-cta-text">
-                        <h2>Pronto para proteger o seu espaço com tecnologia de ponta?</h2>
-                        <p>Com os sistemas de alarme da Multimac, a proteção e a tranquilidade estão ao seu alcance. Entre
-                            em contacto connosco e descubra como podemos ajudá-lo a manter a sua casa ou empresa segura 24
-                            horas por dia.</p>
-                        <div class="final-cta-buttons">
-                            <a href="#formularioalarme" class="final-cta-primary">Peça um Orçamento</a>
-                            <a href="#formularioalarme" class="final-cta-secondary">Fale com um Especialista</a>
-                        </div>
+    <!-- Secção Formulario -->
+
+    <?php
+    get_template_part(
+        'templates/card-formulario',
+        null,
+        array(
+            'titulo' => 'Peça já o seu orçamento e garanta a sua segurança',
+            'texto1' => 'Proteja o que realmente importa com um sistema de alarme adaptado às suas necessidades. Preencha o formulário abaixo e receba uma proposta personalizada.
+',
+            'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+            'botao'  => 'Enviar Solicitação',
+            'id'     => 'formularioalarme'
+        )
+    );
+    ?>
+
+    <!-- Final CTA Section -->
+    <section class="unibind-final-cta">
+        <div class="container">
+            <div class="final-cta-content cta-invertido">
+                <div class="final-cta-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-alarme/ctasection.png" alt="Mulher usando sistema de alarme">
+                </div>
+                <div class="final-cta-text">
+                    <h2>Pronto para proteger o seu espaço com tecnologia de ponta?</h2>
+                    <p>Com os sistemas de alarme da Multimac, a proteção e a tranquilidade estão ao seu alcance. Entre
+                        em contacto connosco e descubra como podemos ajudá-lo a manter a sua casa ou empresa segura 24
+                        horas por dia.</p>
+                    <div class="final-cta-buttons">
+                        <a href="#formularioalarme" class="final-cta-primary">Peça um Orçamento</a>
+                        <a href="#formularioalarme" class="final-cta-secondary">Fale com um Especialista</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

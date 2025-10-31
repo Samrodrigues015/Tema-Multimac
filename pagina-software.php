@@ -121,119 +121,121 @@ get_header();
         </div>
     </section>
 
+    <!-- Testimonial Section Mobile -->
     <?php
-    get_template_part('template-parts/testemunhos', null, array(
-        'show_title' => true,
-        'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-        'card_bg_color' => '#dc6339',
+    get_template_part('templates/testemunhos', null, array(
+        'show_title' => false,
+        'show_paragraph' => false,
+        'only_mobile' => true,
     ));
-
     ?>
 
     <!-- Technology Section -->
-   <section class="equipment-categories">
-    <div class="container">
-        <div class="section-label">
-            <span class="section-bullet">•</span>
-            <span class="section-text">Soluções</span>
+    <section class="equipment-categories">
+        <div class="container">
+            <div class="section-label">
+                <span class="section-bullet">•</span>
+                <span class="section-text">Soluções</span>
+            </div>
+
+            <div class="equipment-header">
+                <div class="equipment-title">
+                    <h2>Tecnologia P.O.S que<br>Transforma o Seu Negócio</h2>
+                </div>
+                <div class="equipment-subtitle">
+                    <p>Os Terminais POS da Multimac combinam hardware de alta qualidade com software inovador para atender às necessidades de negócios de qualquer dimensão.</p>
+                </div>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon1.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Integração na Cloud</h3>
+                        <p>Aceda aos seus dados em tempo real, em qualquer lugar, e otimize a gestão do seu negócio.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon2.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Pagamentos Móveis e Fixos</h3>
+                        <p>Soluções para receber pagamentos no balcão, na mesa ou através de dispositivos móveis.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon3.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Ementas Digitais Interativas</h3>
+                        <p>Atualize menus, imagens e descrições em tempo real, garantindo uma experiência diferenciada para o cliente.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon4.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Gavetas Inteligentes de Dinheiro</h3>
+                        <p>Evite desvios e mantenha a segurança ao integrar sistemas automáticos de gestão de caixa.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon5.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Aplicações de Takeaway</h3>
+                        <p>Reduza custos e permita que clientes façam pedidos diretamente na sua aplicação personalizada.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon6.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Quiosques Self-Service</h3>
+                        <p>Reduza filas e melhore o atendimento com pedidos personalizados e pagamentos rápidos.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon8.svg" alt="">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Opções de Pagamento Modernas</h3>
+                        <p>MB Way, VISA, MasterCard e mais, garantindo flexibilidade para os seus clientes.</p>
+                    </div>
+                </div>
+
+                <div class="equipment-card destaque">
+                    <!-- O texto agora está diretamente dentro do card -->
+                    <a href="#formulariosoftware">
+                        <h3>Descubra mais</h3>
+                    </a>
+                    <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
+
+                    <!-- E aqui está o contentor da seta, para o podermos posicionar -->
+                    <div class="arrow-icon-wrapper">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.00004L29.2947 1M29.2947 1L29.2947 30M29.2947 1L1.00004 30" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a href="#formulariosoftware" class="btn-mobile-pos">Descubra Mais</a>
         </div>
-
-        <div class="equipment-header">
-            <div class="equipment-title">
-                <h2>Tecnologia P.O.S que<br>Transforma o Seu Negócio</h2>
-            </div>
-            <div class="equipment-subtitle">
-                <p>Os Terminais POS da Multimac combinam hardware de alta qualidade com software inovador para atender às necessidades de negócios de qualquer dimensão.</p>
-            </div>
-        </div>
-
-        <div class="equipment-grid">
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon1.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Integração na Cloud</h3>
-                    <p>Aceda aos seus dados em tempo real, em qualquer lugar, e otimize a gestão do seu negócio.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon2.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Pagamentos Móveis e Fixos</h3>
-                    <p>Soluções para receber pagamentos no balcão, na mesa ou através de dispositivos móveis.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon3.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Ementas Digitais Interativas</h3>
-                    <p>Atualize menus, imagens e descrições em tempo real, garantindo uma experiência diferenciada para o cliente.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon4.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Gavetas Inteligentes de Dinheiro</h3>
-                    <p>Evite desvios e mantenha a segurança ao integrar sistemas automáticos de gestão de caixa.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon5.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Aplicações de Takeaway</h3>
-                    <p>Reduza custos e permita que clientes façam pedidos diretamente na sua aplicação personalizada.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon6.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Quiosques Self-Service</h3>
-                    <p>Reduza filas e melhore o atendimento com pedidos personalizados e pagamentos rápidos.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card">
-                <div class="equipment-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/icon8.svg" alt="">
-                </div>
-                <div class="equipment-content">
-                    <h3>Opções de Pagamento Modernas</h3>
-                    <p>MB Way, VISA, MasterCard e mais, garantindo flexibilidade para os seus clientes.</p>
-                </div>
-            </div>
-
-            <div class="equipment-card destaque">
-    <!-- O texto agora está diretamente dentro do card -->
-    <a href="#formulariosoftware"><h3>Descubra mais</h3></a>
-    <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados.</p>
-    
-    <!-- E aqui está o contentor da seta, para o podermos posicionar -->
-    <div class="arrow-icon-wrapper">
-        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1.00004L29.2947 1M29.2947 1L29.2947 30M29.2947 1L1.00004 30" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-    </div>
-</div>
-        </div>
-        <a href="#formulariosoftware" class="btn-mobile-pos">Descubra Mais</a>
-    </div>
-</section>
+    </section>
 
     <!-- Business Solutions Section - Updated to match the image -->
     <div class="xopvision-industries-container">
@@ -292,38 +294,38 @@ get_header();
             <button class="xopvision-desktop-button" style="display: none;" id="xopvisionDesktopButton">Ver todos os produtos</button>
         </div>
     </div>
-         <!-- Secção Formulario -->
-    
-	    <?php
-get_template_part(
-  'templates/card-formulario',
-  null,
-  array(
-    'titulo' => 'Peça Já o Seu Orçamento e Modernize o Seu Negócio',
-    'texto1' => 'Está na hora de dar ao seu negócio as ferramentas que ele merece. Preencha o formulário abaixo e descubra como os Terminais POS da Multimac podem transformar as suas operações.',
-    'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
-    'botao'  => 'Enviar Solicitação',
-    'id'     => 'formulariosoftware'
-  )
-);
-?>
-		</section>
-            <!-- Final CTA Section - Updated to match the image -->
-            <section class="final-cta">
-                <div class="container">
-                    <div class="final-cta-content">
-                        <div class="final-cta-text">
-                            <h2>Soluções garantidas com tecnologia de ponta
-                            </h2>
-                            <p>Na Multimac, trabalhamos com as melhores marcas do mercado para oferecer equipamentos confiáveis e inovadores. As nossas soluções POS combinam hardware robusto com software eficiente, criando uma experiência de venda que se adapta às necessidades do seu negócio.
-                            </p>
-                        </div>
-                        <div class="final-cta-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/predio.png" alt="Ticketing Platform Solutions" class="cta-image">
-                        </div>
-                    </div>
+    <!-- Secção Formulario -->
+
+    <?php
+    get_template_part(
+        'templates/card-formulario',
+        null,
+        array(
+            'titulo' => 'Peça Já o Seu Orçamento e Modernize o Seu Negócio',
+            'texto1' => 'Está na hora de dar ao seu negócio as ferramentas que ele merece. Preencha o formulário abaixo e descubra como os Terminais POS da Multimac podem transformar as suas operações.',
+            'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
+            'botao'  => 'Enviar Solicitação',
+            'id'     => 'formulariosoftware'
+        )
+    );
+    ?>
+    </section>
+    <!-- Final CTA Section - Updated to match the image -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <div class="final-cta-text">
+                    <h2>Soluções garantidas com tecnologia de ponta
+                    </h2>
+                    <p>Na Multimac, trabalhamos com as melhores marcas do mercado para oferecer equipamentos confiáveis e inovadores. As nossas soluções POS combinam hardware robusto com software eficiente, criando uma experiência de venda que se adapta às necessidades do seu negócio.
+                    </p>
                 </div>
-            </section>
+                <div class="final-cta-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-software/predio.png" alt="Ticketing Platform Solutions" class="cta-image">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

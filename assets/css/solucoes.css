@@ -243,7 +243,7 @@ img {
     margin: 0;
     letter-spacing: normal;
     font-weight: 400;
-}
+}-
 
 /* Remove the old feature-icon styles */
 .feature-icon {
@@ -445,15 +445,15 @@ img {
     color: #FFFFFF;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 768px) {
   .testimonial {
     display: none;
   }
+  .transform-spaces {
+   padding: 0;
+  }
 }
 
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
 /* Complementary Solutions Section */
 .complementary-solutions {
   padding: 80px 0;

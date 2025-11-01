@@ -165,7 +165,6 @@
      </section>
 
      <!-- Testimonial Section -->
-<<<<<<< HEAD
       
        <!-- Testimonial Section Mobile -->
     <?php
@@ -175,7 +174,6 @@
         'only_mobile' => true,
     ));
     ?>
-=======
     <section class="testimonial">
         <div class="container">
             <div class="testimonial-header">
@@ -205,7 +203,6 @@
             </div>
         </div>
     </section>
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
      <!-- Statistics Section -->
      <section class="statistics">
          <div class="container">

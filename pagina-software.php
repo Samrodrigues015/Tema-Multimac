@@ -120,7 +120,7 @@ get_header();
             </div>
         </div>
     </section>
-<<<<<<< HEAD
+
 
     <!-- Testimonial Section Mobile -->
     <?php
@@ -130,7 +130,6 @@ get_header();
         'only_mobile' => true,
     ));
     ?>
-=======
   
     <!-- Testimonial Section -->
     <section class="testimonial">
@@ -162,7 +161,6 @@ get_header();
             </div>
         </div>
     </section>
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
 
     <!-- Technology Section -->
     <section class="equipment-categories">

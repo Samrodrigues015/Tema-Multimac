@@ -288,7 +288,7 @@ p {
 
 /* Testimonial Section - Depoimento com layout flexível */
 .testimonial {
-  padding: 60px 0;
+  padding: 60px 100px;
 }
 
 .testimonial-header {

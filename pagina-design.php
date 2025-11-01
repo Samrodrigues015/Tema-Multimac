@@ -107,7 +107,7 @@ get_header();
     </section>
 
     <!-- Testimonial Section - Depoimento de cliente -->
-<<<<<<< HEAD
+
 
     <!-- Testimonial Section Mobile -->
     <?php
@@ -117,8 +117,7 @@ get_header();
         'only_mobile' => true,
     ));
     ?>
-=======
-   <section class="testimonial">
+   <section class="testimonial container">
         <div class="container">
             <div class="testimonial-header">
                 <span class="section-tag"><i class="fa-solid fa-circle"></i> Testemunhos</span>
@@ -147,7 +146,7 @@ get_header();
             </div>
         </div>
     </section>
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
+
     <!-- Technology Section - Recursos tecnológicos -->
     <section class="technology-section">
 

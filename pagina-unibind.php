@@ -118,7 +118,6 @@ get_header();
 
 
   <!-- Testimonial Section (keeping existing) -->
-<<<<<<< HEAD
   <!-- Testimonial Section Mobile -->
   <?php
   get_template_part('templates/testemunhos', null, array(
@@ -127,7 +126,6 @@ get_header();
     'only_mobile' => true,
   ));
   ?>
-=======
    <section class="testimonial">
         <div class="container">
             <div class="testimonial-header">
@@ -157,7 +155,6 @@ get_header();
             </div>
         </div>
     </section>
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
 
   <!-- Advanced Solutions Section -->
   <section class="unibind-advanced-solutions">

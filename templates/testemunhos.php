@@ -502,6 +502,10 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
     .quote-icon {
       display: none;
     }
+    .testemunhos-wrapper {
+    margin: 0 auto;
+  
+  }
   }
 
   @media (min-width: 769px) {

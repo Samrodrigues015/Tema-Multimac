@@ -102,8 +102,6 @@ get_header();
     </div>
   </section>
 
-<<<<<<< HEAD
-
   <!-- Testimonial Section Mobile -->
   <?php
   get_template_part('templates/testemunhos', null, array(
@@ -112,7 +110,6 @@ get_header();
     'only_mobile' => true,
   ));
   ?>
-=======
   <!-- TESTEMUNHOS -->
     <section class="testimonial">
         <div class="container">
@@ -144,7 +141,7 @@ get_header();
             </div>
         </div>
     </section>
->>>>>>> 663e1c7c4915a53f76d295d23185f6d2f1837e44
+
   <!-- SETORES -->
   <section class="sectors">
     <div class="container">

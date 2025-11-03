@@ -966,3 +966,154 @@ p {
     font-size: 36px;
   }
 }
+/*  RESPONSIVIDADE PARA TABLET (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Base */
+  body, p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1 { font-size: 42px; }
+  h2 { font-size: 34px; }
+  h3 { font-size: 22px; }
+  h4, h5, h6 { font-size: 18px; }
+
+  .container {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
+
+  /* Hero Section */
+  .hero-left h1 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+
+  .hero-info-box p {
+    font-size: 15px;
+  }
+
+  /* Why Choose Computing */
+  .computing-title h2 {
+    font-size: 30px;
+  }
+
+  .computing-subtitle p {
+    font-size: 15px;
+    margin-left: 60px;
+  }
+
+  .computing-feature-card {
+    padding: 24px;
+  }
+
+  .computing-feature-card h3 {
+    font-size: 20px;
+  }
+
+  .feature-description {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  /* Equipment Categories */
+  .equipment-title h2 {
+    font-size: 38px;
+  }
+
+  .equipment-subtitle p {
+    font-size: 18px;
+  }
+
+  .feature-box {
+    padding: 25px 20px;
+  }
+
+  .feature-box h3 {
+    font-size: 20px;
+  }
+
+  .feature-box p {
+    font-size: 15px;
+  }
+
+  /* Testimonial */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  /* Business Solutions */
+  .business-solutions h2 {
+    font-size: 38px;
+    max-width: 80%;
+  }
+
+  .solution-content h3 {
+    font-size: 18px;
+  }
+
+  .solution-details li {
+    font-size: 16px;
+  }
+
+  /* Complementary Solutions */
+  .solutions-text h2 {
+    font-size: 42px;
+  }
+
+  .solution-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  /* Geral */
+  section {
+    padding: 60px 0;
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .features-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .solutions-content {
+    display: flex;
+    flex-direction: column;
+  }
+}

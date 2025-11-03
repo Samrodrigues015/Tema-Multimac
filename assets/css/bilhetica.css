@@ -1044,3 +1044,154 @@ p {
     padding: 0 20px;
   }
 }
+/* ====== ESTILOS PARA TABLET (769px - 1024px) ====== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body,
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4, h5, h6 {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  /* Hero Section */
+  .hero-text h2 {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+
+  .floating-container p {
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .floating-container-two span {
+    font-size: 15px;
+  }
+
+  /* Seções "Por que escolher", tecnologia, etc */
+  .why-choose-title h2,
+  .technology-section h2,
+  .final-cta-text h2,
+  .xopvision-industries-title {
+    font-size: 30px;
+  }
+
+  .why-choose-subtitle p,
+  .technology-subtitle,
+  .final-cta-text p,
+  .xopvision-industries-container p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .feature-content h3 {
+    font-size: 20px;
+  }
+
+  .feature-content p,
+  .tech-dropdown p,
+  .xopvision-scenario-text,
+  .xopvision-benefit-text {
+    font-size: 15px;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .xopvision-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* Testemunhos */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  /* Botões e CTAs */
+  .btn-primary,
+  .btn-secondary,
+  .cta-button,
+  .secondary-text,
+  .xopvision-desktop-button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  .cta-button-cards {
+    font-size: 26px;
+    height: 200px;
+    padding: 40px 30px;
+  }
+
+  /* Final CTA Section */
+  .final-cta-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .final-cta-text {
+    text-align: left;
+  }
+
+  /* Ajuste das imagens */
+  img,
+  .cta-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .testimonial-image img {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  /* Padding vertical menor para seções grandes */
+  section,
+  .why-choose-section,
+  .technology-section,
+  .final-cta,
+  .testimonial {
+    padding: 60px 0;
+  }
+
+  /* Oculta elementos mobile */
+  .mobile-container {
+    display: none !important;
+  }
+
+  /* Mantém layout desktop, apenas reduz proporções */
+  .hero-image-bilheteria {
+    display: block !important;
+  }
+}

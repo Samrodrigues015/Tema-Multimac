@@ -1267,3 +1267,108 @@ color: white;
     padding: 16px;
   }
 }
+/* ===== ESTILO PARA TABLET (769px a 1024px) =====
+   Mantém layout de desktop, apenas reduz tamanhos de fontes e espaçamentos
+================================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .main-section {
+    padding: 40px 30px 0;
+  }
+
+  .hero-right h1 {
+    font-size: 44px;
+  }
+
+  .hero-right p {
+    font-size: 18px;
+  }
+
+  .hero-buttons .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .innovation-badge {
+    width: 140px;
+    padding: 40px 15px 32px 0;
+  }
+  .innovation-badge p {
+    font-size: 18px;
+  }
+  .innovation-badge p:nth-of-type(2) {
+    font-size: 22px;
+  }
+
+  .section-title,
+  .section-title-productos {
+    font-size: 42px;
+  }
+
+  .section-description {
+    font-size: 18px;
+    line-height: 30px;
+    width: 85%;
+  }
+
+  .features-grid {
+    gap: 40px 60px;
+  }
+
+  .feature-item h3 {
+    font-size: 20px;
+  }
+  .feature-item p {
+    font-size: 16px;
+  }
+
+  .industry-card h3 {
+    font-size: 22px;
+  }
+  .industry-card p {
+    font-size: 15px;
+  }
+
+  .section-tag {
+    font-size: 18px;
+  }
+
+  .orange-box {
+    padding: 40px;
+  }
+
+  .orange-box p {
+    font-size: 24px;
+  }
+
+  .cta-overlay h3 {
+    font-size: 34px;
+  }
+  .cta-link {
+    font-size: 18px;
+  }
+
+  .feature-box h3 {
+    font-size: 20px;
+  }
+  .feature-box p {
+    font-size: 15px;
+  }
+
+  .discover-more h3 {
+    font-size: 24px;
+  }
+  .discover-more p {
+    font-size: 15px;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+}

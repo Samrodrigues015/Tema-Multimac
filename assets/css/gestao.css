@@ -651,7 +651,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .final-cta-text {
@@ -1003,4 +1003,62 @@ p {
     text-align: center;
   }
 }
+}
+/* ====== ESTILOS PARA TABLET (layout igual ao desktop, fontes menores) ====== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;
+  }
+
+  p, a, li, span {
+    font-size: 90%;
+  }
+
+  .hero-text h2,
+  .why-choose h2,
+  .technology-section h2,
+  .business-title h2,
+  .final-cta-text h2 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .why-choose-subtitle,
+  .technology-subtitle,
+  .business-description p,
+  .final-cta-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .feature-item h3,
+  .tech-item h3,
+  .business-content h3 {
+    font-size: 20px;
+  }
+
+  .feature-item p,
+  .tech-item p,
+  .business-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .cta-button,
+  .btn-primary,
+  .btn-secondary {
+    font-size: 18px;
+    padding: 14px 25px;
+  }
+
+  .container {
+    padding: 0 60px;
+  }
+
+  .testimonial-text {
+    padding: 40px;
+  }
+  .hero-image-gestao {
+    display: none;
+  }
 }

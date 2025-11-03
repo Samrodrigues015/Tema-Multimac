@@ -1623,3 +1623,97 @@ p {
     font-size: 26px;
   }
 }
+/* ===== AJUSTE PARA TABLET (versão mais compacta - 70%) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  body {
+    font-size: 0.9em;
+  }
+
+  h1 { font-size: 30px !important; }
+  h2 { font-size: 28px !important; }
+  h3 { font-size: 22px !important; }
+  h4, h5, h6 { font-size: 18px !important; }
+
+  p, li, a, span, button {
+    font-size: 16px !important;
+    line-height: 120%;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 38px !important;
+  }
+
+  .hero-text p {
+    font-size: 18px !important;
+    line-height: 1.6;
+  }
+
+  .section-title,
+  .resources-title,
+  .quality-section h2,
+  .cta-text h2 {
+    font-size: 34px !important;
+  }
+
+  .solutions-text p,
+  .resources-description,
+  .cta-text p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .cta-button,
+  .cta-button-secondary,
+  .submit-button {
+    font-size: 0.9em !important;
+    padding: 10px 20px;
+  }
+
+  .service-item h3,
+  .feature-content h3 {
+    font-size: 18px !important;
+  }
+
+  .service-item p,
+  .feature-content p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .quality-card h3 {
+    font-size: 18px !important;
+  }
+
+  .quality-card p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .solution-card-suporte h3 {
+    font-size: 18px !important;
+  }
+
+  .solution-card-suporte p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .form-header h1 {
+    font-size: 26px !important;
+  }
+
+  .form-header p {
+    font-size: 18px !important;
+    line-height: 1.6;
+  }
+
+  .why-choose-title h2 {
+    min-width: 100%;
+    font-size: 36px !important;
+  }
+}

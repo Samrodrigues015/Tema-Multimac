@@ -1064,3 +1064,76 @@ img {
     text-align: center;
   }
 }
+/* ===== Ajustes gerais para TABLET (mantém layout desktop, reduz fontes) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;
+    line-height: 1.2;
+  }
+
+  p, li, a, span, button {
+    font-size: 90%;
+    line-height: 1.5;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .why-choose-title h2,
+  .equipment-title h2,
+  .xopvision-industries-title,
+  .final-cta-text h2 {
+    font-size: 28px;
+  }
+
+  .why-choose-subtitle p,
+  .equipment-subtitle p,
+  .xopvision-industries-subitle,
+  .final-cta-text p {
+    font-size: 16px;
+  }
+
+  .feature-content h3,
+  .equipment-content h3,
+  .xopvision-industry-title {
+    font-size: 20px;
+  }
+
+  .feature-content p,
+  .equipment-content p,
+  .xopvision-industry-content p {
+    font-size: 15px;
+  }
+
+  .cta-button,
+  .btn-primary,
+  .btn-secondary,
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 90%;
+    padding: 10px 18px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .xopvision-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

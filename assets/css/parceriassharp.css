@@ -1025,3 +1025,74 @@ img {
   height: 20px;
   flex-shrink: 0;
 }
+/* ====== ESTILO PARA TABLET (769px a 1024px) ======
+   Mantém layout de desktop, apenas reduz fontes e espaçamentos
+===================================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  /* Textos e títulos */
+  h1 { font-size: 46px; }
+  h2 { font-size: 38px; }
+  h3 { font-size: 22px; }
+  p, li, a, span { font-size: 16px; line-height: 1.6; }
+
+  /* Hero */
+  .sharp-hero-text h1 { font-size: 44px; }
+  .sharp-hero-text h2 { font-size: 28px; }
+  .sharp-hero-text p { font-size: 18px; }
+  .sharp-hero-images { height: 320px; }
+
+  /* Highlight */
+  .highlight-content { padding: 30px; }
+  .highlight-text p { font-size: 26px; line-height: 38px; }
+
+  /* Partnership quality */
+  .partnership-quality h2 { font-size: 42px;
+  max-width: 100%;
+  margin-bottom: 15px; }
+  .quality-text p { font-size: 18px; }
+
+  /* Feature boxes */
+  .feature-boxes { padding: 20px 0; }
+  .features-grid { gap: 20px; }
+  .feature-box h3 { font-size: 18px; }
+
+  /* Solutions section */
+  .sharp-solutions h2 { font-size: 44px; }
+  .solutions-subtitle { font-size: 18px; }
+  .solution-card-sharp h3 { font-size: 22px; }
+  .solution-card-sharp p { font-size: 15px; }
+  .solutions-grid { gap: 20px; }
+
+  /* Partnerships */
+  .partnerships-text h2 { font-size: 44px; }
+  .partnerships-text p { font-size: 18px; }
+
+  /* Learn More */
+  .learn-more-text h2 { font-size: 42px; }
+  .learn-more-text p { font-size: 16px;
+  line-height: 120%; }
+  .learn-more-button { font-size: 18px; padding: 12px 24px; }
+
+  /* Statistics */
+  .stat-box h3 { font-size: 44px; }
+  .stat-box p { font-size: 20px; }
+
+  /* Testimonial */
+  .testimonial-quote blockquote { font-size: 17px; }
+  .testimonial-client-info h4 { font-size: 15px; }
+  .testimonial-client-info p { font-size: 13px; }
+
+  section { padding: 50px 0; }
+
+  .stats-grid { gap: 10px; }
+  .quality-content { 
+    grid-template-columns: 1fr;
+}
+.partnerships-handshake-image img {
+    display: none;
+}
+}

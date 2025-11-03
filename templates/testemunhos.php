@@ -249,7 +249,6 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
   @media (max-width: 900px) {
     .testemunhos-wrapper {
       flex-direction: column;
-      align-items: stretch;
     }
 
     .testemunho-card {
@@ -503,7 +502,7 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
       display: none;
     }
     .testemunhos-wrapper {
-    margin: 0 auto;
+    margin: 30px 0;
   
   }
   }
@@ -513,6 +512,7 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
       display: none !important;
     }
   }
+  
 </style>
 
 <script>

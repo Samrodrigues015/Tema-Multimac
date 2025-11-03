@@ -718,7 +718,7 @@ p {
 
 .business-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
@@ -995,4 +995,135 @@ p {
   background-color: #dc6339;
   color: white;
   transform: translateY(-2px);
+}
+/* ===== ESTILOS PARA TABLET (mantém layout desktop, reduz fontes e espaçamentos) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;
+    line-height: 1.2;
+  }
+
+  p, li, a, span, button {
+    font-size: 90%;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  /* HERO */
+  .hero-title h1 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .hero-info-card p {
+    font-size: 18px;
+  }
+
+  .quote-btn {
+    font-size: 18px;
+    width: 120px;
+    height: 130px;
+  }
+
+  /* WHY CHOOSE */
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-choose-top h2 {
+    font-size: 42px;
+  }
+
+  .why-choose-subtitle {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  .feature-item h3 {
+    font-size: 20px;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+  }
+
+  .btn-orange {
+    font-size: 26px;
+    padding: 16px 30px;
+    min-width: 500px;
+    height: 120px;
+  }
+
+  /* TECHNOLOGY */
+  .technology-section h2 {
+    font-size: 42px;
+  }
+
+  .technology-subtitle {
+    font-size: 18px;
+  }
+
+  .tech-item {
+    padding: 25px 30px;
+  }
+
+  .tech-title {
+    font-size: 18px;
+  }
+
+  .tech-dropdown li {
+    font-size: 15px;
+  }
+
+  /* BUSINESS */
+  .business-text h2 {
+    font-size: 30px;
+  }
+
+  .business-text p {
+    font-size: 18px;
+  }
+
+  .business-content h3 {
+    font-size: 22px;
+  }
+
+  .business-content p {
+    font-size: 16px;
+  }
+
+  /* CTA FINAL */
+  .final-cta-text h2 {
+    font-size: 30px;
+  }
+
+  .final-cta-text p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .final-cta-buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* TESTIMONIAL */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
 }

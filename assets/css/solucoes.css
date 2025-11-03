@@ -763,3 +763,105 @@ img {
     line-height: 22px;
   }
 }
+
+/* ===== Ajustes para TABLET (mantém layout desktop, reduz fontes) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;
+    line-height: 1.3;
+  }
+
+  p, a, li, span, button {
+    font-size: 90%;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .hero-info-badge {
+    height: 180px;
+    width: 180px;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .technology-features h2,
+  .transform-spaces h2,
+  .solutions-text h2 {
+    font-size: 42px;
+  }
+  .solutions-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-subtitle {
+    font-size: 20px;
+  }
+
+  .feature-content h3,
+  .solution-content h3 {
+    font-size: 22px;
+  }
+
+  .feature-content p,
+  .solution-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .space-content h3 {
+    font-size: 22px;
+  }
+
+  .space-content p {
+    font-size: 15px;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 17px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  .solutions-content {
+    gap: 40px;
+  }
+
+  .features-grid {
+    gap: 50px 60px;
+  }
+
+  .spaces-grid {
+    gap: 15px;
+  }
+  .hero-content-solucoes {
+    display: grid;
+  }
+}

@@ -784,3 +784,153 @@ p {
     max-width: 320px;
   }
 }
+
+/* 
+   RESPONSIVIDADE PARA TABLET (769px - 1024px)
+   */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  body, p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1 { font-size: 44px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 22px; }
+  h4, h5, h6 { font-size: 18px; }
+
+  .container {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
+
+  /* HERO */
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .hero-images-wrapper {
+    max-width: 90%;
+  }
+
+  /* WHY CHOOSE */
+  .why-choose-title h2 {
+    font-size: 30px;
+  }
+
+  .why-choose-subtitle p {
+    font-size: 18px;
+  }
+
+  .features-grid {
+    column-gap: 40px;
+  }
+
+  .feature-content h3 {
+    font-size: 20px;
+  }
+
+  .feature-content p,
+  .feature-content li {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 22px;
+    padding: 40px 30px;
+  }
+
+  /* TECHNOLOGY */
+  .technology-section h2 {
+    font-size: 28px;
+  }
+
+  .technology-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .technology-features {
+    gap: 30px 40px;
+  }
+
+  .tech-feature h3 {
+    font-size: 20px;
+  }
+
+  .tech-feature p {
+    font-size: 16px;
+  }
+
+  /* SECTORES */
+  .sectors-header h2 {
+    font-size: 28px;
+  }
+
+  .sectors-header .sectors-subtitle {
+    font-size: 18px;
+  }
+
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .sector-card h3 {
+    font-size: 20px;
+  }
+
+  .sector-details p {
+    font-size: 16px;
+  }
+
+  /* CTA FINAL */
+  .final-cta-text h2 {
+    font-size: 30px;
+  }
+  .final-cta-text p {
+    font-size: 16px;
+  }
+  .final-cta-primary,
+  .final-cta-secondary {
+    font-size: 18px;
+    padding: 10px 22px;
+  }
+
+  /* TESTEMUNHOS */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  /* Espaçamentos gerais */
+  section {
+    padding: 70px 0;
+  }
+
+  .feature-card,
+  .tech-feature {
+    padding: 20px 0;
+  }
+}

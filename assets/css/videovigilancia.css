@@ -818,3 +818,106 @@ p {
     padding: 0px 20px 20px 20px;
   }
 }
+/* ===== ESTILOS PARA TABLET (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  h1 { font-size: 42px !important; }
+  h2 { font-size: 36px !important; }
+  h3 { font-size: 24px !important; }
+  h4, h5, h6 { font-size: 18px !important; }
+
+  p {
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+
+  .hero-text h1 {
+    font-size: 27px !important;
+  }
+
+  .hero-text p {
+    font-size: 19px !important;
+    line-height: 120%;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 16px !important;
+    padding: 12px 25px !important;
+  }
+
+  .why-choose-header h2,
+  .videovigilancia-sectors h2,
+  .final-cta-text-video h2 {
+    font-size: 28px !important;
+  }
+
+  .why-choose-header p,
+  .sectors-subtitle,
+  .final-cta-text-video p {
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+
+  .feature-content-video h3 {
+    font-size: 20px !important;
+  }
+
+  .feature-content-video p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .sector-card-video h3 {
+    font-size: 20px !important;
+  }
+
+  .sector-details-video p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .technology-advanced h2 {
+    font-size: 28px !important;
+  }
+
+  .technology-subtitle {
+    font-size: 18px !important;
+    line-height: 120%;
+  }
+
+  .table-cell {
+    font-size: 16px !important;
+    padding: 18px 22px;
+  }
+
+  .table-cell strong {
+    font-size: 22px !important;
+  }
+
+  .final-cta-primary-video,
+  .final-cta-secondary-video {
+    font-size: 16px !important;
+    padding: 12px 25px !important;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 16px !important;
+  }
+
+  .testimonial-client-info p {
+    font-size: 14px !important;
+  }
+}

@@ -1269,3 +1269,117 @@ body {
     border-radius: 8px;
   }
 }
+/*
+   TABLET (769px – 1024px)*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .container {
+    padding: 0 60px;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero-v2-content h1 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .hero-v2-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .btn-primary-gavetas,
+  .btn-secondary-gavetas {
+    font-size: 16px;
+    padding: 0.8rem 1.8rem;
+  }
+.sector-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+  .hero-v2-overlay-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  /* ===== BENEFÍCIOS ===== */
+  .benefits-v2-title h2 {
+    font-size: 36px;
+  }
+
+  .benefits-v2-summary {
+    font-size: 18px;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+  }
+
+  .benefit-card ul li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cta-big-btn {
+    width: 100%;
+    max-width: 480px;
+    height: 200px;
+    font-size: 24px;
+  }
+
+  .cta-big-btn .cta-arrow {
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    right: 20px;
+  }
+
+  /* ===== SETORES ===== */
+  .sector-title {
+    font-size: 36px;
+  }
+
+  .sector-subtitle {
+    font-size: 18px;
+  }
+
+  .sector-card h3 {
+    font-size: 20px;
+  }
+
+  .sector-card p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* ===== MODERNIZE ===== */
+  .modernize-content h2 {
+    font-size: 36px;
+  }
+
+  .modernize-content p {
+    font-size: 18px;
+  }
+
+  .modernize-btn-wrapper .btn.btn-primary {
+    font-size: 16px;
+    padding: 0.7rem 1.6rem;
+  }
+
+  /* ===== TESTEMUNHOS ===== */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  .section-tag {
+    font-size: 18px;
+  }
+}

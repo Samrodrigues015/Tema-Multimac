@@ -788,3 +788,156 @@ p {
     font-size: 32px;
   }
 }
+/* ====== ESTILOS PARA TABLET (769px - 1024px) ====== */
+/* ====== ESTILOS PARA TABLET (769px - 1024px) ====== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Base container */
+  .container {
+    padding: 0 40px;
+  }
+
+  body,
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4, h5, h6 {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .multimac-hero {
+    padding: 60px 0;
+  }
+
+  .multimac-hero-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .hero-text-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .hero-cta button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  /* Why Choose Section */
+  .why-choose-title h2 {
+    font-size: 32px;
+  }
+
+  .why-choose-subtitle p {
+    font-size: 16px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .feature-content h3 {
+    font-size: 20px;
+  }
+
+  .feature-content p {
+    font-size: 15px;
+  }
+
+  /* Testimonial Section */
+  .testimonial-text {
+    padding: 40px;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  /* Advanced Technology Section */
+  .unibind-advanced-title h2 {
+    font-size: 34px;
+  }
+
+  .unibind-advanced-subtitle {
+    font-size: 17px;
+  }
+
+  .unibind-solution-item h3 {
+    font-size: 18px;
+  }
+
+  .unibind-solution-item p {
+    font-size: 15px;
+  }
+
+  /* Sectors Section */
+  .unibind-sectors-title h2 {
+    font-size: 34px;
+  }
+
+  .unibind-sectors-title p {
+    font-size: 17px;
+  }
+
+  .unibind-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .unibind-sector-content h3 {
+    font-size: 18px;
+  }
+
+  .unibind-sector-content p {
+    font-size: 15px;
+  }
+
+  /* Final CTA */
+  .final-cta-text h2 {
+    font-size: 32px;
+  }
+
+  .final-cta-text p {
+    font-size: 16px;
+  }
+
+  .final-cta-primary,
+  .final-cta-secondary {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+
+  .cta-button span {
+    font-size: 26px;
+  }
+}

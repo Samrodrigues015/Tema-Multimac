@@ -1066,3 +1066,111 @@ p {
     padding: 20px;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Base */
+  body, p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1 { font-size: 40px; }
+  h2 { font-size: 34px; }
+  h3 { font-size: 24px; }
+  h4, h5, h6 { font-size: 18px; }
+
+  .container {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+  .hero-info-box p {
+    font-size: 18px;
+  }
+
+  /* Why Choose Section */
+  .why-choose-header-grid h2 {
+    font-size: 42px;
+  }
+  .why-choose-header-grid p {
+    font-size: 18px;
+  }
+  .feature-item h3 {
+    font-size: 20px;
+  }
+  .feature-item li {
+    font-size: 16px;
+  }
+
+  /* Security Features */
+  .features-header-grid h2 {
+    font-size: 36px;
+  }
+  .features-header-grid p {
+    font-size: 18px;
+  }
+  .header-item {
+    font-size: 20px;
+  }
+  .table-cell p {
+    font-size: 15px;
+  }
+
+  /* Products Section */
+  .product-card {
+    width: 320px;
+  }
+  .product-content h3 {
+    font-size: 18px;
+  }
+  .product-back h3 {
+    font-size: 20px;
+  }
+  .product-back ul li {
+    font-size: 15px;
+  }
+
+  /* Testimonial */
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  /* Protect Future */
+  .protect-future-text h2 {
+    font-size: 30px;
+  }
+  .protect-future-text p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .btn-primary, .btn-secondary {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  /* CTA Card */
+  .cta-card {
+    padding: 25px;
+  }
+  .cta-button {
+    font-size: 28px;
+  }
+
+  /* Ajustes gerais */
+  section {
+    padding: 60px 0;
+  }
+  
+}

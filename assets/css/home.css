@@ -256,16 +256,6 @@ main section {
   padding-bottom: 15px;
 }
 
-/*.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background-color: #dc6339;
-} */
 
 .product-cards::-webkit-scrollbar {
   display: none;
@@ -546,48 +536,53 @@ main section {
 }
 
 /* SEÇÃO DE PARCEIROS */
-
-.partners-bg {
-  display: inline;
-  gap: 20px;
-  right: 0;
-  width: 80%;
-  z-index: 0;
+.partners-section {
+  overflow: hidden;
 }
 
-.partners-bg img {
-  border-radius: 10px;
-  max-width: 535px;
-}
-
-.partners-logos {
+.partners-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
+  flex-direction: row-reverse;
   align-items: center;
-  max-width: 800px;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 auto;
 }
 
-.partners-logos h2 {
-  font-size: 50px;
+.partners-image img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+
+
+.partners-content h2 {
+  font-size: 48px;
   font-weight: 600;
   line-height: 118%;
-  margin-bottom: 30px;
-  width: 113%;
-  text-align: left;
-  color: #333;
-  margin-top: -10px;
+  letter-spacing: -0.32px;
+  margin-bottom: 40px;
 }
 
-.partners-logos img {
+/* ====== GRID DE LOGOS (DESKTOP) ====== */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.partners-grid img {
   height: 85px;
-  flex: 0 1 calc(25% - 20px);
-  transition: filter 0.3s;
+  transition: transform 0.3s ease;
 }
 
-.partners-logos img:hover {
+.partners-grid img:hover {
   transform: translateY(-3px);
+}
+
+/* ====== ESCONDER CARROSSEL NO DESKTOP ====== */
+.partners-carousel {
+  display: none;
 }
 
 /* SEÇÃO DE BLOG/DICAS */
@@ -726,6 +721,61 @@ main section {
   .solution-card {
     max-width: 100%;
   }
+  /* Section Parceiros */
+.partners-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .partners-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .partners-grid {
+    display: none; /* esconder grid e mostrar carrossel */
+  }
+
+  .partners-image {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .partners-image img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  /* === CARROSSEL MOBILE === */
+  .partners-carousel {
+    display: block;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    animation: scrollInfinite 35s linear infinite;
+  }
+
+  .carousel-track img {
+    height: 65px;
+  }
+
+  @keyframes scrollInfinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -813,51 +863,6 @@ main section {
     width: 80%;
   }
 
-  .partners-logos h2 {
-    font-size: 24px;
-    text-align: center;
-    width: 100%;
-    margin: 0 0 20px 0;
-    order: -1;
-  }
-
-  .partners-bg {
-    order: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0 0 20px 0;
-  }
-
-  .partners-bg img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .partners-logos {
-    display: contents;
-  }
-
-  /* Cria um container virtual para as imagens */
-  .partners-logos::after {
-    content: "";
-    display: flex;
-    order: 1;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-
-  /* Estilo específico para as imagens das marcas */
-  .partners-logos > img {
-    display: inline-block;
-    height: 60px;
-    margin-right: 15px;
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-  }
 
   .blog-section {
     padding: 40px 20px;
@@ -926,5 +931,134 @@ main section {
 
   product-cards {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Responsividade para telas menores section parceiros*/
+@media (max-width: 992px) {
+  .partners-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .partners-content {
+    max-width: 90%;
+  }
+
+  .partners-content h2 {
+    font-size: 28px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .partners-grid img {
+    height: 75px;
+  }
+
+  .partners-image img {
+    max-width: 400px;
+    padding: 20px;
+  }
+}
+
+/* ====== RESPONSIVIDADE PARA TABLETS (entre 769px e 1024px) ====== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 90%;
+  }
+
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+
+  p, a, button, li {
+    font-size: 90%;
+  }
+.container {
+    padding: 0 0px;
+  }
+  /* Hero */
+  .hero-section {
+    padding: 40px 20px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .main-button-styles {
+    font-size: 16px;
+  }
+
+  /* Produtos */
+  .products-section h2 {
+    font-size: 42px;
+  }
+  .product-info h3 {
+    font-size: 22px;
+  }
+  .product-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Soluções */
+  .section-header h2 {
+    font-size: 42px;
+  }
+  .solution-content h3 {
+    font-size: 22px;
+  }
+  .solution-content p {
+    font-size: 18px;
+  }
+.transform-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 100px;
+}
+  /* Parceiros */
+  .partners-wrapper {
+   
+    text-align: left;
+    gap: 40px;
+  }
+  .partners-content h2 {
+    font-size: 42px;
+  }
+  .partners-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .partners-grid img {
+    height: 75px;
+  }
+
+  /* Blog */
+  .blog-text h2 {
+    font-size: 42px;
+  }
+  .blog-text p {
+    font-size: 18px;
+  }
+  .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Estatísticas */
+  .stats-title {
+    font-size: 45px;
+  }
+  .stats-subtitle {
+    font-size: 20px;
+  }
+
+  /* Transformações */
+  .transform-wrapper h3 {
+    font-size: 20px;
+  }
+  .transform-wrapper p {
+    font-size: 16px;
   }
 }

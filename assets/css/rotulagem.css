@@ -749,3 +749,114 @@ position: absolute;
     max-width: 150px;
   }
 }
+
+/* ===== ESTILO PARA TABLET (769px a 1024px) =====
+   Mantém o layout do desktop com ajustes sutis de tamanho e espaçamento
+================================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  .container {
+    padding: 0 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 46px;
+  }
+
+  .hero-text p {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .hero-feature-box {
+    width: 160px;
+    padding: 30px 10px;
+  }
+
+  .hero-feature-box p {
+    font-size: 18px;
+  }
+
+  .hero-feature-box .feature-highlight {
+    font-size: 22px;
+  }
+
+  .why-choose-header h2 {
+    font-size: 38px;
+  }
+
+  .why-choose-header p {
+    font-size: 18px;
+  }
+
+  .features-grid-video {
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+
+  .feature-content-video h3 {
+    font-size: 22px;
+  }
+
+  .feature-content-video li {
+    font-size: 16px;
+  }
+
+  .application-sectors h2 {
+    font-size: 42px;
+  }
+
+  .sector-card h3 {
+    font-size: 22px;
+  }
+
+  .sector-card p {
+    font-size: 15px;
+  }
+
+  .technology-section .section-header h1 {
+    font-size: 44px;
+  }
+
+  .technology-section .section-header p {
+    font-size: 19px;
+  }
+
+  .partner-item {
+    gap: 32px;
+  }
+
+  .partner-content h2 {
+    font-size: 22px;
+  }
+
+  .partner-content p {
+    font-size: 16px;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  .section-tag {
+    font-size: 17px;
+  }
+  .hero-content-rotulagem {
+    grid-template-columns: 1fr;
+  }
+}

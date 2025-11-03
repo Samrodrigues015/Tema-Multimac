@@ -1118,3 +1118,110 @@ main section {
     font-size: 18px;
   }
 }
+/*  RESPONSIVIDADE PARA TABLET (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  body, p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1 { font-size: 42px; }
+  h2 { font-size: 34px; }
+  h3 { font-size: 22px; }
+  h4, h5, h6 { font-size: 18px; }
+
+  main section {
+    padding: 0 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .floating-container p {
+    font-size: 18px;
+  }
+
+  .floating-container-two span {
+    font-size: 16px;
+  }
+
+  .benefits-grid h2 {
+    font-size: 38px;
+  }
+
+  .benefits-grid p {
+    font-size: 17px;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+  }
+
+  .cta-card h3, 
+  .cta-card p {
+    font-size: 26px;
+  }
+
+  .testimonial-quote blockquote {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonial-client-info h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-client-info p {
+    font-size: 13px;
+  }
+
+  .xopvision-industries-title {
+    font-size: 40px;
+  }
+
+  .xopvision-industries-container p {
+    font-size: 18px;
+  }
+
+  .xopvision-industry-title {
+    font-size: 20px;
+  }
+
+  .xopvision-scenario-text,
+  .xopvision-benefit-text {
+    font-size: 16px;
+  }
+
+  .xopvision-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .design-transformation-section {
+    flex-direction: row;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .main-title {
+    font-size: 38px;
+  }
+
+  .description-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .btn-style {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    font-size: 16px;
+  }
+}

@@ -766,3 +766,111 @@ p {
     flex-direction: column;
   }
 }
+/* =============================
+   RESPONSIVIDADE PARA TABLET
+   Mantém layout de desktop, mas ajusta tamanhos
+   ============================= */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  /* Ajustes gerais de fonte */
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p, li {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Hero Section */
+  .solar-hero-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .solar-hero-left h1 {
+    font-size: 30px;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  /* Why Choose */
+  .why-choose-header {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .why-choose-title h2 {
+    font-size: 36px;
+  }
+  .why-choose-subtitle p {
+    font-size: 18px;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+
+  /* Advanced Solutions */
+  .solar-advanced-title h2 {
+    font-size: 36px;
+  }
+  .solar-advanced-subtitle {
+    font-size: 18px;
+  }
+  .solar-solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  /* Sectors */
+  .solar-sectors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  .solar-sector-card h3 {
+    font-size: 22px;
+  }
+  .sector-details p {
+    font-size: 16px;
+  }
+
+  /* CTA Final */
+  .final-cta-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .final-cta-text h2 {
+    font-size: 30px;
+  }
+  .final-cta-text p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  /* Testimonial */
+  .testimonial-content {
+    grid-template-columns: 1fr 1.5fr;
+    min-height: 280px;
+  }
+  .testimonial-text {
+    padding: 40px;
+  }
+  .testimonial-quote blockquote {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* Ajustes finos de espaçamento */
+  section {
+    padding: 60px 0;
+  }
+}

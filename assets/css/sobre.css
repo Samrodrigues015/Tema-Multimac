@@ -1323,3 +1323,61 @@ p {
     width: 420px;
   }
 }
+/* ===== Ajustes Gerais para TABLET (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%;
+  }
+
+  p, a, li, span {
+    font-size: 90%;
+    line-height: 1.4;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .hero-black-box p,
+  .hero-orange-box h2,
+  .quem-somos-text h2,
+  .mission-vision-values h2,
+  .solutions-services h2,
+  .main-areas h2,
+  .diferencial-left h2,
+  .market-left h2,
+  .environmental-responsibility h2 {
+    font-size: 90%;
+  }
+
+  .quem-somos-text p,
+  .mvv-item p,
+  .solutions-subtitle,
+  .diferencial-left p,
+  .market-right p,
+  .market-card-content p,
+  .responsibility-item p {
+    font-size: 90%;
+    line-height: 1.4;
+  }
+
+  .iso-desc {
+    font-size: 90%;
+  }
+
+  .area-card h3,
+  .market-card-content h3,
+  .responsibility-item h3 {
+    font-size: 95%;
+  }
+
+  .btn,
+  .cta-button {
+    font-size: 90%;
+    padding: 10px 18px;
+  }
+}

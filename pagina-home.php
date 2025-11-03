@@ -361,18 +361,14 @@ get_header();
     </section>
 
     <!-- SEÇÃO DE PARCEIROS -->
-    <section class="home-main-container">
+ <!-- SEÇÃO DE PARCEIROS -->
+<section class="partners-section">
+  <div class="partners-wrapper">
+    <div class="partners-content">
+      <h2>Trabalhamos com os melhores para oferecer o melhor</h2>
 
-      <div class="hero-content">
-        <div class="partners-bg">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/edificio.png" alt="Edifício corporativo" />
-        </div>
-      </div>
-      <div class="partners-logos">
-        <h2>
-          Trabalhamos com os melhores para oferecer o melhor
-        </h2>
-        <div class="partners-scroll">
+      <!-- GRID de logos no desktop -->
+      <div class="partners-grid">
         <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
         <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
         <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
@@ -381,9 +377,40 @@ get_header();
         <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
         <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
         <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
-</div>
       </div>
-    </section>
+    </div>
+
+    <div class="partners-image">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/edificio.png" alt="Edifício corporativo" />
+    </div>
+  </div>
+
+  <!-- Carrossel só aparece no mobile -->
+  <div class="partners-carousel">
+    <div class="carousel-track">
+      <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+      <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+      <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+      <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+      <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+      <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+      <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+      <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+
+      <!-- duplicado para efeito infinito -->
+      <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+      <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+      <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+      <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+      <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+      <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+      <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+      <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+    </div>
+  </div>
+</section>
+
+
    
 
 			<!-- Testemunhos responsivos -->

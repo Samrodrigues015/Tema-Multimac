@@ -12,7 +12,7 @@
 
 ?>
 <footer class="multimac-footer">
-  <div class="container">
+  <div class="container-footer">
     <!-- Logo and Social Media -->
     <div class="logo-social">
       <div class="logo">
@@ -47,7 +47,6 @@
         <p>Praça Alexandre Herculano</p>
         <p class="mb-4">nº7 8000-159 Faro</p>
         <p>(+351) 289 805 888</p>
-        <p class="note">*Chamada para a rede fixa Nacional</p>
       </div>
 
       <div class="location">
@@ -63,7 +62,7 @@
         <p>9h – 13h/14h – 18h</p>
       </div>
     </div>
-
+    <p class="note">*Chamada para a rede fixa Nacional</p>
     <!-- Navigation Sections -->
     <div class="nav-sections">
       <a href="<?php echo site_url('/pagina-produtos'); ?>" class="nav-section">

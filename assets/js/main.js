@@ -156,94 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Script para Página Home - Produtos
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.querySelector(".news-button button");
-  const hiddenCards = document.querySelectorAll(".product-card.hidden-product");
-  let isExpanded = false;
 
-  // Garantir que os produtos ocultos estão escondidos no início
-  hiddenCards.forEach((card) => {
-    card.style.display = "none";
-  });
-
-  toggleButton.addEventListener("click", function () {
-    if (!isExpanded) {
-      // Mostrar os produtos ocultos
-      hiddenCards.forEach((card) => {
-        card.style.display = "flex";
-      });
-      toggleButton.textContent = "Fechar lista";
-      isExpanded = true;
-    } else {
-      // Esconder novamente
-      hiddenCards.forEach((card) => {
-        card.style.display = "none";
-      });
-      toggleButton.textContent = "Ver todos os produtos";
-      isExpanded = false;
-    }
-  });
-});
-// Script para Página Home - Soluções
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButtonSolutions = document.querySelector(
-    ".solution-container .news-button button"
-  );
-  const hiddenSolutionCards = document.querySelectorAll(
-    ".solution-card.hidden-solution"
-  );
-  let solutionsExpanded = false;
-
-  // Garantir que os cards ocultos estão escondidos no início
-  hiddenSolutionCards.forEach((card) => {
-    card.style.display = "none";
-  });
-
-  toggleButtonSolutions.addEventListener("click", function () {
-    if (!solutionsExpanded) {
-      // Mostrar os cards
-      hiddenSolutionCards.forEach((card) => {
-        card.style.display = "flex";
-      });
-      toggleButtonSolutions.textContent = "Fechar Lista";
-      solutionsExpanded = true;
-    } else {
-      // Esconder de novo
-      hiddenSolutionCards.forEach((card) => {
-        card.style.display = "none";
-      });
-      toggleButtonSolutions.textContent = "Conheça todas as soluções";
-      solutionsExpanded = false;
-    }
-  });
-});
-// ===== Carrossel de Logos =====
-if (window.innerWidth <= 640) {
-  const logosContainer = document.querySelector(".partners-logos");
-  if (logosContainer) {
-    const images = Array.from(logosContainer.querySelectorAll("img"));
-    if (images.length > 0) {
-      const carousel = document.createElement("div");
-      carousel.className = "logos-carousel";
-
-      images.forEach((img) => carousel.appendChild(img));
-      logosContainer.appendChild(carousel);
-
-      carousel.style.overflowX = "auto";
-      carousel.style.scrollSnapType = "x mandatory";
-      carousel.style.display = "flex";
-      carousel.style.gap = "15px";
-      carousel.style.paddingBottom = "15px";
-
-      images.forEach((img) => {
-        img.style.flex = "0 0 auto";
-        img.style.height = "60px";
-        img.style.scrollSnapAlign = "start";
-      });
-    }
-  }
-}
  // Script para Faq das paginas(Geral)
   document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq-item');
@@ -266,3 +179,21 @@ document.querySelectorAll('.tech-item').forEach(item => {
     item.classList.toggle('active');
   });
 });
+ // Script pagina home cards solucoes //
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.solution-cards');
+    const nextButtons = document.querySelectorAll('.next');
+    const prevButtons = document.querySelectorAll('.prev');
+
+    nextButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        carousel.scrollBy({ left: 400, behavior: 'smooth' });
+      });
+    });
+
+    prevButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -400, behavior: 'smooth' });
+      });
+    });
+  });

@@ -1,14 +1,14 @@
 /* MOBILE-FIRST STYLES - Matching the mobile image */
 .multimac-footer {
-  font-family: "Arial", sans-serif;
-  background-color: #2a2a2a;
+  background-color: #1C1C1C;
   color: #ffffff;
   padding: 50px 30px;
 }
 
-.container {
+.container-footer {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* LOGO SECTION - Mobile */
@@ -84,11 +84,17 @@
   margin-bottom: 15px;
 }
 
-.location .note {
+.location {
   font-size: 12px;
-  color: #999999;
-  font-style: italic;
+  color: #FFF5F5;
   margin-top: 10px;
+}
+.note {
+  font-size: 16px;
+  font-weight: 400;
+  color: #787474;
+  line-height: 9px;
+  margin-bottom: 40px;
 }
 
 /* NAVIGATION SECTIONS - Mobile (vertical stack) */
@@ -156,8 +162,8 @@
     padding: 50px 0 30px;
   }
 
-  .container {
-    padding: 0 40px;
+  .container-footer {
+    padding: 0 100px;
   }
 
   /* Locations Grid - 2 columns */
@@ -165,13 +171,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   /* Logo and Social - Side by side */
   .logo-social {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 40px;
     align-items: center;
     padding: 50px 0;
     margin-bottom: 60px;
@@ -182,7 +189,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 
   /* Hide mobile divider on larger screens */
@@ -193,7 +200,7 @@
   /* Legal links horizontal with separators */
   .legal-links {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 0;
     text-align: center;
@@ -208,9 +215,11 @@
   .legal-links a {
     margin: 5px 0;
   }
-
+.note {
+    margin-bottom: 100px;
+  }
   .copyright {
-    text-align: center;
+    text-align: start;
     font-size: 14px;
     padding-top: 20px;
     border-top: 1px solid #444444;
@@ -228,7 +237,7 @@
   .locations-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .location h3 {
@@ -244,7 +253,7 @@
   /* Logo and Social */
   .logo-social {
     padding: 60px 0;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
 
   .logo img {
@@ -265,7 +274,7 @@
   .nav-sections {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .nav-section h3 {
@@ -316,7 +325,7 @@
   }
 
   .nav-sections {
-    gap: 60px;
+    gap: 10px;
   }
 }
 

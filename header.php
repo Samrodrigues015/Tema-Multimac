@@ -102,3 +102,19 @@
         </div>
       </div>
     </header>
+      <script>
+  (function () {
+    var header = document.querySelector('header');
+    if (!header) return;
+
+    function onScroll() {
+      if (window.scrollY > 10) {
+        header.classList.add('is-stuck');
+      } else {
+        header.classList.remove('is-stuck');
+      }
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>

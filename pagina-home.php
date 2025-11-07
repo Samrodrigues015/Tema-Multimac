@@ -9,8 +9,8 @@ get_header();
     <div class="home-main-container">
       <div class="hero-content">
         <h1>
-          Inovação em soluções tecnológicas para o 
-		sucesso do seu negócio
+          Inovação em soluções tecnológicas para o
+          sucesso do seu negócio
         </h1>
         <p>
           Há mais de 45 anos a transformar empresas com produtos inovadores
@@ -55,104 +55,121 @@ get_header();
 
 
     <!-- SEÇÃO DE PRODUTOS -->
-    <section  id="solucoes" class="products-section">
-      <div class="container">
-        <h2>Produtos e soluções líderes no mercado</h2>
-        <div class="products-container">
-          <div class="product-cards">
-            <!-- Card 1 -->
-            <div class="product-card">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesvisuais.png" alt="Impressoras Digital Signage" />
-              </div>
-              <div class="product-info">
-                <h3>Soluções Visuais (Digital Signage)</h3>
-                <a href="/pagina-solucoes-visuais" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
+    <section id="solucoes" class="products-section">
+      <div>
+        <h2>Produtos e soluções que são líderes no mercado</h2>
 
-            <!-- Card 2 -->
-            <div class="product-card">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/imprenssora.png" alt="Impressoras Multifunções" />
-              </div>
-              <div class="product-info">
-                <h3>Impressoras e Multifunções</h3>
-                <a href="/pagina-produtos" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+        <div class="products-carousel">
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgimpressora.png"
+              alt="Impressoras e Multifunções" />
+            <div class="card-content">
+              <h3>Impressoras e Multifunções</h3>
+              <p>
+                Otimize fluxos de trabalho com equipamentos confiáveis e avançados.
+                Perfeitos para empresas que precisam de produtividade e qualidade de
+                impressão.
+              </p>
+              <a href="/pagina-produtos" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-
-            <!-- Card 3 -->
-            <div class="product-card">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sistemacontrolo.png" alt="PDV e Sistemas de Controle" />
-              </div>
-              <div class="product-info">
-                <h3>P.O.S e Sistemas de Controlo</h3>
-                <a href="/pagina-pos-software" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgpos.png"
+              alt="POS e Sistemas de Controlo" />
+            <div class="card-content">
+              <h3>POS e Sistemas de Controlo</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-pos-software" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-
-            <!-- Card 4 -->
-            <div class="product-card">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gavetainteligente.png" alt="Gestão de Dados" />
-              </div>
-              <div class="product-info">
-                <h3>Gaveta Inteligente de Dinheiro</h3>
-                <a href="/pagina-gavetas-de-dinheiro" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesvisuais.png"
+              alt="Soluções Visuais (Digital Signage)" />
+            <div class="card-content">
+              <h3>Soluções Visuais (Digital Signage)</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-solucoes-visuais" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-            <!-- Card 5 -->
-            <div class="product-card hidden-product">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/energiarenovavel.png" alt="Gestão de Dados" />
-              </div>
-              <div class="product-info">
-                <h3>Energias Renováveis</h3>
-                <a href="/pagina-energia-renovaveis" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gavetainteligente.png"
+              alt="Gaveta Inteligente" />
+            <div class="card-content">
+              <h3>Gaveta Inteligente de Dinheiro</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-gavetas-de-dinheiro" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-            <!-- Card 6 -->
-            <div class="product-card hidden-product">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/videovigilancia.png" alt="Gestão de Dados" />
-              </div>
-              <div class="product-info">
-                <h3>Videovigilância</h3>
-                <a href="/pagina-videovigilancia" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/videovigilancia.png"
+              alt="Energia Renovável" />
+            <div class="card-content">
+              <h3>Videovigilância</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-videovigilancia" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-            <!-- Card 7 -->
-            <div class="product-card hidden-product">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/controlodeacesso.png" alt="Gestão de Dados" />
-              </div>
-              <div class="product-info">
-                <h3>Controlo de acessos</h3>
-                <a href="/pagina-controlo-de-acessos" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/energiarenovavel.png"
+              alt="Energia Renovável" />
+            <div class="card-content">
+              <h3>Energias Renováveis</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-energia-renovaveis" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
-            <!-- Card 8 -->
-            <div class="product-card hidden-product">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/encadernacao.png" alt="Gestão de Dados" />
-              </div>
-              <div class="product-info">
-                <h3>Encadernação e Personalização</h3>
-                <a href="/pagina-unibind" class="product-tag"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/encadernacao.png"
+              alt="Encadernação e Personalização" />
+            <div class="card-content">
+              <h3>Encadernação e Personalização</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-unibind" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/controlodeacesso.png"
+              alt="Controlo de Acessos" />
+            <div class="card-content">
+              <h3>Controlo de acessos</h3>
+              <p>
+                Processamento rápido e seguro para qualquer setor — da restauração ao
+                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+              </p>
+              <a href="/pagina-controlo-de-acessos" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
           </div>
         </div>
-        <!-- Botão produtos -->
-        <div class="news-button">
-          <button class="primary-button main-button-styles">
-            Ver todos os produtos
-          </button>
-        </div>
       </div>
     </section>
+
+
 
     <!-- SEÇÃO DE ESTATÍSTICAS -->
     <section class="stats-section">
@@ -173,123 +190,122 @@ get_header();
       </div>
     </section>
 
-    <!-- SEÇÃO DE SOLUÇÕES DESTACADAS -->
     <section class="solution-container">
-      <div class="section-header">
-        <span class="section-tag">
-          <i class="fa-solid fa-circle"></i>Soluções</span>
-        <h2>Maximize o potencial dos seus produtos com nossas soluções</h2>
+      <div class="solution-grid">
+
+        <!-- LADO ESQUERDO: título e descrição -->
+        <div class="section-header destaque">
+          <span class="section-tag">
+            <i class="fa-solid fa-circle"></i>Soluções
+          </span>
+          <h2>Maximize o potencial dos seus produtos com nossas soluções</h2>
+          <p>
+            As nossas soluções vão além dos produtos. Oferecemos serviços que integram tecnologia, personalização e inovação, otimizando cada aspeto das operações da tua empresa.
+          </p>
+        </div>
+
+        <!-- LADO DIREITO: carrossel de cards -->
+        <div class="solution-carousel">
+          <div class="solution-cards">
+
+            <!-- Card 1 -->
+            <div class="solution-card">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucao1.png" alt="Soluções Visual Digital Signage" />
+              <div class="solution-content">
+                <h3>XOPVISION Digital Signage</h3>
+                <p>Eleva a tua comunicação visual para captar a atenção do público e impulsionar a tua marca.</p>
+                <button class="discover-button">
+                  <a href="/pagina-solucoes-visuais">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="solution-card">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gestaoatendimento.png" alt="Gestão de Atendimento" />
+              <div class="solution-content">
+                <h3>Gestão de Atendimento</h3>
+                <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
+                <button class="discover-button">
+                  <a href="/pagina-gestao-de-atendimento">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="solution-card hidden-solution">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/bilheteria.png" alt="Bilhética" />
+              <div class="solution-content">
+                <h3>Bilhética</h3>
+                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
+                <button class="discover-button">
+                  <a href="/pagina-bilhetica">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="solution-card hidden-solution">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesdocumentais.png" alt="Soluções Documentais" />
+              <div class="solution-content">
+                <h3>Soluções Documentais</h3>
+                <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
+                <button class="discover-button">
+                  <a href="/pagina-solucoes-documentais">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="solution-card hidden-solution">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/design.png" alt="Design & Imagem Corporativa" />
+              <div class="solution-content">
+                <h3>Design & Imagem Corporativa</h3>
+                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
+                <button class="discover-button">
+                  <a href="/pagina-design-e-imagem">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="solution-card hidden-solution">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/consultoria.png" alt="Consultadoria" />
+              <div class="solution-content">
+                <h3>Consultadoria</h3>
+                <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
+                <button class="discover-button">
+                  <a href="/pagina-consultadoria">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="solution-card hidden-solution">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/ciberseguranca.png" alt="Cibersegurança" />
+              <div class="solution-content">
+                <h3>Cibersegurança</h3>
+                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
+                <button class="discover-button">
+                  <a href="/pagina-ciberseguranca">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ÍCONES DE NAVEGAÇÃO -->
+          <div class="carousel-controls controls-desktop">
+            <img class="prev" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/setaesquerda.svg" alt="icone seta esquerda">
+            <img class="next" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/setadireita.svg" alt="icone seta direita">
+          </div>
+
+          <div class="carousel-controls controls-mobile">
+            <img class="prev" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/setaesquerda.svg" alt="icone seta esquerda">
+            <img class="next" src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/setablack.svg" alt="icone seta direita black">
+          </div>
+
+        </div>
       </div>
-
-      <div class="solution-cards">
-        <!-- Card 1 -->
-        <div class="solution-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucao1.png" alt="Soluções Visual Digital Signage" />
-          <div class="solution-content">
-            <h3>Soluções Visuais (Digital Signage)</h3>
-            <p>
-              Eleve a comunicação visual da sua marca, capte a atenção do
-              público e impulsione o seu negócio.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-solucoes-visuais">Descubra mais </a><i class="fa-solid fa fa-angle-right"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Card 2  -->
-        <div class="solution-card">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gestaoatendimento.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Gestão de Atendimento</h3>
-            <p>
-              Melhore a experiência dos seus clientes com sistemas avançados
-              de gestão de filas.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-gestao-de-atendimento">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Card 3  -->
-        <div class="solution-card hidden-solution">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/bilheteria.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Bilhética</h3>
-            <p>
-              Eleve a comunicação visual da sua marca, capte a atenção do
-              público e impulsione o seu negócio.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-bilhetica">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Card 4  -->
-        <div class="solution-card hidden-solution">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesdocumentais.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Soluções Documentais</h3>
-            <p>
-              Melhore a experiência dos seus clientes com sistemas avançados
-              de gestão de filas.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-solucoes-documentais">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Card 5  -->
-        <div class="solution-card hidden-solution">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/design.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Design & Imagem Corporativa</h3>
-            <p>
-              Eleve a comunicação visual da sua marca, capte a atenção do
-              público e impulsione o seu negócio.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-design-e-imagem">Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Card 6  -->
-        <div class="solution-card hidden-solution">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/consultoria.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Consultadoria</h3>
-            <p>
-              Melhore a experiência dos seus clientes com sistemas avançados
-              de gestão de filas.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-consultadoria"> Descubra mais </a><i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Card 7  -->
-        <div class="solution-card hidden-solution">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/ciberseguranca.png" alt="Gestão de Atendimento" />
-          <div class="solution-content">
-            <h3>Cibersegurança</h3>
-            <p>
-              Eleve a comunicação visual da sua marca, capte a atenção do
-              público e impulsione o seu negócio.
-            </p>
-            <button class="discover-button">
-              <a href="/pagina-ciberseguranca">Descubra mais</a> <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Botão contacto -->
-      <div class="news-button">
-        <button href="" class="dark-button main-button-styles">
-          Conheça todas as soluções
-        </button>
-      </div>
-
     </section>
 
     <!-- SEÇÃO DE SOLUÇÕES TRANSFORMADORAS -->
@@ -311,117 +327,139 @@ get_header();
               combinando performance, durabilidade e segurança.
             </p>
           </div>
-    <a href="/pagina-redes-e-computing" class="item-icon"> <i class="fa-solid fa-arrow-right-long"></i> </a>
-			
+          <a href="/pagina-redes-e-computing" class="item-icon"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/icone.svg" alt="icone seta"> </a>
+
         </div>
         <!-- Item 2 -->
         <div class="transform-item">
           <div class="transform-wrapper">
             <h3>Videovigilância</h3>
             <p>
-              Monitorize e proteja os seus espaços com tecnologia de ponta,
-              garantindo a máxima segurança.
+              Monitorize e proteja os seus espaços com tecnologia de ponta em segurança.
             </p>
           </div>
           <a href="\pagina-videovigilancia" class="item-icon">
-           <i class="fa-solid fa-arrow-right-long"></i>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/icone.svg" alt="icone seta">
           </a>
         </div>
 
         <!-- Item 3  -->
         <div class="transform-item">
           <div class="transform-wrapper">
-            <h3>Unibind</h3>
+            <h3>Unibind Encadernação e Personalização</h3>
             <p>
-              Apresente os seus documentos com um toque profissional e
-              personalizado. Ideal para empresas que valorizam a imagem
-              corporativa.
+              Apresente os seus documentos com um toque profissional e personalizado. Ideal para empresas que valorizam a imagem corporativa.
+            </p>
           </div>
-          </p>
           <a href="/pagina-unibind" class="item-icon">
-            <i class="fa-solid fa-arrow-right-long"></i>
-          </a>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="transform-item">
-          <div class="transform-wrapper">
-            <h3>Videovigilância, controlo de acessos e cibersegurança</h3>
-            <p>
-              Monitorize e proteja os seus espaços físicos e digitais com
-              soluções integradas e tecnologias de ponta, garantindo máxima
-              segurança.
-          </div>
-          </p>
-          <a href="/pagina-ciberseguranca" class="item-icon">
-           <i class="fa-solid fa-arrow-right-long"></i>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/icone.svg" alt="icone seta">
           </a>
         </div>
       </div>
     </section>
 
     <!-- SEÇÃO DE PARCEIROS -->
- <!-- SEÇÃO DE PARCEIROS -->
-<section class="partners-section">
-  <div class="partners-wrapper">
-    <div class="partners-content">
-      <h2>Trabalhamos com os melhores para oferecer o melhor</h2>
+    <!-- SEÇÃO DE PARCEIROS -->
+    <section class="partners-section">
+      <div class="partners-wrapper">
+        <div class="partners-content">
+          <h2>Trabalhamos com os melhores para oferecer o melhor</h2>
 
-      <!-- GRID de logos no desktop -->
-      <div class="partners-grid">
-        <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
-        <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
-        <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
-        <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
-        <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
-        <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
-        <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
-        <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+          <!-- GRID de logos no desktop -->
+          <div class="partners-grid">
+            <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+            <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+            <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+            <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+            <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+            <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+            <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+            <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+          </div>
+        </div>
+
+        <div class="partners-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/edificio.png" alt="Edifício corporativo" />
+        </div>
       </div>
+
+      <!-- Carrossel só aparece no mobile -->
+      <div class="partners-carousel">
+        <div class="carousel-track">
+          <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+          <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+          <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+          <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+          <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+          <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+          <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+          <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+
+          <!-- duplicado para efeito infinito -->
+          <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
+          <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
+          <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
+          <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
+          <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
+          <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
+          <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
+          <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
+        </div>
+      </div>
+    </section>
+<!-- SEÇÃO DE SERVIÇOS DISPONIBILIZADOS PELA MULTIMAC -->
+<div class="available-services-cards">
+  <h2>Conheça os serviços disponibilizados pela Multimac</h2>
+  <div class="cards-container">
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/caixa.svg" alt="Icone caixa"></div>
+        <h3>Packs Económicos<br>em Marketing Digital</h3>
+      </div>
+      <p>Soluções completas, adaptadas à fase em que o teu negócio se encontra, desde a presença inicial até à performance total omnicanal.</p>
+      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
     </div>
 
-    <div class="partners-image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/edificio.png" alt="Edifício corporativo" />
+    <div class="card">
+      <div class="card-header">
+        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/global.svg" alt="Icone caixa"></i></div>
+        <h3>Websites, Landing<br>Pages e Lojas Online</h3>
+      </div>
+      <p>Desenvolvimento de plataformas digitais rápidas, responsivas e pensadas para maximizar a conversão.</p>
+      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
     </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/imagem.svg" alt="Icone caixa"></div>
+        <h3>Materiais Gráficos</h3>
+      </div>
+      <p>Criação de catálogos, outdoors, decoração de frota e merchandising que reforçam o reconhecimento da tua marca.</p>
+      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconelapis.svg" alt="Icone caixa"></div>
+        <h3>Branding e Identidade Visual</h3>
+      </div>
+      <p>Construímos marcas memoráveis, com posicionamento claro, identidade visual sólida e comunicação coerente.</p>
+      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+    </div>
+
   </div>
+</div>
 
-  <!-- Carrossel só aparece no mobile -->
-  <div class="partners-carousel">
-    <div class="carousel-track">
-      <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
-      <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
-      <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
-      <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
-      <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
-      <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
-      <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
-      <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
-
-      <!-- duplicado para efeito infinito -->
-      <a href="https://global.sharp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/sharp.png" alt="Sharp" /></a>
-      <a href="https://www.lexmark.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/lexmark.png" alt="Lexmark" /></a>
-      <a href="https://docsvault.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/docvault.png" alt="Docvault" /></a>
-      <a href="https://www.philips.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/philips.png" alt="Philips" /></a>
-      <a href="https://www.samsung.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/samsung.png" alt="Samsung" /></a>
-      <a href="https://traulux.net/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/traulux.png" alt="Traulux" /></a>
-      <a href="https://xopvision.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/xopvision.png" alt="Xopvision" /></a>
-      <a href="https://dell.itpoint.pt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/dell.png" alt="Dell" /></a>
-    </div>
-  </div>
-</section>
-
-
-   
-
-			<!-- Testemunhos responsivos -->
-	<?php
-get_template_part('templates/testemunhos', null, array(
-  'title' => 'Por que Escolher a Multimac?',
-  'show_title' => true,
-  'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
-  'card_bg_color' => '#ffffff'
-));
-?>
+    <!-- Testemunhos responsivos -->
+    <?php
+    get_template_part('templates/testemunhos', null, array(
+      'title' => 'Por que Escolher a Multimac?',
+      'show_title' => true,
+      'paragraph' => 'Com mais de 45 anos de experiência, somos parceiros de confiança para empresas que exigem qualidade, inovação e suporte contínuo.',
+      'card_bg_color' => '#ffffff'
+    ));
+    ?>
 
 
 
@@ -447,9 +485,6 @@ get_template_part('templates/testemunhos', null, array(
                 <h3>Como a Videovigilância reduz custos operacionais</h3>
                 <a href="" class="learn-more">Saiba mais</a>
               </div>
-
-             <i class="fa-solid fa-arrow-right arrow-icon"></i>
-
             </div>
           </div>
 
@@ -461,7 +496,7 @@ get_template_part('templates/testemunhos', null, array(
                 <h3>Como a Videovigilância reduz custos operacionais</h3>
                 <a href="" class="learn-more">Saiba mais</a>
               </div>
-              <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconesetafinal.svg" alt="Icone seta">
             </div>
           </div>
 
@@ -473,7 +508,7 @@ get_template_part('templates/testemunhos', null, array(
                 <h3>Como a Videovigilância reduz custos operacionais</h3>
                 <a href="" class="learn-more">Saiba mais</a>
               </div>
-              <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconesetafinal.svg" alt="Icone seta">
             </div>
           </div>
         </div>

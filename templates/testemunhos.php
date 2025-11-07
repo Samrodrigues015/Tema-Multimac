@@ -59,29 +59,29 @@ if ($only_mobile) {
       // Adicione mais testemunhos conforme necessário
     ];
 
-  $colors = ['#FFFFFF', '#DC6339', 'linear-gradient(135deg, #121054, #690207)'];
-$is_first = true;
+    $colors = ['#FFFFFF', '#DC6339', 'linear-gradient(135deg, #121054, #690207)'];
+    $is_first = true;
 
-foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
-  $cor = $colors[$i % count($colors)];
+    foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
+      $cor = $colors[$i % count($colors)];
 
-  // decide se texto deve ser claro ou escuro
-  $is_light_bg = ($cor === '#FFFFFF'); // branco => texto escuro
-  $text_color = $is_light_bg ? '#1c1c1c' : '#ffffff';
-  // filter para inverter a imagem SVG das aspas quando fundo escuro
-  $icon_filter = $is_light_bg ? '' : 'filter: brightness(0) invert(1);';
+      // decide se texto deve ser claro ou escuro
+      $is_light_bg = ($cor === '#FFFFFF'); // branco => texto escuro
+      $text_color = $is_light_bg ? '#1c1c1c' : '#ffffff';
+      // filter para inverter a imagem SVG das aspas quando fundo escuro
+      $icon_filter = $is_light_bg ? '' : 'filter: brightness(0) invert(1);';
 
-  echo '<div class="testemunho-card' . ($is_first ? ' active' : '') . '" style="background:' . esc_attr($cor) . ';">';
-  echo '<img src="' . esc_url(get_template_directory_uri() . '/assets/img/img-testemunhos/' . $img) . '" alt="Foto de ' . esc_attr($nome) . '" class="foto">';
-  echo '<div class="testemunhos-text">';
-  // aspas (inverte com filter se necessário)
-  echo '<div class="quote-icon"><img src="' . esc_url(get_template_directory_uri() . '/assets/img/img-testemunhos/aspas.svg') . '" alt="icone aspas" style="' . $icon_filter . '"></div>';
-  // blockquote e cite recebem a cor inline
-  echo '<blockquote style="color:' . esc_attr($text_color) . ';">' . esc_html($mensagem) . '</blockquote>';
-  echo '<cite style="color:' . esc_attr($text_color) . ';"><strong style="color:' . esc_attr($text_color) . ';">' . esc_html($nome) . '</strong><span style="color:' . esc_attr($text_color) . ';">' . esc_html($cargo) . '</span></cite>';
-  echo '</div></div>';
-  $is_first = false;
-}
+      echo '<div class="testemunho-card' . ($is_first ? ' active' : '') . '" style="background:' . esc_attr($cor) . ';">';
+      echo '<img src="' . esc_url(get_template_directory_uri() . '/assets/img/img-testemunhos/' . $img) . '" alt="Foto de ' . esc_attr($nome) . '" class="foto">';
+      echo '<div class="testemunhos-text">';
+      // aspas (inverte com filter se necessário)
+      echo '<div class="quote-icon"><img src="' . esc_url(get_template_directory_uri() . '/assets/img/img-testemunhos/aspas.svg') . '" alt="icone aspas" style="' . $icon_filter . '"></div>';
+      // blockquote e cite recebem a cor inline
+      echo '<blockquote style="color:' . esc_attr($text_color) . ';">' . esc_html($mensagem) . '</blockquote>';
+      echo '<cite style="color:' . esc_attr($text_color) . ';"><strong style="color:' . esc_attr($text_color) . ';">' . esc_html($nome) . '</strong><span style="color:' . esc_attr($text_color) . ';">' . esc_html($cargo) . '</span></cite>';
+      echo '</div></div>';
+      $is_first = false;
+    }
 
 
     ?>
@@ -123,7 +123,7 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
     background: #fff;
     padding: 6px 14px;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 0.9rem;
     color: #1c1c1c;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
@@ -190,7 +190,6 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 825px;
     height: 397px;
     align-items: center;
     box-sizing: border-box;
@@ -294,7 +293,6 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
 
     .testemunhos-left {
       flex: 0.9;
-      /* texto ocupa menos espaço */
     }
 
     .testemunhos-right-carousel {
@@ -304,10 +302,10 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
 
     .testemunho-card {
       width: 100%;
-      max-width: 700px;
-      /* impede de estourar */
+      max-width: 600px;
+
       height: auto;
-      /* ajusta automaticamente à altura */
+
     }
 
     .testemunho-card img.foto {
@@ -344,7 +342,13 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
     }
 
     .section-tag {
-      margin-bottom: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 10px;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: 600;
     }
 
     .testemunhos-left h2 {
@@ -501,10 +505,11 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
     .quote-icon {
       display: none;
     }
+
     .testemunhos-wrapper {
-    margin: 30px 0;
-  
-  }
+      margin: 30px 0;
+
+    }
   }
 
   @media (min-width: 769px) {
@@ -512,7 +517,6 @@ foreach ($testemunhos as $i => [$img, $nome, $cargo, $mensagem]) {
       display: none !important;
     }
   }
-  
 </style>
 
 <script>

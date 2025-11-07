@@ -36,6 +36,27 @@ a {
   font-family: "Poppins", "Funnel Display", sans-serif;
   background: #f2f2f2;
  }
+/* Header sticky no topo */
+header {
+  position: sticky;
+  top: 0;                  
+  z-index: 998;          
+  background: #f2f2f2;     
+  transition: box-shadow .2s ease, backdrop-filter .2s ease;
+}
+
+header.is-stuck {
+  box-shadow: var(--shadow-medium);
+  backdrop-filter: saturate(1.05);
+}
+
+@media (min-width: 783px) {
+  body.admin-bar header { top: 32px; }
+}
+@media (max-width: 782px) {
+  body.admin-bar header { top: 46px; }
+}
+
 /* Header */
 .header-container {
   display: flex;

@@ -112,7 +112,8 @@ main section {
   min-width: 0;
   text-decoration: none;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Funnel Display", sans-serif;
 }
 
 .news-button {
@@ -146,7 +147,7 @@ main section {
 .hero-button-container a.main-button-styles.secondary-button {
   background-color: #e2e2e2;
   border: 2px solid #e2e2e2;
-  color: #000;
+  color: #1C1C1C;
 }
 
 .hero-button-container a.main-button-styles.secondary-button:hover {
@@ -176,7 +177,12 @@ main section {
   padding: 15px 30px;
   font-size: 16px !important;
   font-weight: 500;
-  font-family: DM SANS;
+  font-family: "DM SANS", sans-serif;
+}
+
+.discover-button a {
+  font-family: "DM SANS", sans-serif;
+  font-size: 16px !important;
 }
 
 .discover-button:hover {

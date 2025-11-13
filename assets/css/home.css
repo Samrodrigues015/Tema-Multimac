@@ -98,7 +98,7 @@ main section {
   cursor: pointer;
   padding: 15px 30px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .hero-button-container .main-button-styles {
@@ -242,7 +242,7 @@ main section {
 /* Carrossel horizontal */
 .products-carousel {
   display: flex;
-  gap: 40px;
+  gap: 36px;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
@@ -255,6 +255,8 @@ main section {
 
 /* Card */
 .product-card {
+  position: relative;
+  padding-bottom: 70px;
   flex: 0 0 600px;
   height: 470px;
   background-color: #fff;
@@ -266,7 +268,7 @@ main section {
 .product-card img {
   width: 100%;
   height: 230px;
-  padding: 20px;
+  padding: 30px 30px 0 30px;
 }
 
 /* Conteúdo interno */
@@ -282,11 +284,11 @@ main section {
   font-size: 26px;
   font-weight: 500;
   line-height: 120%;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .card-content p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 25px;
   color: #1c1c1c;
@@ -294,6 +296,10 @@ main section {
 
 /* Botão */
 .card-button {
+  position: absolute;
+  bottom: 30px;
+  left: 115px;
+  transform: translateX(-50%);
   font-family: "DM Sans", sans-serif;
   display: inline-flex;
   align-items: center;
@@ -408,7 +414,6 @@ main section {
 }
 
 .solution-card img {
-  height: 200px;
   display: flex;
   margin: 20px 10px;
   padding: 10px;
@@ -499,7 +504,7 @@ main section {
 }
 
 .transform-item {
-  border-bottom: solid 2px #dc6339;
+  border-bottom: solid 1px #dc6339;
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -559,6 +564,7 @@ main section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0 20px;
+  margin-bottom: 35px;
   scroll-behavior: smooth;
 }
 
@@ -576,10 +582,12 @@ main section {
 }
 
 .card {
+  position: relative;
   flex: 0 0 378px;
   border: 1px solid #ffa788;
   border-radius: 20px;
-  padding: 24px;
+  padding: 22px;
+  padding-bottom: 60px;
   text-align: left;
   scroll-snap-align: start;
 }
@@ -613,6 +621,9 @@ main section {
 }
 
 .card button {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
   background: #dc6339;
   color: #fff;
   border: none;
@@ -851,7 +862,6 @@ main section {
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
-
   .solution-cards {
     grid-template-columns: 1fr;
     padding: 0 20px;
@@ -863,6 +873,7 @@ main section {
   }
   .solution-card img {
     width: 300px;
+    height: 200px;
   }
   /* Section Parceiros */
   .partners-wrapper {
@@ -956,7 +967,7 @@ main section {
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -996,7 +1007,6 @@ main section {
     flex: 0 0 90%;
     height: auto;
   }
-
   .products-carousel {
     gap: 20px;
     padding: 0 20px;
@@ -1011,6 +1021,10 @@ main section {
     padding: 0 40px;
     margin-bottom: 25px;
   }
+ .card-content {
+  margin-bottom: 0;
+ }
+
 
   .section-header-full h2 {
     font-weight: 600;
@@ -1032,14 +1046,13 @@ main section {
 
   .home-main-container {
     flex-direction: column;
-    padding: 0 10px;
   }
 
   .main-button-styles {
-    width: 100%;
+    display: inline;
     font-size: 15px;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 auto;
   }
   .hero-content {
     width: 80%;
@@ -1074,10 +1087,13 @@ main section {
   }
 
   /* Cards do blog */
-  .blog-cards {
-    grid-template-columns: 1fr;
-    /* 1 coluna em mobile */
-    gap: 20px;
+ .blog-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* esconde o 3º card e qualquer outro além dele */
+  .blog-card:nth-child(n+3) {
+    display: none;
   }
 
   .blog-card {

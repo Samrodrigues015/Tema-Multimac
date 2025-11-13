@@ -61,9 +61,20 @@ get_header();
 
         <div class="products-carousel">
           <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgimpressora.png"
-              alt="Impressoras e Multifunções" />
+            <picture>
+              <!-- imagem para mobile -->
+              <source
+                media="(max-width: 768px)"
+                srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/impressora.png" />
+
+              <!-- imagem padrão (desktop) -->
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgimpressora.png"
+                alt="Impressoras e Multifunções" />
+            </picture>
+  
+
+
             <div class="card-content">
               <h3>Impressoras e Multifunções</h3>
               <p>
@@ -75,94 +86,68 @@ get_header();
             </div>
           </div>
           <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgpos.png"
-              alt="POS e Sistemas de Controlo" />
+            <picture>
+              <!-- imagem para mobile -->
+              <source
+                media="(max-width: 768px)"
+                srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/img-pos.png" />
+
+              <!-- imagem padrão (desktop) -->
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgpos.png"
+                alt="POS e Sistemas de Controlo" />
+            </picture>
+
             <div class="card-content">
               <h3>POS e Sistemas de Controlo</h3>
               <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+                Processamento rápido e seguro para qualquer setor – da restauração ao retalho. Melhore a experiência do cliente com sistemas POS modernos.
               </p>
               <a href="/pagina-pos-software" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
           </div>
           <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesvisuais.png"
-              alt="Soluções Visuais (Digital Signage)" />
-            <div class="card-content">
-              <h3>Soluções Visuais (Digital Signage)</h3>
-              <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
-              </p>
-              <a href="/pagina-solucoes-visuais" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
-            </div>
-          </div>
-          <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gavetainteligente.png"
-              alt="Gaveta Inteligente" />
+            <picture>
+              <!-- imagem para mobile -->
+              <source
+                media="(max-width: 768px)"
+                srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/gavetainteligente.png" />
+
+              <!-- imagem padrão (desktop) -->
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pggaveta.png"
+                alt="POS e Sistemas de Controlo" />
+            </picture>
+
+
             <div class="card-content">
               <h3>Gaveta Inteligente de Dinheiro</h3>
               <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+                Simplifique a gestão de numerário com uma solução inovadora que aumenta a segurança e reduz erros operacionais.
               </p>
               <a href="/pagina-gavetas-de-dinheiro" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
           </div>
+
           <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/videovigilancia.png"
-              alt="Energia Renovável" />
+            <picture>
+              <!-- imagem para mobile -->
+              <source
+                media="(max-width: 768px)"
+                srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesvisuais.png" />
+
+              <!-- imagem padrão (desktop) -->
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgsolucoes.png"
+                alt="POS e Sistemas de Controlo" />
+            </picture>
+
             <div class="card-content">
-              <h3>Videovigilância</h3>
+              <h3>Soluções Visuais (Digital Signage)</h3>
               <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
+                Capte a atenção dos teus clientes com comunicações dinâmicas e interativas em ecrãs digitais.
               </p>
-              <a href="/pagina-videovigilancia" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
-            </div>
-          </div>
-          <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/energiarenovavel.png"
-              alt="Energia Renovável" />
-            <div class="card-content">
-              <h3>Energias Renováveis</h3>
-              <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
-              </p>
-              <a href="/pagina-energia-renovaveis" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
-            </div>
-          </div>
-          <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/encadernacao.png"
-              alt="Encadernação e Personalização" />
-            <div class="card-content">
-              <h3>Encadernação e Personalização</h3>
-              <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
-              </p>
-              <a href="/pagina-unibind" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
-            </div>
-          </div>
-          <div class="product-card">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/controlodeacesso.png"
-              alt="Controlo de Acessos" />
-            <div class="card-content">
-              <h3>Controlo de acessos</h3>
-              <p>
-                Processamento rápido e seguro para qualquer setor — da restauração ao
-                retalho. Melhore a experiência do cliente com sistemas POS modernos.
-              </p>
-              <a href="/pagina-controlo-de-acessos" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
+              <a href="/pagina-solucoes-visuais" class="card-button">Descubra mais <i class="fa-solid fa-angle-right" style"font-size: 12px;"></i></a>
             </div>
           </div>
         </div>
@@ -227,67 +212,7 @@ get_header();
                 <h3>Gestão de Atendimento</h3>
                 <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
                 <button class="discover-button">
-                  <a href="/pagina-gestao-de-atendimento">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="solution-card hidden-solution">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/bilheteria.png" alt="Bilhética" />
-              <div class="solution-content">
-                <h3>Bilhética</h3>
-                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
-                <button class="discover-button">
-                  <a href="/pagina-bilhetica">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="solution-card hidden-solution">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/solucoesdocumentais.png" alt="Soluções Documentais" />
-              <div class="solution-content">
-                <h3>Soluções Documentais</h3>
-                <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
-                <button class="discover-button">
-                  <a href="/pagina-solucoes-documentais">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="solution-card hidden-solution">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/design.png" alt="Design & Imagem Corporativa" />
-              <div class="solution-content">
-                <h3>Design & Imagem Corporativa</h3>
-                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
-                <button class="discover-button">
-                  <a href="/pagina-design-e-imagem">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="solution-card hidden-solution">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/consultoria.png" alt="Consultadoria" />
-              <div class="solution-content">
-                <h3>Consultadoria</h3>
-                <p>Melhore a experiência dos seus clientes com sistemas avançados de gestão de filas.</p>
-                <button class="discover-button">
-                  <a href="/pagina-consultadoria">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="solution-card hidden-solution">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/ciberseguranca.png" alt="Cibersegurança" />
-              <div class="solution-content">
-                <h3>Cibersegurança</h3>
-                <p>Eleve a comunicação visual da sua marca, capte a atenção do público e impulsione o seu negócio.</p>
-                <button class="discover-button">
-                  <a href="/pagina-ciberseguranca">Descubra mais</a> <i class="fa-solid fa fa-angle-right"></i>
+                  <a href="/pagina-gestao-de-atendimento">Saiba mais</a> <i class="fa-solid fa fa-angle-right"></i>
                 </button>
               </div>
             </div>
@@ -407,49 +332,102 @@ get_header();
         </div>
       </div>
     </section>
-<!-- SEÇÃO DE SERVIÇOS DISPONIBILIZADOS PELA MULTIMAC -->
-<div class="available-services-cards">
-  <h2>Conheça os serviços disponibilizados pela Multimac</h2>
-  <div class="cards-container">
-    
-    <div class="card">
-      <div class="card-header">
-        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/caixa.svg" alt="Icone caixa"></div>
-        <h3>Packs Económicos<br>em Marketing Digital</h3>
-      </div>
-      <p>Soluções completas, adaptadas à fase em que o teu negócio se encontra, desde a presença inicial até à performance total omnicanal.</p>
-      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
-    </div>
+    <!-- SEÇÃO DE SERVIÇOS DISPONIBILIZADOS PELA MULTIMAC -->
+    <div class="available-services-cards">
+      <h2>Conheça os serviços disponibilizados pela Multimac</h2>
+      <div class="cards-container">
 
-    <div class="card">
-      <div class="card-header">
-        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/global.svg" alt="Icone caixa"></i></div>
-        <h3>Websites, Landing<br>Pages e Lojas Online</h3>
-      </div>
-      <p>Desenvolvimento de plataformas digitais rápidas, responsivas e pensadas para maximizar a conversão.</p>
-      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
-    </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/caixa.svg" alt="Icone caixa"></div>
+            <h3>Packs Económicos<br>em Marketing Digital</h3>
+          </div>
+          <p>Soluções completas, adaptadas à fase em que o teu negócio se encontra, desde a presença inicial até à performance total omnicanal.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/imagem.svg" alt="Icone caixa"></div>
-        <h3>Materiais Gráficos</h3>
-      </div>
-      <p>Criação de catálogos, outdoors, decoração de frota e merchandising que reforçam o reconhecimento da tua marca.</p>
-      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
-    </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/global.svg" alt="Icone caixa"></i></div>
+            <h3>Websites, Landing<br>Pages e Lojas Online</h3>
+          </div>
+          <p>Desenvolvimento de plataformas digitais rápidas, responsivas e pensadas para maximizar a conversão.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconelapis.svg" alt="Icone caixa"></div>
-        <h3>Branding e Identidade Visual</h3>
-      </div>
-      <p>Construímos marcas memoráveis, com posicionamento claro, identidade visual sólida e comunicação coerente.</p>
-      <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
-    </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/imagem.svg" alt="Icone caixa"></div>
+            <h3>Materiais Gráficos</h3>
+          </div>
+          <p>Criação de catálogos, outdoors, decoração de frota e merchandising que reforçam o reconhecimento da tua marca.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
 
-  </div>
-</div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconelapis.svg" alt="Icone caixa"></div>
+            <h3>Branding e Identidade Visual</h3>
+          </div>
+          <p>Construímos marcas memoráveis, com posicionamento claro, identidade visual sólida e comunicação coerente.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/icone-ferramenta.svg" alt="Icone caixa"></div>
+            <h3>Otimização de Websites</h3>
+          </div>
+          <p>Melhoramos o desempenho do teu site com SEO técnico e experiência de utilizador (UX/UI) avançada.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconearroba.svg" alt="Icone caixa"></div>
+            <h3>Gestão de Redes Sociais</h3>
+          </div>
+          <p>Criação de conteúdos estratégicos e gestão completa das tuas redes, para gerar autoridade, tráfego e comunidade.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconeseo.svg" alt="Icone caixa"></div>
+            <h3>SEO com Inteligência Artificial</h3>
+          </div>
+          <p>Otimização avançada com foco na intenção de pesquisa, semântica e análise potenciada por IA.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconeanuncio.svg" alt="Icone caixa"></div>
+            <h3>Anúncios Digitais</h3>
+          </div>
+          <p>Campanhas em Google Ads, Meta Ads e outras plataformas, com segmentação precisa, otimização contínua e foco em ROI real.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconeemail.svg" alt="Icone caixa"></div>
+            <h3>E-mail Marketing</h3>
+          </div>
+          <p>Automatizações inteligentes, newsletters segmentadas e fluxos otimizados para converter.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="icon"><img src=" <?php echo get_template_directory_uri(); ?>/assets/img/img-home/iconemarketing.svg" alt="Icone caixa"></div>
+            <h3>Automações de Marketing</h3>
+          </div>
+          <p>Implementamos sistemas que captam, nutrem e convertem leads de forma automática.</p>
+          <button>Descubra mais <i class="fa-solid fa-angle-right" style="font-size: 12px;"></i></button>
+        </div>
+      </div>
+      <!-- Botão Ver mais -->
+      <div>
+        <a href="noticias" class="primary-button main-button-styles">
+          Veja nossas soluções de marketing
+        </a>
+      </div>
+    </div>
 
     <!-- Testemunhos responsivos -->
     <?php

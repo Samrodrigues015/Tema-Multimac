@@ -94,6 +94,7 @@ p {
   font-weight: 500;
   font-size: 22px;
   line-height: 141%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .floating-container-two {
@@ -115,6 +116,7 @@ p {
   line-height: 120%;
   text-align: center;
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Show only on mobile and tablet */
@@ -387,6 +389,7 @@ p {
   text-decoration: none;
   font-size: 32px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   height: 230px;
   transition: background-color 0.3s ease;
@@ -782,8 +785,9 @@ p {
   border: none;
   padding: 15px 25px;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -797,11 +801,12 @@ p {
 .btn-secondary {
   display: inline-block;
   background-color: #e2e2e2;
-  color: #333;
+  color: #1c1c1c;
   padding: 13px 25px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }

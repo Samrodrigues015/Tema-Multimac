@@ -94,6 +94,7 @@ p {
   font-size: 20px;
   line-height: 120%;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   cursor: pointer;
   z-index: 3;
@@ -146,6 +147,7 @@ p {
   line-height: 141%;
   margin: 5px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ================================
@@ -377,6 +379,7 @@ p {
 .cta-button {
   font-size: 32px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   color: white;
   text-decoration: none;
   display: flex;
@@ -807,6 +810,7 @@ p {
   border-radius: 2rem;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -818,11 +822,12 @@ p {
 
 .btn-secondary {
   background-color: #e2e2e2;
-  color: #333;
+  color: #1c1c1c;
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: 0.3s ease;
   border: none;

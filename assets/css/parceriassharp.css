@@ -161,8 +161,9 @@ img {
   border: none;
   padding: 12px 12px;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   line-height: normal;
   letter-spacing: 0;
   cursor: pointer;
@@ -380,6 +381,7 @@ img {
   border-radius: 25px;
   font-size: 20px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -860,6 +862,8 @@ img {
   background-color: #dc6339;
   color: white;
   font-weight: 600;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
   padding: 14px 28px;
   border-radius: 30px;
   text-decoration: none;

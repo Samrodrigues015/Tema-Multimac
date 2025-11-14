@@ -124,9 +124,10 @@ if ($only_mobile) {
     padding: 6px 14px;
     border-radius: 20px;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 20px;
     color: #1c1c1c;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    font-family: "Funnel Display", sans-serif;
   }
 
   .section-tag i {

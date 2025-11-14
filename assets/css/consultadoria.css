@@ -99,6 +99,7 @@ p {
   line-height: 141%;
   margin: 5px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* TITLE overlayed right of info-card */
@@ -127,13 +128,14 @@ p {
 }
 
 .quote-btn {
-  background-color: #1a1a1a;
+  background-color: #1E1E1E;
   color: white;
   border: none;
   padding: 10px 10px;
   border-radius: 12px;
   font-size: 20px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   line-height: 120%;
   text-align: center;
@@ -375,6 +377,7 @@ p {
   text-decoration: none;
   font-size: 32px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   gap: 20px;
 }
@@ -877,6 +880,7 @@ p {
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -890,11 +894,12 @@ p {
 
 .final-cta-secondary {
   background-color: #e2e2e2;
-  color: #333;
+  color: #1C1C1C;
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;

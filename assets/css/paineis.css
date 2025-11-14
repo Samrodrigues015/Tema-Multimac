@@ -84,6 +84,7 @@ p {
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -100,11 +101,12 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #e2e2e2;
-  color: #333;
+  color: #1C1C1C;
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -242,6 +244,7 @@ p {
 .cta-button span {
   font-size: 32px;
   margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Testimonial Section */
@@ -553,8 +556,9 @@ p {
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -570,11 +574,12 @@ p {
   display: inline-flex;
   justify-content: center;
   background-color: #e2e2e2;
-  color: #333;
+  color: #1C1C1C;
   padding: 12px 24px;
   border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;

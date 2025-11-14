@@ -81,6 +81,7 @@ p {
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -101,7 +102,8 @@ p {
   padding: 15px 30px;
   border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -545,6 +547,7 @@ p {
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -565,7 +568,8 @@ p {
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;

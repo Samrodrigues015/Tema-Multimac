@@ -100,6 +100,7 @@ p {
   color: #fff;
   font-weight: 500;
   line-height: 141%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .floating-container-two {
@@ -118,6 +119,9 @@ p {
 .floating-container-two span {
   text-align: center;
   color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 /* Show only on mobile and tablet */
 .mobile-container {
@@ -319,6 +323,7 @@ p {
   border-radius: 16px;
   font-size: 32px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   width: 600px;
   height: 150px;
   text-align: start;
@@ -686,8 +691,9 @@ p {
   border: none;
   padding: 15px 25px;
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -702,11 +708,12 @@ p {
 .btn-secondary {
   display: inline-block;
   background-color: transparent;
-  color: #333;
+  color: #1c1c1c;
   padding: 13px 25px;
   border-radius: 25px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   background: #e2e2e2;

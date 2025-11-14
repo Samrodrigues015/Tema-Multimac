@@ -197,6 +197,7 @@ p {
   line-height: 120%;
   font-weight: 500;
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .floating-container-two {
@@ -215,6 +216,7 @@ p {
 .floating-container-two span {
   font-size: 20px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   line-height: 120%;
   text-align: center;
   color: #fff;
@@ -1052,6 +1054,7 @@ main section {
 .primary-btn {
   background-color: #dc6339;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .primary-btn:hover {
@@ -1061,7 +1064,8 @@ main section {
 
 .secondary-btn {
   background-color: #e2e2e2;
-  color: #000;
+  color: #1c1c1c;
+  font-family: 'Poppins', sans-serif;
 }
 
 .secondary-btn:hover {

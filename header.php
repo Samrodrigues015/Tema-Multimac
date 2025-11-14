@@ -86,7 +86,7 @@
                 </div>
               </li>
               <li class="nav__item"><a href="pagina-sobre" class="nav__link">Sobre nós</a></li>
-              <li class="nav__item"><a href="noticias" class="nav__link">Notícias</a></li>
+              <li class="nav__item"><a href="pagina-noticias" class="nav__link">Notícias</a></li>
               <li class="nav__item mobile-assistence"><a href="/pagina-suporte" class="nav__link">Assistência Técnica</a></li>
             </ul>
           </div>

@@ -120,6 +120,10 @@ function meu_tema_scripts()
   if (is_page_template('pagina-ciberseguranca.php')) {
     wp_enqueue_style('multimac-ciberseguranca-css', get_template_directory_uri() . '/assets/css/ciberseguranca.css', array('multimac-main-style'), $theme_version);
   }
+  // 27. Página Notícias
+  if (is_page_template('pagina-noticias.php')) {
+    wp_enqueue_style('multimac-noticias-css', get_template_directory_uri() . '/assets/css/noticias.css', array('multimac-main-style'), $theme_version);
+  }
   // . Formulário de Orçamento
   wp_enqueue_style(
   'multimac-form-orcamento-css',
@@ -156,6 +160,62 @@ function multimac_enqueue_fonts() {
 }
 add_action('wp_enqueue_scripts', 'multimac_enqueue_fonts', 5);
 
+// ===== Multimac: Página Notícias (CSS/JS + Fontes), sem dequeues =====
+add_action('wp_enqueue_scripts', function () {
+  $is_noticias_template = is_page_template('pagina-noticias.php');
+  $is_single_post       = is_single() && get_post_type() === 'post';
+
+  if (!$is_noticias_template && !$is_single_post) return;
+
+  add_filter('wp_resource_hints', function($urls, $relation_type) {
+      if ('preconnect' === $relation_type) {
+          $urls[] = 'https://fonts.googleapis.com';
+          $urls[] = 'https://fonts.gstatic.com';
+      }
+      return $urls;
+  }, 10, 2);
+
+  wp_enqueue_style(
+    'multimac-noticias-fonts',
+    'https://fonts.googleapis.com/css2'
+      . '?family=Montserrat:ital,wght@0,100..900;1,100..900'
+      . '&family=Open+Sans:ital,wght@0,300..800;1,300..800'
+      . '&display=swap',
+    [],
+    null
+  );
+
+  $css_path = get_template_directory() . '/assets/css/noticias.css';
+  $css_uri  = get_template_directory_uri() . '/assets/css/noticias.css';
+  $ver_css  = file_exists($css_path) ? filemtime($css_path) : wp_get_theme()->get('Version');
+
+  $deps = ['meu-tema-style','meu-tema-main','meu-tema-header','meu-tema-footer'];
+  foreach ($deps as $d) {
+    if (!wp_style_is($d, 'registered')) { $deps = []; break; } // se não existirem, ignora deps
+  }
+
+  wp_enqueue_style('multimac-noticias-css', $css_uri, $deps, $ver_css);
+
+  if ($is_noticias_template) {
+    wp_enqueue_script(
+      'multimac-noticias-hero',
+      get_template_directory_uri() . '/assets/js/noticias-hero.js',
+      [],
+      '1.1',
+      true
+    );
+  }
+}, 99);
+
+
+add_action('after_setup_theme', function () {
+  add_theme_support('post-thumbnails');
+  add_image_size('noticias-hero',     1600, 600, true);
+  add_image_size('noticias-large',    1200, 600, true);
+  add_image_size('noticias-small',     360,  260, true);
+  add_image_size('noticias-featured',  700,  300, true);
+  add_image_size('noticias-grid',      600,  400, true);
+});
 
 add_action('wp_enqueue_scripts', 'meu_tema_scripts');
 

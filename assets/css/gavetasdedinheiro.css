@@ -99,6 +99,7 @@ body {
   border-radius: 25px;
   font-weight: 600;
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   box-shadow: 0 4px 24px rgba(244, 121, 58, 0.1);
   transition: background 0.2s;
@@ -113,13 +114,14 @@ body {
 
 .btn-secondary-gavetas {
   background: #e2e2e2;
-  color: #333;
+  color: #1c1c1c;
   border: none;
   padding: 0.9rem 2.1rem;
   font-size: 1rem;
   border-radius: 25px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background 0.2s;
   text-decoration: none;
@@ -353,6 +355,7 @@ body {
 .cta-button span {
   font-size: 32px;
   margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Responsivo */

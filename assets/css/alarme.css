@@ -110,15 +110,16 @@ p {
   border-radius: 50px;
   border: none;
   font-size: 18px;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-cta-primary {
 
   background-color: #dc6339;
   color: #fff;
+  font-weight: 600;
 }
 
 .hero-cta-primary:hover {
@@ -131,6 +132,7 @@ p {
 .hero-cta-secondary {
   background-color: #e2e2e2;
   color: #1c1c1c;
+  font-weight: 500;
 }
 
 .hero-cta-secondary:hover {
@@ -239,6 +241,7 @@ p {
 .cta-button span {
  color: #ffffff;
  font-size: 32px;
+ font-family: 'Poppins', sans-serif;
 }
 
 /* Testimonial Section */
@@ -597,6 +600,7 @@ p {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .final-cta-primary:hover {
@@ -610,11 +614,12 @@ p {
   justify-content: center;
   text-align: center;
   background-color: #e2e2e2;
-  color: #333;
+  color: #1C1C1C;
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;

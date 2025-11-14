@@ -337,11 +337,11 @@
                      <p>Otimize os seus recursos tecnológicos com soluções que entregam resultados</p>
                      <a href="/pagina-solucoes-documentais/">
                      <div class="arrow-icon-wrapper">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                             <path d="M7 17L17 7"></path>
-                             <path d="M7 7h10v10"></path>
-                         </svg>
+                         
+<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.00004L29.7389 1M29.7389 1L29.7389 30M29.7389 1L1.00004 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                      </div>
                      </a>
                  </div>

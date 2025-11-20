@@ -257,7 +257,8 @@ get_header();
       'texto1' => 'Fale connosco e descubra como as soluções de encadernação e personalização Unibind podem transformar os seus documentos. Preencha o formulário abaixo e receba uma proposta personalizada para as suas necessidades.',
       'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
       'botao'  => 'Enviar Solicitação',
-      'id'     => 'formulariounibind'
+      'id'     => 'formulariounibind',
+      'ocultar_website'  => true, // Ocultar campo website
     )
   );
   ?>

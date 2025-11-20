@@ -349,6 +349,7 @@ get_template_part(
     'texto2' => 'Entre em contacto connosco e entenda por que somos líderes em soluções empresariais há mais de 45 anos',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Pedir Orçamento',
+    'ocultar_website'  => true, // Ocultar campo website
   )
 );
 ?>

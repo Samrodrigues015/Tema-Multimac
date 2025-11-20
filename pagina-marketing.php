@@ -566,19 +566,28 @@ get_header();
   </section>
 
   <!-- Contact Form Section -->
-  <?php
-  get_template_part(
-    'templates/card-formulario',
-    null,
-    array(
-      'titulo' => 'Queremos ajudar a tua marca a crescer',
-      'texto1' => 'Preenche o formulário e agenda uma reunião estratégica gratuita.  Vamos analisar o teu projeto e apresentar um plano claro, com resultados mensuráveis.
-',
-      'botao'  => 'Quero potenciar o meu marketing digital',
-      'id'     => 'formulariomarketing',
-    )
-  );
-  ?>
+<?php
+get_template_part(
+  'templates/card-formulario',
+  null,
+  array(
+    'titulo' => 'Queremos ajudar a tua marca a crescer',
+    'texto1' => 'Preenche o formulário e agenda uma reunião estratégica gratuita.  Vamos analisar o teu projeto e apresentar um plano claro, com resultados mensuráveis.',
+    'botao'  => 'Quero potenciar o meu marketing digital',
+    'id'     => 'formulariomarketing',
+
+    // CAMPOS:
+    'ocultar_telefone' => true,
+    'ocultar_mensagem' => true,
+    'ocultar_website'  => false, // website visível
+    'select_label'     => 'Objetivo Principal',
+    'select_opcoes'    => array('Selecionar', 'Tráfego', 'Branding', 'Vendas', 'Estratégia Completa')
+  )
+);
+?>
+
+
+
 
 </main>
 <?php get_footer(); ?>

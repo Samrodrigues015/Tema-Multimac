@@ -287,7 +287,8 @@ get_header();
             'texto1' => 'Fale connosco para criar ou modernizar a imagem da sua empresa. Desde o logotipo até campanhas digitais, a nossa equipa de designers está pronta para ajudá-lo a destacar-se no mercado.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Receber Orçamento',
-            'id'     => 'formulariodesign'
+            'id'     => 'formulariodesign',
+            'ocultar_website'  => true, // Ocultar campo website
         )
     );
     ?>

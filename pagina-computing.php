@@ -281,7 +281,8 @@ get_header();
             'texto1' => 'Transforme a forma como comunica com os seus clientes. Preencha o formulário abaixo e receba uma proposta personalizada para o seu projeto.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Enviar Solicitação',
-            'id'     => 'formulariocomputing'
+            'id'     => 'formulariocomputing',
+            'ocultar_website'  => true, // Ocultar campo website
         )
     );
     ?>

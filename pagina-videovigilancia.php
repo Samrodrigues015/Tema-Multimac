@@ -271,7 +271,8 @@ get_header();
             'texto1' => 'Quer saber como as gavetas inteligentes de dinheiro podem transformar a gestão do numerário no seu negócio? Preencha o formulário abaixo e a nossa equipa entrará em contacto para oferecer uma solução personalizada.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Enviar Solicitação',
-            'id'     => 'formulariovideovigilancia'
+            'id'     => 'formulariovideovigilancia',
+            'ocultar_website'  => true, // Ocultar campo website
         )
     );
     ?>

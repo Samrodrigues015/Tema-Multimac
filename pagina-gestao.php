@@ -265,7 +265,8 @@ get_header();
                 'texto1' => 'Quer saber como a Plataforma de Bilhética Multimac pode ajudar o seu negócio a vender bilhetes com mais eficiência? Preencha o formulário abaixo e a nossa equipa entrará em contacto com uma solução personalizada.',
                 'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
                 'botao'  => 'Enviar Solicitação',
-                'id'     => 'formulariogestao'
+                'id'     => 'formulariogestao',
+                'ocultar_website'  => true, // Ocultar campo website
             )
         );
         ?>

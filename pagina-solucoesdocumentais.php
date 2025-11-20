@@ -338,6 +338,7 @@ get_header();
             'texto1' => 'Está na hora de modernizar o seu ambiente de impressão e gestão documental. Fale com os especialistas da Multimac e descubra como podemos ajudá-lo a reduzir custos, aumentar a produtividade e proteger os seus dados.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Receber Orçamento',
+            'ocultar_website'  => true, // Ocultar campo website
         )
     );
     ?>

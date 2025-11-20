@@ -193,7 +193,8 @@ get_header();
 
       'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
       'botao'  => 'Enviar Solicitação',
-      'id'     => 'formulariogavetas'
+      'id'     => 'formulariogavetas',
+      'ocultar_website'  => true, // Ocultar campo website
     )
   );
   ?>

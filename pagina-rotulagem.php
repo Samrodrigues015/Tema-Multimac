@@ -311,7 +311,8 @@ Preencha o formulário e receba uma solução ajustada às necessidades da sua e
 ',
     'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
     'botao'  => 'Pedir Orçamento',
-    'id'     => 'formulariorotulagem'
+    'id'     => 'formulariorotulagem',
+    'ocultar_website'  => true, // Ocultar campo website
   )
 );
 ?>

@@ -337,7 +337,8 @@ get_header();
             'texto1' => 'Está na hora de dar ao seu negócio as ferramentas que ele merece. Preencha o formulário abaixo e descubra como os Terminais POS da Multimac podem transformar as suas operações.',
             'texto3' => 'Garantimos total privacidade e uma resposta dentro de 24 horas úteis.',
             'botao'  => 'Enviar Solicitação',
-            'id'     => 'formulariosoftware'
+            'id'     => 'formulariosoftware',
+            'ocultar_website'  => true, // Ocultar campo website
         )
     );
     ?>

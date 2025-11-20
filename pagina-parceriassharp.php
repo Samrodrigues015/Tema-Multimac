@@ -288,6 +288,7 @@ get_template_part(
     'titulo' => 'Pronto para transformar o seu negócio?',
     'texto1' => 'Entre em contacto connosco para saber mais sobre as soluções Sharp e como a Multimac pode ajudar a sua empresa a atingir novos patamares de eficiência e produtividade.',
     'botao'  => 'Pedir Orçamento',
+    'ocultar_website'  => true, // Ocultar campo website
   )
 );
 ?>

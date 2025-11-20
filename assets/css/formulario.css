@@ -5,7 +5,6 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   align-items: flex-start;
   justify-content: space-between;
   margin: 50px auto;
@@ -35,7 +34,7 @@
   margin-bottom: 32px;
   font-family: "Funnel Display", sans-serif;
   font-weight: 400;
-  max-width: 78%;
+  max-width: 75%;
   line-height: 28px;
   color: white;
 }

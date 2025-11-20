@@ -255,6 +255,7 @@ get_template_part(
     'texto1' => 'Está na hora de adotar uma solução que poupa dinheiro e ajuda o planeta. Fale com a nossa equipa de especialistas e receba uma proposta personalizada para as suas necessidades de energia solar.',
     'botao'  => 'Enviar Solicitação',
     'id'     => 'formulariopaineis',
+    'ocultar_website'  => true, // Ocultar campo website
   )
 );
 ?>

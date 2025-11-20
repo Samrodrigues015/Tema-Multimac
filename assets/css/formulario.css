@@ -1,7 +1,7 @@
 .form-section {
- background: linear-gradient(135deg, #2d1b69 0%, #4a1548 50%, #8b2635 100%);
+  background: linear-gradient(135deg, #2d1b69 0%, #4a1548 50%, #8b2635 100%);
   border-radius: 30px;
-  padding: 80px 60px;
+  padding: 85px 125px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -19,20 +19,22 @@
 }
 
 .form-left h2 {
-font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
   max-width: 80%;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 20px;
   color: white;
-  line-height: 61px;
+  line-height: 120%;
   margin-bottom: 44px;
 }
 
 .form-left p {
-font-size: 22px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 26px;
   margin-bottom: 32px;
-  font-family: funnel display;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 400;
   max-width: 78%;
   line-height: 28px;
   color: white;
@@ -46,13 +48,15 @@ font-size: 22px;
 .form-right form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .form-right label {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Funnel Display", sans-serif;
+  line-height: 26px;
   color: #fff;
+  margin-top: 23px;
 }
 
 .form-right input,
@@ -72,29 +76,29 @@ font-size: 22px;
 }
 
 .form-submit {
-margin-top: 10px;
-  background: linear-gradient(to right, #dc6339, #dc6339);
-  color: white;
-  padding: 12px 32px;
+  font-family: 'Funnel Display', sans-serif;
+  margin-top: 30px;
+   background: linear-gradient(to right, #dc6339);
+  color: #ffe3e3;
+  padding: 12px 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   border: none;
-    border-top-color: currentcolor;
-    border-right-color: currentcolor;
-    border-bottom-color: currentcolor;
-    border-left-color: currentcolor;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
   border-radius: 30px;
   cursor: pointer;
   transition: background 0.3s ease;
   display: inline-block;
-  max-width: 45%;
-  line-height: 24px;
+  max-width: 100%;
+  line-height: 26px;
 }
 
 .form-submit:hover {
   background: linear-gradient(to right, #dc6339);
 }
-
 
 @media (max-width: 991px) {
   .form-section {
@@ -126,18 +130,20 @@ margin-top: 10px;
   }
 
   .form-left h2 {
-  font-size: 26px;
+    font-weight: 600;;
+    font-size: 24px;
+    line-height: 124%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    line-height: 120%;
   }
 
   .form-left p {
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
     max-width: 100% !important;
-	  line-height: 26px;
+    line-height: 26px;
   }
 
   .form-right input,

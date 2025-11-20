@@ -120,9 +120,13 @@ function meu_tema_scripts()
   if (is_page_template('pagina-ciberseguranca.php')) {
     wp_enqueue_style('multimac-ciberseguranca-css', get_template_directory_uri() . '/assets/css/ciberseguranca.css', array('multimac-main-style'), $theme_version);
   }
-  // 27. Página Notícias
+  // 28. Página Notícias
   if (is_page_template('pagina-noticias.php')) {
     wp_enqueue_style('multimac-noticias-css', get_template_directory_uri() . '/assets/css/noticias.css', array('multimac-main-style'), $theme_version);
+  }
+  // 29. Página Serviços de Marketing
+  if (is_page_template('pagina-marketing.php')) {
+    wp_enqueue_style('multimac-marketing-css', get_template_directory_uri() . '/assets/css/marketing.css', array('multimac-main-style'), $theme_version);
   }
   // . Formulário de Orçamento
   wp_enqueue_style(

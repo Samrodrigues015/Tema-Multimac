@@ -274,7 +274,6 @@ p {
 /* Quick Solutions Section */
 .quick-solutions {
   padding: 80px 0;
-  background-color: #f0f0f0;
 }
 
 .quick-solutions h2 {
@@ -294,7 +293,6 @@ p {
 }
 
 .solution-card-suporte {
-  background-color: #f8f8f8;
   padding: 40px 20px;
   border-radius: 20px;
   text-align: center;
@@ -305,11 +303,6 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.solution-card-suporte:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(232, 93, 36, 0.2);
 }
 
 .card-icon {
@@ -1158,6 +1151,7 @@ textarea {
 
   .form-container {
     padding: 20px;
+    margin: 0;
   }
 }
 /* ===== Ajustes para TABLET (mantém layout desktop, reduz fontes e espaçamentos) ===== */

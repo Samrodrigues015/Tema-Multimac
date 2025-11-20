@@ -572,28 +572,32 @@ img {
   }
 
   .hero-content-solucoes {
-    flex-direction: column-reverse; 
-    gap: 30px; 
+    flex-direction: column; 
+    gap: 20px; 
     text-align: center; 
   }
 
   .hero-left {
     width: 100%; /* Ocupa toda a largura */
+    display: contents;
   }
 
   .hero-left h1 {
+    order: 1;
     font-size: 32px; /* Reduz tamanho do título */
     margin-bottom: 15px;
     line-height: 1.3; /* Melhora legibilidade */
   }
 
   .hero-description {
+    order: 1;
     font-size: 16px; /* Tamanho ideal para mobile */
     margin-bottom: 25px;
     max-width: 100%; /* Remove restrições de largura */
   }
 
   .hero-cta {
+    order: 3;
     flex-direction: column; /* Botões em coluna */
     gap: 12px;
     width: 100%; /* Ocupa toda a largura */
@@ -608,7 +612,7 @@ img {
 
   .hero-right {
     width: 100%; /* Ocupa toda a largura */
-    order: -1; /* Coloca a imagem acima do texto (opcional) */
+    order: 2; /* Coloca a imagem acima do texto (opcional) */
   }
 
   .hero-image-container {

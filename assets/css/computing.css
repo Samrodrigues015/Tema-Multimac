@@ -42,7 +42,7 @@ p {
 /* TI Computing Hero Section */
 .ti-computing-hero {
   background-color: #f2f2f2;
-  padding: 60px 0;
+  padding: 20px 0;
   color: #333;
   position: relative;
   overflow: hidden;
@@ -143,7 +143,7 @@ p {
 .hero-image-container img {
   width: 100%;
   height: auto;
-  display: block;
+  display: flex;
 }
 
 .hero-info-box {
@@ -776,22 +776,32 @@ p {
     gap: 30px;
   }
    .hero-content-computing {
-    flex-direction: column-reverse; 
-    gap: 30px; 
+    flex-direction: column; 
+    gap: 20px; 
     text-align: center;
   }
 
+.hero-left {
+    display: contents; 
+  }
+
   .hero-left h1 {
+    order: 1;
     font-size: 28px;
     margin-bottom: 15px;
   }
 
   .hero-description {
+    order: 1;
     font-size: 18px; 
     margin-bottom: 25px;
   }
+ .hero-right {
+    order: 2;
+ }
 
   .hero-cta {
+    order: 3;
     flex-direction: column; 
     gap: 12px;
     width: 100%; 

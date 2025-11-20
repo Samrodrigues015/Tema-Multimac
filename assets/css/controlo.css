@@ -629,13 +629,13 @@ p {
   }
 
   .access-control-hero, .why-choose-section, .technology-section, .sectors-section, .final-cta-section {
-    padding: 60px 0;
+    padding: 20px 0;
   }
   
   /* --- Secção Hero --- */
   .hero-content-controlo {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
     text-align: center; 
   }
   .hero-images-wrapper {
@@ -649,7 +649,17 @@ p {
     bottom: 0;
     right: 0;
   }
+  .hero-text {
+    display: contents; 
+  }
+  .hero-text h1, p {
+    order: 1; 
+  }
+  .hero-image-controlo {
+    order: 2; 
+  }
   .hero-buttons {
+    order: 3;
     justify-content: center; 
   }
 .sectors-header {

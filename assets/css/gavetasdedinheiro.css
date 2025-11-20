@@ -188,10 +188,6 @@ body {
     bottom: 0;
   }
 
-  .hero-v2-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
 
   .hero-v2-buttons a {
     width: 100%;
@@ -655,16 +651,24 @@ body {
     padding: 1.7rem 0 0.5rem 0;
   }
   .hero-v2-grid {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2.2rem;
     align-items: stretch;
   }
+
+  .hero-v2-content {
+    display: contents;
+    flex-direction: column;
+  }
+
   .hero-v2-content h1 {
+    order: 1;
     font-size: 28px;
     text-align: center;
   }
 
   .hero-v2-content p {
+    order: 1;
     font-size: 18px;
     margin-bottom: 1.2rem;
     line-height: 120%;
@@ -672,6 +676,16 @@ body {
 
   .hero-v2-main-img {
     border-radius: 12px 6px 12px 6px;
+  }
+
+  .hero-v2-image-area {
+    order: 2;
+  }
+
+   .hero-v2-buttons {
+    order: 3;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-v2-overlay-img {

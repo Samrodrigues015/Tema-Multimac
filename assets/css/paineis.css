@@ -602,12 +602,29 @@ p {
   }
   .solar-hero-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
+
+  .solar-hero-left {
+    display: contents;
+  }
+
   .solar-hero-left h1 {
+    order: 1;
     font-size: 30px;
     font-weight: 600;
   }
+
+   .hero-cta {
+    order: 3;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .solar-hero-right {
+    order: 2;
+  }
+
 
   .solar-why-header {
     grid-template-columns: 1fr;
@@ -648,6 +665,7 @@ p {
     text-align: center;
   }
   .hero-description {
+    order: 1;
     text-align: center;
   }
   .solar-why-left h2 {
@@ -754,10 +772,6 @@ p {
   }
 }
 @media (max-width: 480px) {
-  .hero-cta {
-    flex-direction: column;
-    gap: 10px;
-  }
 
   .solar-solutions-grid {
     grid-template-columns: 1fr;

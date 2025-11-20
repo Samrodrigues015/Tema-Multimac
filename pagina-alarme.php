@@ -32,6 +32,7 @@ get_header();
                             <button class="hero-cta-secondary">Fale com um Especialista</button>
                         </a>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>

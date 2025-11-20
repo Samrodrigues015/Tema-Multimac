@@ -620,7 +620,7 @@ p {
   }
   .hero-content-videovigilancia {
     grid-template-columns: 1fr; 
-    gap: 40px;
+    gap: 20px;
     padding: 0 20px;
   }
 
@@ -629,8 +629,20 @@ p {
   }
 
   .hero-text {
+    display: contents;
+  }
+  .hero-text h1 {
     order: 1;
   }
+  .hero-text p {
+    order: 1;
+  }
+  .hero-buttons {
+    order: 3;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .final-cta-content-video {
     grid-template-columns: 1fr;
     gap: 40px;

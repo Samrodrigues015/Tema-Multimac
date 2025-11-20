@@ -1427,16 +1427,28 @@ p {
 @media (max-width: 768px) {
   .unibind-hero-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
+  }
+
+  .unibind-hero-left {
+    display: contents;
+    text-align: center;
   }
 
   .unibind-hero-left h1 {
+    order: 1;
     font-size: 28px;
   }
   .unibind-hero-left p {
+    order: 1;
     font-size: 18px;
     line-height: normal;
   }
+
+  .unibind-image-wrapper {
+    order: 2;
+  }
+
   .unibind-features-grid {
     grid-template-columns: 1fr;
   }
@@ -1550,6 +1562,7 @@ p {
     display: none;
   }
   .hero-cta {
+    order: 3;
     flex-direction: column;
     gap: 10px;
   }

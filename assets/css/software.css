@@ -748,9 +748,14 @@ img {
   /* --- Secção Hero --- */
   .hero-content-software {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
   }
+
+  .hero-text {
+    display: contents;
+  }
+
   .hero-images-wrapper {
     order: -1;
   }
@@ -760,8 +765,14 @@ img {
     right: 0;
   }
   .hero-buttons {
+    order: 3;
     justify-content: center;
   }
+
+  .hero-image-software {
+    order: 2;
+  }
+
   /* --- Secção Why Choose --- */
   .why-choose-header {
     grid-template-columns: 1fr;
@@ -949,12 +960,14 @@ img {
     font-size: 15px;
   }
   .hero-text h1 {
+    order: 1;
     text-align: center;
     align-items: center;
     font-size: 28px;
   }
 
   .hero-text p {
+    order: 1;
     text-align: center;
     align-items: center;
   }

@@ -36,9 +36,9 @@ get_header();
     <!-- Secção das Soluções -->
     <section class="solutions-section">
         <div class="container">
-             <span class="section-tag">
-                    <i class="fa-solid fa-circle"></i>
-                    Soluções</span>
+            <span class="section-tag">
+                <i class="fa-solid fa-circle"></i>
+                Soluções</span>
 
             <h2 class="section-title">A sua satisfação é a nossa prioridade</h2>
 
@@ -268,8 +268,8 @@ get_header();
     <section id="recursos" class="resources-section">
         <div class="container">
             <span class="section-tag">
-                    <i class="fa-solid fa-circle"></i>
-                    Drivers e Manuais</span>
+                <i class="fa-solid fa-circle"></i>
+                Drivers e Manuais</span>
             <div class="resources-header">
                 <h2 class="resources-title">Acesso fácil a drivers e manuais</h2>
                 <p class="resources-description">
@@ -279,52 +279,50 @@ get_header();
                 </p>
             </div>
 
-           <div class="resources-main-grid">
-  <div class="teamviewer-section">
-    <h3>Team Viewer para Assistência Remota</h3>
-    <div class="download-items">
-      <div class="download-item">
-        <span class="platform-name">WINDOWS</span>
-        <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-      <div class="download-item">
-        <span class="platform-name">MAC</span>
-        <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-      <div class="download-item">
-        <span class="platform-name">LINUX</span>
-        <a href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-    </div>
-  </div>
+            <div class="resources-main-grid">
+                <div class="teamviewer-section">
+                    <h3>Team Viewer para Assistência Remota</h3>
+                    <div class="download-items">
+                        <div class="download-item">
+                            <span class="platform-name">WINDOWS</span>
+                            <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                        <div class="download-item">
+                            <span class="platform-name">MAC</span>
+                            <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                        <div class="download-item">
+                            <span class="platform-name">LINUX</span>
+                            <a href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="drivers-section">
-    <h3>Drivers e Manuais por Marca</h3>
-    <div class="download-items">
-      <div class="download-item">
-        <span class="platform-name">LEXMARK</span>
-        <a href="https://support.lexmark.com/pt_pt/drivers-downloads.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-      <div class="download-item">
-        <span class="platform-name">SHARP</span>
-        <a href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-      <div class="download-item">
-        <span class="platform-name">MULTIMAC - MYPRINTERS</span>
-        <a href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-      <div class="download-item">
-        <span class="platform-name">MANUAL MULTIXOP</span>
-        <a href="https://multimac.pt/atualizacao-multixop/" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="drivers-section">
+                    <h3>Drivers e Manuais por Marca</h3>
+                    <div class="download-items">
+                        <div class="download-item">
+                            <span class="platform-name">LEXMARK</span>
+                            <a href="https://support.lexmark.com/pt_pt/drivers-downloads.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                        <div class="download-item">
+                            <span class="platform-name">SHARP</span>
+                            <a href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                        <div class="download-item">
+                            <span class="platform-name">MULTIMAC - MYPRINTERS</span>
+                            <a href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="resources-bottom-grid">
                 <div class="update-guide-section">
                     <h3>Guia de Atualização</h3>
+                    
+                    
                     <div class="download-item">
                         <span class="platform-name">ATCUD MULTIXOP</span>
                         <button class="download-btn">Descarregar</button>

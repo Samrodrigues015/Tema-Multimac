@@ -85,6 +85,21 @@
                   </div>
                 </div>
               </li>
+              <li class="nav__item">
+                <a href="pagina-servico" class="nav__link" aria-expanded="false" aria-haspopup="true">
+                  Serviços de Marketing
+                  <i class="fa-solid fa-chevron-down nav__dropdown-icon" aria-hidden="true"></i>
+                </a>
+                <div class="mega-dropdown" role="menu">
+                  <div class="mega-dropdown__grid">
+                    <a href="/pagina-suporte" class="mega-dropdown__item"><i class="fa-solid fa-cogs mega-dropdown__icon"></i><span>Manutenção e Suporte Técnico</span></a>
+                    <a href="/pagina-servico-e-solucoes" class="mega-dropdown__item"><i class="fa-solid fa-cloud mega-dropdown__icon"></i><span>Soluções Cloud</span></a>
+                    <a href="pagina-redes-e-computing" class="mega-dropdown__item"><i class="fa-solid fa-network-wired mega-dropdown__icon"></i><span>Infraestrutura de Rede</span></a>
+                    <a href="/pagina-ciberseguranca/" class="mega-dropdown__item"><i class="fa-solid fa-lock mega-dropdown__icon"></i><span>Segurança de Dados</span></a>
+                    <a href="/pagina-gestao-de-atendimento/" class="mega-dropdown__item"><i class="fa-solid fa-file-alt mega-dropdown__icon"></i><span>Gestão Documental</span></a>
+                  </div>
+                </div>
+              </li>
               <li class="nav__item"><a href="pagina-sobre" class="nav__link">Sobre nós</a></li>
               <li class="nav__item"><a href="pagina-noticias" class="nav__link">Notícias</a></li>
               <li class="nav__item mobile-assistence"><a href="/pagina-suporte" class="nav__link">Assistência Técnica</a></li>

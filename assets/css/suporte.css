@@ -552,7 +552,7 @@ p {
   .download-item {
     flex: 1;
     border: 1px solid #dc6339;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 20px;
   }
 

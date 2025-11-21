@@ -13,9 +13,7 @@ get_header();
           sucesso do seu negócio
         </h1>
         <p>
-          Há mais de 45 anos a transformar empresas com produtos inovadores
-          e soluções personalizadas que aumentam a eficiência e maximizam a
-          produtividade.
+          Há mais de 45 anos a transformar empresas com produtos líderes e soluções personalizadas que aumentam a eficiência e maximizam a produtividade.
         </p>
         <div class="hero-button-container">
           <a href="#solucoes" class="main-button-styles primary-button">
@@ -72,7 +70,7 @@ get_header();
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home/pgimpressora.png"
                 alt="Impressoras e Multifunções" />
             </picture>
-  
+
 
 
             <div class="card-content">

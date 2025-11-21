@@ -28,21 +28,21 @@
 }
 
 a {
-  font-family: 'Funny Display', sans-serif;
+  font-family: "Funny Display", sans-serif;
   text-decoration: none;
   color: inherit;
 }
- body {
+body {
   font-family: "Poppins", "Funnel Display", sans-serif;
   background: #f2f2f2;
- }
+}
 /* Header sticky no topo */
 header {
   position: sticky;
-  top: 0;                  
-  z-index: 998;          
-  background: #f2f2f2;     
-  transition: box-shadow .2s ease, backdrop-filter .2s ease;
+  top: 0;
+  z-index: 998;
+  background: #f2f2f2;
+  transition: box-shadow 0.2s ease, backdrop-filter 0.2s ease;
 }
 
 header.is-stuck {
@@ -51,10 +51,14 @@ header.is-stuck {
 }
 
 @media (min-width: 783px) {
-  body.admin-bar header { top: 32px; }
+  body.admin-bar header {
+    top: 32px;
+  }
 }
 @media (max-width: 782px) {
-  body.admin-bar header { top: 46px; }
+  body.admin-bar header {
+    top: 46px;
+  }
 }
 
 /* Header */
@@ -135,14 +139,14 @@ header.is-stuck {
 
 .nav-menu a {
   text-decoration: none;
-  color: #333;
+  color: #1e1e1e;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
 
 .nav-menu a:hover {
-  color: #dc6339;
+  font-weight: 700;
 }
 
 /* 47 anos */
@@ -156,13 +160,15 @@ header.is-stuck {
 }
 
 .botao-assistencia-tecnica {
-        background: #E9E9E9;
-        display: block;
-        padding: 10px 10px;
-        border-radius: 30px;
-        border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #e9e9e9;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
 }
-
 
 /* Mobile Menu Toggle */
 .menu-toggle {
@@ -180,7 +186,7 @@ header.is-stuck {
 }
 .mobile-menu-image {
   width: 100%;
-  background-color: #f2f2f2;,
+  background-color: #f2f2f2;
   margin-bottom: 1.5rem;
 }
 
@@ -245,7 +251,6 @@ header.is-stuck {
 .nav__list {
   list-style: none;
   padding: 0;
-  background: #f2f2f2;
 }
 
 .nav__link {
@@ -258,15 +263,10 @@ header.is-stuck {
   min-height: 56px;
 }
 
-.nav__link:hover,
-.nav__link:focus {
-  background-color: var(--background-secondary);
-  color: var(--primary-color);
-}
-
 .nav__link--active {
   color: var(--primary-color);
   background-color: var(--background-secondary);
+  font-weight: 700;
 }
 
 .nav__dropdown-icon {
@@ -419,14 +419,18 @@ header.is-stuck {
   }
 
   .nav__link {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1e1e1e;
+    background: none;
     padding: 0.75rem 1rem;
     min-height: auto;
     white-space: nowrap;
   }
 
   .nav__link--active {
-    background: none;
-    border-bottom: 2px solid var(--primary-color);
+    font-weight: 700;
   }
 
   .nav__dropdown-icon {

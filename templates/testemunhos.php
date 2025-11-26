@@ -142,7 +142,7 @@ if ($only_mobile) {
     font-size: 50px;
     font-weight: 600;
     margin: 20px 0 16px;
-    max-width: 300px;
+    max-width: 450px;
   }
 
   .testemunhos-left p {
@@ -150,7 +150,7 @@ if ($only_mobile) {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    max-width: 340px;
+    max-width: 420px;
   }
 
   .testemunhos-buttons {
@@ -303,7 +303,7 @@ if ($only_mobile) {
 
     .testemunho-card {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
 
       height: auto;
 

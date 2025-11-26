@@ -321,8 +321,6 @@ get_header();
             <div class="resources-bottom-grid">
                 <div class="update-guide-section">
                     <h3>Guia de Atualização</h3>
-                    
-                    
                     <div class="download-item">
                         <span class="platform-name">ATCUD MULTIXOP</span>
                         <button class="download-btn">Descarregar</button>
@@ -338,6 +336,57 @@ get_header();
                 </div>
             </div>
         </div>
+
+
+        // Carrosel Mobile #formulariosuporte<div class="resources-mobile-layout">
+    <div class="resources-carousel-grid">
+        <div class="teamviewer-section">
+            <h3>Team Viewer para Assistência Remota</h3>
+            <div class="download-items">
+                <div class="download-item">
+                    <span class="platform-name">WINDOWS</span>
+                    <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+                <div class="download-item">
+                    <span class="platform-name">MAC</span>
+                    <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+                <div class="download-item">
+                    <span class="platform-name">LINUX</span>
+                    <a href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="drivers-section">
+            <h3>Drivers e Manuais por Marca</h3>
+            <div class="download-items">
+                <div class="download-item">
+                    <span class="platform-name">LEXMARK</span>
+                    <a href="https://support.lexmark.com/pt_pt/drivers-downloads.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+                <div class="download-item">
+                    <span class="platform-name">SHARP</span>
+                    <a href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+                <div class="download-item">
+                    <span class="platform-name">MULTIMAC - MYPRINTERS</span>
+                    <a href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="update-guide-section">
+            <h3>Guia de Utilização</h3>
+            <div class="download-items">
+                <div class="download-item">
+                    <span class="platform-name">ATCUD MULTIXOP</span>
+                    <button class="download-btn">Ver Guia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </section>
 
     <!-- Qualidade -->

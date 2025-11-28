@@ -215,8 +215,8 @@ get_header();
   </section>
 
   <!-- Products Section -->
-  <section class="products-section">
-    <div class="container">
+  <section class="products-section container">
+    <div>
       <div class="products-grid">
         <!-- Card 1 -->
         <div class="product-card expandable-card">
@@ -402,6 +402,7 @@ get_header();
 
 
   <!-- FAQ Section - Perguntas frequentes -->
+   <div class="container">
     <?php
 get_template_part('templates/faq-section', null, [
   'tag' => 'FAQ',
@@ -423,6 +424,7 @@ get_template_part('templates/faq-section', null, [
   ]
 ]);
 ?>
+</div>
   <!-- Contact Form Section -->
     <?php
 get_template_part(

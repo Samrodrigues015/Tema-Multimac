@@ -1,7 +1,8 @@
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
+  background-color: #f2f2f2;
 }
 
 .hero-slide { display: none; }
@@ -412,7 +413,7 @@ border-radius: 8%;
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .hero-content-noticias h1 {
@@ -423,6 +424,9 @@ border-radius: 8%;
 }
 
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
   .articles-grid-all {
     grid-template-columns: repeat(2, 1fr);
   }

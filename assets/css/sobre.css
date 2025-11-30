@@ -36,7 +36,7 @@ p {
   padding: 0 100px;
 }
 @media (max-width: 1400px) and (min-width: 1100px) {
-   .container {
+  .container {
     padding: 0 20px;
   }
 }
@@ -172,7 +172,7 @@ p {
 }
 
 .quem-somos-text p {
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 33px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -680,11 +680,11 @@ p {
 }
 
 .environmental-responsibility h2 {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 120%;
-    text-align: center;
-    margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .responsibility-grid {
@@ -712,7 +712,7 @@ p {
 }
 
 .responsibility-item h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -723,8 +723,6 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1154,23 +1152,21 @@ p {
   .responsibility-item p {
     font-size: 16px;
     line-height: 30px;
-  }.market-cards
-
-  .responsibility-item h3 {
+  }
+  .market-cards .responsibility-item h3 {
     font-size: 20px;
     text-align: center;
     color: #1c1c1c;
   }
-.environmental-responsibility h2 {
+  .environmental-responsibility h2 {
     font-size: 26px;
-}
+  }
   .responsability-underline {
     width: 314px;
     height: 1.5px;
     background-color: #dc6339;
     margin: 20px auto;
   }
-
 }
 
 /* Responsividade para container hero para telas menores */
@@ -1185,8 +1181,8 @@ p {
   .hero-bg-image {
     position: absolute;
     top: 0;
-    left: 280px; 
-    width: 850px; 
+    left: 280px;
+    width: 850px;
     height: 520px;
     object-fit: cover;
     border-radius: 20px;
@@ -1203,18 +1199,18 @@ p {
     transform: scaleX(-1);
   }
 
- .hero-black-box {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 260px;
-        height: 280px;
-        background: #1e1e1e;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .hero-black-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 280px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .hero-black-box p {
     color: #ffffff;
@@ -1226,18 +1222,18 @@ p {
     padding: 25px;
   }
 
- .hero-orange-box {
-        position: absolute;
-        top: 300px;
-        left: 0;
-        width: 560px;
-        height: 220px;
-        background: #dc6339;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .hero-orange-box {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 560px;
+    height: 220px;
+    background: #dc6339;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .hero-orange-box h2 {
     color: #ffffff;
@@ -1329,11 +1325,19 @@ p {
     font-size: 15px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 90%;
   }
 
-  p, a, li, span {
+  p,
+  a,
+  li,
+  span {
     font-size: 90%;
     line-height: 1.4;
   }

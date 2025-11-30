@@ -324,7 +324,6 @@ header.is-stuck {
   filter: invert(1) grayscale(1) contrast(1000%);
   transition: none !important;
 }
-
 .mega-dropdown__icon {
   width: 20px;
   height: 20px;

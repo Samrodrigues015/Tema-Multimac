@@ -243,17 +243,16 @@ get_header();
                         <div class="form-group message-field">
                             <label for="message">Escreva sua mensagem</label>
                             <textarea id="message" name="message"></textarea>
+                             <div class="checkbox-group">
+                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                        <label for="privacyPolicy"><em>Declaro que aceito a nossa Política de Privacidade.</em></label>
+                    </div>
                         </div>
 
                         <div class="form-group">
                             <label for="phone">Telefone</label>
                             <input type="tel" id="phone" name="phone">
                         </div>
-                    </div>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-                        <label for="privacyPolicy">Declaro que aceito a nossa Política de Privacidade.</label>
                     </div>
 
                     <div class="submit-container">
@@ -336,58 +335,89 @@ get_header();
                 </div>
             </div>
         </div>
+    </section>
 
+ <!-- CARROSSEL MOBILE -->
+<div class="mobile-carousel">
 
-        // Carrosel Mobile #formulariosuporte<div class="resources-mobile-layout">
-    <div class="resources-carousel-grid">
-        <div class="teamviewer-section">
-            <h3>Team Viewer para Assistência Remota</h3>
-            <div class="download-items">
-                <div class="download-item">
-                    <span class="platform-name">WINDOWS</span>
-                    <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-                <div class="download-item">
-                    <span class="platform-name">MAC</span>
-                    <a href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-                <div class="download-item">
-                    <span class="platform-name">LINUX</span>
-                    <a href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-            </div>
+    <!-- CARD 1 - TEAM VIEWER -->
+    <div class="mobile-carousel-card">
+        <h3 class="mobile-title-teamviewer">TEAM VIEWER PARA ASSISTÊNCIA REMOTA</h3>
+
+        <div class="download-item">
+            <span>Windows</span>
+            <a class="download-btn" target="_blank"
+               href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.exe">
+               Download 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
         </div>
 
-        <div class="drivers-section">
-            <h3>Drivers e Manuais por Marca</h3>
-            <div class="download-items">
-                <div class="download-item">
-                    <span class="platform-name">LEXMARK</span>
-                    <a href="https://support.lexmark.com/pt_pt/drivers-downloads.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-                <div class="download-item">
-                    <span class="platform-name">SHARP</span>
-                    <a href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-                <div class="download-item">
-                    <span class="platform-name">MULTIMAC - MYPRINTERS</span>
-                    <a href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh" target="_blank" rel="noopener noreferrer" class="download-btn">Descarregar</a>
-                </div>
-            </div>
+        <div class="download-item">
+            <span>Mac</span>
+            <a class="download-btn" target="_blank"
+               href="https://download.teamviewer.com/download/version_11x/TeamViewerQS.dmg">
+               Download
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
         </div>
 
-        <div class="update-guide-section">
-            <h3>Guia de Utilização</h3>
-            <div class="download-items">
-                <div class="download-item">
-                    <span class="platform-name">ATCUD MULTIXOP</span>
-                    <button class="download-btn">Ver Guia</button>
-                </div>
-            </div>
+        <div class="download-item">
+            <span>Linux</span>
+            <a class="download-btn" target="_blank"
+               href="https://download.teamviewer.com/download/version_11x/teamviewer_qs.tar.gz">
+               Download
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
         </div>
     </div>
+
+    <!-- CARD 2 - DRIVERS -->
+    <div class="mobile-carousel-card">
+        <h3 class="mobile-title-drivers">DRIVERS E MANUAIS POR MARCA</h3>
+
+        <div class="download-item">
+            <span>Lexmark</span>
+            <a class="download-btn" target="_blank"
+               href="https://support.lexmark.com/pt_pt/drivers-downloads.html">
+               Download
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>Sharp</span>
+            <a class="download-btn" target="_blank"
+               href="https://global.sharp/restricted/products/copier/downloads/select_pt_driver.html">
+               Download
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>MYPRINTERS</span>
+            <a class="download-btn" target="_blank"
+               href="https://dualinfor.sharepoint.com/:f:/g/ElAzzDbv1udNkmzwSUdxAz8BV6TFJc7I89_kKqAhapURBQ?e=h0BtMh">
+               Download
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
+        </div>
+    </div>
+
+    <!-- CARD 3 - GUIA -->
+    <div class="mobile-carousel-card">
+        <h3 class="mobile-title-guia">GUIA DE ATUALIZAÇÃO</h3>
+
+        <div class="download-item">
+            <span>ATCUD Multixop</span>
+            <a class="download-btn" href="#">
+                Download
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-suporte/iconedownload.svg" alt="" class="download-icon">
+            </a>
+        </div>
+
+    </div>
 </div>
-    </section>
 
     <!-- Qualidade -->
     <section class="quality-section">

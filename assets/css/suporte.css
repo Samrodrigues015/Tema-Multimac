@@ -475,6 +475,9 @@ p {
   font-family: "Funnel Display";
   font-weight: 400;
 }
+.mobile-carousel {
+  display: none;
+}
 
 /* Responsive Design for Resources */
 @media (max-width: 1200px) {
@@ -494,92 +497,101 @@ p {
   .resources-bottom-grid {
     display: none;
   }
-  .resources-main-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: start;
-  }
-
-  /* reduz um pouco o tamanho/line-height dos textos para caber nas colunas */
-  .resources-description {
-    font-size: 16px;
-    line-height: 24px;
-    max-width: none;
-    text-align: center;
-  }
-
-  .resources-title {
-    font-size: 32px;
-    text-align: center;
-  }
-  .teamviewer-section h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #1c1c1c;
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #1c1c1c;
-  }
-
-  .team-image-container {
+  .resources-main-grid,
+  .resources-bottom-grid {
     display: none;
   }
+  .resources-section {
+    padding-bottom: 0;
+  }
 
-  .solutions-text p {
+  .mobile-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .mobile-carousel-card {
+    flex: 0 0 50%;
+    padding: 10px;
+    border-radius: 12px;
+    scroll-snap-align: start;
+  }
+
+  .mobile-carousel-card .download-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    padding: 20px;
+    border: 1px solid #dc6339;
+    border-radius: 8px;
+  }
+
+  .mobile-carousel-card span {
     font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .mobile-carousel-card .download-btn {
+    background: #dc6339;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .download-btn img.download-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .resources-description {
     text-align: center;
   }
-  .service-item h3,
-  .service-item p {
+  .resources-title {
     text-align: center;
   }
-  .drivers-section h3 {
-    font-size: 16px;
-    font-weight: 500;
+  .mobile-title-teamviewer {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dc6339;
+  }
+
+  .mobile-title-drivers {
+    font-size: 14px;
+    font-weight: 400;
     color: #78716c;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #78716c;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  /* garante que os blocos de download não quebrem layout */
-  .download-items {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-
-  .download-item {
-    flex: 1;
-    border: 1px solid #dc6339;
-    border-radius: 10px;
-    padding: 20px;
-  }
-
-  /* botões e textos dentro dos cards ficam mais proporcionais */
-  .platform-name {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .download-btn {
-    position: relative;
-    padding-right: 30px;
-    border-radius: 10px;
-  }
-
-  .download-btn::after {
-    content: "";
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12 16l4-5h-3V4h-2v7H8l4 5zM4 18h16v2H4z'/%3E%3C/svg%3E")
-      no-repeat center;
-    background-size: contain;
+  .mobile-title-guia {
+    font-size: 14px;
+    font-weight: 400;
+    color: #78716c;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #78716c;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -620,7 +632,7 @@ p {
 .quality-card {
   background-color: #dc6339;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 20px 10px 20px;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -629,16 +641,10 @@ p {
   text-align: center;
 }
 
-.quality-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(232, 93, 36, 0.3);
-}
-
 .card-image-container {
   width: 100%;
   margin-bottom: 25px;
   border-radius: 15px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -646,11 +652,14 @@ p {
 
 .card-image {
   width: 100%;
-  max-width: 600px;
   height: auto;
   object-fit: contain;
   border-radius: 15px;
+  padding: 20px;
   background-color: #dc6339;
+}
+.card-content {
+  padding: 0;
 }
 
 .card-content {
@@ -1046,28 +1055,36 @@ p {
 }
 
 .form-header h1 {
-  font-size: 36px;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
   color: white;
   margin-bottom: 15px;
 }
 
 .form-header p {
+  font-family: "Opens Sans", sans-serif;
   color: white;
-  font-size: 18px;
-  max-width: 700px;
+  font-size: 22px;
+  max-width: 900px;
+  line-height: 28px;
   margin: 0 auto;
 }
 
 .form-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
   .form-grid {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 430px 430px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 70px; 
   }
 
   .message-field {
@@ -1080,6 +1097,10 @@ p {
 }
 
 label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
   display: block;
   color: white;
   margin-bottom: 8px;
@@ -1163,7 +1184,7 @@ textarea {
     margin: 0;
   }
 }
-/* ===== Ajustes para TABLET (mantém layout desktop, reduz fontes e espaçamentos) ===== */
+/* Ajustes para TABLET (mantém layout desktop) */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
     font-size: 15px;

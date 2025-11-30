@@ -63,6 +63,9 @@ p {
   object-fit: cover;
   border-radius: 20px;
 }
+.hero-bg-image-mobile {
+  display: none;
+}
 
 .hero-overlay {
   position: absolute;
@@ -80,7 +83,7 @@ p {
   left: 0;
   width: 320px;
   height: 320px;
-  background: #1e1e1e;
+  background: #dc6339;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -91,11 +94,12 @@ p {
 .hero-black-box p {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 38px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.32px;
   text-align: start;
-  padding: 30px;
+  padding: 20px;
 }
 
 .hero-orange-box {
@@ -105,7 +109,6 @@ p {
   bottom: 0;
   width: 647px;
   height: 247px;
-  background: #dc6339;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -113,12 +116,12 @@ p {
 }
 
 .hero-orange-box h2 {
-  color: #ffffff;
+  color: #1c1c1c;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  width: 512px;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: start;
+  width: 668px;
 }
 
 .hero-orange-box,
@@ -211,7 +214,7 @@ p {
 
 /* Imagem 4 - abaixo da imagem grande, alinhada à direita */
 .img-4 {
-  height: 80%;
+  height: 70%;
   width: 100%;
   margin: 20px 0;
 }
@@ -730,8 +733,7 @@ p {
     padding: 0 20px;
   }
   .main-hero-new {
-    background-color: #f2f2f2;
-    padding-bottom: 10px;
+    display: none;
   }
   .main-areas h2 {
     font-size: 26px;
@@ -740,57 +742,64 @@ p {
     text-align: center;
     margin-bottom: 20px;
   }
-
-  .hero-container {
-    height: 400px;
-    position: relative;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
+  /* section hero mobile */
+  .main-hero-mobile {
+    display: block;
     margin: 0 20px;
   }
-  .hero-bg-image {
-    width: 400px;
-    left: 0;
-    height: 250px;
+
+  .hero-mobile-wrapper {
     position: relative;
-    top: -60px;
+    width: 100%;
   }
 
-  .hero-black-box {
-    position: absolute;
-    width: 105px;
-    height: 110px;
-    top: 155px;
-    border-radius: 15px;
+  .hero-bg-image-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
   }
-  .hero-black-box p {
+
+  /* Caixa preta grudada no fundo da imagem */
+ .hero-mobile-black-box {
+  position: absolute;
+  bottom: 0px;            
+  left: 0px;             
+  background-color: #1c1c1c;
+  height: 42%;
+  max-width: 32%;        
+  width: fit-content;     
+  padding: 5px; 
+  border-radius: 15px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  .hero-mobile-black-box p {
     text-align: start;
+    align-items: center;
     font-weight: 600;
     font-size: 12px;
     margin-right: 10px;
-    width: 99px;
+    width: auto;
     line-height: 147.7%;
-    padding: 0px;
+    padding: 10px;
+    color: #ffffff;
   }
 
-  .hero-orange-box {
-    width: 100%;
-    height: 102px;
-    border-radius: 16px;
-    align-items: center;
-    margin-top: -70px;
-  }
+  /* Titulo*/
 
-  .hero-orange-box h2 {
-    font-size: 22px;
+  .main-hero-mobile h2 {
+    font-weight: 600;
+    font-size: 26px;
     margin: 0;
-    width: 271px;
-    height: 49px;
-    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 120%;
+    text-align: center;
   }
-
   .hero-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -928,7 +937,7 @@ p {
   }
 
   .solutions-header {
-    margin: 0 auto 20px auto; /* 👉 centraliza horizontalmente */
+    margin: 0 auto 20px auto;
     text-align: center;
     font-size: 16px;
     color: #1c1c1c;

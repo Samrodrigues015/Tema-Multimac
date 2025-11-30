@@ -86,7 +86,7 @@
                 </div>
               </li>
               <li class="nav__item">
-                <a href="pagina-servico" class="nav__link" aria-expanded="false" aria-haspopup="true">
+                <a href="pagina-marketing" class="nav__link" aria-expanded="false" aria-haspopup="true">
                   Serviços de Marketing
                   <i class="fa-solid fa-chevron-down nav__dropdown-icon" aria-hidden="true"></i>
                 </a>

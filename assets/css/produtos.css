@@ -615,16 +615,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.discover-more:hover .arrow-icon-wrapper {
-  background-color: #fcece6;
-}
-
 .discover-more .arrow-icon-wrapper svg {
   width: 20px;
   height: 20px;
 }
 
-/* Botão para mobile (escondido em desktop por defeito) */
+/* Botão para mobile (escondido em desktop) */
 .btn-mobile-discover {
   display: none;
 }

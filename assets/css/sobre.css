@@ -176,7 +176,7 @@ p {
 
 .quem-somos-text p {
   font-size: 1.2rem;
-  line-height: 33px;
+  line-height: 26px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -761,22 +761,22 @@ p {
   }
 
   /* Caixa preta grudada no fundo da imagem */
- .hero-mobile-black-box {
-  position: absolute;
-  bottom: 0px;            
-  left: 0px;             
-  background-color: #1c1c1c;
-  height: 42%;
-  max-width: 32%;        
-  width: fit-content;     
-  padding: 5px; 
-  border-radius: 15px;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .hero-mobile-black-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1c1c1c;
+    height: 42%;
+    max-width: 32%;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .hero-mobile-black-box p {
     text-align: start;
     align-items: center;

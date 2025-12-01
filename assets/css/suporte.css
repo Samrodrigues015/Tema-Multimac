@@ -30,7 +30,6 @@ h6 {
 }
 p {
   font-family: "Funnel Display", sans-serif;
-  color: #1c1c1c;
 }
 .container {
   max-width: 1500px;
@@ -40,6 +39,11 @@ p {
 @media (max-width: 1400px) and (min-width: 1100px) {
   .container {
     padding: 0 20px;
+  }
+
+  .form-container {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* Hero Section */
@@ -479,6 +483,16 @@ p {
   display: none;
 }
 
+/* mobile-only helpers: hide by default (desktop), show via media query */
+.mobile-only {
+  display: none !important;
+}
+
+/* privacy note hidden on desktop; shown only on mobile */
+.privacy-note {
+  display: none;
+}
+
 /* Responsive Design for Resources */
 @media (max-width: 1200px) {
   .resources-main-grid {
@@ -592,6 +606,12 @@ p {
     border-bottom: 1px solid #78716c;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .privacy-note {
+    display: block;
   }
 }
 
@@ -1034,6 +1054,8 @@ p {
   overflow: hidden;
   background: linear-gradient(to right, #0e0853, #2e0a3a, #8b0e23);
   padding: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -1065,21 +1087,50 @@ p {
 
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  column-gap: 70px;
+}
+
+.form-column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message-field {
+  grid-row: span 2;
 }
 
 @media (min-width: 768px) {
   .form-grid {
     display: grid;
     grid-template-columns: 430px 430px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    column-gap: 70px; 
+    column-gap: 70px;
+  }
+
+  .form-column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .message-field {
-    grid-row: span 2;
+    grid-row: auto;
   }
 }
 
@@ -1088,7 +1139,7 @@ p {
 }
 
 label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
@@ -1124,6 +1175,7 @@ textarea {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
+  grid-column: 2;
 }
 
 .checkbox-group input {
@@ -1138,28 +1190,36 @@ textarea {
 
 .submit-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-top: 20px;
+  grid-column: 2;
 }
 
 .submit-button {
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
   background-color: white;
   color: #dc6339;
-  font-weight: 500;
+  font-weight: 700;
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 @media (max-width: 767px) {
   .form-header h1 {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 124%;
   }
 
   .form-header p {
     font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
   }
 
   .submit-container {
@@ -1168,11 +1228,215 @@ textarea {
 
   .submit-button {
     width: 100%;
+    color: #fff;
+    background: #dc6339;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .form-container {
-    padding: 20px;
+    padding: 55px;
     margin: 0;
+  }
+
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .message-field {
+    grid-row: auto;
+  }
+
+  /* Mobile: make the column wrappers behave like contents so we can reorder fields */
+  .form-column-left,
+  .form-column-right {
+    display: contents;
+  }
+
+  /* Order classes for mobile stacking */
+  .mo-1 {
+    order: 1;
+  }
+  .mo-2 {
+    order: 2;
+  }
+  .mo-3 {
+    order: 3;
+  }
+  .mo-4 {
+    order: 4;
+  }
+  .mo-5 {
+    order: 5;
+  }
+  .mo-6 {
+    order: 6;
+  }
+  .mo-7 {
+    order: 7;
+  }
+  .mo-8 {
+    order: 8;
+  }
+  .mo-9 {
+    order: 9;
+  }
+  .mo-10 {
+    order: 10;
+  }
+  .mo-11 {
+    order: 11;
+  }
+  .mo-12 {
+    order: 12;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 70px;
+  }
+
+  /* Hide/show fields per current step (only applies on mobile via this media query) */
+  .form-grid[data-current-step="1"] .form-group[data-step="2"],
+  .form-grid[data-current-step="1"] .checkbox-group[data-step="2"],
+  .form-grid[data-current-step="1"] .submit-container[data-step="2"],
+  .form-grid[data-current-step="1"] .mo-11,
+  .form-grid[data-current-step="1"] .mo-10 {
+    display: none !important;
+  }
+
+  .form-grid[data-current-step="2"] .form-group[data-step="1"],
+  .form-grid[data-current-step="2"] .checkbox-group[data-step="1"],
+  .form-grid[data-current-step="2"] .submit-container[data-step="1"] {
+    display: none !important;
+  }
+
+  /* Mobile-only buttons */
+  .mobile-only {
+    display: inline-block;
+  }
+  .next-button,
+  .back-button {
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .next-button {
+    background: #fff;
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    line-height: 24px;
+  }
+  .back-button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 8px;
+  }
+
+  .privacy-note {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    color: #fff;
+    opacity: 0.95;
+    font-size: 14px;
+  }
+
+  /* Ensure Próximo only visible on step 1, hidden on step 2 (mobile) */
+  .form-grid[data-current-step="1"] .next-button {
+    display: inline-block !important;
+  }
+  .form-grid[data-current-step="2"] .next-button {
+    display: none !important;
+  }
+
+  /* Fix: place privacy note at the bottom of the form container on mobile */
+  .form-container {
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .privacy-note {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 12px;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    background: transparent;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    opacity: 0.95;
+    z-index: 1;
+  }
+
+  /* Ensure submit button of step 2 is visible above the privacy note */
+  .submit-container[data-step="2"] {
+    display: flex !important;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 12px;
+  }
+}
+
+/* Progress indicators hidden on desktop, visible on mobile */
+.progress-indicator {
+  display: none;
+}
+
+.progress-indicator img {
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .progress-indicator {
+    display: none;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+    order: 0;
+  }
+
+  /* Show progress indicators on mobile */
+  .progress-1 {
+    display: block;
+  }
+  .progress-2 {
+    display: none;
+  }
+
+  /* Hide/show progress per step */
+  .form-grid[data-current-step="1"] .progress-1 {
+    display: block;
+  }
+  .form-grid[data-current-step="1"] .progress-2 {
+    display: none;
+  }
+
+  .form-grid[data-current-step="2"] .progress-1 {
+    display: none;
+  }
+  .form-grid[data-current-step="2"] .progress-2 {
+    display: block;
   }
 }
 /* Ajustes para TABLET (mantém layout desktop) */
@@ -1314,5 +1578,9 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: start;
+  }
+  .form-container {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

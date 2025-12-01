@@ -69,17 +69,40 @@ body {
   border-radius: 12px;
 }
 
+.printers-image-desktop {
+  display: block;
+}
+
+.printers-image-mobile {
+  display: none;
+}
+
 .innovation-badge {
   position: absolute;
   bottom: 8px;
   right: 0px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.innovation-badge-desktop {
   background: #dc6339;
   color: white;
   padding: 60px 23px 47px 0px;
-  border-radius: 20px;
-  text-align: center;
-  /*box-shadow: 0 8px 24px rgba(232, 90, 43, 0.3);*/
-  width: 181px;
+  width: 31%;
+  height: 42%;
+  display: block;
+}
+
+.innovation-badge-mobile {
+  display: none;
+}
+
+.innovation-badge-mobile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
 }
 
 /* Responsividade */
@@ -97,9 +120,40 @@ body {
     max-width: 100%;
   }
 
+  .printers-image-desktop {
+    display: none;
+  }
+
+  .printers-image-mobile {
+    display: block;
+  }
+
   .innovation-badge {
     right: 9px;
     bottom: 11px;
+  }
+
+  .innovation-badge-desktop {
+    display: none;
+  }
+
+  .innovation-badge-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .innovation-badge-mobile img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: auto;
+    margin-top: auto;
   }
 }
 
@@ -1123,8 +1177,9 @@ body {
   }
 
   .hero-right h1 {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 16px;
+    padding: 0;
   }
 
   .hero-right p {

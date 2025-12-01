@@ -8,11 +8,15 @@
      <section class="hero">
          <div class="hero-content">
              <div class="hero-left">
-                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/impressora.png" alt="Sharp Printers and Multifunction Devices" class="printers-image">
-                 <div class="innovation-badge">
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/impressora.png" alt="Sharp Printers and Multifunction Devices" class="printers-image printers-image-desktop">
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/img-mobile.png" alt="Sharp Printers and Multifunction Devices" class="printers-image printers-image-mobile">
+                 <div class="innovation-badge innovation-badge-desktop">
                      <p>Inovação</p>
                      <p>Tecnologia</p>
                      <p>Solução</p>
+                 </div>
+                 <div class="innovation-badge innovation-badge-mobile">
+                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-produtos/mobile-prod.png" alt="produtos mobile">
                  </div>
              </div>
              <div class="hero-right">

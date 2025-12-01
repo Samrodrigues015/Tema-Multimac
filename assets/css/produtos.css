@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   max-width: 1500px;
 }
 @media (max-width: 1400px) and (min-width: 1100px) {
-   .main-section {
+  .main-section {
     padding: 30px 20px;
   }
 }
@@ -58,7 +60,7 @@ body {
 
 .hero-right {
   grid-area: text;
-  align-self: end; 
+  align-self: end;
 }
 
 .printers-image {
@@ -68,16 +70,16 @@ body {
 }
 
 .innovation-badge {
-position: absolute;
-    bottom: 5px;
-    right: 0px;
-    background: #dc6339;
-    color: white;
-    padding: 60px 23px 47px 0px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(232, 90, 43, 0.3);
-    width: 181px;
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+  background: #dc6339;
+  color: white;
+  padding: 60px 23px 47px 0px;
+  border-radius: 20px;
+  text-align: center;
+  /*box-shadow: 0 8px 24px rgba(232, 90, 43, 0.3);*/
+  width: 181px;
 }
 
 /* Responsividade */
@@ -96,7 +98,7 @@ position: absolute;
   }
 
   .innovation-badge {
-   right: 9px;
+    right: 9px;
     bottom: 11px;
   }
 }
@@ -108,60 +110,56 @@ position: absolute;
 }
 
 .innovation-badge p {
-font-size: 22px;
+  font-size: 22px;
   color: white !important;
   line-height: 35%;
   font-weight: 400;
   text-align: left;
   padding-left: 10%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
 .innovation-badge p:nth-of-type(2) {
-  font-size: 26px;   
-  font-weight: 600;  
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .hero-right h1 {
-    font-size: 54px;
-    font-weight: 600;
-    color: #1C1C1C;
-    margin-bottom: 24px;
-    line-height: 120%;
-    font-family: 'Poppins', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 24px;
+  line-height: 120%;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-right p {
- font-size: 22px;
-  color: #1C1C1C;
+  font-size: 22px;
+  color: #1c1c1c;
   margin-bottom: 0;
   line-height: 31px;
-  font-family: 'Funnel Display', sans-serif;
+  font-family: "Funnel Display", sans-serif;
   font-weight: 400;
 }
 
-
 .hero-buttons .btn {
-    flex: 1 1 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 10px;
-    border-radius: 30px;
-    box-sizing: border-box;
-    min-width: 0;
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
+  flex: 1 1 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  min-width: 0;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-
-
 .hero-buttons {
- grid-area: buttons; 
+  grid-area: buttons;
   align-self: start;
-  margin-top: 32px; 
+  margin-top: 32px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -181,8 +179,8 @@ font-size: 22px;
 .btn-primary {
   background: #dc6339;
   color: white;
-	font-weight: 400;
-  font-family: 'Funnel Display', sans-serif;
+  font-weight: 400;
+  font-family: "Funnel Display", sans-serif;
 }
 
 .btn-primary:hover {
@@ -195,7 +193,7 @@ font-size: 22px;
   background: #e2e2e2;
   color: #1c1c1c;
   font-weight: 400;
-  font-family: 'Funnel Display', sans-serif;
+  font-family: "Funnel Display", sans-serif;
 }
 
 .btn-secondary:hover {
@@ -232,8 +230,8 @@ font-size: 22px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
   gap: 10px;
-	
-	font-size: 20px;
+
+  font-size: 20px;
   font-weight: 600;
   color: #1e1e1e;
 }
@@ -245,7 +243,6 @@ font-size: 22px;
   background: #dc6339;
   border-radius: 50%;
 } */
-
 
 .section-tag span {
   color: #1c1c1c;
@@ -269,20 +266,17 @@ font-size: 22px;
   color: #1c1c1c;
   margin-bottom: 24px;
   line-height: 1.2;
-	text-align: left;
+  text-align: left;
 }
-
 
 /* DESCRIÇÃO - A GRANDE ALTERAÇÃO ESTÁ AQUI */
 .section-description {
-    font-size: 22px;
-    color: #1C1C1C;
-    line-height: 32px;
-    width: 80%;
-    font-family: 'Funnel Display', sans-serif;
-    font-weight: 400;
-	
-	
+  font-size: 22px;
+  color: #1c1c1c;
+  line-height: 32px;
+  width: 80%;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 400;
 }
 
 /* IMAGEM */
@@ -308,36 +302,36 @@ font-size: 22px;
   margin-right: auto;
   /*padding: 0 20px;*/
 
-/* O antigo .feature-card agora é .feature-item */
-.feature-item {
-  border-bottom: 1px solid #dc6339;
-  padding-bottom: 25px;
-}
+  /* O antigo .feature-card agora é .feature-item */
+  .feature-item {
+    border-bottom: 1px solid #dc6339;
+    padding-bottom: 25px;
+  }
 
-/* ADICIONADO: Classe para o novo cabeçalho que agrupa título e ícone */
-.feature-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
+  /* ADICIONADO: Classe para o novo cabeçalho que agrupa título e ícone */
+  .feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
 
-/* Estilos do título e parágrafo (mantidos e ligeiramente ajustados) */
-.feature-item h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #1e1e1e;
-  margin: 0;
-}
+  /* Estilos do título e parágrafo (mantidos e ligeiramente ajustados) */
+  .feature-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 0;
+  }
 
-.feature-item p {
-color: #1e1e1e;
+  .feature-item p {
+    color: #1e1e1e;
     line-height: 28px;
     margin: 0;
     font-size: 18px;
     width: 80%;
     font-family: funnel display;
-}
+  }
 }
 
 /* O antigo .feature-icon agora é .arrow-icon e foi completamente reestilizado */
@@ -347,7 +341,7 @@ color: #1e1e1e;
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid #1e1e1e; 
+  border: 1px solid #1e1e1e;
   border-radius: 50%;
   color: #1e1e1e;
   transition: all 0.3s ease;
@@ -394,7 +388,7 @@ color: #1e1e1e;
 }
 
 .industry-card h3 {
- font-size: 26px;
+  font-size: 26px;
   color: #2d3748;
   margin-bottom: 12px;
   line-height: 120%;
@@ -402,8 +396,8 @@ color: #1e1e1e;
 }
 
 .industry-card p {
- font-size: 16x !important;
-  color: #1C1C1C;
+  font-size: 16x !important;
+  color: #1c1c1c;
   line-height: 25px;
   font-family: funnel display;
 }
@@ -429,8 +423,8 @@ color: #1e1e1e;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
   gap: 10px;
-	
-	font-size: 20px;
+
+  font-size: 20px;
   font-weight: 600;
   color: #1e1e1e;
 }
@@ -446,9 +440,9 @@ color: #1e1e1e;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  background: #DC6339;
+  background: #dc6339;
   border-radius: 30px;
-  box-shadow: 0 8px 32px rgba(20,20,40,0.10);
+  box-shadow: 0 8px 32px rgba(20, 20, 40, 0.1);
   overflow: hidden;
   min-height: 320px;
   margin-top: 0;
@@ -459,7 +453,7 @@ color: #1e1e1e;
   height: 100%;
   min-height: 320px;
   display: block;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
   overflow: hidden;
   padding: 0;
@@ -487,7 +481,7 @@ color: #1e1e1e;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .testimonial-quote-icon {
@@ -501,32 +495,31 @@ color: #1e1e1e;
 }
 
 .testimonial-quote blockquote {
-   font-family: 'Funnel Display', sans-serif; 
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 28px;
-    margin: 0;
-    max-width: 80%;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28px;
+  margin: 0;
+  max-width: 80%;
 }
 
 .testimonial-client-info h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
   margin: 0 0 4px 0;
   margin-top: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .testimonial-client-info p {
-   font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0;
-    opacity: 0.85;
-    color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.85;
+  color: #ffffff;
 }
-
 
 /* Advanced Features Section */
 .advanced-features {
@@ -565,7 +558,7 @@ color: #1e1e1e;
 
 .feature-box h3 {
   font-size: 22px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 30px;
@@ -575,16 +568,16 @@ color: #1e1e1e;
 
 .feature-box p {
   font-size: 16px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   line-height: 1.5;
   margin: 0;
   font-weight: 500;
   max-width: 224px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .discover-more {
-  background: #DC6339;
+  background: #dc6339;
   border: none;
   position: relative;
 }
@@ -593,17 +586,19 @@ color: #1e1e1e;
   max-width: 85%;
   font-size: 28px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .discover-more p {
   max-width: 85%;
   font-size: 16px;
-  font-family: 'Funnel Display', sans-serif;
-  color: #FFFFFF;
+  font-family: "Funnel Display", sans-serif;
+  color: #ffffff;
 }
 
-.arrow-icon-wrapper { display: none; }
+.arrow-icon-wrapper {
+  display: none;
+}
 
 .discover-more .arrow-icon-wrapper {
   display: flex;
@@ -627,9 +622,8 @@ color: #1e1e1e;
 
 /* Botão para mobile (escondido em desktop) */
 .btn-mobile-discover {
-    display: none;
+  display: none;
 }
-
 
 /* Secção Produtividade */
 .productivity {
@@ -651,7 +645,7 @@ color: #1e1e1e;
 }
 
 .productivity-text h2 {
- font-size: 50px;
+  font-size: 50px;
   font-weight: 600;
   color: #1c1c1c;
   line-height: 120%;
@@ -659,7 +653,7 @@ color: #1e1e1e;
 }
 
 .orange-box {
-background: #dc6339;
+  background: #dc6339;
   color: white;
   padding: 50px;
   border-radius: 20px;
@@ -677,7 +671,7 @@ background: #dc6339;
   line-height: 136%;
   font-weight: 500;
   padding: 36px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .productivity-image {
@@ -716,14 +710,14 @@ background: #dc6339;
 }
 
 .cta-overlay h3 {
-font-size: 42px;
+  font-size: 42px;
   font-weight: 600;
   margin: 0 0 15px 0;
   line-height: 120%;
 }
 
 .cta-link {
-color: white;
+  color: white;
   text-decoration: underline;
   text-underline-offset: 5px;
   font-size: 20px;
@@ -731,17 +725,25 @@ color: white;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Funnel Display', sans-serif;
+  font-family: "Funnel Display", sans-serif;
 }
 
 .cta-link .icon {
-  width: 24px; /* Definir tamanho do ícone */
+  display: inline-block;
+  width: 24px;
   height: 24px;
-  transition: transform 0.3s ease; /* Efeito suave no hover */
+  transform: rotate(45deg); /* estado inicial inclinado */
+  transition: transform 0.3s ease;
 }
 
+/* Hover apenas para leve deslocamento */
 .cta-link:hover .icon {
-  transform: translateY(3px); /* Pequeno efeito de movimento ao passar o rato */
+  transform: rotate(45deg) translateY(3px);
+}
+
+/* Ao clicar */
+.cta-link:active .icon {
+  transform: rotate(180deg) translateY(0); /* mira para baixo */
 }
 
 /* Large Desktops */
@@ -802,7 +804,6 @@ color: white;
   .orange-box p {
     font-size: 16px;
   }
-
 }
 
 /* Tablets and Small Desktops */
@@ -849,7 +850,7 @@ color: white;
   }
 
   .productivity-content {
-   grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 0; /* Remove gap to allow overlap */
     display: flex;
     flex-direction: column;
@@ -860,7 +861,7 @@ color: white;
     display: contents; /* This allows children to be direct flex items of the parent */
   }
 
- .productivity-text h2 {
+  .productivity-text h2 {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
@@ -885,10 +886,14 @@ color: white;
     position: relative; /* Establish stacking context */
   }
 
-   .cta-overlay {
+  .cta-overlay {
     align-items: center;
     text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
   }
 
   .cta-overlay h3 {
@@ -904,7 +909,6 @@ color: white;
   .cta-link img.icon {
     display: none;
   }
-
 }
 
 /* Tablets */
@@ -918,12 +922,12 @@ color: white;
   }
 
   .innovation-badge {
-        width: 100px;
-        padding: 14px 0px;
-        right: 0;
-        bottom: 4px;
-        text-align: center;
-        border-radius: 10px;
+    width: 100px;
+    padding: 14px 0px;
+    right: 0;
+    bottom: 4px;
+    text-align: center;
+    border-radius: 10px;
   }
   .innovation-badge p {
     font-size: 16px; /* Reduce base font size */
@@ -948,8 +952,8 @@ color: white;
   }
 
   .printers-image {
-        height: 297px;
-        width: 310px;
+    height: 297px;
+    width: 310px;
   }
 
   .hero-right h1 {
@@ -979,7 +983,7 @@ color: white;
     margin: 0 auto;
   }
 
-   .solutions .section-tag,
+  .solutions .section-tag,
   .advanced-features .section-tag {
     display: none;
   }
@@ -995,60 +999,59 @@ color: white;
     gap: 24px;
   }
 
-.industry-solutions .industry-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
-        padding-bottom: 1rem; /* Add some space for the scrollbar */
-        gap: 1rem; /* Space between cards */
-        scrollbar-width: none; /* Hide scrollbar for Firefox */
-    }
+  .industry-solutions .industry-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    padding-bottom: 1rem; /* Add some space for the scrollbar */
+    gap: 1rem; /* Space between cards */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
 
-    .industry-solutions .section-title {
-        width: 100% !important; /* Override the inline style for mobile */
-        text-align: center;
-    }
+  .industry-solutions .section-title {
+    width: 100% !important; /* Override the inline style for mobile */
+    text-align: center;
+  }
 
-    .industry-solutions .industry-card {
-        flex: 0 0 80%; /* Each card takes up 80% of the container width */
-        scroll-snap-align: start;
-        min-width: 0; /* Override any desktop min-width */
-    }
+  .industry-solutions .industry-card {
+    flex: 0 0 80%; /* Each card takes up 80% of the container width */
+    scroll-snap-align: start;
+    min-width: 0; /* Override any desktop min-width */
+  }
 
-    /* Hide scrollbar for a cleaner look, but still allow scrolling */
-    .industry-solutions .industry-cards::-webkit-scrollbar {
-        display: none;
-    }
+  /* Hide scrollbar for a cleaner look, but still allow scrolling */
+  .industry-solutions .industry-cards::-webkit-scrollbar {
+    display: none;
+  }
 
-    .industry-solutions .industry-cards {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-
+  .industry-solutions .industry-cards {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
   .industry-cards {
     grid-template-columns: 1fr;
   }
 
-.testimonial {
-        display: none;
-    }
+  .testimonial {
+    display: none;
+  }
 
   .advanced-features {
     padding: 60px 0;
   }
 
- /* 1. Transformar a grelha num carrossel scrollável */
+  /* 1. Transformar a grelha num carrossel scrollável */
   .features-cards {
     display: flex; /* Muda de grid para flex */
     overflow-x: auto; /* Permite o scroll horizontal */
     scroll-snap-type: x mandatory; /* Ativa o "íman" para o scroll */
     -webkit-overflow-scrolling: touch; /* Melhora a experiência em iOS */
-    
+
     /* Esconde a barra de scroll para um look mais limpo */
     scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
   }
   .features-cards::-webkit-scrollbar {
     display: none; /* Safari e Chrome */
@@ -1064,7 +1067,7 @@ color: white;
   .discover-more {
     display: none;
   }
-  
+
   /* 4. Mostrar e estilizar o botão que é só para mobile */
   .btn-mobile-discover {
     display: block; /* Faz o botão aparecer */
@@ -1079,7 +1082,7 @@ color: white;
     margin: 40px auto 0;
     max-width: 300px;
     transition: background-color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .btn-mobile-discover:hover {
     background-color: #c75630;
@@ -1093,7 +1096,7 @@ color: white;
     padding: 25px;
     padding-top: 95px; /* Maintain top padding for overlap */
   }
-   .orange-box p {
+  .orange-box p {
     font-size: 18px;
     line-height: 1.5;
     padding: 0;
@@ -1148,7 +1151,7 @@ color: white;
   }
 
   .section-title {
-   font-size: 26px;
+    font-size: 26px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -1156,21 +1159,20 @@ color: white;
   }
 
   .section-description {
-   font-size: 16px;
+    font-size: 16px;
     width: 328px;
     line-height: 23px;
     font-family: funnel display;
   }
 
-	.section-header h2{
-		font-size: 26px;
+  .section-header h2 {
+    font-size: 26px;
     text-align: center;
     align-items: center;
     justify-content: center;
     line-height: 120%;
-	}
-	
-	
+  }
+
   .feature-card {
     padding: 20px;
   }
@@ -1211,7 +1213,7 @@ color: white;
     font-size: 24px;
   }
 
- .orange-box {
+  .orange-box {
     padding: 20px;
     padding-top: 90px; /* Adjust padding for smaller screens */
     margin-top: -70px; /* Adjust overlap for smaller screens */
@@ -1233,7 +1235,6 @@ color: white;
     font-size: 18px;
     margin-bottom: 10px;
   }
-
 }
 
 /* Small Mobile Phones */

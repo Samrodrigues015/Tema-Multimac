@@ -304,6 +304,13 @@ header.is-stuck {
   padding: 0.75rem 1rem 0.75rem 2rem;
   transition: var(--transition);
   background: #ececec;
+
+  transition: none !important;
+  will-change: filter;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0); /* força camada compositing */
+  -webkit-transform: translateZ(0);
 }
 
 .mega-dropdown__item:hover,
@@ -312,9 +319,10 @@ header.is-stuck {
   color: #fff;
 }
 
-.mega-dropdown__item:hover i,
-.mega-dropdown__item:focus i {
-  color: #fff;
+.mega-dropdown__item:hover img,
+.mega-dropdown__item:focus img {
+  filter: invert(1) grayscale(1) contrast(1000%);
+  transition: none !important;
 }
 .mega-dropdown__icon {
   width: 20px;
@@ -322,6 +330,7 @@ header.is-stuck {
   margin-right: 0.75rem;
   color: var(--primary-color);
   flex-shrink: 0;
+  transition: none;
 }
 
 .mega-dropdown__text {
@@ -331,6 +340,12 @@ header.is-stuck {
 
 .botao-assistencia-tecnica {
   display: none;
+}
+
+.botao-assistencia-tecnica:hover,
+.botao-assistencia-tecnica:focus {
+  background-color: #dc6339;
+  color: #fff;
 }
 
 .years-badge {

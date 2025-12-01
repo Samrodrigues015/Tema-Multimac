@@ -175,7 +175,7 @@ p {
 }
 
 .quem-somos-text p {
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -727,13 +727,6 @@ p {
   line-height: 30px;
 }
 
-/* ESCONDE O HERO MOBILE NO DESKTOP */
-@media (min-width: 768px) {
-  .main-hero-mobile {
-    display: none !important;
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -768,22 +761,22 @@ p {
   }
 
   /* Caixa preta grudada no fundo da imagem */
- .hero-mobile-black-box {
-  position: absolute;
-  bottom: 0px;            
-  left: 0px;             
-  background-color: #1c1c1c;
-  height: 42%;
-  max-width: 32%;        
-  width: fit-content;     
-  padding: 5px; 
-  border-radius: 15px;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .hero-mobile-black-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1c1c1c;
+    height: 42%;
+    max-width: 32%;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .hero-mobile-black-box p {
     text-align: start;
     align-items: center;

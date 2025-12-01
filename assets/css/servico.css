@@ -47,7 +47,7 @@ section {
 }
 
 .xop-question {
-  width: 55%;
+  width: 65%;
   font-size: 1.8rem;
   margin-bottom: 60px;
 }
@@ -127,80 +127,80 @@ section {
 
 /* Hero Section - Seção principal da página */
 .hero-image-service {
-      max-width: 1500px;
-      margin: 0 auto;
-      position: relative;
-      margin-top: 40px;
-    }
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
+}
 
-    /* Container de texto centralizado */
-    .hero-text {
-      position: absolute;
-      bottom: 43px;
-      left: 43px;
-      color: white;
-      z-index: 2;
-      width: 55%;
-    }
+/* Container de texto centralizado */
+.hero-text {
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+  color: white;
+  z-index: 2;
+  width: 55%;
+}
 
-    .hero-text h2 {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 50px;
-      line-height: 72px;
-      margin-bottom: 40px;
-    }
+.hero-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 72px;
+  margin-bottom: 40px;
+}
 
-    .highlight {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-top: 20px;
-    }
+.highlight {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
 
-    /* Containers das imagens flutuantes */
-    .floating-container {
-      position: absolute;
-      bottom: 10px;
-      right: 0px;
-      width: 32%;
-      height: 42%;
-      padding: 40px;
-      border-radius: 15px;
-      background: #dc6339;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+/* Containers das imagens flutuantes */
+.floating-container {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 32%;
+  height: 42%;
+  padding: 40px;
+  border-radius: 15px;
+  background: #dc6339;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .floating-container p {
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      line-height: 141%;
-      font-weight: 600;
-      color: #fff;
-    }
+.floating-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 141%;
+  font-weight: 600;
+  color: #fff;
+}
 
-    .floating-container-two {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 11%;
-      height: 26%;
-      border-radius: 12%;
-      background: #1e1e1e;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-    }
+.floating-container-two {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 11%;
+  height: 26%;
+  border-radius: 12%;
+  background: #1e1e1e;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
 
-    .floating-container-two span {
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 120%;
-      text-align: center;
-      color: #fff;
-    }
+.floating-container-two span {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
 
 /* Why Choose Section - Benefícios em grid */
 
@@ -218,8 +218,7 @@ section {
 }
 .benefits-grid h3 {
   font-size: 24px;
- font-weight: 600;
-
+  font-weight: 600;
 }
 
 .benefits-grid p {
@@ -259,7 +258,7 @@ section {
   display: flex;
   align-items: end;
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
@@ -291,8 +290,8 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
   gap: 10px;
-	
-	font-size: 20px;
+
+  font-size: 20px;
   font-weight: 600;
   color: #1e1e1e;
 }
@@ -308,7 +307,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
   overflow: hidden;
   min-height: 320px;
@@ -320,7 +319,7 @@ section {
   height: 100%;
   min-height: 320px;
   display: block;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
   overflow: hidden;
   padding: 0;
@@ -363,30 +362,30 @@ section {
 }
 
 .testimonial-quote blockquote {
-   font-family: 'Funnel Display', sans-serif; 
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 28px;
-    margin: 0;
-    max-width: 80%;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28px;
+  margin: 0;
+  max-width: 80%;
 }
 
 .testimonial-client-info h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
   margin: 0 0 4px 0;
   margin-top: 40px;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 
 .testimonial-client-info p {
-   font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0;
-    opacity: 0.85;
-    color: #535353;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.85;
+  color: #535353;
 }
 
 /* Technology Section - Recursos em grid flexível */
@@ -569,10 +568,10 @@ section {
 }
 
 .xopvision-industries-title {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
   margin-bottom: 60px;
-  line-height: 132%;
+  line-height: 125%;
   text-align: left;
 }
 
@@ -605,10 +604,10 @@ section {
 }
 
 .xopvision-industry-content {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 120%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .xopvision-industry-scenario,
@@ -625,7 +624,7 @@ section {
 
 .xopvision-scenario-text,
 .xopvision-benefit-text {
-  font-family: 'Funnel Display', sans-serif;
+  font-family: "Funnel Display", sans-serif;
   font-weight: 400;
   display: inline;
   font-size: 18px;
@@ -657,9 +656,8 @@ section {
 /* Mobile Styles */
 @media (max-width: 768px) {
   main {
-  padding: 0 20px;
-  
-}
+    padding: 0 20px;
+  }
   .xopvision-industries-container {
     padding: 30px 0;
   }
@@ -762,7 +760,7 @@ section {
   .testimonial {
     display: none;
   }
-  
+
   .benefits-grid p {
     font-size: 18px;
     max-width: 100%;
@@ -771,7 +769,7 @@ section {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 20px;
-}
+  }
 }
 
 /* Desktop only - hide mobile elements */
@@ -792,7 +790,6 @@ section {
     font-size: 36px;
   }
 }
-
 
 /* Show only on mobile and tablet */
 .mobile-container {
@@ -937,7 +934,6 @@ section {
   .cta-card {
     display: none !important;
   }
-  
 
   .mobile-container {
     padding: 15px;

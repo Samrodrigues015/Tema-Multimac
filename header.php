@@ -57,16 +57,16 @@
                 <div class="mega-dropdown" role="menu">
                   <div class="mega-dropdown__grid">
                     <!-- Produtos listados -->
-                    <a href="/pagina-produtos" class="mega-dropdown__item"><i class="fa-solid fa-print mega-dropdown__icon"></i><span>Impressoras e Multifunções Sharp</span></a>
-                    <a href="/pagina-energia-renovaveis/" class="mega-dropdown__item"><i class="fa-solid fa-sun mega-dropdown__icon"></i><span>Energias Renováveis</span></a>
-                    <a href="/pagina-solucoes-visuais/" class="mega-dropdown__item"><i class="fa-solid fa-eye mega-dropdown__icon"></i><span>Soluções Visuais Multimac</span></a>
-                    <a href="/pagina-videovigilancia" class="mega-dropdown__item"><i class="fa-solid fa-video mega-dropdown__icon"></i><span>Videovigilância</span></a>
-                    <a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><i class="fa-solid fa-desktop mega-dropdown__icon"></i><span>TI & Computing Multimac</span></a>
-                    <a href="/pagina-controlo-de-acessos/" class="mega-dropdown__item"><i class="fa-solid fa-id-card mega-dropdown__icon"></i><span>Controlo de Acessos e Gestão de Assiduidades</span></a>
-                    <a href="/pagina-pos-software/" class="mega-dropdown__item"><i class="fa-solid fa-cash-register mega-dropdown__icon"></i><span>POS - Software de Faturação Multimac</span></a>
-                    <a href="/paginas-sistemas-de-alarme/" class="mega-dropdown__item"><i class="fa-solid fa-shield-alt mega-dropdown__icon"></i><span>Intrusão</span></a>
-                    <a href="/pagina-gavetas-de-dinheiro/" class="mega-dropdown__item"><i class="fa-solid fa-money-bill mega-dropdown__icon"></i><span>Gavetas Inteligentes de Dinheiro</span></a>
-                    <a href="/pagina-unibind/" class="mega-dropdown__item"><i class="fa-solid fa-tag mega-dropdown__icon"></i><span>Peleman - Encadernação e Personalização</span></a>
+                    <a href="/pagina-produtos" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/impressora.svg" class="mega-dropdown__icon"></img><span>Impressoras e Multifunções Sharp</span></a>
+                    <a href="/pagina-energia-renovaveis/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/energia.svg" class="mega-dropdown__icon"></img><span>Energias Renováveis</span></a>
+                    <a href="/pagina-solucoes-visuais/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/soluções.svg" class="mega-dropdown__icon"></img><span>Soluções Visuais Multimac</span></a>
+                    <a href="/pagina-videovigilancia" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/video.svg" class="mega-dropdown__icon"></img><span>Videovigilância</span></a>
+                    <a href="/pagina-redes-e-computing/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/ti.svg" class="mega-dropdown__icon"></img><span>TI & Computing Multimac</span></a>
+                    <a href="/pagina-controlo-de-acessos/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/controle.svg" class="mega-dropdown__icon"></img><span>Controlo de Acessos e Gestão de Assiduidades</span></a>
+                    <a href="/pagina-pos-software/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/pos.svg" class="mega-dropdown__icon"></img><span>POS - Software de Faturação Multimac</span></a>
+                    <a href="/paginas-sistemas-de-alarme/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/intrusão.svg" class="mega-dropdown__icon"></img><span>Intrusão</span></a>
+                    <a href="/pagina-gavetas-de-dinheiro/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/gavetas.svg" class="mega-dropdown__icon"></img><span>Gavetas Inteligentes de Dinheiro</span></a>
+                    <a href="/pagina-unibind/" class="mega-dropdown__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-dropdown-produtos/peleman.svg" class="mega-dropdown__icon"></img><span>Peleman - Encadernação e Personalização</span></a>
                   </div>
                 </div>
               </li>
@@ -107,29 +107,31 @@
           </div>
         </nav>
 
-        <button class="botao-assistencia-tecnica">
-          <a href="/pagina-suporte"> <i class="fa-solid fa-headset"></i>
-            <span>Assistência Técnica</span></a>
-        </button>
+        <a href="/pagina-suporte" class="botao-assistencia-tecnica"> <i class="fa-solid fa-headset"></i>
+          <span>Assistência Técnica</span>
+        </a>
+
 
         <div class="years-badge">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/47anos.png" alt="47 anos" />
         </div>
       </div>
     </header>
-      <script>
-  (function () {
-    var header = document.querySelector('header');
-    if (!header) return;
+    <script>
+      (function() {
+        var header = document.querySelector('header');
+        if (!header) return;
 
-    function onScroll() {
-      if (window.scrollY > 10) {
-        header.classList.add('is-stuck');
-      } else {
-        header.classList.remove('is-stuck');
-      }
-    }
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  })();
-</script>
+        function onScroll() {
+          if (window.scrollY > 10) {
+            header.classList.add('is-stuck');
+          } else {
+            header.classList.remove('is-stuck');
+          }
+        }
+        onScroll();
+        window.addEventListener('scroll', onScroll, {
+          passive: true
+        });
+      })();
+    </script>
